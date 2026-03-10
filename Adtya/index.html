@@ -57,11 +57,15 @@
       Your browser does not support the audio element.
    </audio>
 
-    <video controls>
-        <source src="./video/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
-        <!-- <source src="video-file.ogg" type="video/ogg"> -->
-        Your browser does not support the video tag.
+    <p>Playing video using video element</p>
+    <p>The browser is responsible for determining the appropriate format to use.</p>
+    <video width="450" height="250" controls>
+        <source src="./video/video_sample.mp4" type="video/webm">
+        <source src="./video/video_sample.mp4" type="video/mp4">
+        <source src="./video/video_sample.mp4" type="video/ogg">
+        <p>Sorry, video element is not supported!</p>
     </video>
+
 
 
 </body>
