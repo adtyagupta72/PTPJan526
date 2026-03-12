@@ -5,8 +5,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>HTML Training</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
 </head>
 <body>
     <header>
@@ -19,6 +19,14 @@
             </ul>
         </nav>
     </header>
+
+    <p 
+        style="
+            background-image: url('images/image3.jpeg'); 
+            color: aliceblue;"
+    >
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+    </p>
 
     <h1>HTML Training is going on!</h1>
     <a href="https://myskillverse.ai" target="_parent">Visit My SkillVerse here!</a>
@@ -79,13 +87,20 @@
         <!-- https://youtu.be/nHvixwyrBLo?si=hBnfuT07uMzCQl4U -->
     </iframe>
 
-    <audio controls unmuted autoplay>
+    <audio controls muted autoplay>
         <source src="audio/sample-0.mp3" type="audio/mp3">
     </audio>
-
+    <br>
     <embed type="image/jpg" src="./images/image3.jpeg" width="300" height="200">
-    <embed type="text/html" src="abc.html" width="500" height="200">
-
-
+    <embed type="text/html" src="abc.html" width="500" height="200"><br>
+    <object type="image/jpg" data="./images/image3.jpeg" width="300" height="200"></object>
+    <object type="text/html" data="abc.html" width="300" height="200"></object>
+    <br>
+    <object data="./audio/sample-0.mp3" type="audio/mp3">
+        <param name="controls" value="true">
+        <param name="unmuted" value="true">
+    </object>
+    <br>
+    <object data="https://www.pexels.com/download/video/15764815/" type="video/mp4"></object>
 </body>
 </html>
