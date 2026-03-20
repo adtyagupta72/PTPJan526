@@ -31,6 +31,19 @@
 
     </style>
 
+    <script>
+        function onlyOne(checkbox) 
+        {
+            var checkboxes = document.getElementsByName(checkbox.name);
+            checkboxes.forEach((item) => 
+            {
+                if (item !== checkbox) {
+                    item.checked = false;
+                }
+            });
+        }
+    </script>
+
 </head>
 <body >
     <!-- style="background-image: url('images/image3.jpeg'); background-repeat: no-repeat;" -->
@@ -119,14 +132,14 @@
 
 
     <form>
-        <input type="checkbox" name="vehicle1" value="Bike">
-        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" name="interests" value="Bike" id="Bike">
+        <label for="interests"> I have a bike</label><br>
 
-        <input type="checkbox" name="vehicle2" value="Car">
-        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" name="interests" value="Car" id="Car">
+        <label for="interests"> I have a car</label><br>
 
-        <input type="checkbox" name="vehicle3" value="Boat">
-        <label for="vehicle3"> I have a boat</label><br>
+        <input type="checkbox" name="interests" value="Boat" id="Boatchrom">
+        <label for="interests"> I have a boat</label><br>
 
         <input type="button" value="Click Me!"><br>
         <label for="favcolor">Select your favorite color:</label>
@@ -137,6 +150,34 @@
         <input type="date" name="birthday">
     </form>
 
+    <form>
+        <input type="checkbox" id="coding" name="interests" value="coding" onclick="onlyOne(this)"/>
+        <label for="coding">Coding</label><br>
+
+        <input type="checkbox" id="music" name="interests" value="music" onclick="onlyOne(this)"/>
+        <label for="music">Music</label><br>
+
+        <input type="checkbox" id="art" name="interests" value="art" onclick="onlyOne(this)"/>
+        <label for="art">Art</label><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <form action="action_page.html" method="post">
+        <div>
+            <input type="checkbox" id="soccer" name="sports[]" value="soccer">
+            <label for="soccer">Soccer</label>
+        </div>
+        <div>
+            <input type="checkbox" id="baseball" name="sports[]" value="baseball">
+            <label for="baseball">Baseball</label>
+        </div>
+        <div>
+            <input type="checkbox" id="basketball" name="sports[]" value="basketball">
+            <label for="basketball">Basketball</label>
+        </div>
+    <button type="submit">Submit</button>
+    </form>
 
     ---------------------------
 
