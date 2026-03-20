@@ -68,8 +68,9 @@
     <input type="time"><br>
     <input type="url"><br>
     <input type="week"><br>
-
-    ---------------------------
+    <br>
+    ---------------------------<br>
+    #Input Elements:<br>
     <form>
         <label for="fname">First name:</label><br>
         <input type="text" name="fname"><br>
@@ -91,6 +92,52 @@
 
         <input type="submit" value="Submit">
     </form>
+
+    <h1>Second phase</h1>
+
+    <form action="action_page.html" onreset="return confirm('Are you sure, you want to clear this form?')">
+        <label for="fname">First name:</label><br>
+        <input type="text" name="fname" value="John" id="fname"><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" name="lname" value="Doe" id="lname"><br><br>
+
+        <input type="text" placeholder="test">
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit"><br>
+
+        <input type="radio" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+
+        <input type="radio" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        
+        <input type="radio" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form>
+
+
+    <form>
+        <input type="checkbox" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+
+        <input type="checkbox" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+
+        <input type="checkbox" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br>
+
+        <input type="button" value="Click Me!"><br>
+        <label for="favcolor">Select your favorite color:</label>
+
+        <input type="color" name="favcolor"><br>
+        <label for="birthday">Birthday:</label>
+
+        <input type="date" name="birthday">
+    </form>
+
+
     ---------------------------
 
     <!-- src="https://www.youtube.com" -->
