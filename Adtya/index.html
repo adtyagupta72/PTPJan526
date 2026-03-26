@@ -176,10 +176,82 @@
             <input type="checkbox" id="basketball" name="sports[]" value="basketball">
             <label for="basketball">Basketball</label>
         </div>
-    <button type="submit">Submit</button>
+        <button type="submit">Submit</button><br>
+
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" name="favcolor"><br>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" name="birthday">
+
     </form>
 
     ---------------------------
+    ------------------------------------------------------
+    <form>
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" name="birthdaytime"><br>
+        <label for="email">Enter your email:</label>
+        <input type="email" name="email"><br>
+        <!-- a@a.n -->
+        <input type="image" src="./images/image11.jpg" alt="Submit" width="48" height="48"><br>
+
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile"><br>
+
+        <label for="bdaymonth">Birthday (month and year):</label>
+        <input type="month" id="bdaymonth" name="bdaymonth"><br>
+
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+
+        <label for="vol">Volume (between 0 and 50):</label>
+        <input type="range" id="vol" name="vol" min="0" max="50"><br>
+
+        <label for="gsearch">Search Google:</label>
+        <input type="search" id="gsearch" name="gsearch">
+    </form>
+
+    ------------------------------------------------------
+    <form>
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br>
+
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt"><br>
+
+        <label for="homepage">Add your homepage:</label>
+        <input type="url" id="homepage" name="homepage"><br>
+
+        <label for="week">Select a week:</label>
+        <input type="week" id="week" name="week">
+
+        <label for="review">textarea:</label>
+        <textarea name="review" rows="4" cols="50">
+        </textarea><br>
+
+        <label for="fruits">Choose a fruit:</label><br>
+        <select id="fruits" name="fruits">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="cherry">Cherry</option>
+        </select><br>
+
+        <label for="vehical">Choose a vehical:</label><br>
+        <select id="vehical" name="vehical">
+            <optgroup label="German Cars">
+                <option value="bmw">BMW</option>
+                <option value="vw">Volkswagen</option>
+            </optgroup>
+  	        <optgroup label="Japanese Cars">
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+            </optgroup>
+
+        </select>
+
+    </form>
+
 
     <!-- src="https://www.youtube.com" -->
     <!-- <iframe
