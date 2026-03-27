@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>admission form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(61, 61, 61);
+        }
+        p{
+            text-align: center;
+        }
+        .container form{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin-left: 38%;
+        }
+        input{
+            width: 60%;    
+        }
+        button{
+            width: 10%;
+            margin-left: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Student Admission Form</h1>
+    <p>This form is for the students who want take admisssion in our college and learn their specific domain of subject
+    </p>
+    <div class="container">
+        <form action="/submit-admission" method="post">
+            <label for="fullname">Full Name</label>
+            <input type="text" placeholder="Enter Your fullname" id="fullname" required>                        
+
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter Your email" id="email" required>
+
+            <label for="bday">Date of Birth</label>
+            <input type="date" placeholder="Enter Your date of birth" id="bday" required>
+
+            <h3>Select Your gender</h3>
+            <label for="male" name="gender">Male</label>
+            <input type="radio" name="gender" id ="male">
+
+            <label for="female" name="gender">Female</label>
+            <input type="radio" name="gender" id="female">
+
+            <label for="other" name="gender">Other</label>
+            <input type="radio" name="gender" id="other">
+
+            <h3>Choose Your Subject</h3>
+            <h4>BSC DEPARTMENT</h4>
+            <input type="checkbox" id="bsc bio">
+            <label for="bsc bio">BSC BIO</label>
+
+            <input type="checkbox" id="bsc math">
+            <label for="bsc math">BSC MATH</label>
+
+            <input type="checkbox" id="bsc cs">
+            <label for="bsc cs">BSC CS</label>
+
+            <input type="checkbox" id="bsc agr">
+            <label for="bsc agr">BSC AGR</label>
+
+            <input type="checkbox" id="bsc nursing">
+            <label for="bsc nursing">BSC NURSING</label>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter Your PhoneNo." pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required title="Phone No. must be in the format xxx-xxx-xxxx">
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>

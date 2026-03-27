@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Student Complaint Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        h1,
+        p {
+            text-align: center;
+            color: rgb(66, 58, 58);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container{
+            width: 50%;
+            margin: auto;
+        }
+        input{
+            width: 70%;
+        }
+        button{
+            width: 20%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Student Complaint Form</h1>
+    <p>Students can report their problems and complaints using this form</p>
+    <div class="container">
+        <form action="/submit-complaint" method="post">
+            <label for="name">Student Name</label>
+            <input type="text" placeholder="Enter Your Name" id="name" required title="Enter Your Fullname">
+
+            <label for="email">E-Mail</label>
+            <input type="email" placeholder="Enter Your Email" id="email" required>
+
+            <label for="class">Class</label>
+            <input type="text" placeholder="enter Your Class" id="class" required>
+
+            <h3>complaint type</h3>
+            <label for="academics" name="complaint">Academics</label>
+            <input type="radio" id="academics" name="complaint">
+            <label for="Facilities">Facilities</label>
+            <input type="radio" id="Facilities" name="complaint">
+            <label for="others">Other</label>
+            <input type="radio" id="others" name="complaint">
+
+            <label for="describe">Describe Your Complaint</label>
+            <textarea name="describe" id="describe" rows="5" cols="40"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
