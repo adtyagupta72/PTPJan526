@@ -214,43 +214,60 @@
 
     ------------------------------------------------------
     <form>
-        <label for="phone">Enter your phone number:</label>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br>
+        <fieldset>
+            <legend>General information form</legend>
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
 
-        <label for="appt">Select a time:</label>
-        <input type="time" id="appt" name="appt"><br>
+            <label for="appt">Select a time:</label>
+            <input type="time" id="appt" name="appt" required><br>
 
-        <label for="homepage">Add your homepage:</label>
-        <input type="url" id="homepage" name="homepage"><br>
+            <label for="homepage">Add your homepage:</label>
+            <input type="url" id="homepage" name="homepage" required><br>
 
-        <label for="week">Select a week:</label>
-        <input type="week" id="week" name="week">
+            <label for="week">Select a week:</label>
+            <input type="week" id="week" name="week">
 
-        <label for="review">textarea:</label>
-        <textarea name="review" rows="4" cols="50">
-        </textarea><br>
+            <label for="review">textarea:</label>
+            <textarea name="review" rows="4" cols="50">
+            </textarea><br>
 
-        <label for="fruits">Choose a fruit:</label><br>
-        <select id="fruits" name="fruits">
-            <option value="apple">Apple</option>
-            <option value="banana">Banana</option>
-            <option value="cherry">Cherry</option>
-        </select><br>
+            <label for="fruits">Choose a fruit:</label><br>
+            <select id="fruits" name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select><br>
 
-        <label for="vehical">Choose a vehical:</label><br>
-        <select id="vehical" name="vehical">
-            <optgroup label="German Cars">
-                <option value="bmw">BMW</option>
-                <option value="vw">Volkswagen</option>
-            </optgroup>
-  	        <optgroup label="Japanese Cars">
-                <option value="toyota">Toyota</option>
-                <option value="honda">Honda</option>
-            </optgroup>
+            <label for="vehical">Choose a vehical:</label><br>
+            <select id="vehical" name="vehical">
+                <optgroup label="German Cars">
+                    <option value="bmw">BMW</option>
+                    <option value="vw">Volkswagen</option>
+                </optgroup>
+                <optgroup label="Japanese Cars">
+                    <option value="toyota">Toyota</option>
+                    <option value="honda">Honda</option>
+                </optgroup>
 
-        </select>
+            </select>
+            <br>
+            <input type="submit" value="Submit form">
 
+        </fieldset>
     </form>
+
+    ----------------------------
+    ----------------------------<br><br><br>
+    <label for="myBrowser">Choose a browser from this list:</label>
+    <input list="browsers" id="myBrowser" name="myBrowser" />
+    <datalist id="browsers">
+        <option value="Chrome"></option>
+        <option value="Firefox"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+        <option value="Microsoft Edge"></option>
+    </datalist>
 
 
     <!-- src="https://www.youtube.com" -->
