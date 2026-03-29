@@ -6,21 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    <center><h1>Student Admission Form</h1></center>
-    <p><i>Students must fill out this form for new admission registration</i></p>
+    <center><h1>Student Complaint Form</h1></center>
+    <p><i>Students can report problems or issues using this online form</i></p>
     <form action="action.html" method="post">
         <label for="info" >Student's name</label>
         <input type="text" name="info" id="info"><br>
         <label for="email" >Email</label>
         <input type="email" name="email"><br>
-         <label for="paas" >Password</label>
-        <input type="password" name="paas"><br>
-        <label>Gender:</label><BR>
+         <!-- <label for="paas" >Password</label>
+        <input type="password" name="paas"><br> -->
+        <label>Complaint type:</label><BR>
         <input type="radio" name="gen" id="gen">
-        <label for="gen" >Male</label><BR>
+        <label for="gen" >Sports</label><BR>
         <input type="radio" name="gen" id="gen">
-        <label for="gen" >Female</label><BR>
-        <label for="bday">Birthday:</label>    
+        <label for="gen" >Academic</label><BR>
+        <input type="radio" name="gen" id="gen">
+        <label for="gen"> facilities</label><BR>
+        <label for="textarea">Describe here</label> <br>   
+        <textarea rows="10" cols="50"></textarea>  <br>  
+        <!-- <label for="bday">Birthday:</label>    
         <input type="date" name="bday"><br>
         <label for="NUMBER">Phone number</label>    
         <input type="tel" name="NUMBER" pattern="[0-9]{10}"><br>
@@ -32,12 +36,9 @@
         <input type="checkbox" name="box" id="box">
         <label for="gen" >Mathematics</label><BR>
         <input type="checkbox" name="box" id="box">
-        <label for="gen" >Science</label><BR>
+        <label for="gen" >Science</label><BR> -->
         <button type="submit">Submit</button>    
-        
-        
-        
-    </form>
+            </form>
 
 </body>
 </html>
