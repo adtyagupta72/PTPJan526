@@ -6,14 +6,15 @@
     <title>HTML Training</title>
     <meta name='viewport' content='width=device-width, initial-scale=1, viewport-fit=cover'>
     <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="icon" type="image/x-icon" href="images/favicon_io/favicon.ico">
     <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script> -->
     <style>
-        h1,
+        /* h1,
         h3 {
             text-align: center;
             color: green;
-        }
+        } */
         /* table {
             width: 100%;
             border: 1px solid #100808;
@@ -57,534 +58,582 @@
             </ul>
         </nav>
     </header>
+    <main>
 
-    <input type="button"><br>
-    <input type="checkbox"><br>
-    <input type="color"><br>
-    <input type="date"><br>
-    <input><br>
-    <input type="datetime-local"><br>
-    <input type="email"><br>
-    <input type="file"><br>
-    <input type="hidden"><br>
-    <input type="image"><br>
-    <input type="month"><br>
-    <input type="number"><br>
-    <input type="password"><br>
-    <input type="radio"><br>
-    <input type="range"><br>
-    <input type="reset"><br>
-    <input type="search"><br>
-    <input type="submit"><br>
-    <input type="tel"><br>
-    <input type="text"><br>
-    <input type="time"><br>
-    <input type="url"><br>
-    <input type="week"><br>
-    <br>
-    ---------------------------<br>
-    #Input Elements:<br>
-    <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" name="fname"><br>
+        <input type="button"><br>
+        <input type="checkbox"><br>
+        <input type="color"><br>
+        <input type="date"><br>
+        <input><br>
+        <input type="datetime-local"><br>
+        <input type="email"><br>
+        <input type="file"><br>
+        <input type="hidden"><br>
+        <input type="image"><br>
+        <input type="month"><br>
+        <input type="number"><br>
+        <input type="password"><br>
+        <input type="radio"><br>
+        <input type="range"><br>
+        <input type="reset"><br>
+        <input type="search"><br>
+        <input type="submit"><br>
+        <input type="tel"><br>
+        <input type="text"><br>
+        <input type="time"><br>
+        <input type="url"><br>
+        <input type="week"><br>
+        <br>
+        ---------------------------<br>
+        #Input Elements:<br>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" name="fname"><br>
 
-        <label for="lname">Last name:</label><br>
-        <input type="text" name="lname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" name="lname"><br>
 
-        <label for="username">Username:</label><br>
-        <input type="text" name="username"><br>
+            <label for="username">Username:</label><br>
+            <input type="text" name="username"><br>
 
-        <label for="pwd">Password:</label><br>
-        <input type="password" name="pwd"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" name="pwd"><br>
 
-        <label for="fname">First name:</label><br>
-        <input type="text" name="fname" value="John"><br>
+            <label for="fname">First name:</label><br>
+            <input type="text" name="fname" value="John"><br>
 
-        <label for="lname">Last name:</label><br>
-        <input type="text" name="lname" value="Doe"><br><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" name="lname" value="Doe"><br><br>
 
-        <input type="submit" value="Submit">
-    </form>
+            <input type="submit" value="Submit">
+        </form>
 
-    <h1>Second phase</h1>
+        <h1>Second phase</h1>
 
-    <form action="action_page.html" onreset="return confirm('Are you sure, you want to clear this form?')">
-        <label for="fname">First name:</label><br>
-        <input type="text" name="fname" value="John" id="fname"><br>
+        <form action="action_page.html" onreset="return confirm('Are you sure, you want to clear this form?')">
+            <label for="fname">First name:</label><br>
+            <input type="text" name="fname" value="John" id="fname"><br>
 
-        <label for="lname">Last name:</label><br>
-        <input type="text" name="lname" value="Doe" id="lname"><br><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" name="lname" value="Doe" id="lname"><br><br>
 
-        <input type="text" placeholder="test">
+            <input type="text" placeholder="test">
 
-        <input type="reset" value="Reset">
-        <input type="submit" value="Submit"><br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit"><br>
 
-        <input type="radio" name="fav_language" value="HTML">
-        <label for="html">HTML</label><br>
+            <input type="radio" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
 
-        <input type="radio" name="fav_language" value="CSS">
-        <label for="css">CSS</label><br>
-        
-        <input type="radio" name="fav_language" value="JavaScript">
-        <label for="javascript">JavaScript</label>
-    </form>
+            <input type="radio" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            
+            <input type="radio" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </form>
 
 
-    <form>
-        <input type="checkbox" name="interests" value="Bike" id="Bike">
-        <label for="interests"> I have a bike</label><br>
+        <form>
+            <input type="checkbox" name="interests" value="Bike" id="Bike">
+            <label for="interests"> I have a bike</label><br>
 
-        <input type="checkbox" name="interests" value="Car" id="Car">
-        <label for="interests"> I have a car</label><br>
+            <input type="checkbox" name="interests" value="Car" id="Car">
+            <label for="interests"> I have a car</label><br>
 
-        <input type="checkbox" name="interests" value="Boat" id="Boatchrom">
-        <label for="interests"> I have a boat</label><br>
+            <input type="checkbox" name="interests" value="Boat" id="Boatchrom">
+            <label for="interests"> I have a boat</label><br>
 
-        <input type="button" value="Click Me!"><br>
-        <label for="favcolor">Select your favorite color:</label>
+            <input type="button" value="Click Me!"><br>
+            <label for="favcolor">Select your favorite color:</label>
 
-        <input type="color" name="favcolor"><br>
-        <label for="birthday">Birthday:</label>
+            <input type="color" name="favcolor"><br>
+            <label for="birthday">Birthday:</label>
 
-        <input type="date" name="birthday">
-    </form>
+            <input type="date" name="birthday">
+        </form>
 
-    <form>
-        <input type="checkbox" id="coding" name="interests" value="coding" onclick="onlyOne(this)"/>
-        <label for="coding">Coding</label><br>
+        <form>
+            <input type="checkbox" id="coding" name="interests" value="coding" onclick="onlyOne(this)"/>
+            <label for="coding">Coding</label><br>
 
-        <input type="checkbox" id="music" name="interests" value="music" onclick="onlyOne(this)"/>
-        <label for="music">Music</label><br>
+            <input type="checkbox" id="music" name="interests" value="music" onclick="onlyOne(this)"/>
+            <label for="music">Music</label><br>
 
-        <input type="checkbox" id="art" name="interests" value="art" onclick="onlyOne(this)"/>
-        <label for="art">Art</label><br>
-        
-        <button type="submit">Submit</button>
-    </form>
+            <input type="checkbox" id="art" name="interests" value="art" onclick="onlyOne(this)"/>
+            <label for="art">Art</label><br>
+            
+            <button type="submit">Submit</button>
+        </form>
 
-    <form action="action_page.html" method="post">
-        <div>
-            <input type="checkbox" id="soccer" name="sports[]" value="soccer">
-            <label for="soccer">Soccer</label>
+        <form action="action_page.html" method="post">
+            <div>
+                <input type="checkbox" id="soccer" name="sports[]" value="soccer">
+                <label for="soccer">Soccer</label>
+            </div>
+            <div>
+                <input type="checkbox" id="baseball" name="sports[]" value="baseball">
+                <label for="baseball">Baseball</label>
+            </div>
+            <div>
+                <input type="checkbox" id="basketball" name="sports[]" value="basketball">
+                <label for="basketball">Basketball</label>
+            </div>
+            <button type="submit">Submit</button><br>
+
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" name="favcolor"><br>
+
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="birthday">
+
+        </form>
+
+        ---------------------------
+        ------------------------------------------------------
+        <form>
+            <label for="birthdaytime">Birthday (date and time):</label>
+            <input type="datetime-local" name="birthdaytime"><br>
+            <label for="email">Enter your email:</label>
+            <input type="email" name="email"><br>
+            <!-- a@a.n -->
+            <input type="image" src="./images/image11.jpg" alt="Submit" width="48" height="48"><br>
+
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile"><br>
+
+            <label for="bdaymonth">Birthday (month and year):</label>
+            <input type="month" id="bdaymonth" name="bdaymonth"><br>
+
+            <label for="quantity">Quantity (between 1 and 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+
+            <label for="vol">Volume (between 0 and 50):</label>
+            <input type="range" id="vol" name="vol" min="0" max="50"><br>
+
+            <label for="gsearch">Search Google:</label>
+            <input type="search" id="gsearch" name="gsearch">
+        </form>
+
+        ------------------------------------------------------
+        <form>
+            <fieldset>
+                <legend>General information form</legend>
+                <label for="phone">Enter your phone number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+
+                <label for="appt">Select a time:</label>
+                <input type="time" id="appt" name="appt" required><br>
+
+                <label for="homepage">Add your homepage:</label>
+                <input type="url" id="homepage" name="homepage" required><br>
+
+                <label for="week">Select a week:</label>
+                <input type="week" id="week" name="week">
+
+                <label for="review">textarea:</label>
+                <textarea name="review" rows="4" cols="50" >
+                </textarea><br>
+
+                <label for="fruits">Choose a fruit:</label><br>
+                <select id="fruits" name="fruits">
+                    <option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
+                    <option value="cherry">Cherry</option>
+                </select><br>
+
+                <label for="vehical">Choose a vehical:</label><br>
+                <select id="vehical" name="vehical">
+                    <optgroup label="German Cars">
+                        <option value="bmw">BMW</option>
+                        <option value="vw">Volkswagen</option>
+                    </optgroup>
+                    <optgroup label="Japanese Cars">
+                        <option value="toyota">Toyota</option>
+                        <option value="honda">Honda</option>
+                    </optgroup>
+
+                </select>
+                <br>
+                <input type="submit" value="Submit form">
+
+            </fieldset>
+        </form>
+
+        ----------------------------
+        ----------------------------<br><br><br>
+        <label for="myBrowser">Choose a browser from this list:</label>
+        <input list="browsers" id="myBrowser" name="myBrowser" />
+        <datalist id="browsers">
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+            <option value="Microsoft Edge"></option>
+        </datalist>
+
+        <div class="user-card" style="background-color: aquamarine;">
+            <h2>John Doe</h2>
+            <p>Software Developer</p>
+            <p>Contact: <a href="mailto:john.doe@example.com">john.doe@example.com</a>
+            </p>
         </div>
-        <div>
-            <input type="checkbox" id="baseball" name="sports[]" value="baseball">
-            <label for="baseball">Baseball</label>
+
+        <div class="user-card">
+            <p>
+            Sale ends in <span style="color: red; font-weight: bold;">3 days</span>!
+            </p>
         </div>
-        <div>
-            <input type="checkbox" id="basketball" name="sports[]" value="basketball">
-            <label for="basketball">Basketball</label>
-        </div>
-        <button type="submit">Submit</button><br>
 
-        <label for="favcolor">Select your favorite color:</label>
-        <input type="color" name="favcolor"><br>
+        <section>
+            <article>
+                <h2>Facts About Dogs</h2>
+                <p>
+                    Dogs have a sense of time. It's been proven that they
+                    know the difference between an hour and five. If conditioned to,
+                    they can predict future events, such as regular walk times.
+                </p>
+            </article>
+        </section>
 
-        <label for="birthday">Birthday:</label>
-        <input type="date" name="birthday">
+        <section>
+            <h1>Topic 1</h1>
+            <p>Topic content comes here. Whatever we want to say or show about the topic, the content will be shown here.</p>
+        </section>
 
-    </form>
+        <section>
+            <h1>Topic 2</h1>
+            <p>Topic content comes here. Whatever we want to say or show about the topic, the content will be shown here.</p>
+        </section>
 
-    ---------------------------
-    ------------------------------------------------------
-    <form>
-        <label for="birthdaytime">Birthday (date and time):</label>
-        <input type="datetime-local" name="birthdaytime"><br>
-        <label for="email">Enter your email:</label>
-        <input type="email" name="email"><br>
-        <!-- a@a.n -->
-        <input type="image" src="./images/image11.jpg" alt="Submit" width="48" height="48"><br>
+        <article>
+            <h2>Google Slides</h2>
+            <p>Google Slide is a web application which provides you the facility to create presentations and use it for the presentations for various purposes!</p>
+        </article>
 
-        <label for="myfile">Select a file:</label>
-        <input type="file" id="myfile" name="myfile"><br>
+        <article>
+            <h2>Google Sheet</h2>
+            <p>Google sheet is a web application which provides you the feature of represent the data in a tabular form collectively so that you can work with the data wholesome in a single view.</p>
+        </article>
 
-        <label for="bdaymonth">Birthday (month and year):</label>
-        <input type="month" id="bdaymonth" name="bdaymonth"><br>
-
-        <label for="quantity">Quantity (between 1 and 5):</label>
-        <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
-
-        <label for="vol">Volume (between 0 and 50):</label>
-        <input type="range" id="vol" name="vol" min="0" max="50"><br>
-
-        <label for="gsearch">Search Google:</label>
-        <input type="search" id="gsearch" name="gsearch">
-    </form>
-
-    ------------------------------------------------------
-    <form>
-        <fieldset>
-            <legend>General information form</legend>
-            <label for="phone">Enter your phone number:</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
-
-            <label for="appt">Select a time:</label>
-            <input type="time" id="appt" name="appt" required><br>
-
-            <label for="homepage">Add your homepage:</label>
-            <input type="url" id="homepage" name="homepage" required><br>
-
-            <label for="week">Select a week:</label>
-            <input type="week" id="week" name="week">
-
-            <label for="review">textarea:</label>
-            <textarea name="review" rows="4" cols="50" >
-            </textarea><br>
-
-            <label for="fruits">Choose a fruit:</label><br>
-            <select id="fruits" name="fruits">
-                <option value="apple">Apple</option>
-                <option value="banana">Banana</option>
-                <option value="cherry">Cherry</option>
-            </select><br>
-
-            <label for="vehical">Choose a vehical:</label><br>
-            <select id="vehical" name="vehical">
-                <optgroup label="German Cars">
-                    <option value="bmw">BMW</option>
-                    <option value="vw">Volkswagen</option>
-                </optgroup>
-                <optgroup label="Japanese Cars">
-                    <option value="toyota">Toyota</option>
-                    <option value="honda">Honda</option>
-                </optgroup>
-
-            </select>
-            <br>
-            <input type="submit" value="Submit form">
-
-        </fieldset>
-    </form>
-
-    ----------------------------
-    ----------------------------<br><br><br>
-    <label for="myBrowser">Choose a browser from this list:</label>
-    <input list="browsers" id="myBrowser" name="myBrowser" />
-    <datalist id="browsers">
-        <option value="Chrome"></option>
-        <option value="Firefox"></option>
-        <option value="Opera"></option>
-        <option value="Safari"></option>
-        <option value="Microsoft Edge"></option>
-    </datalist>
-
-    <div class="user-card" style="background-color: aquamarine;">
-        <h2>John Doe</h2>
-        <p>Software Developer</p>
-        <p>Contact: <a href="mailto:john.doe@example.com">john.doe@example.com</a>
-        </p>
-    </div>
+        <article>
+            <h2>Google Doc</h2>
+            <p>Google doc is a web application which provides you the feature of creating a document online with collaboration with other people.</p>
+        </article>
 
 
 
-    <!-- src="https://www.youtube.com" -->
-    <!-- <iframe
-         style="position:fixed; left:0; bottom:0; right:0; width:100%; height:100%; border:none;"
-         src="https://www.youtube.com/embed/$videoID?autoplay=1&mute=1"
-         allow="autoplay"
-         referrerpolicy="strict-origin-when-cross-origin">
-      </iframe> -->
+        <!-- src="https://www.youtube.com" -->
+        <!-- <iframe
+            style="position:fixed; left:0; bottom:0; right:0; width:100%; height:100%; border:none;"
+            src="https://www.youtube.com/embed/$videoID?autoplay=1&mute=1"
+            allow="autoplay"
+            referrerpolicy="strict-origin-when-cross-origin">
+        </iframe> -->
 
 
-    <!-- <table border="1">
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>10</td>
-            <td>11</td>
-            <td>12</td>
-        </tr>
-    </table>
-
-    <table border="1">
-        <caption>Description of table</caption>
-        <thead style="background-color: aqua;">
+        <!-- <table border="1">
             <tr>
-                <th>Product</th>
-                <th>Category</th>
-                <th>Price</th>
-            </tr>
-        </thead>
-        <tr>
-            <td>Laptop</td>
-            <td>Electronics</td>
-            <td>$800</td>
-        </tr>
-        <tr>
-            <td>Bookshelf</td>
-            <td>Furniture</td>
-            <td>$150</td>
-        </tr>
-        <tr>
-            <td>Coffee Maker</td>
-            <td>Appliances</td>
-            <td>$50</td>
-        </tr>
-    </table>
-
-    <table border=1>
-      <thead>
-         <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-            <th>Column 3</th>
-         </tr>
-      </thead>
-      
-   </table>
-
-    <table border="1">
-        <thead>
-            <tr>
-                <th colspan="2">Name</th>
-                <th>Class</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Alice</td>
-                <td>Brown</td>
                 <td>1</td>
-            </tr>
-            <tr>
-                <td>Jane</td>
-                <td>Smith</td>
+                <td>2</td>
                 <td>3</td>
+                <td>4</td>
             </tr>
             <tr>
-                <td>John</td>
-                <td>Doe</td>
                 <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
             </tr>
-        </tbody>
-    </table> -->
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+        </table>
 
-    <!-- <table border="1">
-        <tr>
-            <th rowspan="3">MVM School</th>
-            <th>Name</th>
-            <th>Class</th>
-        </tr> 
-        <tr>
-            <td>Adam</td>
-            <td>10</td>
-        </tr>
-        <tr>
-            <td>Bob</td>
-            <td>11</td>
-        </tr>
-    </table> -->
+        <table border="1">
+            <caption>Description of table</caption>
+            <thead style="background-color: aqua;">
+                <tr>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Laptop</td>
+                <td>Electronics</td>
+                <td>$800</td>
+            </tr>
+            <tr>
+                <td>Bookshelf</td>
+                <td>Furniture</td>
+                <td>$150</td>
+            </tr>
+            <tr>
+                <td>Coffee Maker</td>
+                <td>Appliances</td>
+                <td>$50</td>
+            </tr>
+        </table>
 
-    <table border="1">
+        <table border=1>
         <thead>
             <tr>
-                <th colspan="2">Name</th>
-                <th>Class</th>
-                <th>School</th>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
             </tr>
         </thead>
-        <tbody>
+        
+    </table>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="2">Name</th>
+                    <th>Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alice</td>
+                    <td>Brown</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Jane</td>
+                    <td>Smith</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+        </table> -->
+
+        <!-- <table border="1">
             <tr>
-                <td rowspan="2">Alice</td>
-                <td rowspan="2">Brown</td>
+                <th rowspan="3">MVM School</th>
+                <th>Name</th>
+                <th>Class</th>
+            </tr> 
+            <tr>
+                <td>Adam</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
                 <td>11</td>
-                <td rowspan="2">MVM School</td>
+            </tr>
+        </table> -->
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="2">Name</th>
+                    <th>Class</th>
+                    <th>School</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Alice</td>
+                    <td rowspan="2">Brown</td>
+                    <td>11</td>
+                    <td rowspan="2">MVM School</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">John</td>
+                    <td rowspan="2">Doe</td>
+                    <td>3</td>
+                    <td rowspan="2">LMS School</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Jane</td>
+                    <td rowspan="2">Smith</td>
+                    <td>5</td>
+                    <td rowspan="2">SCPM School</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table style="width: 60%;">
+            <colgroup>
+                <col span="2" style="background-color: #D6EEEE">
+                <col span="3" style="background-color: pink">
+            </colgroup>
+            <tr>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                <th>FRI</th>
+                <th>SAT</th>
+                <th>SUN</th>
             </tr>
             <tr>
-                <td>A</td>
-            </tr>
-            <tr>
-                <td rowspan="2">John</td>
-                <td rowspan="2">Doe</td>
+                <td>1</td>
+                <td>2</td>
                 <td>3</td>
-                <td rowspan="2">LMS School</td>
-            </tr>
-            <tr>
-                <td>B</td>
-            </tr>
-            <tr>
-                <td rowspan="2">Jane</td>
-                <td rowspan="2">Smith</td>
+                <td>4</td>
                 <td>5</td>
-                <td rowspan="2">SCPM School</td>
+                <td>6</td>
+                <td>7</td>
             </tr>
             <tr>
-                <td>A</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
             </tr>
-        </tbody>
-    </table>
+            <tr>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+            </tr>
+        </table>
 
-    <table style="width: 60%;">
-        <colgroup>
-            <col span="2" style="background-color: #D6EEEE">
-            <col span="3" style="background-color: pink">
-        </colgroup>
-        <tr>
-            <th>MON</th>
-            <th>TUE</th>
-            <th>WED</th>
-            <th>THU</th>
-            <th>FRI</th>
-            <th>SAT</th>
-            <th>SUN</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>9</td>
-            <td>10</td>
-            <td>11</td>
-            <td>12</td>
-            <td>13</td>
-            <td>14</td>
-        </tr>
-        <tr>
-            <td>15</td>
-            <td>16</td>
-            <td>17</td>
-            <td>18</td>
-            <td>19</td>
-            <td>20</td>
-            <td>21</td>
-        </tr>
-        <tr>
-            <td>22</td>
-            <td>23</td>
-            <td>24</td>
-            <td>25</td>
-            <td>26</td>
-            <td>27</td>
-            <td>28</td>
-        </tr>
-    </table>
-
-    <table border="1" width="50%">
-        <tr>
-            <td>
-                <table border="1" width="50%">
-                    <tr>
-                        <th>Name</th>
-                        <th>Salary</th>
-                    </tr>
-                    <tr>
-                        <td>Ramesh Raman</td>
-                        <td>5000</td>
-                    </tr>
-                    <tr>
-                        <td>Shabbir Hussein</td>
-                        <td>7000</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+        <table border="1" width="50%">
+            <tr>
+                <td>
+                    <table border="1" width="50%">
+                        <tr>
+                            <th>Name</th>
+                            <th>Salary</th>
+                        </tr>
+                        <tr>
+                            <td>Ramesh Raman</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr>
+                            <td>Shabbir Hussein</td>
+                            <td>7000</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
 
 
-    <p 
-        style="
-            background-image: url('images/image3.jpeg'); 
-            color: aliceblue;"
-    >
-        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-    </p>
+        <p 
+            style="
+                background-image: url('images/image3.jpeg'); 
+                color: aliceblue;"
+        >
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+        </p>
 
-    <h1>HTML Training is going on!</h1>
-    <a href="https://myskillverse.ai" target="_parent">Visit My SkillVerse here!</a>
+        <h1>HTML Training is going on!</h1>
+        <a href="https://myskillverse.ai" target="_parent">Visit My SkillVerse here!</a>
 
-    <h2>Absolute URLs</h2>
-    <p><a href="https://www.w3.org/">W3C</a></p>
-    <p><a href="https://www.google.com/">Google</a></p>
+        <h2>Absolute URLs</h2>
+        <p><a href="https://www.w3.org/">W3C</a></p>
+        <p><a href="https://www.google.com/">Google</a></p>
 
-    <h2>Relative URLs</h2>
-    <p><a href="../Nirbhay/index.html" target="_blank">Nirbhay's HTML Page</a></p>
-    <p><a href="../zeeshan/index.html" target="_blank">Zeeshan's HTML Page</a></p>
-    <p><a href="./abc.html" target="_blank">ABC's HTML Page</a></p>
+        <h2>Relative URLs</h2>
+        <p><a href="../Nirbhay/index.html" target="_blank">Nirbhay's HTML Page</a></p>
+        <p><a href="../zeeshan/index.html" target="_blank">Zeeshan's HTML Page</a></p>
+        <p><a href="./abc.html" target="_blank">ABC's HTML Page</a></p>
 
-    <p>Click any of the following links</p>
-   <a href="./abc.html" target="_blank">Opens in New</a> | 
-   <a href="./abc.html" target="_self">Opens in Self</a> | 
-   <a href="./abc.html" target="_parent">Opens in Parent</a> | 
-   <a href="./abc.html" target="_top">Opens in Body</a>
+        <p>Click any of the following links</p>
+    <a href="./abc.html" target="_blank">Opens in New</a> | 
+    <a href="./abc.html" target="_self">Opens in Self</a> | 
+    <a href="./abc.html" target="_parent">Opens in Parent</a> | 
+    <a href="./abc.html" target="_top">Opens in Body</a>
 
-   <p>This is a demo to share the commit link as assignment submission!</p>
+    <p>This is a demo to share the commit link as assignment submission!</p>
 
-   <a href="mailto:zeeshan6767siddiqui@gmail.com">Send Email</a>
-   <a href="tel:+18001234567" style="background-color: #007bff; color: white; padding: 10px; text-decoration: none; border-radius: 5px;">+1-800-123-4567</a>
-    <br>
-    <img src="./images/image1.jpg" alt="Congratulations Inndia for World Cup!" title="This text will appear as a tooltip on hover">
-    <img src="./images/image2.jpeg" alt="Happy Holi">
-    <img src="./images/image3.jpeg" alt="Ramdaan Mubaarak" ><!--width="500em" height="500em"-->
-    <img src="https://readfoundation.org.uk/wp-content/uploads/2025/01/Top-10-Facts-About-Ramadan-1024x576.png" alt="abc">
-    <!--  -->
+    <a href="mailto:zeeshan6767siddiqui@gmail.com">Send Email</a>
+    <a href="tel:+18001234567" style="background-color: #007bff; color: white; padding: 10px; text-decoration: none; border-radius: 5px;">+1-800-123-4567</a>
+        <br>
+        <img src="./images/image1.jpg" alt="Congratulations Inndia for World Cup!" title="This text will appear as a tooltip on hover">
+        <img src="./images/image2.jpeg" alt="Happy Holi">
+        <img src="./images/image3.jpeg" alt="Ramdaan Mubaarak" ><!--width="500em" height="500em"-->
+        <img src="https://readfoundation.org.uk/wp-content/uploads/2025/01/Top-10-Facts-About-Ramadan-1024x576.png" alt="abc">
+        <!--  -->
 
-    <!-- <p>Working with audio element</p>
-   <audio controls autoplay unmuted loop>
-    <source src= "./audio/sample-12s.mp3" type = "audio/mp3" />
-      <source src= "./audio/sample-15s.mp3" type = "audio/mp3" />
-      <source src= "./audio/sample-9s.mp3" type = "audio/mp3" />
-      Your browser does not support the audio element.
-   </audio> -->
+        <!-- <p>Working with audio element</p>
+    <audio controls autoplay unmuted loop>
+        <source src= "./audio/sample-12s.mp3" type = "audio/mp3" />
+        <source src= "./audio/sample-15s.mp3" type = "audio/mp3" />
+        <source src= "./audio/sample-9s.mp3" type = "audio/mp3" />
+        Your browser does not support the audio element.
+    </audio> -->
 
-    <p>Playing video using video element</p>
-    <p>The browser is responsible for determining the appropriate format to use.</p>
-    <video width="450" height="250" controls autoplay>
-        <source src="./video/3195394-uhd_3840_2160_25fps.mp4" type="video/mp4">
-        <!-- <source src="./video/video_sample.mp4" type="video/mp4">
-        <source src="./video/video_sample.mp4" type="video/ogg"> -->
-        <p>Sorry, video element is not supported!</p>
-    </video>
+        <p>Playing video using video element</p>
+        <p>The browser is responsible for determining the appropriate format to use.</p>
+        <video width="450" height="250" controls autoplay>
+            <source src="./video/3195394-uhd_3840_2160_25fps.mp4" type="video/mp4">
+            <!-- <source src="./video/video_sample.mp4" type="video/mp4">
+            <source src="./video/video_sample.mp4" type="video/ogg"> -->
+            <p>Sorry, video element is not supported!</p>
+        </video>
 
-    <video controls autoplay>
-        <source src="https://www.pexels.com/download/video/15764815/" type="video/mp4">
-    </video>
+        <video controls autoplay>
+            <source src="https://www.pexels.com/download/video/15764815/" type="video/mp4">
+        </video>
 
-    <iframe height="480" width="500" 
-            src="https://www.youtube.com/embed/il_t1WVLNxk">
-      </iframe>
+        <iframe height="480" width="500" 
+                src="https://www.youtube.com/embed/il_t1WVLNxk">
+        </iframe>
 
-    <iframe width="420" height="315"
-        src="https://www.youtube.com/embed/hBnfuT07uMzCQl4U" allow="fullscreen" allowfullscreen>
-        <!-- https://youtu.be/nHvixwyrBLo?si=hBnfuT07uMzCQl4U -->
-    </iframe>
+        <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/hBnfuT07uMzCQl4U" allow="fullscreen" allowfullscreen>
+            <!-- https://youtu.be/nHvixwyrBLo?si=hBnfuT07uMzCQl4U -->
+        </iframe>
 
-    <audio controls muted autoplay>
-        <source src="audio/sample-0.mp3" type="audio/mp3">
-    </audio>
-    <br>
-    <embed type="image/jpg" src="./images/image3.jpeg" width="300" height="200">
-    <embed type="text/html" src="abc.html" width="500" height="200"><br>
-    <object type="image/jpg" data="./images/image3.jpeg" width="300" height="200"></object>
-    <object type="text/html" data="abc.html" width="300" height="200"></object>
-    <br>
-    <object data="./audio/sample-0.mp3" type="audio/mp3">
-        <param name="controls" value="true">
-        <param name="unmuted" value="true">
-    </object>
-    <br>
-    <object data="https://www.pexels.com/download/video/15764815/" type="video/mp4"></object>
-    
+        <audio controls muted autoplay>
+            <source src="audio/sample-0.mp3" type="audio/mp3">
+        </audio>
+        <br>
+        <embed type="image/jpg" src="./images/image3.jpeg" width="300" height="200">
+        <embed type="text/html" src="abc.html" width="500" height="200"><br>
+        <object type="image/jpg" data="./images/image3.jpeg" width="300" height="200"></object>
+        <object type="text/html" data="abc.html" width="300" height="200"></object>
+        <br>
+        <object data="./audio/sample-0.mp3" type="audio/mp3">
+            <param name="controls" value="true">
+            <param name="unmuted" value="true">
+        </object>
+        <br>
+        <object data="https://www.pexels.com/download/video/15764815/" type="video/mp4"></object>
+    </main>
+    <center>
+        <footer>
+            <p>EMAIL at hello@myskillverse.ai</p>
+        </footer>
+    </center>
 </body>
 </html>
