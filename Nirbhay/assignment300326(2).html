@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        form {
+            line-height: 35px;
+        }
+
+        div {
+            margin: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h2>Registration Form</h2>
+        <p>Registration form for hackathon participation</p>
+    </center>
+    <div>
+        <form action="registrationform-submit.php" method="post">
+            <fieldset>
+                <legend>HACKATHON</legend>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required placeholder="Enter Your Name"><br>
+                <label for="age">Age: </label>
+                <input type="number" min="16" max="30" id="age" placeholder="Enter Your Age"><br>
+                <label for="gender">Gender: </label>
+                <label for="male">Male</label>
+                <input type="radio" name="gender">
+                <label for="Female">Female</label>
+                <input type="radio" name="gender">
+                <label for="other">Other</label>
+                <input type="radio" name="gender"><br>
+                <label for="rollno.">Rollno: </label>
+                <input type="number" id="rollno." placeholder="Enter Your Rollno."><br>
+                <label for="dob">Date of Birth: </label>
+                <input type="date" id="dob" required><br>
+                <label for="email">Email: </label>
+                <input type="email" id="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    placeholder="Enter Your Email"><br>
+                <label for="phone">Phone no.</label>
+                <input type="tel" id="phone" required pattern="[0-9]{10}"><br>
+                <label for="languages">Programming languages: </label>
+                <label for="html">HTML</label>
+                <input type="checkbox" id="html">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="css">
+                <label for="js">JS</label>
+                <input type="checkbox" id="js">
+                <label for="python">Python</label>
+                <input type="checkbox" id="python">
+                <label for="sql">Sql</label>
+                <input type="checkbox" id="sql"><br>
+                <label for="text">Why you Want to participate ?</label><br>
+                <textarea name="defining" id="defining"></textarea><br>
+                <input type="submit">
+            </fieldset>
+        </form>
+        <input list="favcars" id="myfavcars" name="myfavcars" placeholder="select your favcar">
+        <datalist id="favcars">
+            <option value="thar"></option>
+            <option value="scorpio"></option>
+            <option value="bolero"></option>
+            <option value="Gwagon"></option>
+            <option value="XUV700"></option>
+            <option value="skoda"></option>
+        </datalist>
+    </div>
+</body>
+
+</html>
