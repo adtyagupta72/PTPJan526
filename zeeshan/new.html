@@ -9,14 +9,17 @@
     <center><h1>Student Complaint Form</h1></center>
     <p><i>Students can report problems or issues using this online form</i></p>
     <form action="action.html" method="post">
+        <fieldset>
+        <legend>Info</legend>
+
         <label for="info" >Student's name</label>
-        <input type="text" name="info" id="info"><br>
+        <input type="text" name="info" id="info" required><br>
         <label for="email" >Email</label>
-        <input type="email" name="email"><br>
+        <input type="email" name="email" ><br>
          <!-- <label for="paas" >Password</label>
         <input type="password" name="paas"><br> -->
         <label>Complaint type:</label><BR>
-        <input type="radio" name="gen" id="gen">
+        <input type="radio" name="gen" id="gen" >
         <label for="gen" >Sports</label><BR>
         <input type="radio" name="gen" id="gen">
         <label for="gen" >Academic</label><BR>
@@ -37,8 +40,21 @@
         <label for="gen" >Mathematics</label><BR>
         <input type="checkbox" name="box" id="box">
         <label for="gen" >Science</label><BR> -->
-        <button type="submit">Submit</button>    
+        <button type="submit">Submit</button>    </fieldset>
+
+        <label for="list">browser</label>
+        <input list="ggg" id="ggg" name="ggg">
+        <datalist id="ggg">
+            <option value="chrome"></option>
+            <option value="safari"></option>
+        </datalist>
             </form>
+            <div style="background-color: aqua;">
+                <p>hii, my name is zeeshan</p>
+                <ol>
+                    <li>apple</li>
+                </ol>
+            </div>
 
 </body>
 </html>
