@@ -6,27 +6,45 @@
   <title>Document</title>
 </head>
 <body >
-  <fieldset><legend  style="text-decoration: aqua;">Details</legend>
-  <form method="get" style="background-color: antiquewhite;">
-    <label for="nnn">Name</label>
-    <input type="text" id="nnn" required>  <br>
+  <center><h1><u>Form</u></h1></center>
+ <fieldset><legend>Details:</legend>
+  <form  style="background-color: azure;">
+    <label for="nnn">First Name</label>
+    <input type="text" id="nnn" required>
+     <label for="lname">last Name</label>
+    <input type="text" id="lname" required>
+    <br>
     <label for="best">Email</label>
     <input type="email" id="best" required> <br> 
-    <label for="multi">City</label>
-    <input list="multiple" id="multi" name="multiple">
-    <datalist id="multiple">
-      <option value="Sitapur"></option>
-      <option value="Mumbai"></option>
-    </datalist><br>
+     <label for="add">Address</label>
+    <input type="text" id="add" required> <br>
+    <label for="best">Contact Number</label>
+    <input type="tel" id="best" pattern="[0-9]{10}" required> <br> 
+    <label for="dob">DOB</label>
+    <input type="Date" id="dob" required> <br> 
+     <label for="pass">Password</label>
+    <input type="password" id="pass" required><br>
+    <label ><b>Gender:</b></label>
+    <input type="radio" id="genm" name="same">
+    <label for="genm">Male</label>
+    <input type="radio" id="genf" name="same">
+    <label for="genf">Female</label>
+    <input type="radio" id="geno" name="same">
+    <label for="geno">Other</label><br>
+    <label><b>Hobbies:</b>(Multiple can be selected)</label><br>
+    <label for="check">Dancing</label>
+    <input type="checkbox" id="check"><br>
+    <label for="chec">singing</label>
+    <input type="checkbox" id="chec"><br>
+    <label for="che">Playing</label>
+    <input type="checkbox" id="che"><br>
+    <label for="ch">Travelling</label>
+    <input type="checkbox" id="ch"><br>
+    <label for="ggg">Something else:</label><br>
+    <textarea id="ggg" rows="20" cols="40">Type here;</textarea><br>
     <button type="submit">Submit</button>
-  </form>
-  </fieldset><br>
-   <form method="post">
-    <label for="nnn">Name</label>
-    <input type="text" id="nnn" required>  <br>
-    <label for="nnn">Email</label>
-    <input type="email" id="nnn" required> <br>
-    <button type="submit">Submit</button>
-  </form>
+    
+ </form>
+ </fieldset>
 </body>
 </html>
