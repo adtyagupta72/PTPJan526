@@ -6,7 +6,7 @@
   <title>Document</title>
 </head>
 <body >
-  <center>
+  <!-- <center>
    <img src="./OIP.jpg" height="70px" width="80px">
    <h1><i>Instagram</i></h1><br>
     
@@ -20,7 +20,47 @@
     <br><br>
     <button type="submit" style="background-color: rgba(8, 199, 220, 0.656);">Login</button>
     </form>
-  </center><br><br><br>
+  </center><br><br><br> -->
+<center>
+<h2>Search bar</h2>
+<label for="sea">Search here:</label>
+<input list="vegetables" id="sea">
+<datalist id="vegetables">
+  <option value="Tomato"></option>
+  <option value="Potato"></option>
+  <option value="Brinjal"></option>
+  <option value="Peas"></option>
+</datalist>
+
+</center>
+
+<form>
+  <fieldset><legend>Personal info</legend>
+    <label for="nnn">Namw</label>
+    <input id="nnn" type="text"><br>
+     <label for="add">Address</label>
+    <input id="add" type="text"><br>
+     <label for="date">DOB</label>
+    <input id="date" type="date"><br>
+    </fieldset>
+    <fieldset>
+      <legend>Preferences</legend>
+      <label>Area Type</label><br>
+      <input type="radio" id="area" name="same">
+      <label for="area">Rural</label><br>
+      <input type="radio" id="urban" name="same">
+      <label for="urban">Urban</label><br>
+      <input type="radio" id="oth" name="same">
+      <label for="oth">other</label><br>
+      <label for="income">Income</label>
+      <select id="income">
+        <option value="40000">20000</option> 
+         <option value="80000">80000</option> 
+          <option value="20000">30000</option> 
+           <option value="30000">40000</option> 
+      </select>
+    </fieldset>
+</form>
 
 
 
