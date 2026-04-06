@@ -56,4 +56,14 @@ let localScopeOut = "I am a Local Scoped Let - OUT"
 console.log(globalScopeOut)
 console.log(localScopeOut)
 
+var height
+console.log(height)
+var height
+console.log(height)
+
+let weight
+console.log(weight)
+let weight
+console.log(weight)
+
 console.log("Program Ends here------")
