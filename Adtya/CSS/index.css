@@ -1,0 +1,43 @@
+/* h1,
+h3 {
+    text-align: center;
+    color: green;
+} */
+/* table {
+    width: 100%;
+    border: 1px solid #100808;
+    border-collapse: collapse;
+}
+th,
+td {
+    padding: 10px;
+    border: 2px solid black;
+} */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+body{
+    background-color: #007bff;
+}
+
+form
+{
+    background-color: brown;
+}
+
+#myFormID
+{
+    background-color: chartreuse;
+}
+
+.user-card
+{
+    background-color: crimson;
+}
+
+p.user-card
+{
+    background-color: white;
+}

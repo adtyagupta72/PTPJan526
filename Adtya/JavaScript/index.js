@@ -63,7 +63,7 @@ console.log(height)
 
 let weight
 console.log(weight)
-let weight
-console.log(weight)
+// let weight
+// console.log(weight)
 
 console.log("Program Ends here------")
