@@ -20,6 +20,13 @@ table, th, td {
 
 body{
     background-color: #007bff;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font-size: 100%;
+	font-family: sans-serif;
+
 }
 
 form
@@ -40,4 +47,14 @@ form
 p.user-card
 {
     background-color: white;
+}
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+p, div, form{
+    text-align: center;
+    color: darkmagenta;
 }
