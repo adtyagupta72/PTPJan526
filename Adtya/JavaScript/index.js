@@ -69,6 +69,60 @@
 
 // console.log("Program Ends here------")
 
-//height = 180
-let height = 180
-console.log(height)
+// height = 180
+// let height = 180
+// console.log(height)
+
+// let greeting = "Hello!"
+// let counter = 100
+
+// console.log(greeting) // -> Hello!
+// greeting = 1
+// console.log(greeting) // -> 1
+
+// greeting = "Hello!"
+// greeting = greeting + counter
+// console.log(greeting) // -> Hello!100
+
+// greeting = greeting - counter
+// console.log(greeting)
+
+// //const HELLO_VARIABLE
+// const HELLO_VARIABLE = "Hello!"
+//HELLO_VARIABLE = "wkejbf"
+
+// let counter
+// console.log(counter) // -> undefined
+// {
+//    counter = 1
+//    //console.log(counter) // -> 1
+//    {
+//       console.log(counter) // -> 1
+//    }
+
+// }
+// counter = counter + 1
+// console.log(counter) // -> 2
+
+var height = 180
+{
+   var weight = 70
+   console.log(height) // -> 180
+   console.log(weight) // -> 70   
+}
+console.log(height) // -> 180
+console.log(weight) // -> 70
+
+
+console.log("let's begin:") // -> let's begin:
+testFunction() 
+console.log("and again:") // -> and again:
+testFunction() 
+console.log("and once more:") // -> and once more:
+testFunction() 
+
+function testFunction() 
+{
+   console.log("Hello")
+   console.log("World")
+}
