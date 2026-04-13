@@ -143,11 +143,39 @@
 // }
 // console.log(counter) // -> 200
 
-var counter = 100
-function testFunction() {
-   var counter = 200
-   console.log(counter)
+// var counter = 100
+// function testFunction() {
+//    var counter = 200
+//    console.log(counter)
+// }
+// console.log(counter) // -> 100
+// testFunction() // -> 200
+// console.log(counter) // -> 100
+
+// var height = 180
+// console.log(height)  // -> 180
+// console.log(weight)
+
+// var height = 180
+// console.log(height)
+// console.log(weight)
+// var weight = 70
+// console.log(weight) 
+
+
+myPlace = 'Bengaluru'  // var is hoisted
+console.log(myPlace)
+var myPlace
+let myName = "Subhajit"
+sayHi() // valid
+function sayHi()
+{
+    let greet = "hi"
+    console.log(greet, myName) 
 }
-console.log(counter) // -> 100
-testFunction() // -> 200
-console.log(counter) // -> 100
+
+sayHello()
+var sayHello = function()
+{
+   console. log(myName)
+}
