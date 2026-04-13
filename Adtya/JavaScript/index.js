@@ -104,25 +104,41 @@
 // counter = counter + 1
 // console.log(counter) // -> 2
 
-var height = 180
+// var height = 180
+// {
+//    var weight = 70
+//    console.log(height) // -> 180
+//    console.log(weight) // -> 70   
+// }
+// console.log(height) // -> 180
+// console.log(weight) // -> 70
+
+
+// console.log("let's begin:") // -> let's begin:
+// testFunction() 
+// console.log("and again:") // -> and again:
+// testFunction() 
+// console.log("and once more:") // -> and once more:
+// testFunction() 
+
+// function testFunction() 
+// {
+//    console.log("Hello")
+//    console.log("World")
+// }
+
+// let counter = 100
+// console.log(counter) // -> 100
+// {
+//    counter = 200
+//    console.log(counter) // -> 200
+// }
+// console.log(counter) // -> 200
+
+let counter = 100
+console.log(counter) // -> 100
 {
-   var weight = 70
-   console.log(height) // -> 180
-   console.log(weight) // -> 70   
+  let counter = 200
+  console.log(counter) // -> 200
 }
-console.log(height) // -> 180
-console.log(weight) // -> 70
-
-
-console.log("let's begin:") // -> let's begin:
-testFunction() 
-console.log("and again:") // -> and again:
-testFunction() 
-console.log("and once more:") // -> and once more:
-testFunction() 
-
-function testFunction() 
-{
-   console.log("Hello")
-   console.log("World")
-}
+console.log(counter) // -> 200
