@@ -163,19 +163,33 @@
 // console.log(weight) 
 
 
-myPlace = 'Bengaluru'  // var is hoisted
-console.log(myPlace)
-var myPlace
-let myName = "Subhajit"
-sayHi() // valid
-function sayHi()
-{
-    let greet = "hi"
-    console.log(greet, myName) 
-}
+// myPlace = 'Bengaluru'  // var is hoisted
+// console.log(myPlace)
+// var myPlace
+// let myName = "Subhajit"
+// sayHi() // valid
+// function sayHi()
+// {
+//     let greet = "hi"
+//     console.log(greet, myName) 
+// }
 
-sayHello()
-var sayHello = function()
-{
-   console. log(myName)
-}
+// //sayHello()
+// var sayHello = function()
+// {
+//    console. log(myName)
+// }
+
+// console.log(thisIsConst)
+// const thisIsConst = "HELLO"
+
+
+let year = 1990
+console.log(year) // -> 1990
+console.log(1991) // -> 1991
+console.log("Alice") // -> Alice
+
+console.log(typeof 1)
+console.log(typeof "1")
+console.log(typeof true)
+console.log(typeof month)
