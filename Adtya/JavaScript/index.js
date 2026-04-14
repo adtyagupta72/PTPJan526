@@ -184,12 +184,64 @@
 // const thisIsConst = "HELLO"
 
 
-let year = 1990
-console.log(year) // -> 1990
-console.log(1991) // -> 1991
-console.log("Alice") // -> Alice
+// let year = 1990
+// console.log(year) // -> 1990
+// console.log(1991) // -> 1991
+// console.log("Alice") // -> Alice
 
-console.log(typeof 1)
-console.log(typeof "1")
-console.log(typeof true)
-console.log(typeof month)
+// console.log(typeof 1)
+// console.log(typeof "1")
+// console.log(typeof true)
+// console.log(typeof month)
+
+// let isDataValid = true
+// let isStringTooLong = false
+// let isGameOver = false
+// let continueLoop = true
+// console.log(false) // -> false
+// console.log(typeof false) // -> boolean
+// console.log(isDataValid) // -> true
+// console.log(typeof isDataValid) // -> boolean
+
+// const YEAR = 1991
+// let delayInSeconds = 0.00016
+// let area = (16 * 3.14)
+// let halfArea = area / 2
+// console.log(YEAR) // -> 1991
+// console.log(typeof YEAR) // -> number
+
+// console.log(9e3)
+// console.log(0x123)
+// console.log(0o123)
+// console.log(0b1010101)
+
+// let a = 10 // decimal - default 
+// let b = 0x10 // hexadecimal 
+// let c = 0o10 // octal 
+// let d = 0b10 // binary 
+// console.log(a) // -> 10 
+// console.log(b) // -> 16 
+// console.log(c) // -> 8 
+// console.log(d) // -> 2 
+// let x = 9e3
+// let y = 123e-5
+// console.log(x) // -> 9000
+// console.log(y) // -> 0.00123
+
+// console.log(Infinity)
+// console.log(-Infinity)
+
+// console.log(2/0)
+// console.log(typeof Infinity)
+// let s = "it's definitely not a number"
+// let n = s * 10
+// console.log(n) // -> NaN
+// console.log(typeof n) // -> number
+
+let big = 1234567890000000000000n
+let big2 = 1n
+console.log(big) // -> 1234567890000000000000n
+console.log(typeof big) // -> bigint
+console.log(big2) // -> 1n
+console.log(7n / 4n) // -> 1n
+console.log(7n / 4) // -> 1n
