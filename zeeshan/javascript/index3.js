@@ -1,19 +1,17 @@
-const singleRose = 8
-const singleTulip = 2
-const singleLily  = 10
+// 
+let name1 = "John"
+let name2 = "Zeeshan"
+let name3 = "Samantha"
 
-let quantityRose = 50
-let quantityTulip = 120
-let quantityLily = 20
+let no1 = 3452617278
+let no2 = 3452617278
+let no3 = 3452617278
 
- let valueRose = singleRose * quantityRose
- let valueTulip = singleTulip * quantityTulip
- let valueLily = singleLily * quantityLily
+let email1 = "johngmail.com"
+let email2 = "zeeshangmail.com"
+let email3 = "samanthagmail.com"
 
- let total = valueRose + valueTulip + valueLily
-
-
-console.log("Rose-unit price:"+ singleRose +", quantity:"+ quantityRose + ", Value:"+ valueRose)
-console.log("Lily-unit price:"+ singleLily +", quantity:"+ quantityTulip + ", Value:"+ valueLily)
-console.log("Tulip-unit price:"+ singleTulip +", quantity:"+ quantityTulip + ", Value:"+ valueTulip)
-console.log("Total:"+total)
+console.log("NAME          PH.NUMBER       EMAIL")
+console.log(name1,            no1,           email1)
+console.log(name2,            no2,           email2)
+console.log(name3,            no3,           email3)
