@@ -1,10 +1,10 @@
-let singleRose = 8
-let singleTulip = 2
-let singleLily  = 10
+const singleRose = 8
+const singleTulip = 2
+const singleLily  = 10
 
-let quantityRose = 70
+let quantityRose = 50
 let quantityTulip = 120
-let quantityLily = 50
+let quantityLily = 20
 
  let valueRose = singleRose * quantityRose
  let valueTulip = singleTulip * quantityTulip
