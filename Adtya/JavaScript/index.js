@@ -238,10 +238,51 @@
 // console.log(n) // -> NaN
 // console.log(typeof n) // -> number
 
-let big = 1234567890000000000000n
-let big2 = 1n
-console.log(big) // -> 1234567890000000000000n
-console.log(typeof big) // -> bigint
-console.log(big2) // -> 1n
-console.log(7n / 4n) // -> 1n
-console.log(7n / 4) // -> 1n
+// let big = 1234567890000000000000n
+// let big2 = 1n
+// console.log(big) // -> 1234567890000000000000n
+// console.log(typeof big) // -> bigint
+// console.log(big2) // -> 1n
+// console.log(7n / 4n) // -> 1n
+// //console.log(7n / 4) // -> 1n
+
+// //console.log(1000n/0n)
+
+// let str = "Hello there, how are you?"
+// let str1 = 'Hello there, how are you?'
+// console.log(str)
+// console.log(typeof str)
+// console.log(str1)
+// console.log(typeof str1)
+// let name = "Hello 'Adtya'"
+// let name1 = 'Hello "Adtya"'
+// console.log(name)
+// console.log(typeof name)
+// console.log(name1)
+// console.log(typeof name1)
+
+// let name2 = `Hello "Adtya"`
+// console.log(name2)
+
+// let age = 20
+
+// let name3 = `Hello "Adtya" ${age} is my Age` //string interpolation
+// let name4 = "Hello 'Adtya' "+age+" is my Age"
+// let name5 = "Hello 'Adtya' ${age} is my Age"
+// console.log(name3)
+// console.log(name4)
+// console.log(name5)
+
+// let message1 = 'The vessel \'Mars\' called at the port.'
+// let message2 = "Cyclone \"Cilida\" to pass close to Mauritius."
+// //let message3 = "Cyclone \"Cilida\" to pass close to Mauritius."
+// console.log(message1) // -> The vessel 'Mars' called at the port.
+// console.log(message2) // -> Cyclone "Cilida" to pass close to Mauritius.
+// let path = "C:\\Windows"
+// console.log(path) // -> C:\Windows
+
+let path = "C:\\Windows" - "Windows"
+console.log(path) // -> NaN
+let test = "100" - "10"
+console.log(test) // -> 90
+console.log(typeof test) // -> number
