@@ -296,3 +296,37 @@ for(let count = 0; count< 999999999; count++)
     let c = a + b
 }
 console.timeEnd() // -> default: 0.108154296875 ms
+
+console.log("adtya".toUpperCase())
+console.log(typeof "adtya".toUpperCase())
+console.log(typeof "adtya")
+
+let river = "Mekong"
+let character = river.charAt(4)
+console.log(character) // -> n
+
+console.log("100" + 10)
+let a = "100" + 10
+console.log(a)
+
+console.log(a.length)
+
+let str = "java script language"
+console.log(str.length) // -> 20
+console.log('test'.length) // -> 4
+console.log(str.charAt(0)) // -> 'j'
+console.log('abc'.charAt(1)) // -> 'b'
+console.log(str.slice(0, 4)) // -> 'java'
+console.log(str.slice(0, 6)) // -> 'java'
+console.log(str.slice(8)) // -> 'java'
+console.log('test'.slice(1, 3)) // -> 'es'
+console.log(str.split(' ')) // -> ['java', 'script', 'language']
+console.log('192.168.1.1'.split('.'))  // -> ['192', '168', '1', '1']
+
+
+//String("adtya").toUpperCase()
+//string name = "adtya"
+//name.xyz()
+//name => primitive
+//name.xyz() => treats name as a object and applies method
+
