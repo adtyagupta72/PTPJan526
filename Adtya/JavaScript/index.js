@@ -281,8 +281,18 @@
 // let path = "C:\\Windows"
 // console.log(path) // -> C:\Windows
 
-let path = "C:\\Windows" - "Windows"
-console.log(path) // -> NaN
-let test = "100" - "10"
-console.log(test) // -> 90
-console.log(typeof test) // -> number
+// let path = "C:\\Windows" - "Windows"
+// console.log(path) // -> NaN
+// let test = "100" - "10"
+// console.log(test) // -> 90
+// console.log(typeof test) // -> number
+
+console.time()
+console.log("test console") // -> test console
+for(let count = 0; count< 999999999; count++)
+{
+    let a = 10
+    let b = 20
+    let c = a + b
+}
+console.timeEnd() // -> default: 0.108154296875 ms
