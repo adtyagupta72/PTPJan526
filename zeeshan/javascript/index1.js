@@ -51,18 +51,14 @@
 // let w = 200
 // console.log(w)
 
-myPlace = "bengal"
-console.log(myPlace)
-var myPlace
-let myname = "zeeshan"
-sayHi()
-function sayHi()
-{
-    let greet = "hii"
-    console.log(greet,myname)
-}
-sayHello()
-var sayHello = function()
-{
-    console.log(myname)
-}
+// 
+//  
+// 
+// 
+// 
+// 
+
+let a = "windows"-"window"
+console.log(a)
+let b = "100"-"50"
+console.log(b)
