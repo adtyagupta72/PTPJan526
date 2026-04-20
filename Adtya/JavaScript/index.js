@@ -1,4 +1,4 @@
-"use strict"
+//"use strict"
 // console.log("Program Starts here------")
 // console.log("Hello There....")
 
@@ -287,41 +287,41 @@
 // console.log(test) // -> 90
 // console.log(typeof test) // -> number
 
-console.time()
-console.log("test console") // -> test console
-for(let count = 0; count< 999999999; count++)
-{
-    let a = 10
-    let b = 20
-    let c = a + b
-}
-console.timeEnd() // -> default: 0.108154296875 ms
+// console.time()
+// console.log("test console") // -> test console
+// for(let count = 0; count< 999999999; count++)
+// {
+//     let a = 10
+//     let b = 20
+//     let c = a + b
+// }
+// console.timeEnd() // -> default: 0.108154296875 ms
 
-console.log("adtya".toUpperCase())
-console.log(typeof "adtya".toUpperCase())
-console.log(typeof "adtya")
+// console.log("adtya".toUpperCase())
+// console.log(typeof "adtya".toUpperCase())
+// console.log(typeof "adtya")
 
-let river = "Mekong"
-let character = river.charAt(4)
-console.log(character) // -> n
+// let river = "Mekong"
+// let character = river.charAt(4)
+// console.log(character) // -> n
 
-console.log("100" + 10)
-let a = "100" + 10
-console.log(a)
+// console.log("100" + 10)
+// let a = "100" + 10
+// console.log(a)
 
-console.log(a.length)
+// console.log(a.length)
 
-let str = "java script language"
-console.log(str.length) // -> 20
-console.log('test'.length) // -> 4
-console.log(str.charAt(0)) // -> 'j'
-console.log('abc'.charAt(1)) // -> 'b'
-console.log(str.slice(0, 4)) // -> 'java'
-console.log(str.slice(0, 6)) // -> 'java'
-console.log(str.slice(8)) // -> 'java'
-console.log('test'.slice(1, 3)) // -> 'es'
-console.log(str.split(' ')) // -> ['java', 'script', 'language']
-console.log('192.168.1.1'.split('.'))  // -> ['192', '168', '1', '1']
+// let str = "java script language"
+// console.log(str.length) // -> 20
+// console.log('test'.length) // -> 4
+// console.log(str.charAt(0)) // -> 'j'
+// console.log('abc'.charAt(1)) // -> 'b'
+// console.log(str.slice(0, 4)) // -> 'java'
+// console.log(str.slice(0, 6)) // -> 'java'
+// console.log(str.slice(8)) // -> 'java'
+// console.log('test'.slice(1, 3)) // -> 'es'
+// console.log(str.split(' ')) // -> ['java', 'script', 'language']
+// console.log('192.168.1.1'.split('.'))  // -> ['192', '168', '1', '1']
 
 
 //String("adtya").toUpperCase()
@@ -330,3 +330,67 @@ console.log('192.168.1.1'.split('.'))  // -> ['192', '168', '1', '1']
 //name => primitive
 //name.xyz() => treats name as a object and applies method
 
+// var declaredVar
+// console.log(typeof declaredVar) // -> undefined
+// declaredVar = 5
+// console.log(typeof declaredVar) // -> number
+// declaredVar = undefined
+// console.log(typeof declaredVar) // -> undefined
+// //The undefined value can also be returned by the typeof operator when a non-existent variable is used as an argument.
+// console.log(typeof notDeclaredVar) // -> undefined
+// console.log(notDeclaredVar) // -> Uncaught ReferenceError:
+
+// let someResource
+// console.log(someResource) // -> undefined
+// console.log(typeof someResource) // -> undefined
+// someResource = null
+// console.log(someResource) // -> null
+// console.log(typeof someResource) // -> object
+
+// const str = String()
+// const num = Number()
+// const bool = Boolean()
+// console.log("str: ", str) // ->
+// console.log("typeof str: ", typeof str) // ->
+// console.log("num: ", num) // -> 0
+// console.log("typeof num: ", typeof num) // -> 0
+// console.log("ool: ", bool)
+// console.log("typeof bool: ", typeof bool) // -> false
+// const big1 = BigInt(42)
+// console.log("big1: ", big1) // -> 42n
+// console.log("typeof big1: ", typeof big1) // -> 42n
+// //const big2 = BigInt()   // -> Uncaught TypeError: Cannot convert undefined to a BigInt
+
+
+// let str1 = new String()
+// console.log(str1)
+// console.log(typeof str1)
+
+// const num = 42
+// const strFromNum1 = String(num)
+// const strFromNum2 = String(8)
+// const strFromBool = String(true)
+// const numFromStr = Number("312")
+// const numFromStr1 = Number("Hi")
+// const boolFromNumber = Boolean(1)
+
+// console.log("strFromNum1: ", strFromNum1)
+// console.log("strFromNum2: ", strFromNum2)
+// console.log("strFromBool: ", strFromBool)
+// console.log("numFromStr: ", numFromStr)
+// console.log("boolFromNumber: ", boolFromNumber)
+// console.log("numFromStr1: ", numFromStr1)
+// console.log("typeof NaN: ", typeof NaN)
+
+let str = "text"
+let strStr = String(str)
+console.log(`${typeof str} : ${str}`) // -> string : text
+console.log(`${typeof strStr} : ${strStr}`) // -> string : text
+let nr = 42
+let strNr = String(nr)
+console.log(`${typeof nr} : ${nr}`) // -> number : 42
+console.log(`${typeof strNr} : ${strNr}`) // -> string : 42
+let bl = true
+let strBl = String(bl)
+console.log(`${typeof bl} : ${bl}`) // -> boolean : true
+console.log(`${typeof strBl} : ${strBl}`) // -> string : true
