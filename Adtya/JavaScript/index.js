@@ -447,9 +447,66 @@ Falsy -> "", 0, false, [], {}, undefined, NaN, null
 // console.log(BigInt(undefined)) // -> Uncaught TypeError: Cannot convert undefined to a BigInt
 // console.log(BigInt(NaN)) // -> Uncaught RangeError: The number NaN cannot be converted to a BigInt because it is not an integer
 
-const str1 = 42 + "1"
-console.log(str1)        // -> 421
-console.log(typeof str1) // -> string
-const str2 = 42 - "1"
-console.log(str2)        // -> 41
-console.log(typeof str2) // -> number
+// const str1 = 42 + "1"
+// console.log(str1)        // -> 421
+// console.log(typeof str1) // -> string
+// const str2 = 42 - "1"
+// console.log(str2)        // -> 41
+// console.log(typeof str2) // -> number
+
+let testObj = {
+    nr: 600,
+   str: "text"
+}
+console.log(typeof testObj) // -> object
+console.log(testObj)
+
+console.log(testObj.nr) // -> 600
+console.log(testObj.str) // -> text
+
+testObj.nr = 200
+testObj.str = "Adtya"
+testObj.age = 20
+
+console.log(testObj.nr)
+console.log("typeof testObj.nr", typeof testObj.nr)
+console.log(testObj.str)
+console.log("typeof testObj.str", typeof testObj.str)
+console.log(testObj.age)
+console.log("typeof testObj.age", typeof testObj.age)
+
+let user1 = {
+   name: "Calvin",
+   surname: "Hart",
+   age: 66,
+   email: "CalvinMHart@teleworm.us"
+}
+let user2 = {
+   name: "Mateus",
+   surname: "Pinto",
+   age: 21,
+   email: "MateusPinto@dayrep.com"
+}
+console.log(user1)
+console.log("typeof user1:", typeof user1)
+console.log("user1.name: ", user1.name)
+console.log("user1.surname: ", user1.surname)
+console.log("user1.age: ", user1.age)
+console.log("user1.email: ", user1.email)
+console.log("user1.abc: ", user1.abc)
+
+console.log(user2)
+console.log("typeof user2:", typeof user2)
+console.log("user2.name: ", user2.name)
+console.log("user2.surname: ", user2.surname)
+console.log("user2.age: ", user2.age)
+console.log("user2.email: ", user2.email)
+console.log("user2.abc: ", user2.abc)
+
+user2.name = "Nirbhay"
+console.log("user2.name: ", user2.name)
+delete user2.name
+console.log("user2.name: ", user2.name)
+
+delete user2
+console.log("user2: ", user2)
