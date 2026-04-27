@@ -529,7 +529,15 @@ console.log(myArray)
 let myArray2
 console.log(myArray2)
 //myArray2 = []
-myArray2[0] = "One"
+//myArray2[0] = "One"
 console.log(myArray2)
 
 console.log(typeof myArray2)
+
+let animals = []
+console.log(animals[0]) // -> undefined
+animals[0] = "dog"
+animals[2] = "cat"
+console.log(animals[0]) // -> dog
+console.log(animals[1]) // -> undefined
+console.log(animals[2]) // -> cat
