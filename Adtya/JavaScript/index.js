@@ -454,59 +454,82 @@ Falsy -> "", 0, false, [], {}, undefined, NaN, null
 // console.log(str2)        // -> 41
 // console.log(typeof str2) // -> number
 
-let testObj = {
-    nr: 600,
-   str: "text"
-}
-console.log(typeof testObj) // -> object
-console.log(testObj)
+// let testObj = {
+//     nr: 600,
+//    str: "text"
+// }
+// console.log(typeof testObj) // -> object
+// console.log(testObj)
 
-console.log(testObj.nr) // -> 600
-console.log(testObj.str) // -> text
+// console.log(testObj.nr) // -> 600
+// console.log(testObj.str) // -> text
 
-testObj.nr = 200
-testObj.str = "Adtya"
-testObj.age = 20
+// testObj.nr = 200
+// testObj.str = "Adtya"
+// testObj.age = 20
 
-console.log(testObj.nr)
-console.log("typeof testObj.nr", typeof testObj.nr)
-console.log(testObj.str)
-console.log("typeof testObj.str", typeof testObj.str)
-console.log(testObj.age)
-console.log("typeof testObj.age", typeof testObj.age)
+// console.log(testObj.nr)
+// console.log("typeof testObj.nr", typeof testObj.nr)
+// console.log(testObj.str)
+// console.log("typeof testObj.str", typeof testObj.str)
+// console.log(testObj.age)
+// console.log("typeof testObj.age", typeof testObj.age)
 
-let user1 = {
-   name: "Calvin",
-   surname: "Hart",
-   age: 66,
-   email: "CalvinMHart@teleworm.us"
-}
-let user2 = {
-   name: "Mateus",
-   surname: "Pinto",
-   age: 21,
-   email: "MateusPinto@dayrep.com"
-}
-console.log(user1)
-console.log("typeof user1:", typeof user1)
-console.log("user1.name: ", user1.name)
-console.log("user1.surname: ", user1.surname)
-console.log("user1.age: ", user1.age)
-console.log("user1.email: ", user1.email)
-console.log("user1.abc: ", user1.abc)
+// let user1 = {
+//    name: "Calvin",
+//    surname: "Hart",
+//    age: 66,
+//    email: "CalvinMHart@teleworm.us"
+// }
+// let user2 = {
+//    name: "Mateus",
+//    surname: "Pinto",
+//    age: 21,
+//    email: "MateusPinto@dayrep.com"
+// }
+// console.log(user1)
+// console.log("typeof user1:", typeof user1)
+// console.log("user1.name: ", user1.name)
+// console.log("user1.surname: ", user1.surname)
+// console.log("user1.age: ", user1.age)
+// console.log("user1.email: ", user1.email)
+// console.log("user1.abc: ", user1.abc)
 
-console.log(user2)
-console.log("typeof user2:", typeof user2)
-console.log("user2.name: ", user2.name)
-console.log("user2.surname: ", user2.surname)
-console.log("user2.age: ", user2.age)
-console.log("user2.email: ", user2.email)
-console.log("user2.abc: ", user2.abc)
+// console.log(user2)
+// console.log("typeof user2:", typeof user2)
+// console.log("user2.name: ", user2.name)
+// console.log("user2.surname: ", user2.surname)
+// console.log("user2.age: ", user2.age)
+// console.log("user2.email: ", user2.email)
+// console.log("user2.abc: ", user2.abc)
 
-user2.name = "Nirbhay"
-console.log("user2.name: ", user2.name)
-delete user2.name
-console.log("user2.name: ", user2.name)
+// user2.name = "Nirbhay"
+// console.log("user2.name: ", user2.name)
+// delete user2.name
+// console.log("user2.name: ", user2.name)
 
-delete user2
-console.log("user2: ", user2)
+// delete user2
+// console.log("user2: ", user2)
+
+let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+console.log(days[0]) // -> Sun
+console.log(days[2]) // -> Tue
+console.log(days[5]) // -> Fri
+days[0] = "Sunday"
+console.log(days[0]) // -> Sunday
+let emptyArray = []
+console.log(emptyArray[0]) // -> undefined
+
+console.log(days)
+
+let myArray
+myArray = [1,2,3,5]
+console.log(myArray)
+
+let myArray2
+console.log(myArray2)
+//myArray2 = []
+myArray2[0] = "One"
+console.log(myArray2)
+
+console.log(typeof myArray2)
