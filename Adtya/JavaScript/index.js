@@ -511,33 +511,59 @@ Falsy -> "", 0, false, [], {}, undefined, NaN, null
 // delete user2
 // console.log("user2: ", user2)
 
-let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
-console.log(days[0]) // -> Sun
-console.log(days[2]) // -> Tue
-console.log(days[5]) // -> Fri
-days[0] = "Sunday"
-console.log(days[0]) // -> Sunday
-let emptyArray = []
-console.log(emptyArray[0]) // -> undefined
+// let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+// console.log(days[0]) // -> Sun
+// console.log(days[2]) // -> Tue
+// console.log(days[5]) // -> Fri
+// days[0] = "Sunday"
+// console.log(days[0]) // -> Sunday
+// let emptyArray = []
+// console.log(emptyArray[0]) // -> undefined
 
-console.log(days)
+// console.log(days)
 
-let myArray
-myArray = [1,2,3,5]
-console.log(myArray)
+// let myArray
+// myArray = [1,2,3,5]
+// console.log(myArray)
 
-let myArray2
-console.log(myArray2)
-//myArray2 = []
-//myArray2[0] = "One"
-console.log(myArray2)
+// let myArray2
+// console.log(myArray2)
+// //myArray2 = []
+// //myArray2[0] = "One"
+// console.log(myArray2)
 
-console.log(typeof myArray2)
+// console.log(typeof myArray2)
 
-let animals = []
-console.log(animals[0]) // -> undefined
-animals[0] = "dog"
-animals[2] = "cat"
-console.log(animals[0]) // -> dog
-console.log(animals[1]) // -> undefined
-console.log(animals[2]) // -> cat
+// let animals 
+// animals = []
+// //console.log(animals[0]) // -> undefined
+// animals[0] = "dog"
+// animals[2] = "cat"
+// console.log(animals[0]) // -> dog
+// console.log(animals[1]) // -> undefined
+// console.log(animals[2]) // -> cat
+
+// console.log(typeof animals)
+// console.log("animals instanceof Array: ", animals instanceof Array)
+// let newAnimal = new String("Cat")
+// console.log("newAnimal instanceof Array: ", newAnimal instanceof Array)
+// console.log("newAnimal instanceof String: ", newAnimal instanceof String)
+
+let values = ["Test", 7, 12.3, false, Infinity, undefined, null]
+console.log("values:", values)
+console.log("values[0]:", values[0])
+console.log("values[1]:", values[1])
+console.log("values[2]:", values[2])
+console.log("values[3]:", values[3])
+console.log("values[4]:", values[4])
+console.log("values[5]:", values[5])
+console.log("values[6]:", values[6])
+console.log("values[7]:", values[7])
+
+let names = [["Olivia", "Emma", "Mia", "Sofia"], ["William", "James", "Daniel"]]
+console.log(names[0]) // -> ["Olivia", "Emma", "Mia", "Sofia"]
+console.log(names[0][1]) // -> Emma
+console.log(names[1][1]) // -> James
+let femaleNames = names[0]
+console.log(femaleNames[0]) // -> Olivia
+console.log(femaleNames[2]) // -> Mia
