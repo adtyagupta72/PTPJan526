@@ -549,21 +549,79 @@ Falsy -> "", 0, false, [], {}, undefined, NaN, null
 // console.log("newAnimal instanceof Array: ", newAnimal instanceof Array)
 // console.log("newAnimal instanceof String: ", newAnimal instanceof String)
 
-let values = ["Test", 7, 12.3, false, Infinity, undefined, null]
-console.log("values:", values)
-console.log("values[0]:", values[0])
-console.log("values[1]:", values[1])
-console.log("values[2]:", values[2])
-console.log("values[3]:", values[3])
-console.log("values[4]:", values[4])
-console.log("values[5]:", values[5])
-console.log("values[6]:", values[6])
-console.log("values[7]:", values[7])
+// let values = ["Test", 7, 12.3, false, Infinity, undefined, null]
+// console.log("values:", values)
+// console.log("values[0]:", values[0])
+// console.log("values[1]:", values[1])
+// console.log("values[2]:", values[2])
+// console.log("values[3]:", values[3])
+// console.log("values[4]:", values[4])
+// console.log("values[5]:", values[5])
+// console.log("values[6]:", values[6])
+// console.log("values[7]:", values[7])
 
-let names = [["Olivia", "Emma", "Mia", "Sofia"], ["William", "James", "Daniel"]]
-console.log(names[0]) // -> ["Olivia", "Emma", "Mia", "Sofia"]
-console.log(names[0][1]) // -> Emma
-console.log(names[1][1]) // -> James
-let femaleNames = names[0]
-console.log(femaleNames[0]) // -> Olivia
-console.log(femaleNames[2]) // -> Mia
+// let names = [["Olivia", "Emma", "Mia", "Sofia"], ["William", "James", "Daniel"]]
+// console.log(names[0]) // -> ["Olivia", "Emma", "Mia", "Sofia"]
+// console.log(names[0][1]) // -> Emma
+// console.log(names[1][1]) // -> James
+// let femaleNames = names[0]
+// console.log(femaleNames[0]) // -> Olivia
+// console.log(femaleNames[2]) // -> Mia
+
+// let user1 = {
+//    name: "Calvin",
+//    surname: "Hart",
+//    age: 66,
+//    email: "CalvinMHart@teleworm.us"
+// }
+// let user2 = {
+//    name: "Mateus",
+//    surname: "Pinto",
+//    age: 21,
+//    email: "MateusPinto@dayrep.com"
+// }
+// console.log("user1: ", user1)
+// console.log("user1 name: ", user1.name)
+// console.log("user1 surname: ", user1.surname)
+// console.log("user2: ", user2)
+
+// let users =[ 
+//    {
+//       name: "Calvin",
+//       surname: "Hart",
+//       age: 66,
+//       email: "CalvinMHart@teleworm.us"
+//    },
+//    {
+//       name: "Mateus",
+//       surname: "Pinto",
+//       age: 21,
+//       email: "MateusPinto@dayrep.com"
+//    }
+// ]
+// console.log(users[0].name) // -> Calvin
+// console.log(users[1].age) // -> 21
+// users[2] = {
+//    name: "Irene",
+//    surname: "Purnell",
+//    age: 32,
+//    email: "IreneHPurnell@rhyta.com"
+// }
+// console.log(users[0].name) // -> Calvin
+// console.log(users[1].name) // -> Mateus
+// console.log(users[2].name) // -> Irene
+
+// let names  = ["Olivia", "Emma", "Mateo", "Samuel"]
+// console.log(names.length)
+// names[5] = "Amelia"
+// console.log(names.length)
+// console.log(names)
+// console.log(names[3])
+// console.log(names[4])
+// console.log(names[5])
+
+let names = ["Olivia", "Emma", "Mateo", "Samuel"]
+console.log(names.indexOf("Mateo")) // -> 2
+console.log(names.indexOf("Victor")) // -> -1
+
+
