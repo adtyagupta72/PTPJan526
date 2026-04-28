@@ -620,8 +620,16 @@ Falsy -> "", 0, false, [], {}, undefined, NaN, null
 // console.log(names[4])
 // console.log(names[5])
 
+// let names = ["Olivia", "Emma", "Mateo", "Samuel"]
+// console.log(names.indexOf("Mateo")) // -> 2
+// console.log(names.indexOf("Victor")) // -> -1
+
 let names = ["Olivia", "Emma", "Mateo", "Samuel"]
-console.log(names.indexOf("Mateo")) // -> 2
-console.log(names.indexOf("Victor")) // -> -1
+console.log(names.length) // -> 4
+names.push("Amelia")
+console.log(names.length) // -> 5
+console.log(names) // - > ["Olivia", "Emma", "Mateo", "Samuel", "Amelia"]
 
-
+names.unshift("Adtya")
+console.log(names)
+console.log(names.indexOf("Adtya"))
