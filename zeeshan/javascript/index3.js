@@ -108,14 +108,16 @@ let books = [
 
 let a = {
         title:"Learning JavaScript Design Patterns",
-        Author:"Addy Osmani",
+        Author:"Addy Osmani",                           //PUSh a new object
         Pages:254
 }
 books.push(a)
-console.log("length of array:",books.length)
-console.log("Book1:",books[0].title)
-console.log("Book2;",books[1].title)
-console.log("Book3;",books[2].title)
-console.log("Book4;",books[3].title)
 
+// console.log("length of array:",books.length)            //Length 
 
+// console.log("Book1:",books[0].title)
+// console.log("Book2;",books[1].title)                    //title of all books
+// console.log("Book3;",books[2].title)
+// console.log("Book4;",books[3].title)
+
+console.log(books.slice(2,4))
