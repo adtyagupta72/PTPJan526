@@ -105,6 +105,17 @@ let books = [
         Pages:352
     }
 ]
-console.log(books[1])
-console.log("Pages:",books[2].Pages)
+
+let a = {
+        title:"Learning JavaScript Design Patterns",
+        Author:"Addy Osmani",
+        Pages:254
+}
+books.push(a)
+console.log("length of array:",books.length)
+console.log("Book1:",books[0].title)
+console.log("Book2;",books[1].title)
+console.log("Book3;",books[2].title)
+console.log("Book4;",books[3].title)
+
 
