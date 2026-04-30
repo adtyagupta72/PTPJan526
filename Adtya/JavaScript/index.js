@@ -624,25 +624,54 @@ Falsy -> "", 0, false, [], {}, undefined, NaN, null
 // console.log(names.indexOf("Mateo")) // -> 2
 // console.log(names.indexOf("Victor")) // -> -1
 
+// let names = ["Olivia", "Emma", "Mateo", "Samuel"]
+// console.log(names.length) // -> 4
+// names.push("Amelia")
+// console.log(names.length) // -> 5
+// console.log(names) // - > ["Olivia", "Emma", "Mateo", "Samuel", "Amelia"]
+
+// names.unshift("Adtya")
+// console.log(names)
+// console.log(names.indexOf("Adtya"))
+
+// let poped = names.pop()
+// console.log("Poped: ", poped)
+// console.log("Length of names: ", names.length)
+// console.log("names: ", names)
+
+// let shifted = names.shift()
+// console.log("shifted: ", shifted)
+// console.log("Length of names: ", names.length)
+// console.log("names: ", names)
+
+// names.reverse()
+// console.log("names: ", names)
+
+// let names = ["Olivia", "Emma", "Mateo", "Samuel"]
+// let n1 = names.slice(2)
+// console.log(n1)
+// console.log(names)
+
+// let n2 = names.slice(1,3)
+// console.log(n2)
+// console.log(names)
+
+// let n3 = names.slice(0, -1)
+// console.log(n3)
+// console.log(names)
+
+// let n4 = names.slice(-1)
+// console.log(n4) // -> ["Samuel"]
+// console.log(names)
+
 let names = ["Olivia", "Emma", "Mateo", "Samuel"]
-console.log(names.length) // -> 4
-names.push("Amelia")
-console.log(names.length) // -> 5
-console.log(names) // - > ["Olivia", "Emma", "Mateo", "Samuel", "Amelia"]
+let otherNames = ["William", "Jane"]
+let allNames = names.concat( otherNames)
+console.log("names: ", names) // -> ["Olivia", "Emma", "Mateo","Samuel"]
+console.log("otherNames: ", otherNames) // -> ["William", "Jane"]
+console.log("allNames: ", allNames)
 
-names.unshift("Adtya")
-console.log(names)
-console.log(names.indexOf("Adtya"))
-
-let poped = names.pop()
-console.log("Poped: ", poped)
-console.log("Length of names: ", names.length)
-console.log("names: ", names)
-
-let shifted = names.shift()
-console.log("shifted: ", shifted)
-console.log("Length of names: ", names.length)
-console.log("names: ", names)
-
-names.reverse()
-console.log("names: ", names)
+names = otherNames.concat(names)
+console.log("names: ", names) // -> ["Olivia", "Emma", "Mateo","Samuel"]
+console.log("otherNames: ", otherNames) // -> ["William", "Jane"]
+//console.log("allNames1: ", allNames1)
