@@ -121,10 +121,11 @@ books.push(a)
 // console.log("Book4;",books[3].title)
 
 // console.log(books.slice(2,4))
-console.log("shifted;",books.shift())
-console.log("length:",books.length)
+// console.log("shifted;",books.shift())
+// console.log("length:",books.length)
 
 
-console.log("Book1:",books[0].title)
-console.log("Book2;",books[1].title)                    //title of all books
-console.log("Book3;",books[2].title)
+// console.log("Book1:",books[0].title)
+// console.log("Book2;",books[1].title)                    //title of all books
+// console.log("Book3;",books[2].title)
+console.log("sum:",books[0].Pages+books[1].Pages+books[2].Pages+books[3].Pages)
