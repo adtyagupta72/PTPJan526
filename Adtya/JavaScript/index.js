@@ -633,3 +633,16 @@ console.log(names) // - > ["Olivia", "Emma", "Mateo", "Samuel", "Amelia"]
 names.unshift("Adtya")
 console.log(names)
 console.log(names.indexOf("Adtya"))
+
+let poped = names.pop()
+console.log("Poped: ", poped)
+console.log("Length of names: ", names.length)
+console.log("names: ", names)
+
+let shifted = names.shift()
+console.log("shifted: ", shifted)
+console.log("Length of names: ", names.length)
+console.log("names: ", names)
+
+names.reverse()
+console.log("names: ", names)
