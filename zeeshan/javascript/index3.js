@@ -81,9 +81,30 @@
 //  let all = name.concat(nsme)
 //  console.log("all name", all)
 
-let ticket = {
-    startingStation : "Khairabad",
-    endStation : "Lucknow",
-    price : 350
-}
-console.log(ticket)
+// let ticket = {
+//     startingStation : "Khairabad",
+//     endStation : "Lucknow",
+//     price : 350
+// }
+// console.log(ticket)
+
+let books = [
+    { 
+        title:"Speaking JavaScript",
+        Author:"Axel Rauschmayer",
+        Pages:460
+    },
+    { 
+        title:"Programming JavaScript Applications",
+        Author:"Eric Elliott",
+        Pages:360
+    },
+    { 
+        title:"Understanding ECMAScript 6",
+        Author:"Nicholas C. Zakas",
+        Pages:352
+    }
+]
+console.log(books[1])
+console.log("Pages:",books[2].Pages)
+
