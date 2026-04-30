@@ -49,11 +49,11 @@
 // }
 // ]
 // console.log(user1.name)
-let nsme=["sam","james","mathew"]
-console.log(nsme.indexOf("james"))
-// nsme[4]="hina"
-// console.log(nsme.length)
-let name = ["jack","rose","samantha","mathew","zeeshan"]
+// let nsme=["sam","james","mathew"]
+// console.log(nsme.indexOf("james"))
+// // nsme[4]="hina"
+// // console.log(nsme.length)
+// let name = ["jack","rose","samantha","mathew","zeeshan"]
 // name.push("amelia")
 // name.unshift("zeeshan")
 // console.log(name.indexOf(name[0]))
@@ -86,4 +86,4 @@ let ticket = {
     endStation : "Lucknow",
     price : 350
 }
-console.log(ticket.price)
+console.log(ticket)
