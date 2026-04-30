@@ -671,7 +671,7 @@ console.log("names: ", names) // -> ["Olivia", "Emma", "Mateo","Samuel"]
 console.log("otherNames: ", otherNames) // -> ["William", "Jane"]
 console.log("allNames: ", allNames)
 
-names = otherNames.concat(names)
+let names = otherNames.concat(names)
 console.log("names: ", names) // -> ["Olivia", "Emma", "Mateo","Samuel"]
 console.log("otherNames: ", otherNames) // -> ["William", "Jane"]
-//console.log("allNames1: ", allNames1)
+console.log("allNames1: ", allNames1)
