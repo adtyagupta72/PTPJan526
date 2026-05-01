@@ -128,4 +128,10 @@ books.push(a)
 // console.log("Book1:",books[0].title)
 // console.log("Book2;",books[1].title)                    //title of all books
 // console.log("Book3;",books[2].title)
-console.log("sum:",books[0].Pages+books[1].Pages+books[2].Pages+books[3].Pages)
+// console.log("sum:",books[0].Pages+books[1].Pages+books[2].Pages+books[3].Pages)
+
+let person = {};
+person.name = "zeeshan"
+person.sname = "Siddqui"
+console.log(person.name)
+console.log(person.sname)
