@@ -664,14 +664,85 @@ Falsy -> "", 0, false, [], {}, undefined, NaN, null
 // console.log(n4) // -> ["Samuel"]
 // console.log(names)
 
-let names = ["Olivia", "Emma", "Mateo", "Samuel"]
-let otherNames = ["William", "Jane"]
-let allNames = names.concat( otherNames)
-console.log("names: ", names) // -> ["Olivia", "Emma", "Mateo","Samuel"]
-console.log("otherNames: ", otherNames) // -> ["William", "Jane"]
-console.log("allNames: ", allNames)
+// let names = ["Olivia", "Emma", "Mateo", "Samuel"]
+// let otherNames = ["William", "Jane"]
+// let allNames = names.concat( otherNames)
+// console.log("names: ", names) // -> ["Olivia", "Emma", "Mateo","Samuel"]
+// console.log("otherNames: ", otherNames) // -> ["William", "Jane"]
+// console.log("allNames: ", allNames)
 
-let names = otherNames.concat(names)
-console.log("names: ", names) // -> ["Olivia", "Emma", "Mateo","Samuel"]
-console.log("otherNames: ", otherNames) // -> ["William", "Jane"]
-console.log("allNames1: ", allNames1)
+// let names = otherNames.concat(names)
+// console.log("names: ", names) // -> ["Olivia", "Emma", "Mateo","Samuel"]
+// console.log("otherNames: ", otherNames) // -> ["William", "Jane"]
+// console.log("allNames1: ", allNames1)
+
+// var number1 = 10
+// let number2 = 20
+// {
+//     console.log(number1)
+//     console.log(number2)
+//     var number3 = 30
+//     let number4 = 40
+//     console.log(number3)
+//     console.log(number4)
+//     {
+//         console.log(number3)
+//         console.log(number4)
+//     }
+// }
+// console.log(number1)
+// console.log(number2)
+// console.log(number3)
+// console.log(number4)
+
+// const name = "Alice"
+// console.log(name) // -> Alice
+
+// let year = 2050
+// let newYear = year = 2051
+// console.log(year)
+// console.log(newYear)
+
+// let year = 2050
+// year = 2051
+// let newYear = year
+// console.log(year)
+// console.log(newYear)
+
+// console.log(2 + 2 * 2)
+// console.log(2 + (2 * 2))
+// console.log((2 + 2) * 2)
+
+// const x = 5
+// const y = 2
+// console.log("addition: ", x + y) // -> 7
+// console.log("subtraction: ", x - y) // -> 3
+// console.log("multiplication: ", x * y) // -> 10
+// console.log("division: ", x / y) // -> 2.5
+// console.log("division remainder :", x % y) // -> 1
+// console.log("exponent: ", x ** y) // -> 25
+
+// let str = "123"
+// let n1 = +str
+// let n2 = -str
+// let n3 = -n2
+// let n4 = +"abcd"
+
+// console.log(`${str} : ${typeof str}`) // -> 123 : string
+// console.log(`${n1} : ${typeof n1}`) // -> 123 : number
+// console.log(`${n2} : ${typeof n2}`) // -> -123 : number
+// console.log(`${n3} : ${typeof n3}`) // -> 123 : number
+// console.log(`${n4} : ${typeof n4}`) // -> NaN : number
+
+let n1 = 10
+console.log(n1++)
+console.log(n1)
+
+console.log(++n1)
+console.log(n1)
+
+console.log(0.2 + 0.1)
+console.log(0.2 * 0.1)
+console.log(0.3 / 0.1)
+
+
