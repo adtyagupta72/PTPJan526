@@ -780,17 +780,31 @@ Falsy -> "", 0, false, [], {}, undefined, NaN, null
 // console.log(a && b && c || d)
 // console.log(a && b && (c || d))
 
-let nr = 0
-let year = 1970
-let name = "Alice"
-let empty = ""
-console.log(!nr) // -> true
-console.log(!year) // -> false
-console.log(!name) // -> false
-console.log(!empty) // -> true
-console.log(!!nr) // -> false
-console.log(!!name) // -> true
+// let nr = 0
+// let year = 1970
+// let name = "Alice"
+// let empty = ""
+// console.log(!nr) // -> true
+// console.log(!year) // -> false
+// console.log(!name) // -> false
+// console.log(!empty) // -> true
+// console.log(!!nr) // -> false
+// console.log(!!name) // -> true
 
 
 //Truthy - 1,2 ,3 4, 5, " ", "a", [0], {a:1}
 //Falsy - 0, "", undefined , null, [], {}
+//&& => second if True, First if False
+//|| => First if True, second is False
+console.log(true && 1991) // -> 1991
+console.log(false && 1991) // -> false
+console.log(2 && 5) // -> 5
+console.log(0 && 5) // -> 0
+console.log("Alice" && "Bob") // -> Bob
+console.log("" && "Bob") // -> empty string
+console.log(true || 1991) // -> true
+console.log(false || 1991) // -> 1991
+console.log(2 || 5) // -> 2
+console.log(0 || 5) // -> 5
+console.log("Alice" || "Bob") // -> Alice
+console.log("" || "Bob") // -> Bob
