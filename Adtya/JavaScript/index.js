@@ -734,15 +734,63 @@ Falsy -> "", 0, false, [], {}, undefined, NaN, null
 // console.log(`${n3} : ${typeof n3}`) // -> 123 : number
 // console.log(`${n4} : ${typeof n4}`) // -> NaN : number
 
-let n1 = 10
-console.log(n1++)
-console.log(n1)
+// let n1 = 10
+// console.log(n1++)
+// console.log(n1)
 
-console.log(++n1)
-console.log(n1)
+// console.log(++n1)
+// console.log(n1)
 
-console.log(0.2 + 0.1)
-console.log(0.2 * 0.1)
-console.log(0.3 / 0.1)
+// console.log(0.2 + 0.1)
+// console.log(0.2 * 0.1)
+// console.log(0.3 / 0.1)
 
 
+// let x = 10
+// x += 2
+// console.log(x) // -> 12
+// x -= 4
+// console.log(x) // -> 8
+// x *= 3
+// console.log(x) // -> 24
+// x /= 6
+// console.log(x) // -> 4
+// x **= 3
+// console.log(x) // -> 64
+// x %= 10
+// console.log(x) // -> 4
+
+// console.log("true && true: ", true && true)
+// console.log("true && false: ", true && false)
+// console.log("false && true: ", false && true)
+// console.log("false && false: ", false && false)
+
+// console.log(true || true) // -> true
+// console.log(true || false) // -> true
+// console.log(false || true) // -> true
+// console.log(false || false) // -> false
+
+
+// console.log(!true) // -> false
+// console.log(!false) // -> true
+// const a = false
+// const b = true
+// const c = false
+// const d = true
+// console.log(a && b && c || d)
+// console.log(a && b && (c || d))
+
+let nr = 0
+let year = 1970
+let name = "Alice"
+let empty = ""
+console.log(!nr) // -> true
+console.log(!year) // -> false
+console.log(!name) // -> false
+console.log(!empty) // -> true
+console.log(!!nr) // -> false
+console.log(!!name) // -> true
+
+
+//Truthy - 1,2 ,3 4, 5, " ", "a", [0], {a:1}
+//Falsy - 0, "", undefined , null, [], {}
