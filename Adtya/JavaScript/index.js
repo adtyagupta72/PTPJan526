@@ -823,14 +823,14 @@ Falsy -> "", 0, false, [], {}, undefined, NaN, null
 // console.log("x=>", x)
 
 
-let x = 1
-let y = 0
+// let x = 1
+// let y = 0
 // console.log(x++ && y++)
 // console.log("x=>", x)
 // console.log("x=>", y)
-console.log(x++ || y++)
-console.log("x=>", x)
-console.log("y=>", y)
+// console.log(x++ || y++)
+// console.log("x=>", x)
+// console.log("y=>", y)
 
 /*
 x   y   x||y
@@ -840,3 +840,17 @@ x   y   x||y
 1   1   1
 0   1   1   
 */
+
+let a = true
+console.log(a) // -> true
+a &&= false// -> a = a && false
+console.log(a) // -> false
+
+let b = false
+console.log(b) // -> false
+b ||= true
+console.log(b) // -> true
+
+console.log(6*5 == "30")
+console.log("10" - 100)
+
