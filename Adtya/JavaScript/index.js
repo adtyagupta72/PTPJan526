@@ -809,22 +809,34 @@ Falsy -> "", 0, false, [], {}, undefined, NaN, null
 // console.log("Alice" || "Bob") // -> Alice
 // console.log("" || "Bob") // -> Bob
 
-let x = 0
-let y = 0
-x++ // x = x + 1// 1
-console.log("x=>", x)
-++x     // 2
-console.log("x=>", x)
-
-console.log("(with x++) x=>", x++)//1
-console.log("x=>", x)
-//x=> 3
-console.log("(With ++x) x=>", ++x)//2
-console.log("x=>", x)
-
-
 // let x = 0
 // let y = 0
-// console.log(x++ && y++) // -> 0
-// console.log(x)
-// console.log(y)
+// x++ // x = x + 1// 1
+// console.log("x=>", x)
+// ++x     // 2
+// console.log("x=>", x)
+
+// console.log("(with x++) x=>", (x++))//1
+// console.log("x=>", x)
+// //x=> 3
+// console.log("(With ++x) x=>", ++x)//2
+// console.log("x=>", x)
+
+
+let x = 1
+let y = 0
+// console.log(x++ && y++)
+// console.log("x=>", x)
+// console.log("x=>", y)
+console.log(x++ || y++)
+console.log("x=>", x)
+console.log("y=>", y)
+
+/*
+x   y   x||y
+------------
+0   0   0
+1   0   1  
+1   1   1
+0   1   1   
+*/
