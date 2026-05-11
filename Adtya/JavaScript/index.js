@@ -796,15 +796,35 @@ Falsy -> "", 0, false, [], {}, undefined, NaN, null
 //Falsy - 0, "", undefined , null, [], {}
 //&& => second if True, First if False
 //|| => First if True, second is False
-console.log(true && 1991) // -> 1991
-console.log(false && 1991) // -> false
-console.log(2 && 5) // -> 5
-console.log(0 && 5) // -> 0
-console.log("Alice" && "Bob") // -> Bob
-console.log("" && "Bob") // -> empty string
-console.log(true || 1991) // -> true
-console.log(false || 1991) // -> 1991
-console.log(2 || 5) // -> 2
-console.log(0 || 5) // -> 5
-console.log("Alice" || "Bob") // -> Alice
-console.log("" || "Bob") // -> Bob
+// console.log(true && 1991) // -> 1991
+// console.log(false && 1991) // -> false
+// console.log(2 && 5) // -> 5
+// console.log(0 && 5) // -> 0
+// console.log("Alice" && "Bob") // -> Bob
+// console.log("" && "Bob") // -> empty string
+// console.log(true || 1991) // -> true
+// console.log(false || 1991) // -> 1991
+// console.log(2 || 5) // -> 2
+// console.log(0 || 5) // -> 5
+// console.log("Alice" || "Bob") // -> Alice
+// console.log("" || "Bob") // -> Bob
+
+let x = 0
+let y = 0
+x++ // x = x + 1// 1
+console.log("x=>", x)
+++x     // 2
+console.log("x=>", x)
+
+console.log("(with x++) x=>", x++)//1
+console.log("x=>", x)
+//x=> 3
+console.log("(With ++x) x=>", ++x)//2
+console.log("x=>", x)
+
+
+// let x = 0
+// let y = 0
+// console.log(x++ && y++) // -> 0
+// console.log(x)
+// console.log(y)
