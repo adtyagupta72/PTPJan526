@@ -841,16 +841,83 @@ x   y   x||y
 0   1   1   
 */
 
-let a = true
-console.log(a) // -> true
-a &&= false// -> a = a && false
-console.log(a) // -> false
+// let a = true
+// console.log(a) // -> true
+// a &&= false// -> a = a && false
+// console.log(a) // -> false
 
-let b = false
-console.log(b) // -> false
-b ||= true
-console.log(b) // -> true
+// let b = false
+// console.log(b) // -> false
+// b ||= true
+// console.log(b) // -> true
 
-console.log(6*5 == "30")
-console.log("10" - 100)
+// console.log(6*5 == "30")
+// console.log("10" - 100)
 
+// let greetings = "Hi"
+// console.log(greetings + " " + "Alice") 
+// let sentence = "Happy New Year "
+// let newSentence = sentence + 10191
+// console.log(newSentence)
+// console.log(typeof newSentence)
+
+// sentence = "Happy New "
+// sentence += "Year "
+// sentence += 10191
+// console.log(sentence)
+
+// console.log("10 === 10: ", 10 === 10) // -> true
+// console.log("10 === 10n:", 10 === 10n) // -> false
+// console.log("10 == 10n:", 10 == 10n) // -> false
+// console.log("10 === \"10\":", 10 === "10") // -> false
+// console.log("10 == \"10\":", 10 == "10")
+// console.log('"10" === "10":', "10" === "10") // -> true
+// console.log('"Alice" === "Bob": ', "Alice" === "Bob") // -> false
+// console.log('"Alice" == "Bob": ', "Alice" == "Bob") // -> false
+// console.log("0 === false: ",0 === false) // -> false
+// console.log("0 == false: ",0 == false) // -> false
+// console.log("undefined === false:", undefined === false) // -> false
+// console.log("undefined == false:", undefined == false) // -> false
+
+// console.log("NaN == NaN: ",NaN == NaN)
+// console.log("NaN === NaN: ",NaN === NaN)
+
+// console.log(10 !== 5) // -> true
+// console.log(10 !== 10) // -> false
+// console.log(10 !== 10n) // -> true
+// console.log(10 !== "10") // -> true
+// console.log("10" !== "10") // -> false
+// console.log("Alice" !== "Bob") // -> true
+// console.log(0 !== false) // -> true
+// console.log(undefined !== false) // -> true
+// console.log(10 != 5) // -> true
+// console.log(10 != 10) // -> false
+// console.log(10 != 10n) // -> false
+// console.log(10 != "10") // -> false
+// console.log("10" != "10") // -> false
+// console.log("Alice" != "Bob") // -> true
+// console.log(0 !=  false) // -> false
+// console.log(undefined != false) // -> true
+// console.log(NaN != NaN) // -> true
+
+// console.log("10 > 100:", 10 > 100) // -> false
+// console.log("101 > 100:", 101 > 100) // -> true
+// console.log('101 > "100": ', 101 > "100") // -> true
+// console.log("101 < 100: ", 101 < 100) // -> false
+// console.log("100n < 102: ", 100n < 102) // -> true
+// console.log('"10" < 20n: ',"10" < 20n) // -> true
+// console.log("101 <= 100: ", 101 <= 100) // -> false
+// console.log("10 >= 10n: ", 10 >= 10n) // -> true
+// console.log('"10" <=  20: ',"10" <=  20) // -> true
+
+
+console.log("b" > "a") // -> true
+console.log("a" > "B") // -> true
+console.log("B" > "A") // -> true
+console.log("A" > "4") // -> true
+console.log("4" > "1") // -> true
+console.log("ab1" < "ab4") // -> true
+console.log("ab4" < "abA") // -> true
+console.log("abB" < "aba") // -> true
+console.log("aba" < "abb") // -> true
+console.log("ab" < "ab4") // -> true
