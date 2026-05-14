@@ -6,20 +6,61 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <!-- This line makes things resonsive in our web page by default -->
         <title>Responsive Web Page!</title>
+        <style>
+            .left
+            {
+                background-color: aqua;
+                padding: 20px;
+                float: left;
+                width: 16%;
+            }
+            .center
+            {
+                background-color: bisque;
+                padding: 20px;
+                float: left;
+                width: 60%;
+            }
+            .right
+            {
+                background-color: blueviolet;
+                padding: 20px;
+                float: left;
+                width: 16%;
+            }
+            @media screen and (max-width: 800px) {
+                .left, .center, .right{
+                    width: 100%;
+                }
+            }
+        </style>
     </head>
     <body>
-        <h2>Responsive Image Example</h2>
+        <!-- <h2>Responsive Image Example</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p>This is how image will look like when page is resized</p>
+        <p>This is how image will look like when page is resized</p>-->
         <!-- <img src="../images/image1.jpg" alt="Sample Image" style="max-width: 100%; height: auto;"> -->
 
-        <picture>
+        <!-- <picture>
             <source srcset="../images/image2.jpeg" media="(max-width: 600px)">
             <source srcset="../images/image3.jpeg" media="(max-width: 1200px)">
             <source srcset="../images/image1.jpg">
             <img src="../images/image1.jpg" alt="Default image" style="max-width: 100%; width: auto;">
         </picture>
 
-        <h1 style="font-size: 10vw;">This is responsive Heading in the page</h1>
+        <h1 style="font-size: 10vw;">This is responsive Heading in the page</h1> -->
+
+        <h2>Media Query Example</h2>
+        <p>Resize the browser</p>
+
+        <div class="left">
+            <p>Left Menu</p>
+        </div>
+        <div class="center">
+            <p>Main Content</p>
+        </div>
+        <div class="right">
+            <p>Right Menu</p>
+        </div>
     </body>
 </html>
