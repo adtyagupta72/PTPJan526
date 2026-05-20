@@ -945,12 +945,31 @@ x   y   x||y
 // console.log(name)
 
 
-let a = 10
-let b = a + 2 * 3
-let c = a + 2  < 20 - 15
-console.log(a)
-console.log(b)  //
-console.log(c)  //
+// let a = 10
+// let b = a + 2 * 3
+// let c = a + 2  < 20 - 15
+// console.log(a)
+// console.log(b)  //
+// console.log(c)  //
 
-let myArray = [1, 2, 3, 4, 5, 6]
-console.log(...myArray)
+// let myArray = [1, 2, 3, 4, 5, 6]
+// console.log(...myArray)
+
+function openConfirmationDialog()
+{
+    let decision = window.confirm("Is it OK?")
+    console.log("This is confirmation dialog response: ", decision)   
+}
+
+function openPromptDialog()
+{
+    let name = window.prompt("What is your name?")
+    name = name ? name : "anonymous"
+    let age = prompt("Hello " + name + ", how old are you?")
+    alert(name + " is " + age + " years old")
+}
+
+// let remove = window.confirm("Remove all data?")
+// let message = remove ? "Deleting Data" : "Cancelled"
+// console.log(message)
+
