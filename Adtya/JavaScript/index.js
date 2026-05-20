@@ -911,13 +911,65 @@ x   y   x||y
 // console.log('"10" <=  20: ',"10" <=  20) // -> true
 
 
-console.log("b" > "a") // -> true
-console.log("a" > "B") // -> true
-console.log("B" > "A") // -> true
-console.log("A" > "4") // -> true
-console.log("4" > "1") // -> true
-console.log("ab1" < "ab4") // -> true
-console.log("ab4" < "abA") // -> true
-console.log("abB" < "aba") // -> true
-console.log("aba" < "abb") // -> true
-console.log("ab" < "ab4") // -> true
+// console.log("b" > "a") // -> true
+// console.log("a" > "B") // -> true
+// console.log("B" > "A") // -> true
+// console.log("A" > "4") // -> true
+// console.log("4" > "1") // -> true
+// console.log("ab1" < "ab4") // -> true
+// console.log("ab4" < "abA") // -> true
+// console.log("abB" < "aba") // -> true
+// console.log("aba" < "abb") // -> true
+// console.log("ab" < "ab4") // -> true
+
+// let names = ["Patti", "Bob"]
+// let name1 = names[0]
+// name1 = new String(name1)
+// console.log(names instanceof Array)
+// console.log(name1 instanceof Array)
+// console.log(name1 instanceof String)
+
+// let user = {
+//  name: "Alice",
+//  age: 38
+// }
+// console.log(user.age)
+// delete user.age
+// console.log(user.age)
+
+// //Syntax -> condition ? value1 : value2
+// console.log(true ? "Alice" : "Bob")
+// console.log(false ? "Alice" : "Bob")
+
+// let name = 1 > 2 ? "Alice" : "Bob"
+// console.log(name)
+
+
+// let a = 10
+// let b = a + 2 * 3
+// let c = a + 2  < 20 - 15
+// console.log(a)
+// console.log(b)  //
+// console.log(c)  //
+
+// let myArray = [1, 2, 3, 4, 5, 6]
+// console.log(...myArray)
+
+function openConfirmationDialog()
+{
+    let decision = window.confirm("Is it OK?")
+    console.log("This is confirmation dialog response: ", decision)   
+}
+
+function openPromptDialog()
+{
+    let name = window.prompt("What is your name?")
+    name = name ? name : "anonymous"
+    let age = prompt("Hello " + name + ", how old are you?")
+    alert(name + " is " + age + " years old")
+}
+
+// let remove = window.confirm("Remove all data?")
+// let message = remove ? "Deleting Data" : "Cancelled"
+// console.log(message)
+
