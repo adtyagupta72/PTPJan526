@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: aqua;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+}
+
+#hamburgermenu {
+    margin-left: 60%;
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    ul{
+        display:none;
+    }
+    #hamburgermenu{
+        display:block;
+    }
+}
+
+li {
+    background-color: bisque;
+    padding: 15px;
+    list-style: none;
+}
+
+a {
+    padding: 15px;
+    background-color: cadetblue;
+    text-decoration: none;
+}
