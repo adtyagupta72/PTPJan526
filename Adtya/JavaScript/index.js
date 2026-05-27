@@ -973,3 +973,7 @@ function openPromptDialog()
 // let message = remove ? "Deleting Data" : "Cancelled"
 // console.log(message)
 
+let price = 50
+let shippingCost = price > 50 ? 0 : 5
+console.log(`price = ${price}, shipping = ${shippingCost}`) 
+
