@@ -973,7 +973,50 @@ function openPromptDialog()
 // let message = remove ? "Deleting Data" : "Cancelled"
 // console.log(message)
 
-let price = 50
-let shippingCost = price > 50 ? 0 : 5
-console.log(`price = ${price}, shipping = ${shippingCost}`) 
+// let price = 50
+// let shippingCost = price > 50 ? 0 : 5
+// console.log(`price = ${price}, shipping = ${shippingCost}`) 
 
+// console.log(0) 
+// console.log(10) 
+// console.log(20) 
+// console.log(30)
+// console.log(40) 
+// console.log(50) 
+// console.log(60) 
+// console.log(70) 
+// console.log(80) 
+// console.log(90)
+
+// let n = 0
+// console.log(n) 
+// n += 10
+// console.log(n)
+// n += 10
+// console.log(n)
+// n += 10
+// console.log(n)
+// n += 10
+// console.log(n)
+// n += 10
+// console.log(n) 
+// n += 10
+// console.log(n)
+// n += 10
+// console.log(n)
+// n += 10
+// console.log(n)
+// n += 10
+// console.log(n)
+// n += 10
+
+let n = 0
+while(n < 91) 
+{
+    console.log(n) 
+    n += 10
+}
+/*
+n   0   10  20  30  40  50  60....  90    100
+op  0   10  20  30  40  50  60      90    
+*/
