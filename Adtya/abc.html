@@ -132,11 +132,33 @@
                 alert("Gate C: empty") 
                 break 
             default: 
-                alert("No gate " + String(gate)) 
-        } 
+                alert("No gate " + gate) 
+        }
         if(win) 
         { 
             alert("Winner!") 
+        }
+        // orderValue = 100 => 0 discount, 
+                //     +200 => 2% discount
+                //     +300 => 5% discount
+                //     +500 => 10% discount
+                //    +1000 => 15% discount
+                //    +2000 => 20% discount
+
+        let number = 4
+        switch (number) 
+        { 
+            case 1: 
+                console.log("One") 
+                break 
+            case 2: 
+                console.log("Two") 
+                break 
+            case 3: 
+                console.log("Three") 
+                break
+            default: 
+                console.log("Unknown number") 
         }
 
 
