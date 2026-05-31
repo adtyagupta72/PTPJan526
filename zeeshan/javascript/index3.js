@@ -88,30 +88,30 @@
 // }
 // console.log(ticket)
 
-let books = [
-    { 
-        title:"Speaking JavaScript",
-        Author:"Axel Rauschmayer",
-        Pages:460
-    },
-    { 
-        title:"Programming JavaScript Applications",
-        Author:"Eric Elliott",
-        Pages:360
-    },
-    { 
-        title:"Understanding ECMAScript 6",
-        Author:"Nicholas C. Zakas",
-        Pages:352
-    }
-]
+// let books = [
+//     { 
+//         title:"Speaking JavaScript",
+//         Author:"Axel Rauschmayer",
+//         Pages:460
+//     },
+//     { 
+//         title:"Programming JavaScript Applications",
+//         Author:"Eric Elliott",
+//         Pages:360
+//     },
+//     { 
+//         title:"Understanding ECMAScript 6",
+//         Author:"Nicholas C. Zakas",
+//         Pages:352
+//     }
+// ]
 
-let a = {
-        title:"Learning JavaScript Design Patterns",
-        Author:"Addy Osmani",                           //PUSh a new object
-        Pages:254
-}
-books.push(a)
+// let a = {
+//         title:"Learning JavaScript Design Patterns",
+//         Author:"Addy Osmani",                           //PUSh a new object
+//         Pages:254
+// }
+// books.push(a)
 
 // console.log("length of array:",books.length)            //Length 
 
@@ -130,8 +130,79 @@ books.push(a)
 // console.log("Book3;",books[2].title)
 // console.log("sum:",books[0].Pages+books[1].Pages+books[2].Pages+books[3].Pages)
 
-let person = {};
-person.name = "zeeshan"
-person.sname = "Siddqui"
-console.log(person.name)
-console.log(person.sname)
+// let person = {};
+// person.name = "zeeshan"
+// person.sname = "Siddqui"
+// console.log(person.name)
+// console.log(person.sname)
+
+// let year = 2050
+// year = 2051
+// let newYear = year
+// console.log(year)
+// console.log(newYear)
+// 
+// 
+// let n1 = 10 
+// console.log(n1)
+// console.log(n1++)
+// console.log(n1)
+
+// let n2 = 12 
+// console.log(n2)
+// console.log(++n2)
+// console.log(n2)
+ 
+// let s = 0.3+0.2
+// console.log(0.3 + 0.2)
+
+// 
+// console.log(true || true)
+// console.log(true || false)
+// console.log(false || true)
+// console.log(false || false)
+
+// console.log(!  true)
+// console.log(!  false)
+// let a = 123
+// let b = true 
+// let c = false 
+// let d = true
+// console.log(a && b && c || d)
+// console.log(a && b && (c || d))
+
+//truthy = {a:" "}, [6], 1, 2, 3," ","a"
+// falsey = {} , [] , null , undefined , 0 
+
+// console.log(!!a)
+
+// if true second 2nd , if false 1st (&&)
+// if true first , if false 2nd (||)
+
+// console.log(true && 786)
+// console.log(false && 1991)
+// console.log("alice " && "bob")
+// console.log("" && "alice")
+// console.log(true || 1991)
+// console.log(false || 1221)
+// console.log(2 || 5)
+// console.log(false || 5)
+
+// let name = ["veena", "Praew"]
+// let name1 = name[0]
+// console.log(name instanceof Array)
+// console.log(name1 instanceof Array)
+
+// let user = {
+//     name: "zeeshan",
+//     age : 21
+// }
+// console.log(user)
+// delete user.age
+// console.log(user.age)
+
+// //syntax = condition ? value 1(true): value 2 ( if false)
+
+// let num = 10> 15 ? "yes": "no"
+// console.log(num)
+

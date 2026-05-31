@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-image: url("candle.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+           
+        }
+        
+        #backpass{
+            height:150px;
+            width:100px;
+            color:red;
+
+        }
+    </style>
 </head>
 <body><header>
     <center><h1>Student Complaint Form</h1></center>
@@ -14,6 +30,9 @@
 
         <label for="info" >Student's name</label>
         <input type="text" name="info" id="info" required><br>
+                    <div id="backpass">
+                
+            </div>
         <label for="email" >Email</label>
         <input type="email" name="email" ><br>
          <!-- <label for="paas" >Password</label>
@@ -21,6 +40,7 @@
         <label>Complaint type:</label><BR>
         <input type="radio" name="gen" id="gen" >
         <label for="gen" >Sports</label><BR>
+
         <input type="radio" name="gen" id="gen">
         <label for="gen" >Academic</label><BR>
         <input type="radio" name="gen" id="gen">
