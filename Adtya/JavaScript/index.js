@@ -1010,13 +1010,71 @@ function openPromptDialog()
 // console.log(n)
 // n += 10
 
-let n = 0
-while(n < 91) 
-{
-    console.log(n) 
-    n += 10
-}
+// let n = 0
+// while(n < 91) 
+// {
+//     console.log(n) 
+//     n += 10
+// }
 /*
 n   0   10  20  30  40  50  60....  90    100
 op  0   10  20  30  40  50  60      90    
 */
+
+
+// let fruits = ["apple", "banana", "mango"]
+// let index = 0
+// while (index < fruits.length) 
+// {
+//     console.log(fruits[index])
+//     index++
+// }
+
+// let num = 2
+// while (num <= 20) 
+// {
+//     console.log(num)
+//     num += 2
+// }
+
+// let n = 10
+// while (n >= 1) 
+// {
+//   console.log(n)
+//   n--
+// }
+
+// let condition = false
+
+// while(condition)
+// {
+//     console.log("A while loop iteration.") // never executed
+// }
+// do 
+// {
+//     console.log("A do ... while loop iteration.") // executed once
+// } 
+// while (condition)
+
+// let text = "Divya"
+// let i = 0
+// do 
+// {
+//     console.log(text[i])
+//     i++
+// } 
+// while (i < text.length)
+
+for(let index = 0; index < 10; index++) 
+{ 
+    console.log(index) 
+}
+
+let i = 0
+while (i < 10) 
+{
+    console.log(i)
+    i++
+}
+
+
