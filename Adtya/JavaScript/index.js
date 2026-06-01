@@ -1065,13 +1065,15 @@ op  0   10  20  30  40  50  60      90
 // } 
 // while (i < text.length)
 
-for(let index = 0; index < 10; index++) 
+let index = 0
+for(; index < 10;)
 { 
     console.log(index) 
+    index++
 }
 
 let i = 0
-while (i < 10) 
+while(i < 10) 
 {
     console.log(i)
     i++
