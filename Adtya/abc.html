@@ -185,15 +185,35 @@
     	// 	isOver = !confirm(`[${counter++}] Continue the loop?`)
         // }
 
-        isOver = false
-        counter = 1
-        do
-        {
-            isOver = !confirm(`[${counter++}] Continue the loop?`)
-        } 
-        while (!isOver)
+        // isOver = false
+        // counter = 1
+        // do
+        // {
+        //     isOver = !confirm(`[${counter++}] Continue the loop?`)
+        // } 
+        // while (!isOver)
 
-        //
+        let names = []
+        let isOver = false
+        while (!isOver) 
+        {
+            let name = prompt("Enter another name or press cancel.")
+            if (name != null) 
+            {
+                names.push(name)
+            } 
+            else 
+            {
+                isOver = true
+            }
+        }
+
+        for(let index = 0; index < names.length; index++)
+        {
+            console.log(names[index])
+        }
+
+
 
     </script>
 </head>

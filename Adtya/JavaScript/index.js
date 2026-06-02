@@ -1065,18 +1065,98 @@ op  0   10  20  30  40  50  60      90
 // } 
 // while (i < text.length)
 
-let index = 0
-for(; index < 10;)
-{ 
-    console.log(index) 
-    index++
-}
+// let index = 0
+// for(; index < 10;)
+// { 
+//     console.log(index) 
+//     index++
+// }
 
-let i = 0
-while(i < 10) 
+// let i = 0
+// while(i < 10) 
+// {
+//     console.log(i)
+//     i++
+// }
+
+// let values = [10, 30, 50, 100]
+// let sum = 0				
+// for(let index = 0; index < 4; index++) 
+// {
+//     sum += values[index]		
+// }					
+// console.log(sum) // 190				
+
+
+// let numbers = [2, 5, 8, 11, 14]
+// let evenCount = 0
+// for(let index = 0; index < numbers.length; index++) 
+// {
+//    	if(numbers[index] % 2 === 0) 
+//     {
+//         evenCount++
+//     }
+// }
+// console.log("Even numbers count:", evenCount)
+
+// let fruits = ["apple", "banana", "mango", "grape"]
+// for(let index = fruits.length - 1; index >= 0; index--) 
+// {
+//     console.log(fruits[index])
+// }
+
+
+// let values = [10, 30, 50, 100]
+// for(let index = 0; index < values.length; index++) 
+// {
+//     console.log(values[index]) // -> 10, 30, 50, 100
+// }
+// console.log("-------")
+// for(let index = values.length - 1; index >= 0; index--) 
+// {
+//    	console.log(values[index]) // -> 100, 50, 30, 10
+// }
+// console.log("-------")
+// for(let index = 0; index < values.length; index += 2) 
+// {
+//     console.log(values[index]) // -> 10, 50
+// }
+// let values = [10, 30, 50, 100]
+
+// for(let element of values)
+// {
+//     console.log(element)
+// }
+
+// let sum = 0
+// for(let index = 0; index < values.length; index++) 
+// {
+//     sum += values[index]
+// }
+// console.log(sum) 
+
+// sum = 0
+// for(let number of values) 
+// {
+//     sum += number
+// }
+// console.log(sum)
+
+
+let cities = [
+    { name: "New York", population: 18.65e6 },
+    { name: "Cairo", population: 18.82e6 },
+    { name: "Mumbai", population: 19.32e6 },
+    { name: "São Paulo", population: 20.88e6 },
+    { name: "Mexico City", population: 21.34e6 },
+    { name: "Shanghai", population: 23.48e6 },
+    { name: "Delhi", population: 25.87e6 },
+    { name: "Tokyo", population: 37.26e6 }
+]
+for(let city of cities) 
 {
-    console.log(i)
-    i++
+    if (city.population > 20e6) 
+    {
+        console.log(`${city.name} (${city.population})`)
+    }
 }
-
-
