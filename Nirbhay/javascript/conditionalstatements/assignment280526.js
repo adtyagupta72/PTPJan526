@@ -108,7 +108,26 @@
 // }
 
 // Write a program that greets the user based on the time of day.
-
+let timeFormat=prompt("Enter the time format(AM Or PM): ")
+let time=prompt("Enter the actual time: ")
+if(timeFormat=="AM")
+{
+    if(parseInt(time)>=1 && parseInt(time)<12)
+    {
+        console.log("good morning")
+    }
+}
+else if(timeFormat=="PM")
+{
+    if((parseInt(time)>=1 && parseInt(time)<=5)|| parseInt(time)==12)
+    {
+        console.log("good afternon")
+    }
+    else if(parseInt(time)>6 && parseInt(time)<24)
+    {
+        console.log("goodNight")
+    }
+}
 
 // Write a program that calculates the Body Mass Index (BMI) and categorizes it.
 // let weight=63
@@ -133,3 +152,18 @@
 
 
 // Write a simple number guessing game
+let actualNumber = 55
+let userGuess = prompt("Guess the number...")
+
+if (parseInt(userGuess) == actualNumber) {
+    alert("Your guess is correct")
+}
+else if (parseInt(userGuess) < actualNumber) {
+    alert("Your guess is smaller then the actual number --Try again")
+    if (parseInt(userGuess) <= 10) {
+        alert("You have to Guess above 10")
+    }
+}
+else if (parseInt(userGuess) > actualNumber) {
+    alert("Your guess is larger then the actual numebr -- Try again")
+}
