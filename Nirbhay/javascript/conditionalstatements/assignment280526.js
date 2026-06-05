@@ -108,26 +108,26 @@
 // }
 
 // Write a program that greets the user based on the time of day.
-let timeFormat=prompt("Enter the time format(AM Or PM): ")
-let time=prompt("Enter the actual time: ")
-if(timeFormat=="AM")
-{
-    if(parseInt(time)>=1 && parseInt(time)<12)
-    {
-        console.log("good morning")
-    }
-}
-else if(timeFormat=="PM")
-{
-    if((parseInt(time)>=1 && parseInt(time)<=5)|| parseInt(time)==12)
-    {
-        console.log("good afternon")
-    }
-    else if(parseInt(time)>6 && parseInt(time)<24)
-    {
-        console.log("goodNight")
-    }
-}
+// let timeFormat=prompt("Enter the time format(AM Or PM): ")
+// let time=prompt("Enter the actual time: ")
+// if(timeFormat=="AM")
+// {
+//     if(parseInt(time)>=1 && parseInt(time)<12)
+//     {
+//         console.log("good morning")
+//     }
+// }
+// else if(timeFormat=="PM")
+// {
+//     if((parseInt(time)>=1 && parseInt(time)<=5)|| parseInt(time)==12)
+//     {
+//         console.log("good afternon")
+//     }
+//     else if(parseInt(time)>6 && parseInt(time)<24)
+//     {
+//         console.log("goodNight")
+//     }
+// }
 
 // Write a program that calculates the Body Mass Index (BMI) and categorizes it.
 // let weight=63
@@ -152,18 +152,241 @@ else if(timeFormat=="PM")
 
 
 // Write a simple number guessing game
-let actualNumber = 55
-let userGuess = prompt("Guess the number...")
+// let actualNumber = 55
+// let userGuess = prompt("Guess the number...")
 
-if (parseInt(userGuess) == actualNumber) {
-    alert("Your guess is correct")
+// if (parseInt(userGuess) == actualNumber) {
+//     alert("Your guess is correct")
+// }
+// else if (parseInt(userGuess) < actualNumber) {
+//     alert("Your guess is smaller then the actual number --Try again")
+//     if (parseInt(userGuess) <= 10) {
+//         alert("You have to Guess above 10")
+//     }
+// }
+// else if (parseInt(userGuess) > actualNumber) {
+//     alert("Your guess is larger then the actual numebr -- Try again")
+// }
+
+
+// PRACTICE QUESTIONS---
+
+// Write a program that takes a number from 1 to 7 and prints the corresponding day of the week.
+// let dayNumber=prompt("Enter the number of the day :")
+// switch(parseInt(dayNumber))
+// {
+//     case 1:
+//         console.log("monday")
+//         break
+//     case 2:
+//         console.log("Tuesday")
+//         break
+//     case 3:
+//         console.log("wednesday")
+//         break
+//     case 4:
+//         console.log("Thursday")
+//         break
+//     case 5:
+//         console.log("Friday")
+//         break
+//     case 6:
+//         console.log("Saturday")
+//         break
+//     case 7:
+//         console.log("Sunday")
+//         break
+//     default:
+//         alert("Enter a valid number")
+// }
+
+
+// Write a program that takes three numbers as input and prints the largest one.
+
+// let num1=prompt("Enter the first number")
+// let num2=prompt("Enter the second number")
+// let num3=prompt("Enter the third number")
+// if(parseInt(num1)>parseInt(num2))
+// {
+//     if(parseInt(num1)>parseInt(num3))
+//     {
+//         console.log("num1 is the largest")
+//     }
+// }
+// else if(parseInt(num1)<parseInt(num2))
+// {
+//     if(parseInt(num2)>parseInt(num3))
+//     {
+//         console.log("Num2 is greatest")
+//     }
+//     else console.log("num3 is greatest")
+// }
+// Write a program that simulates a basic login system. Ask for a username and password, and check if they match predefined correct values.
+// const USERNAME="nirbhayy_1"
+// const PASSWORD="NirbhayKumar@123"
+// let username=prompt("Enter the username: ")
+// let password=prompt("Ennter the password: ")
+// if(username==USERNAME && password==PASSWORD)
+// {
+//     alert("Login successfully...")
+// }else alert("Failed to login")
+
+// Write a program that categorizes a person's stage in life based on age.
+// let age=prompt("Enter the age: ")
+// if(age>0 && age<=3)
+// {
+//     alert("You are infant")
+// }
+// else if(age>=4 && age<=12)
+// {
+//     alert("You are in childhood")
+// }
+// else if(age>=13 && age<=19)
+// {
+//     alert("You are in teenage")
+// }
+// else if(age>=20 && age<=64)
+// {
+//     alert('You are in middle adulthood')
+// }else alert('You are in late adulthood')
+
+
+// Write a switch program to print the name of the month based on month number (1 to 12).
+// let monthNumber=prompt("Enter the month number: ")
+// switch(parseInt(monthNumber))
+// {
+//     case 1:
+//         alert("January")
+//         break
+//     case 2:
+//         alert("February")
+//         break
+//     case 3:
+//         alert("March")
+//         break
+//     case 4:
+//         alert("April")
+//         break
+//     case 5:
+//         alert("May")
+//         break
+//     case 6:
+//         alert("June")
+//         break
+//     case 7:
+//         alert("July")
+//         break
+//     case 8:
+//         alert("August")
+//         break
+//     case 9:
+//         alert("september")
+//         break
+//     case 10:
+//         alert("October")
+//         break
+//     case 11:
+//         alert("November")
+//         break
+//     case 12:
+//         alert("December")
+//         break
+//     default:
+//         alert("Invalid input")
+// }
+
+// "Write a program using a switch statement to simulate a basic menu selection system."
+// let choice = parseInt(prompt("Enter the choice you want \n 1.Addititon \n 2.Substraction \n 3.multiplication \n 4.Divide"))
+// let num1=10
+// let num2=20
+// switch(choice)
+// {
+//     case 1:
+//         console.log("Addition",num1+num2)
+//         break
+//     case 2:
+//         console.log("Substraction",num1-num2)
+//         break
+//     case 3:
+//         console.log("multiply",num1*num2)
+//         break
+//     case 4:
+//         console.log("Divide",num1/numm2)
+//         break
+//     default:
+//         console.log("Enter a valid input")
+// }
+
+// "Write a program to implement a food ordering system."
+let foodChoice=parseInt(prompt("Enter the choice number of food :\n 1.Pizza\n 2.Fried Rice\n 3.Pasta\n 4.Macroni\n 5.Maggi\n 6.CHilli potato"))
+switch(foodChoice)
+{
+    case 1:
+        console.log("You ordered Pizza please wait 2min the order is getting ready")
+        break
+    case 2:
+        console.log("You have ordered Fried rice wait 3min order is getting ready")
+        break
+    case 3:
+        console.log("You have ordered pasta wait 3min order is getting ready")
+        break
+    case 4:
+        console.log("You have ordered macroni wait 3min order is getting ready")
+        break
+    case 5:
+        console.log("You have ordered Maggi wait 3min order is getting ready")
+        break
+    case 6:
+        console.log("You have ordered chilli potato wait 3min order is getting ready")
+        break
+    default:
+        alert("please enter a valid input")
 }
-else if (parseInt(userGuess) < actualNumber) {
-    alert("Your guess is smaller then the actual number --Try again")
-    if (parseInt(userGuess) <= 10) {
-        alert("You have to Guess above 10")
-    }
-}
-else if (parseInt(userGuess) > actualNumber) {
-    alert("Your guess is larger then the actual numebr -- Try again")
-}
+// Write a program that takes a color ("red", "yellow", "green") as input and prints the required action ("Stop", "Get Ready", "Go").
+// let signal=prompt('Enter the signal Colour: ')
+// if(signal=="red")
+// {
+//     alert('Stop')
+// }
+// else if(signal=="yellow")
+// {
+//     alert('Get Ready')
+// }
+// else if(signal=="green")
+// {
+//     alert('Go')
+// }else alert("Invalid input Pls Enter a valid input")
+
+// Write a program that takes the length and width of a four-sided shape and determines if it is a square or a rectangle.
+// let length=prompt("Enter the length: ")
+// let breadth=prompt("Enter the width: ")
+// if(length==0 || breadth==0)
+// {
+//     console.log("Neither square nor rectangle ")
+// }
+// else if(length==breadth)
+// {
+//     console.log("Its a square")
+// }
+// else if(length!=breadth)
+// {
+//     console.log("Rectangle!")
+// }
+
+// Write a program that prompts the user to enter a single letter and determines whether it's a vowel or a consonant.
+// let letter=prompt("Enter the letter: ")
+// let vowels=["a","e","i","o","u"]
+// let i=0
+// while(i<vowels.length)   //while loop works more well
+// {
+//     if(letter==vowels[i])
+//     {
+//         console.log("Vowel !")
+//         break
+//     }
+//     else{
+//         console.log("consonant !")
+//         break
+//     }
+//     i++
+// }
