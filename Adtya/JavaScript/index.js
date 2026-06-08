@@ -1220,3 +1220,4 @@ for(let i = 0; i < 10; i++)
     console.log(i)
 }
 
+// https://docs.google.com/presentation/d/1S9k6db2UeKJJ1J0sx11l5mPbJ1u1vmyomI10hWoC9Do/edit?slide=id.g37043ce6f99_3_150#slide=id.g37043ce6f99_3_150
