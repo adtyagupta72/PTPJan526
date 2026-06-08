@@ -1143,20 +1143,80 @@ op  0   10  20  30  40  50  60      90
 // console.log(sum)
 
 
-let cities = [
-    { name: "New York", population: 18.65e6 },
-    { name: "Cairo", population: 18.82e6 },
-    { name: "Mumbai", population: 19.32e6 },
-    { name: "São Paulo", population: 20.88e6 },
-    { name: "Mexico City", population: 21.34e6 },
-    { name: "Shanghai", population: 23.48e6 },
-    { name: "Delhi", population: 25.87e6 },
-    { name: "Tokyo", population: 37.26e6 }
-]
-for(let city of cities) 
+// let cities = [
+//     { name: "New York", population: 18.65e6 },
+//     { name: "Cairo", population: 18.82e6 },
+//     { name: "Mumbai", population: 19.32e6 },
+//     { name: "São Paulo", population: 20.88e6 },
+//     { name: "Mexico City", population: 21.34e6 },
+//     { name: "Shanghai", population: 23.48e6 },
+//     { name: "Delhi", population: 25.87e6 },
+//     { name: "Tokyo", population: 37.26e6 }
+// ]
+// for(let city of cities) 
+// {
+//     if (city.population > 20e6) 
+//     {
+//         console.log(`${city.name} (${city.population})`)
+//     }
+// }
+
+// let names = ["Alice", "Bob", "Charlie"]
+// for(let name of names) 
+// {
+//     console.log(name)
+// }
+
+// let fruits = ["apple", "banana", "mango"]
+// for(let fruit of fruits) 
+// {
+//     console.log(fruit)
+// }
+
+// let user = 
+// {
+//     name: "Calvin",
+//     surname: "Hart",
+//     age: 66,
+//     email: "CalvinMHart@teleworm.us"
+// }
+
+// for(let key in user) 
+// {
+//   	//console.log(key) // -> name, surname, age, email
+//     console.log(`${key} -> ${user[key]}`)
+// }
+
+// let user = { name: "Swati", age: 25 } 
+// for(let key in user) 
+// { 
+//     console.log(`${key}: ${user[key]}`) 
+// }
+
+// const array1 = ["a", "b", "c"]
+// for(const element of array1) 
+// {
+//   	console.log(element)
+// }
+
+let i = 0
+while (true) 
 {
-    if (city.population > 20e6) 
+    console.log(i)
+    i++
+    if (i >= 5) 
     {
-        console.log(`${city.name} (${city.population})`)
+        break
     }
 }
+console.log('Exited the loop with break')
+
+for(let i = 0; i < 10; i++) 
+{
+    if(i == 3 || i == 6) 
+    {
+        continue
+    }
+    console.log(i)
+}
+
