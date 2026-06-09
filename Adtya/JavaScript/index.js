@@ -1199,25 +1199,83 @@ op  0   10  20  30  40  50  60      90
 //   	console.log(element)
 // }
 
-let i = 0
-while (true) 
-{
-    console.log(i)
-    i++
-    if (i >= 5) 
-    {
-        break
-    }
-}
-console.log('Exited the loop with break')
+// let i = 0
+// while (true) 
+// {
+//     console.log(i)
+//     i++
+//     if (i >= 5) 
+//     {
+//         break
+//     }
+// }
+// console.log('Exited the loop with break')
 
-for(let i = 0; i < 10; i++) 
+// for(let i = 0; i < 10; i++) 
+// {
+//     if(i == 3 || i == 6) 
+//     {
+//         continue
+//     }
+//     console.log(i)
+// }
+
+// let fruits = ["apple", "banana", "mango", "orange", "grapes"]
+// for(let i = 0; i < fruits.length; i++) 
+// {
+//     if(fruits[i] === "mango") 
+//     {
+//        	console.log("Mango found at index " + i)
+//         break
+//     }
+//     console.log("The fruit iterated: ", fruits[i])
+// }
+
+// for(let i = 1; i <= 10; i++) 
+// {
+//     if (i % 2 == 0) 
+//     {
+//         continue
+//     }
+//     console.log(i)
+// }
+
+let temperatures
+let sum
+let meanTemp
+// temperatures = [12, 12, 11, 11, 10, 9, 9, 10, 12, 13, 15, 18, 21, 24, 24, 23, 25, 25, 23, 21, 20, 19, 17, 16]
+// sum = 0
+// for(let i = 0; i < temperatures.length; i++) 
+// {
+//     sum += temperatures[i]
+// }
+// meanTemp = sum / temperatures.length
+// console.log(`mean: ${meanTemp}`) 
+// temperatures = [17, 16, 14, 12, 10, 10, 10, 11, 13, 14, 15, 17, 22, 27, 29, 29, 27, 26, 24, 21, 19, 18, 17, 16]
+// sum = 0
+// for(let i = 0; i < temperatures.length; i++) 
+// {
+//     sum += temperatures[i]
+// }
+// meanTemp = sum / temperatures.length
+// console.log(`mean: ${meanTemp}`)
+
+function getMeanTemp() 
 {
-    if(i == 3 || i == 6) 
+    sum = 0
+    for(let i = 0; i < temperatures.length; i++) 
     {
-        continue
+        sum += temperatures[i]
     }
-    console.log(i)
+    meanTemp = sum / temperatures.length    
 }
 
-// https://docs.google.com/presentation/d/1S9k6db2UeKJJ1J0sx11l5mPbJ1u1vmyomI10hWoC9Do/edit?slide=id.g37043ce6f99_3_150#slide=id.g37043ce6f99_3_150
+temperatures = [12, 12, 11, 11, 10, 9, 9, 10, 12, 13, 15, 18, 21, 24, 24, 23, 25, 25, 23, 21, 20, 19, 17, 16]
+getMeanTemp()
+console.log(`mean: ${meanTemp}`) 
+
+temperatures = [17, 16, 14, 12, 10, 10, 10, 11, 13, 14, 15, 17, 22, 27, 29, 29, 27, 26, 24, 21, 19, 18, 17, 16]
+getMeanTemp()
+console.log(`mean: ${meanTemp}`) 
+
+
