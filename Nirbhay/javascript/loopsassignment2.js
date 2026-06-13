@@ -62,8 +62,54 @@ for(let i=1;i<=5;i++)
 
 // Write a program to print all Armstrong numbers between 1 and 500.
 
+for(let i=1;i<=500;i++)
+{
+    let sum=0
+    let digit=0
+    if(i<10)
+    {
+        console.log(`${i} is not a armstrong number`)
+    }
+    else
+    {
+        while(i!=0)
+        {
+            digit=i%10
+            sum=sum+(digit**3)
+            i=Math.floor(i/10)
+        }
+        if(sum==i)
+        {
+            console.log(`${i} is a armstrong number`)
+        }
+    }
+}
+
 // Print the multiplication table from 1 to 10.
+for(let num=1;num<=10;num++)
+{
+    for(let factor=1;factor<=10;factor++)
+    {
+        console.log(num*factor)
+    }
+}
 
 // Write a program to print a number triangle.
+for(let row=1;row<=5;row++)
+{
+    for(let coloumn=1;coloumn<=row;coloumn++)
+    {
+        process.stdout.write(`${coloumn}`)
+    }
+    console.log()
+}
 
 // Write a program to print reverse triangle.
+for(let row=1;row<=5;row++)
+{
+    for(let coloumn=5;coloumn>=row;coloumn--)
+    {
+        process.stdout.write("*")
+    }
+    console.log()
+}
