@@ -1363,11 +1363,88 @@ let meanTemp
 //     return name[index]
 // }
 
-function add(first, second) 
+// function add(first, second) 
+// {
+//     return first + second
+// }
+// let first = 10, second = 20, third = 40, fourth = 80
+// console.log(add(first, second))  
+// console.log(add(second, third)) 
+// console.log(add(third, fourth))
+
+// let a = 100, b = 200, c = 300
+// function test(a) 
+// {
+//   let b = 10
+//   console.log(a)
+//   console.log(b)
+//   console.log(c) 
+// }
+// test(1)
+// console.log(a)
+// console.log(b) 
+// console.log(c) 
+
+// function showMessage(message) 
+// {
+//     console.log(`Message: ${message}`)
+// }
+// let sm = showMessage
+
+// sm("This works!") // -> Message: This works!
+// console.log(typeof sm)
+
+// function doNothing() 
+// {
+//   	return undefined
+// }
+
+// let a = doNothing() // assign result of function call
+// let b = doNothing   // assign a function
+// console.log(a)
+// console.log(typeof a) // -> undefined
+// console.log(b)
+// console.log(typeof b) // -> function
+
+// function add(a, b) 
+// {
+// 	return a + b
+// }
+// function multiply(a, b) 
+// {
+//  	return a * b
+// }
+// function operation(func, first, second) 
+// {
+//  	return func(first, second)
+// }
+// console.log(operation(add, 10, 20))      
+// console.log(operation(multiply, 10, 20))
+
+// let myAdd = function(a, b) 
+// {
+//     return a + b
+// }
+// console.log(myAdd)
+// console.log(typeof myAdd)
+// console.log(myAdd(10, 20))
+
+// let myAdd = function add(a, b) 
+// {
+//     return a + b
+// }
+// myAdd = add
+// console.log(myAdd)
+// console.log(typeof myAdd)
+// console.log(myAdd(10, 30))
+
+// console.log(add)
+// console.log(typeof add)
+// console.log(add(10, 20))
+function add(a, b) 
 {
-    return first + second
+   	return a + b
 }
-let first = 10, second = 20, third = 40, fourth = 80
-console.log(add(first, second))  
-console.log(add(second, third)) 
-console.log(add(third, fourth))
+myAdd = add
+console.log(myAdd(10, 20))
+console.log(add(10, 20))
