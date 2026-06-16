@@ -1449,23 +1449,70 @@ let meanTemp
 // console.log(myAdd(10, 20))
 // console.log(add(10, 20))
 
-let myAdd = function(a, b) 
-{
-    return a + b
-}
-console.log(myAdd(10, 20)) 
+// let myAdd = function(a, b) 
+// {
+//     return a + b
+// }
+// console.log(myAdd(10, 20)) 
 
-function operation(func, first, second) 
+// function operation(func, first, second) 
+// {
+//     return func(first, second)
+// }
+// myAdd = function(a, b) 
+// {
+//     return a + b
+// }
+// console.log(operation(myAdd, 10, 20))
+// console.log(operation( function(a, b) 
+// {
+//     return a + b
+// }, 10, 20))
+
+// function getMeanTemp(temperatures) 
+// {
+//     if (!(temperatures instanceof Array)) 
+//     {
+//     	return "Invalid Input, please check and try again!"
+//     }
+//     let sum = 0
+//     for(let i = 0; i < temperatures.length; i++) 
+//     {
+//     	sum += temperatures[i]
+//     }
+//    	return sum / temperatures.length
+// }
+// console.log(getMeanTemp([10, 20, 30])) 
+// console.log(getMeanTemp("not an array")) 
+
+// function addNumbers(a, b) 
+// {
+//    	if (typeof a !== "number" || typeof b !== "number") 
+//     {
+//         // if(typeof a === "string")
+//         // {
+//         //     let conv = int(a)
+//         //     if(typeof conv === "number")
+//         //         a = conv
+//         // }
+//         return "Invalid input: numbers expected"
+//    	}
+//     return a + b
+// }
+// console.log(addNumbers(5, 7))        
+// console.log(addNumbers("5", 7))   
+
+let inner = function() 
 {
-    return func(first, second)
+  	console.log('inner 1')
 }
-myAdd = function(a, b) 
+let outer = function(callback) 
 {
-    return a + b
+ 	console.log('outer 1')
+  	callback()
+   	console.log('outer 2')
 }
-console.log(operation(myAdd, 10, 20))
-console.log(operation( function(a, b) 
-{
-    return a + b
-}, 10, 20))
+console.log('test 1')
+outer(inner)
+console.log('test 2')
 
