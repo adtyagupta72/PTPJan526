@@ -1441,10 +1441,31 @@ let meanTemp
 // console.log(add)
 // console.log(typeof add)
 // console.log(add(10, 20))
-function add(a, b) 
+// function add(a, b) 
+// {
+//    	return a + b
+// }
+// myAdd = add
+// console.log(myAdd(10, 20))
+// console.log(add(10, 20))
+
+let myAdd = function(a, b) 
 {
-   	return a + b
+    return a + b
 }
-myAdd = add
-console.log(myAdd(10, 20))
-console.log(add(10, 20))
+console.log(myAdd(10, 20)) 
+
+function operation(func, first, second) 
+{
+    return func(first, second)
+}
+myAdd = function(a, b) 
+{
+    return a + b
+}
+console.log(operation(myAdd, 10, 20))
+console.log(operation( function(a, b) 
+{
+    return a + b
+}, 10, 20))
+
