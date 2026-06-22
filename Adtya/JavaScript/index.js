@@ -1516,20 +1516,64 @@ let meanTemp
 // outer(inner)
 // console.log('test 2')
 
-let fruits = ["apple", "banana", "kiwi"]
-const animateAll = (animate) =>
+// let fruits = ["apple", "banana", "kiwi"]
+// let intervalID = 0
+// const animateAll = (animate) =>
+// {
+//     setTimeout (()=> {
+//         animate(fruits[0])
+//         setTimeout(()=>{
+//             animate(fruits[1])
+//             intervalID = setInterval(()=> {
+//                 animate(fruits[2])
+//                 clearInterval(intervalID)
+//             },1000)
+//         },1000)
+//     },1000)
+// }
+// const animate = (fruit)=> {
+//     console.log("animating", fruit)
+// }
+// animateAll(animate)
+
+// console.log("Start")
+// setTimeout(function() 
+// {
+//   	console.log("This runs after 1 second")
+// }, 1000)
+// console.log("End")
+
+// let counter = 0
+// let intervalId = setInterval(function() 
+// {
+//    	console.log("Repeating:", ++counter)
+// }, 1000)
+// setTimeout(function() 
+// {
+//    	clearInterval(intervalId)
+//    	console.log("Stopped")
+// }, 5500)
+
+
+// let inner = function() 
+// {
+//     console.log('inner 1')
+// }
+// let outer = function(callback)
+// {
+//     console.log('outer 1')
+//     let timerId = setInterval(callback, 1000) 
+//     console.log('outer 2')
+//     setTimeout(function()
+//     {
+//         clearInterval(timerId)
+//     }, 5500)
+// }
+// console.log('test 1')
+// outer(inner)
+// console.log('test 2')	
+
+window.addEventListener("click", function() 
 {
-    setTimeout (()=> {
-        animate(fruits[0])
-        setTimeout(()=>{
-            animate(fruits[1])
-            setInterval(()=> {
-                animate(fruits[2])
-            },1000)
-        },1000)
-    },1000)
-}
-const animate = (fruit)=> {
-    console.log("animating", fruit)
-}
-animateAll(animate)
+    console.log("clicked!")
+})
