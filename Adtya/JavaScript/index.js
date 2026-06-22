@@ -1502,17 +1502,34 @@ let meanTemp
 // console.log(addNumbers(5, 7))        
 // console.log(addNumbers("5", 7))   
 
-let inner = function() 
-{
-  	console.log('inner 1')
-}
-let outer = function(callback) 
-{
- 	console.log('outer 1')
-  	callback()
-   	console.log('outer 2')
-}
-console.log('test 1')
-outer(inner)
-console.log('test 2')
+// let inner = function() 
+// {
+//   	console.log('inner 1')
+// }
+// let outer = function(callback) 
+// {
+//  	console.log('outer 1')
+//   	callback()
+//    	console.log('outer 2')
+// }
+// console.log('test 1')
+// outer(inner)
+// console.log('test 2')
 
+let fruits = ["apple", "banana", "kiwi"]
+const animateAll = (animate) =>
+{
+    setTimeout (()=> {
+        animate(fruits[0])
+        setTimeout(()=>{
+            animate(fruits[1])
+            setInterval(()=> {
+                animate(fruits[2])
+            },1000)
+        },1000)
+    },1000)
+}
+const animate = (fruit)=> {
+    console.log("animating", fruit)
+}
+animateAll(animate)
