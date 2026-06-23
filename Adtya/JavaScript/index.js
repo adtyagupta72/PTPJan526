@@ -1573,7 +1573,57 @@ let meanTemp
 // outer(inner)
 // console.log('test 2')	
 
-window.addEventListener("click", function() 
+// window.addEventListener("click", function() 
+// {
+//     console.log("clicked!")
+// })
+
+// let add = function(a, b)
+// {
+//     return a + b
+// }
+
+// let add = (a, b) =>
+// {
+//    	return a + b
+// }
+// let add = (a, b) => a + b
+// console.log(add(10, 20))
+
+// function factorial(n)
+// {
+//     return n > 1 ? n * factorial(n - 1) : 1
+// }
+
+// let factorial = n => n > 1 ? n * factorial(n - 1) : 1
+// console.log(factorial(5))
+
+
+// let names = ['Alice', 'Eve', 'John']
+// function showName(element) 
+// {
+//     console.log("Name: ",element)
+// }
+// names.forEach(showName)
+
+// let greet = () => console.log("Hello!")
+// greet()
+
+// let square = x => x * x
+// console.log(square(5))
+
+// let multiply = (a, b) => a * b
+// console.log(multiply(4, 3)) 
+
+
+function factorial(n) 
 {
-    console.log("clicked!")
-})
+    let result = 1
+    while (n > 1) 
+    {
+        result *= n
+        n--
+    }
+    return result
+}
+console.log(factorial(6))
