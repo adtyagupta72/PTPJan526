@@ -1240,9 +1240,9 @@ op  0   10  20  30  40  50  60      90
 //     console.log(i)
 // }
 
-let temperatures
-let sum
-let meanTemp
+// let temperatures
+// let sum
+// let meanTemp
 // temperatures = [12, 12, 11, 11, 10, 9, 9, 10, 12, 13, 15, 18, 21, 24, 24, 23, 25, 25, 23, 21, 20, 19, 17, 16]
 // sum = 0
 // for(let i = 0; i < temperatures.length; i++) 
@@ -1616,14 +1616,48 @@ let meanTemp
 // console.log(multiply(4, 3)) 
 
 
-function factorial(n) 
+// function factorial(n) 
+// {
+//     let result = 1
+//     // while (n > 1) 
+//     // {
+//     //     result *= n
+//     //     n--
+//     // }
+
+//     for(let i = 2; i <= n; i++) 
+//     {
+//         result *= i
+//     }
+//     return result
+// }
+// console.log(factorial(6))
+// console.log(factorial(5))
+
+function sum(a) 
 {
-    let result = 1
-    while (n > 1) 
-    {
-        result *= n
-        n--
-    }
-    return result
+    return function(b) 
+        {
+            return function(c) 
+                {
+                    return a+b+c
+                }
+        }
 }
-console.log(factorial(6))
+console.log(sum(3)(4)(5))
+console.log(sum(30)) //=> function(function())
+console.log(sum(30)(20)) //=> function(function())
+// const logger = (time) => (type) => (message) => `At time: ${time}, 
+// an event of type: ${type}, occurred with full details as: ${message}` 
+// const eventsNow = logger( '5am' )
+// const errorEvent = eventsNow( 'error' )
+// console. log(errorEvent('cannot set properties of null' ))
+/*
+function sum(a)
+    r => f(b)
+        r => f(c)
+f1 = sum(10)
+f1(20) => sum(10)(20)
+f2 = f1(20)
+f2(30) => f1(20)(30) => sum(10)(20)(30)
+*/
