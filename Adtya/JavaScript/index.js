@@ -1661,26 +1661,54 @@ f1(20) => sum(10)(20)
 f2 = f1(20)
 f2(30) => f1(20)(30) => sum(10)(20)(30)
 */
-const inputElement = document.getElementById('fruits')
-function printInputText(text) 
+// const inputElement = document.getElementById('fruits')
+// function printInputText(text) 
+// {
+//     console.log(text)
+//     //API Call
+// }
+// function debounce(fx, delay)
+// {
+//     let timeoutId = null
+//     return function(text) {
+//         clearTimeout(timeoutId)
+//         timeoutId = setTimeout (() => 
+//         {
+//             fx(text)
+//         }, delay)
+//     }
+// }
+// const debounceFn = debounce(printInputText, 2000)
+// inputElement.addEventListener('input', (event) => 
+// {
+//     console.log("fruits")
+//     debounceFn(event.target.value)//1234567
+// })
+
+let count = 0
+function printScroll()
 {
-    console.log(text)
-    //API Call
+    count += 1
+    console. log("scroll called", count) 
 }
-function debounce(fx, delay)
+function throttle(fx, delay)
 {
     let timeoutId = null
-    return function(text) {
-        clearTimeout(timeoutId)
-        timeoutId = setTimeout (() => 
+    return function () 
+    {
+        if(!timeoutId)
         {
-            fx(text)
-        }, delay)
+            timeoutId = setTimeout (() => 
+            {
+                fx() 
+                clearTimeout(timeoutId) 
+                timeoutId = null
+            }, delay)
+        }
     }
 }
-const debounceFn = debounce(printInputText, 2000)
-inputElement.addEventListener('input', (event) => 
+const throttleFn = throttle(printScroll, 2000)
+document.addEventListener('scroll', (e) => 
 {
-    console.log("fruits")
-    debounceFn(event.target.value)//1234567
+    throttleFn()
 })
