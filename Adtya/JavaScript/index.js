@@ -1634,19 +1634,19 @@ op  0   10  20  30  40  50  60      90
 // console.log(factorial(6))
 // console.log(factorial(5))
 
-function sum(a) 
-{
-    return function(b) 
-        {
-            return function(c) 
-                {
-                    return a+b+c
-                }
-        }
-}
-console.log(sum(3)(4)(5))
-console.log(sum(30)) //=> function(function())
-console.log(sum(30)(20)) //=> function(function())
+// function sum(a) 
+// {
+//     return function(b) 
+//         {
+//             return function(c) 
+//                 {
+//                     return a+b+c
+//                 }
+//         }
+// }
+// console.log(sum(3)(4)(5))
+// console.log(sum(30)) //=> function(function())
+// console.log(sum(30)(20)) //=> function(function())
 // const logger = (time) => (type) => (message) => `At time: ${time}, 
 // an event of type: ${type}, occurred with full details as: ${message}` 
 // const eventsNow = logger( '5am' )
@@ -1661,3 +1661,26 @@ f1(20) => sum(10)(20)
 f2 = f1(20)
 f2(30) => f1(20)(30) => sum(10)(20)(30)
 */
+const inputElement = document.getElementById('fruits')
+function printInputText(text) 
+{
+    console.log(text)
+    //API Call
+}
+function debounce(fx, delay)
+{
+    let timeoutId = null
+    return function(text) {
+        clearTimeout(timeoutId)
+        timeoutId = setTimeout (() => 
+        {
+            fx(text)
+        }, delay)
+    }
+}
+const debounceFn = debounce(printInputText, 2000)
+inputElement.addEventListener('input', (event) => 
+{
+    console.log("fruits")
+    debounceFn(event.target.value)//1234567
+})

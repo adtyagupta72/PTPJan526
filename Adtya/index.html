@@ -15,18 +15,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Guides&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+NZ+Guides&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="./JavaScript/index.js"></script>
+    
     <script>
-        function onlyOne(checkbox) 
-        {
-            var checkboxes = document.getElementsByName(checkbox.name);
-            checkboxes.forEach((item) => 
-            {
-                if (item !== checkbox) {
-                    item.checked = false;
-                }
-            });
-        }
+        // function onlyOne(checkbox) 
+        // {
+        //     var checkboxes = document.getElementsByName(checkbox.name);
+        //     checkboxes.forEach((item) => 
+        //     {
+        //         if (item !== checkbox) {
+        //             item.checked = false;
+        //         }
+        //     });
+        // }
     </script>
     
 
@@ -46,6 +46,7 @@
         </nav>
     </header>
     <main>
+        <input id="fruits"/><br>
         <button onclick="openConfirmationDialog()">Open Confirmation dialog</button>
         <br>
         <button onclick="openPromptDialog()">Open Prompt Dialog</button>
@@ -613,10 +614,10 @@
         </audio>
         ---------Here is the Audio---------
         <br>
-        <embed type="image/jpg" src="./images/image3.jpeg" width="300" height="200">
+        <!-- <embed type="image/jpg" src="./images/image3.jpeg" width="300" height="200">
         <embed type="text/html" src="abc.html" width="500" height="200"><br>
         <object type="image/jpg" data="./images/image3.jpeg" width="300" height="200"></object>
-        <object type="text/html" data="abc.html" width="300" height="200"></object>
+        <object type="text/html" data="abc.html" width="300" height="200"></object> -->
         <br>
         <object data="./audio/sample-0.mp3" type="audio/mp3">
             <param name="controls" value="true">
@@ -649,5 +650,6 @@
             <p>EMAIL at hello@myskillverse.ai</p>
         </footer>
     </center>
+    <script src="./JavaScript/index.js"></script>
 </body>
 </html>
