@@ -1708,7 +1708,7 @@ function throttle(fx, delay)
     }
 }
 const throttleFn = throttle(printScroll, 2000)
-document.addEventListener('scroll', (e) => 
+document.addEventListener('scroll', (event) => 
 {
     throttleFn()
 })
