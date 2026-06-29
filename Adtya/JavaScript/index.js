@@ -1685,30 +1685,104 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 //     debounceFn(event.target.value)//1234567
 // })
 
-let count = 0
-function printScroll()
-{
-    count += 1
-    console. log("scroll called", count) 
-}
-function throttle(fx, delay)
-{
-    let timeoutId = null
-    return function () 
-    {
-        if(!timeoutId)
-        {
-            timeoutId = setTimeout (() => 
-            {
-                fx() 
-                clearTimeout(timeoutId) 
-                timeoutId = null
-            }, delay)
-        }
-    }
-}
-const throttleFn = throttle(printScroll, 2000)
-document.addEventListener('scroll', (event) => 
-{
-    throttleFn()
-})
+// let count = 0
+// function printScroll()
+// {
+//     count += 1
+//     console. log("scroll called", count) 
+// }
+// function throttle(fx, delay)
+// {
+//     let timeoutId = null
+//     return function () 
+//     {
+//         if(!timeoutId)
+//         {
+//             timeoutId = setTimeout (() => 
+//             {
+//                 fx() 
+//                 clearTimeout(timeoutId) 
+//                 timeoutId = null
+//             }, delay)
+//         }
+//     }
+// }
+// const throttleFn = throttle(printScroll, 2000)
+// document.addEventListener('scroll', (event) => 
+// {
+//     throttleFn()
+// })
+
+// const obj = {
+//     value: 42,
+//     getValue: async function getValue() 
+//     {
+//         console.log(this.value)
+//         await new Promise((resolve) => setTimeout(resolve, 1000))
+//         console.log(this.value * 2)
+//     }
+// }    
+// const { value, getValue } = obj
+// getValue()
+
+// class Mixer 
+// {
+//     constructor (name) 
+//     {
+//         this.name = name
+//     }
+//     async start() 
+//     {
+//         console.log("Start: ", this.name) 
+//         setTimeout ( () => 
+//         {
+//             console.log("Inside Timeout: ", this.name) 
+//         }, 1000)
+//         await new Promise((resolve) => setTimeout(resolve, 500))
+//         console.log("After Await: ", this.name)
+//     }
+// }
+// const mixer = new Mixer("MixerTest")
+// mixer.start()
+
+// class DataHandler 
+// {
+//     constructor (data) 
+//     {
+//         this.data = data
+//         console.log("Property from constructor:", this.data)
+//     }
+//     async processData() 
+//     {
+//         console.log("Processing: ", this.data)
+//     	await Promise.resolve()
+//     	console.log( "Processed: ", this.data.toUpperCase())
+//     }
+// }
+// const handler = new DataHandler("async")
+// const boundProcess = handler.processData.bind( { data: "boundData" })
+// boundProcess() 
+
+
+// function Handler(name) 
+// {
+//     this.name = name
+// }
+// Handler.prototype.asyncMethod = async function () 
+// {
+//     console.log(this.name) 
+//     await new Promise((resolve) => setTimeout(resolve, 500))
+//     console.log(this.name.toUpperCase())
+// }
+// const handler = new Handler("Prototype Test")
+// handler.asyncMethod() 
+// const detachedMethod = handler.asyncMethod
+// detachedMethod()
+
+console.log( 5 +"5")        //55
+console.log("5" + 5)        //55
+console.log("5" + "5")      //55
+console.log(95 - "5")       //90    NaN
+console.log("5" - 95)       //-90   NaN
+
+console.log(5 * "A")
