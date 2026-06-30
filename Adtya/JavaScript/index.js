@@ -1851,7 +1851,7 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // }
 
 
-iff (true) 
+iff(true)
 { //-> Uncaught SyntaxError: Unexpected token '{'
    	 console.log("true")
 }
