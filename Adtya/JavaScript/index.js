@@ -1,4 +1,4 @@
-//"use strict"
+"use strict"
 // console.log("Program Starts here------")
 // console.log("Hello There....")
 
@@ -1800,27 +1800,58 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // let result = multiply(5, 10)
 // console.log(result)
 
-try
-{
-    console.log('abc')
-    conole.log('abc')
-}
-catch(error) 
-{  
-    console.log(error.message)
-    console.log(error)
-}
+// try
+// {
+//     console.log('abc')
+//     conole.log('abc')
+// }
+// catch(error) 
+// {  
+//     console.log(error.message)
+//     console.log(error)
+// }
 
-try
-{
-    console.log("Start")
-    conole.log("Oops!")
-    console.log("This won't run")
-    weogb
+// try
+// {
+//     console.log("Start")
+//     conole.log("Oops!")
+//     console.log("This won't run")
+//     weogb
+// }
+// catch (error) 
+// {
+//     console.log("Caught an error:")
+//     console.log(error.message)  
+// }
+// console.log("Program continues...")
+// if(isNaN("A"-10))
+// {
+
+// }
+// else
+// {
+
+// }
+
+// console.log(100 / 0) // -> Infinity
+// console.log(100 * "2") // -> 200
+// console.log(100 * "abc") // -> NaN
+
+// let sX = prompt("Enter the first number")
+// let sY = prompt("Enter the second number")
+// let x = Number(sX)
+// let y = Number(sY)
+// if (Number.isFinite(x) && Number.isFinite(y) && y !== 0) 
+// {
+//     console.log(x / y)
+// } 
+// else
+// {
+//     console.log("incorrect arguments")
+// }
+
+
+iff (true) 
+{ //-> Uncaught SyntaxError: Unexpected token '{'
+   	 console.log("true")
 }
-catch (error) 
-{
-    console.log("Caught an error:")
-    console.log(error.message)  
-}
-console.log("Program continues...")
