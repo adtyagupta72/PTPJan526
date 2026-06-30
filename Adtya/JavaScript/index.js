@@ -1779,10 +1779,48 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // const detachedMethod = handler.asyncMethod
 // detachedMethod()
 
-console.log( 5 +"5")        //55
-console.log("5" + 5)        //55
-console.log("5" + "5")      //55
-console.log(95 - "5")       //90    NaN
-console.log("5" - 95)       //-90   NaN
+// console.log( 5 +"5")        //55
+// console.log("5" + 5)        //55
+// console.log("5" + "5")      //55
+// console.log(95 - "5")       //90    NaN
+// console.log("5" - 95)       //-90   NaN
 
-console.log(5 * "A")
+// console.log(5 * "A")
+
+// console.log('abc')
+// conole.log('def') 
+// console.log('ghi')
+
+// let multiply = (a b) => a + b
+
+// let multipl = (a, b) => a + b
+// let result = multiply(10, 20)
+
+// let multiply = (a, b) => a + b
+// let result = multiply(5, 10)
+// console.log(result)
+
+try
+{
+    console.log('abc')
+    conole.log('abc')
+}
+catch(error) 
+{  
+    console.log(error.message)
+    console.log(error)
+}
+
+try
+{
+    console.log("Start")
+    conole.log("Oops!")
+    console.log("This won't run")
+    weogb
+}
+catch (error) 
+{
+    console.log("Caught an error:")
+    console.log(error.message)  
+}
+console.log("Program continues...")
