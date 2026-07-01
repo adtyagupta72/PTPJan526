@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .chessboard
+        {
+            
+            border: 5px solid black;
+            width: 800px;
+            height:800px;
+            margin-top: 2%;
+            margin-left: 0%;
+            
+            transition: transform 0.3s ease;
+        }
+
+        .chessboard:hover
+        {
+            transform: scale(0.88);
+        }
+
+
+        body
+        {
+            background-color: bisque;
+        }
+
+        img
+        {
+            margin-right:2%;
+            margin-bottom:1%;
+        }
+
+
+        .pieces
+        {
+            transition: transform 3s ease-in;
+        }
+
+
+        .pieces:hover
+        {
+            transform: translateY(400px )
+        }
+
+
+        h1
+        {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            transition: transform 0.3s ease;
+        }   
+
+        h1:hover
+        {
+            transform: scale(2);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+
+        .points
+        {
+        display: flex;
+        transition: transform 5s  ease;
+       }
+
+       .points:hover
+       {
+        transform:translateX(450px);
+       }
+
+       div.a{
+        float:left;
+        margin-top:15%;
+        margin-left:1%;
+       }
+       div.b
+       {
+        float:right;
+        margin-top:15%;
+        margin-right: 1%;
+       }
+
+       .geet
+       {
+         display: block;
+         transition: transform 5s ease;
+         
+       }
+       .geet:hover{
+        transform: translateX(-500px);
+       }
+       
+        
+    </style>
+</head>
+<body>
+    <center>
+    <h1 style="margin-top: 5%; margin-bottom: 2%;" ><q>Chess Board</q></h1>
+    <img src="king.webp" width="120px" height="120px" class="pieces">
+    <img src="queen.webp" width="150px" height="130px" class="pieces">
+    <img src="knight3.webp" width="150px" height="120px" class="pieces">
+
+    <div class="a">      
+    <img src="king.webp" width="120px" height="120px" class="points">
+    <img src="queen.webp" width="120px" height="120px" class="points">
+    <img src="knight3.webp" width="120px" height="120px" class="points">  
+    </div>  
+
+    <div class="b">
+        <img src="pawn2.webp" width="120px" height="110px" class="geet">
+        <img src="camel" width="120px" height="130px" class="geet">
+        <img src="rukkk.png"width="120px" height="130px" class="geet" >
+    </div>
+
+    <DIV class="chessboard">
+        <div style="float:left; width:100px; height:100px; background-color: white;  margin:0px; "></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px; "></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;  margin:0px; "></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;  margin:0px; "></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;  margin:0px; "></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;  margin:0px; "></div>
+   
+        <div style="float:left; width:100px; height:100px; background-color: white;  margin:0px; "></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px; "></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+
+
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;  margin:0px; "></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;  margin:0px; "></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;  margin:0px; "></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;  margin:0px; "></div>
+
+
+        <div style="float:left; width:100px; height:100px; background-color: white;  margin:0px; "></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px; "></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+
+
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;  margin:0px; "></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;  margin:0px; "></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;  margin:0px; "></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;  margin:0px; "></div>
+
+        <div style="float:left; width:100px; height:100px; background-color: white;  margin:0px; "></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px; "></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+
+        
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;  margin:0px; "></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;  margin:0px; "></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;  margin:0px; "></div>
+        <div style="float:left; width:100px; height:100px; background-color: black;   margin:0px;"></div>
+        <div style="float:left; width:100px; height:100px; background-color: white;  margin:0px; "></div>
+
+    </DIV>
+    </center>
+</body>
+</html>

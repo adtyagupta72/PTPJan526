@@ -206,3 +206,20 @@
 // let num = 10> 15 ? "yes": "no"
 // console.log(num)
 
+        // let now = new Date()
+        //     console.log(now)
+
+        // let hour = now.getHours()
+        // let Minutes = now.getMinutes()
+        // let seconds = now.getSeconds()    
+        // console.log(hour + "-" + Minutes + "-" + seconds)
+
+
+        // console.log(now.toLocaleString())
+
+        let time = new Date()
+        let hour = time.getHours()
+        console.log(hour)
+          
+        if(hour < )
+     

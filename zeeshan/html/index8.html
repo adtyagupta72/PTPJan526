@@ -11,26 +11,43 @@
         width: 800px;
         height:700px;
         margin-top: 2%;
+         transition: transform 0.3s ease;
         
-        
+      }
+      .zee:hover{
+      transform: scale(0.88);
       }
       body{
         background-color: bisque;
       }
-      
+      .zoom-img{
+         transition: transform 3s ease-in;
+      }
      .zoom-img:hover {
-      transform: scale(2);
-  transition: transform 0.3s ease;
-}
+      transform: translateY(400px )
+      
+     
+            
+
+
+  }
 h1{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  transition: transform 0.3s ease;
+}   
+
+h1:hover{
+   transform: scale(2);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+
   </style>
 </head>
 <body >
   
   <center>
-    <h1 style="margin-top: 5%; margin-bottom: 2%;" class="zoom-img"><q>Chess Board</q></h1>
+    <h1 style="margin-top: 5%; margin-bottom: 2%;" ><q>Chess Board</q></h1>
     <img src="./3d-rendering-black-king-isolated-on-transparent-background-object-clipping-path-on-file-png.webp" width="120px" height="110px" class="zoom-img">
     <img src="./queen.webp" width="150px" height="120px" class="zoom-img">
     <img src="horse.png!w700wp" width="150px" height="120px" class="zoom-img">
@@ -103,5 +120,7 @@ h1{
  <div style=" float: left; width:12.5%; height:12.5%; margin:0% ; background-color: black; border:2px solid;"></div>
  </center>
      </DIV>
+
+     <div class="box"></div>
 </body>
 </html>

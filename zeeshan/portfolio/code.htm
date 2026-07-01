@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+    body{
+        background-color: black;
+    }
+.section1
+    {
+        background-image:url("backg.avif");
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+        
+        /* BORDER-BOTTOM:10px solid WHITE; */
+    }
+
+.section2
+    {
+      background-image:url("bacground1.jpg");
+      width: 100%;
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover; 
+      background-position: center;
+      box-shadow: 0 0 10px white;
+      
+      
+      
+    }
+
+.section3
+{
+   background-color: black;
+    width:100%;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+     box-shadow: 0 0 30px white;
+    /* BORDER-BOTTOM:10px solid WHITE; */
+    
+
+}
+.section4
+{
+    /* background-color: black;  */
+    background-image:url("img8honeyy.jpg");
+    width:100%;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    box-shadow: 0 0 20px aqua;
+    /* BORDER-BOTTOM:10px solid WHITE; */
+
+}
+
+.section5
+{
+      background-image:url("back5.jpg");
+     /* opacity: 1.2%;  */
+     background-color: black;
+    width:100%;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    box-shadow: 0 0 15px skyblue;
+    
+}
+
+section1 hover{
+     box-shadow: 0 0 30px aqua;
+}
+
+.rotate
+{
+        width:300px;
+        height:300px;
+        border-radius: 50%;
+        animation: spin 5s linear infinite;
+        transition: 0.5s; 
+           
+}
+
+@keyframes spin
+            {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+            }
+
+            img:hover
+            {
+            border: 5px solid lightskyblue;           
+            box-shadow: 0 0 30px aqua;
+            }
+
+
+
+
+   .parent1
+        { 
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+        }
+
+    .parent5
+    {
+         display:flex;
+            justify-content: center;
+            align-items: center;
+    }    
+         .child1
+        {
+            margin-right:4.5%;
+            margin-bottom: 16%;
+            
+        } 
+
+        .IMG2
+        {    
+           width:400px;
+           height:500px;
+           border:4px SOLID whitesmoke;
+           margin:15%;
+           margin-top:20%;
+        } 
+
+        .child2
+        {
+            WIDTH: 650px;
+            HEIGHT:300PX;
+            background-color:BLACK;
+            border: 8px solid;
+            margin: 12%;
+            margin-left:15%;
+        }
+
+        .parent2
+        {
+             display:flex;
+        }
+
+
+        .child2:hover
+        {
+            border: 5px solid lightskyblue;            
+            box-shadow: 0 0 30px aqua;
+        }
+
+        .child3, .child4 , .child5, .child6, .child7 , .child8
+        {
+            width:220px;
+            height:220px;
+            background-color: black;
+           border: 2px white groove;
+            margin-top:3%;
+            margin-right:5%;
+            margin-left:5%;
+            padding:10px;
+
+
+           
+        }  
+        .parent3
+        {
+            display: flex;
+            align-items: center;
+             justify-content: center;
+            
+
+        }
+        .parent4
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .parent6
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+     .child3:hover, .child4:hover , .child5:hover, .child6:hover, .child7:hover , .child8:hover
+      {
+        
+         border: 5px solid lightskyblue;            
+            box-shadow: 0 0 30px aqua;
+      }
+        
+      h4,p{
+        margin-top:2%;
+        margin-left:2%;
+        margin-right:2%;
+        margin-bottom:3%;
+        color:white;
+        align-items: center;
+      }
+     
+
+      .child9
+      {
+        width:700px;
+        height:350px;
+        background-color: black;
+        margin:10%;
+      }
+      .child9:hover{
+        border: 5px solid lightskyblue;            
+            box-shadow: 0 0 30px aqua;
+      }
+      .heading
+      {
+        font-size: 45px;
+        text-align: center;
+        padding:1%;
+        margin:0;
+        margin-bottom:0.1;
+        transition: transform 0.5s ease;
+        
+      }
+    .heading:hover
+    {
+    transform:scale(0.9);
+    color:skyblue;
+    }
+
+.tech-title {
+  color: white;
+  font-size: 33px;
+   padding:2%; 
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  transition: transform 2s ease;
+
+}
+.tech-title:hover{
+    transform : scale(1.2);
+}
+   
+details {
+  margin-bottom: 10px;
+  margin-top:40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color:black;
+  color:white;
+  font-size: larger;
+}
+li:hover
+{
+    color:aqua;
+    font-size: 30px;
+}
+header{
+    box-shadow: 0 0 20px aqua;  
+}
+ nav a {
+  color: white;
+  text-decoration: none;
+
+}
+form{
+    color:white;
+    padding:6%;
+   
+    width:550px;
+}
+fieldset{
+    box-shadow: 0 0 5px white;
+}
+fieldset:hover{
+    box-shadow: 0 0 30px rgb(33, 76, 185); 
+}
+input:hover, textarea:hover , button:hover{
+    box-shadow: 0 0 40px rgb(33, 76, 185); 
+}
+
+
+    .child11 
+    {
+        margin-right:8%;
+        margin-left:2%;
+        margin-top:0%;
+        padding-bottom:3%;
+    }
+
+    .child12
+    {
+        transition: transform 1s ease;
+        padding-top:5%;
+    }
+     .child12:hover
+     {
+        transform:scale(1.2);
+         
+     }
+
+     a:hover, h4:hover
+     {
+       color:royalblue; 
+     }
+
+</style>
+</head>
+<body>
+ <CENTER>   
+<header>
+  <nav>
+    <a href="#Aboutme">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#skill">Skills</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#education">Qualification</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#contact">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;
+  
+  </nav>
+</header>
+</CENTER>
+    
+    <main>
+        <section class="section1" >
+            <h2 class="tech-title">PORTFOLIO</h2>
+            <div class="parent1">
+                
+                    <div class="child1"><img src="technolgy.png" class="rotate"></div>
+                    </div>
+                    </section>
+                        <section class="section2" ID="Aboutme">
+                        <div class="parent2">
+                        <div> <img src="zee1.jpg" CLASS="IMG2"></div>
+                        <div class="child2">                    
+                            <h2>About Me</h2>
+                                <p style="color:white; padding:2% ; border:1px solid white;">
+                                    Hi, I'm Shahnawaz Siddiqui — <br><br>
+                                    a passionate web developer with a growing expertise in 
+                                    HTML, CSS, and JavaScript. I enjoy building clean, responsive, and interactive 
+                                    designs that bring ideas to life. <br>My focus is on creating user-friendly 
+                                    experiences while continuously learning new techniques to improve my craft.<br> 
+                                    This portfolio showcases my journey, projects, and the skills I’ve developed 
+                                    along the way.
+                                </p>
+                            </div>
+                    </div>
+        </section>
+        <section class="section3" id="skill">
+            <p class="heading">SKILLS</p>
+            <div class="parent3">                
+                <div class="child3"><h4>Core Technical Skills</h4><br><p>1.HTML (semantic structure, forms, layout)<br><br>2.CSS (flexbox, grid, transitions, transforms, hover effects, link styling, multi-column layouts)<br><br>3. Prompts, alerts, switch statements, DOM basics)</p></div>
+                <div class="child4"><h4>UI/UX Styling</h4><p>1.Responsive design (mobile-first layouts)<br><br>2.Interactive animations (hover effects, sliding transitions)<br><br>3.Custom list and link styling</p></div>
+                <div class="child5"><h4>Communication</h4><p>1.I have intermidate to strong communication skills<br>2.I have experience of presentation<br>3.Public speaking </p></div>
+            </div>
+
+            <div class="parent4">
+                <div class="child6"></div>
+                <div class="child7"></div>
+                <div class="child8"></div>
+            </div>
+        </section>
+        <section class="section4" id="education">
+            <div class="parent5">
+                <h1 style=" box-shadow: 0 0 30px aqua; color:white;">EDUCATION</h1> 
+                <DIV CLASS="child9">
+                    <details>
+                        <summary>Bachelor Degree of Computer Science(BCA)</summary>
+                         <ul type="square">
+                            <li>Lucknow University (Lucknow)</li>
+                            <li>Year of Completion - 2027</li>
+                            <li>CGPA - 8.4</li>                            
+                         </ul>
+                    </details>
+                    <details>
+                    <summary>Master Diploma in Computer Applications (MDCA) </summary>
+                    <ul type="square">
+                            <li>CLFM Acadmey (Sitapur)</li>
+                            <li>Year of Completion - 2026</li>
+                            <li>Advanced Programming (C, C++, Java, Python),
+                               Database Management (SQL, Oracle, MongoDB),
+                               Web Development (HTML, CSS, JavaScript, PHP, Bootstrap)</li>                            
+                         </ul>
+                    </details>
+
+                    <details>
+                    <summary>Masters of Computer Appliaction (MCA)</summary>
+                    <p>Completed with a focus on mathematics and computer fundamentals.</p>
+                    </details>
+                </DIV>
+        </section>
+      
+    </main>
+
+    <footer>
+          <section class="section5" id="contact">
+             <h2 style="color:white; padding:3%; padding-bottom: 0%; margin:0;">CONTACT</h2>
+             <h4 style="color:white; padding-left:2%; padding-top:0; margin-top:4px; "><a href="mailto:zeeshan6767siddiqui@gmail.com" style="color:white; text-decoration: none;">zeeshan6767siddiqui@gmail.com</a></h4>
+            <div class="parent6">
+               
+                <div class="child11">                     
+                    <form action="#" onreset='return confirm("Are you sure??")'>
+                        <fieldset>   
+                        <legend style="font-size: medium; font-family:Arial, Helvetica, sans-serif; font-weight: bolder;">Information</legend>                    
+                        <label for="name">Name:&nbsp;&nbsp;&nbsp;&nbsp;</label> 
+                        <input type="text" name="name"><br><br>
+                        <label for="add">Address:</label> 
+                        <input type="text" name="add"><br><br> 
+                        <label for="age">Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> 
+                        <input type="number" name="age"><br><br>  
+                        <label for="cont">Contact:</label> 
+                        <input type="Phone" name="cont"><br><br>    
+                        <label for="email">Enter email:</label>
+                        <input type="email" name="email"><br><br><br>
+                        <textarea cols="40" rows="12">Type here.....</textarea><br><br>
+                        <button type="submit">SEND</button>  <button type="reset">Reset</button>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div  class="child12">
+                <pre style="margin: 0%;" >
+                    <code style="color:white; font-size: x-large; margin-bottom:15%;  ">
+                        function greet()
+                        {
+                        alert("Hello, World!");
+                        }
+                        console.log(greet())
+                    </code>
+                </pre>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
