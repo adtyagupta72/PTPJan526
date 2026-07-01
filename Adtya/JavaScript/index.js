@@ -1,4 +1,4 @@
-"use strict"
+// "use strict"
 // console.log("Program Starts here------")
 // console.log("Hello There....")
 
@@ -1876,23 +1876,114 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // let testArray2 = Array(-1) 
 // console.log(testArray2.length)
 
+// let b = 10
+// try
+// {
+//     let a = b
+//     let num = 42
+//     num() 
+// } 
+// catch (error)
+// {
+//     console.log("Caught " + error)
+//     let result = error instanceof ReferenceError
+//     console.log(result)
+//     if(error instanceof ReferenceError)
+//     {
+//         console.log("This is first line which is crashing!")
+//     }
+//     else if(error instanceof TypeError)
+//     {
+//         console.log("This is the third line crashed!")
+//     }
+// }
+// console.log("We handled the exception!")
 
-try
-{
-    let a = b
-} 
-catch (error)
-{
-    console.log("Caught " + error)
-}
-console.log("We handled the exception!")
+// try 
+// {
+    
+// } 
+// catch (error) 
+// {
+//     console.log("Caught a TypeError: " + error.message)
+//     let result = error instanceof ReferenceError
+//     console.log(result)
+//     result = error instanceof TypeError
+//     console.log(result)
+// }
 
+
+// let a = 10
+// try 
+// {
+//     a = 5
+// }
+// finally 
+// {
+//     console.log("Finally executed!")
+// }
+// console.log(a) 
+
+// let a = 10
+// try 
+// {
+//     a = b 
+// } 
+// finally 
+// {
+//     console.log(a) 
+// }
+// console.log(a)
+
+// let a = 10
+// try 
+// {
+//     a = b  // ReferenceError
+// } 
+// catch (error) 
+// {
+//     console.log("An Error!") 
+// } 
+// finally 
+// {
+//     console.log("Finally!") 
+// }
+// console.log(a) 
+
+// let a = 10
+// try 
+// {
+//     a = b 
+// } 
+// catch (error) 
+// {
+//     try 
+//     {
+//    	    console.log(b)
+//     } 
+//     catch 
+//     {
+//      	console.log("Second catch!") 
+//     }
+// } 
+// finally 
+// {
+//     console.log("Finally!") 
+// }
+
+
+console.log("start")
+throw 100 
+console.log("end")
+
+
+console.log("start") 
 try 
 {
-    let num = 42
-    num() 
+    throw 100
 } 
 catch (error) 
 {
-    console.log("Caught a TypeError: " + error.message)
+    console.log(error) 
 }
+console.log("end") 
