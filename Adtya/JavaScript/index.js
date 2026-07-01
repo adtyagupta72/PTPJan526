@@ -1762,6 +1762,7 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // const handler = new DataHandler("async")
 // const boundProcess = handler.processData.bind( { data: "boundData" })
 // boundProcess() 
+// const handler2 = new DataHandler()
 
 
 // function Handler(name) 
@@ -1851,7 +1852,47 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // }
 
 
-iff(true)
-{ //-> Uncaught SyntaxError: Unexpected token '{'
-   	 console.log("true")
+// iff(true)
+// { //-> Uncaught SyntaxError: Unexpected token '{'
+//    	 console.log("true")
+// }
+
+// let a = b
+// fun()
+
+// const someConstValue = 5
+// someConstValue = 7
+
+// let someNumber = 10
+// someNumber.length()
+// let value = -1
+// if (value < 0)
+// {
+//   throw new RangeError("Value must be non-negative")
+// }
+
+// let testArray1 = Array(10)
+// console.log(testArray1.length)
+// let testArray2 = Array(-1) 
+// console.log(testArray2.length)
+
+
+try
+{
+    let a = b
+} 
+catch (error)
+{
+    console.log("Caught " + error)
+}
+console.log("We handled the exception!")
+
+try 
+{
+    let num = 42
+    num() 
+} 
+catch (error) 
+{
+    console.log("Caught a TypeError: " + error.message)
 }
