@@ -1972,18 +1972,84 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // }
 
 
-console.log("start")
-throw 100 
-console.log("end")
+// console.log("start")
+// throw 100 
+// console.log("end")
 
 
-console.log("start") 
-try 
+// console.log("start") 
+// try 
+// {
+//     throw 100
+// } 
+// catch (error) 
+// {
+//     console.log(error) 
+// }
+// console.log("end") 
+
+// function factorial(n) 
+// {
+//     if (n > 20) 
+//     {
+//         throw new RangeError("Max value 20")
+//     }
+//     let result = 1
+//     for(; n > 1; n--) 
+//     {
+//         result = result * n
+//    	}
+//     return result
+// }
+// input = 0
+// try
+// {
+//     input = 3
+//     console.log(factorial(input)) 
+//     input = 5
+//     console.log(factorial(input)) 
+//     input = 8
+//     console.log(factorial(input)) 
+//     input = 20
+//     console.log(factorial(input)) 
+//     input = 1000
+//     console.log(factorial(input)) 
+// }
+// catch(error)
+// {
+//     console.log("Error thrown for: ", input,"\n Error:", error)
+// }
+
+// function average(a, b) 
+// {
+//     return a + b / 2
+// }
+// console.log(average(2, 10))//6
+// console.log(average(5, 5)) //5
+
+
+function largest(a, b, c) 
 {
-    throw 100
-} 
-catch (error) 
-{
-    console.log(error) 
+    if (a > b && a > c) 
+    {
+        return a
+    } 
+    else if (b > a && b > c) 
+    {
+        return b
+    } 
+    else 
+    {
+        return c
+    }
 }
-console.log("end") 
+
+console.log("Before debugger")
+debugger
+console.log("After debugger")
+console.log(largest(1, 1, 2)) 
+console.log(largest(1, 2, 3)) 
+console.log(largest(3, 2, 1)) 
+console.log(largest(2, 2, 1)) 
+
+
