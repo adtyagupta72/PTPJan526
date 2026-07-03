@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Achievements</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .achievement {
+      border: 2px solid #333;
+      padding: 15px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .achievement h2 {
+      margin-bottom: 10px;
+      color: #444;
+    }
+    .achievement img, .achievement video {
+      max-width: 100%;
+      height: auto;
+    }
+    /* Smaller photo styling */
+    .achievement img {
+      max-width: 500px;   /* limit width */
+      max-height: 500px;  /* limit height */
+      width: auto;
+      height: auto;
+      border-radius: 8px; /* rounded corners */
+    }
+    /* Smaller video styling */
+    .achievement video {
+      max-width: 1000px;
+      max-height: 800px;
+      width: auto;
+      height: auto;
+      border: 2px solid #666;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="achievement">
+    <h2>Mr. Fresher 2024</h2>
+    <img src="fresher.jpg" alt="Mr Fresher Prize">
+  </div>
+
+  <div class="achievement">
+    <h2>English Topper - secured 99/100 marks</h2>
+    <img src="english.jpg" alt="English Topper">
+  </div>
+
+  <!-- <div class="achievement">
+    <h2>Hindi Topper</h2>
+    <img src="hindi-topper.jpg" alt="Hindi Topper">
+  </div> -->
+
+  <div class="achievement">
+    <h2>Modelling 1st Prize</h2>
+    <img src="modelling.jpg" alt="Modelling">
+  </div>
+
+  <div class="achievement">
+    <h2>Best Dressed Student of The Year</h2>
+    <img src="dressed.jpg" alt="Best Dressed">
+  </div>
+
+  <div class="achievement">
+    <h2>Speaking Skills</h2>
+    <video controls>
+      <source src="communication.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</body>
+</html>
