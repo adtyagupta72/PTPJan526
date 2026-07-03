@@ -27,3 +27,62 @@ for (let i = 1; i <= 10; i++) {
 // showAllContacts: the function should take one argument, the list of contacts inside the function, check if the given argument is an array
 
 // addNewContact: the function should take four arguments, a contact list and the data of the new contact, that is: name, phone, and number before adding a new contact, check if the passed argument is an array and if the new contact data have any value.
+
+let ContactList = []
+let NoofContact = Number(prompt("Enter the number of contact you want to enter:"))
+for (let i = 1; i <= NoofContact; i++) 
+{
+    let name = prompt("Enter the name: ")
+    let phone = prompt("Enter the phone no: ")
+    let email = prompt("Enter the Email: ")
+    ContactList.push({ name, phone, email })
+}
+
+function showContact(list,value)
+{
+    if(list[value] instanceof Object)
+    {
+        return list[value]
+    }
+}
+
+function showAllcontact(list)
+{
+    if(list instanceof Array)
+    {
+        for(let i=0;i<list.length;i++)
+        {
+            console.log(list[i])
+        }
+    }
+}
+
+function addNewcontact(list,v1,v2,v3)
+{
+    return list.push({v1,v2,v3})
+}
+
+while(true)
+{
+    let userChoise=prompt("1. Showcontact--\n2.ShowallContact--\n3.addnewcontact--\n4.Quit")
+    if(userChoise=="First")
+    {
+        let index=Number(prompt("Enter the index of the contact"))
+        console.log(showContact(ContactList,index))
+    }
+    else if(userChoise=="Second")
+    {
+        showAllcontact(ContactList)
+    }
+    else if(userChoise=="Third")
+    {
+        let name=prompt("Enter the name")
+        let contact=prompt("Enter the contact")
+        let email=prompt("Enter the email")
+        console.log(addNewcontact(ContactList,name,contact,email))
+    }
+    else if(userChoise=="Quit")
+    {
+        break
+    }
+}
