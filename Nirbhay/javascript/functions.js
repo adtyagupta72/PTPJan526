@@ -86,3 +86,143 @@ while(true)
         break
     }
 }
+
+// Write a JavaScript function that takes an array of numbers and returns a new array with all duplicate elements removed.
+
+function uniqueElement(arr)
+{
+    let array=arr.sort(function(a,b){
+        return a-b
+    })
+    for(let i=0;i<array.length;i++)
+    {
+        for(let j=i+1;j<array.length;j++)
+        {
+            if(array[i]==array[j])
+            {
+                array.splice(i,2)
+            }
+        }
+    }
+    return array
+}
+console.log(uniqueElement([5,4,3,2,5,6,5]))
+
+// Create a function that returns the maximum of two numbers.
+function maxNumber(num1 , num2)
+{
+    if(num1==num2)
+    {
+        return `both numbers are same`
+    }
+    else if(num1>num2)
+    {
+        return `${num1} is maximum`
+    }
+    else{
+        return `${num2} is maximum`
+    }
+}
+console.log(maxNumber(70,70))
+
+// Write a function to count down from a given number to 1 using recursion.
+function countdown(number)
+{
+    console.log(number)
+    if(number==1)
+    {
+        return
+    }
+    number--
+    countdown(number)
+}
+countdown(100)
+
+// Write an arrow function that adds 3 numbers.
+let addnumbers=(num1,num2,num3)=>{
+    return num1+num2+num3
+}
+console.log(addnumbers(10,20,30))
+
+// Write a function to return the sum of all numbers in an array.
+function sumArray(arr)
+{
+    let sum=0
+    for(let i=0;i<arr.length;i++)
+    {
+        sum=sum+arr[i]
+    }
+    return sum
+}
+console.log(sumArray([5,4,5,6,3,4]))
+
+// Write a function that returns the largest number in an array.
+function findLargest(arr)
+{
+    let largest
+    for(let i=0;i<arr.length;i++)
+    {
+        largest=arr[i]
+        for(let j=i+1;j<arr.length;j++)
+        {
+            if(arr[j]>largest)
+            {
+                largest=arr[j]
+            }
+        }
+    }
+    return largest
+}
+
+console.log(findLargest([45,23,54,76,32,65,87,43,21,43,65,87,23,32,43,456,345]))
+
+// Write a function to check if a number is prime.
+function checkprime(number)
+{
+    let isPrime=false
+    for(let i=2;i<number;i++)
+    {
+        if(number%i==0)
+        {
+            isPrime=true
+            break
+        }
+    }
+    if(isPrime)
+    {
+        return `No.is not prime`
+    }
+    else{
+        return `No. is  prime`
+    }
+}
+console.log(checkprime(19))
+
+// Write a function that returns the Fibonacci sequence up to n terms.
+function Fibonacci(n)
+{
+    for(let i=0;i<n;i++)
+    {
+
+    }
+}
+// Write a function that returns the length of a string.
+
+function length(str)
+{
+    return str.length
+}
+console.log(length("nirbhay"))
+
+// Create a function that capitalizes the first letter of a string.
+function capitalize(str)
+{
+    let arr=str.split(" ")
+    for(let i=0;i<arr.length;i++)
+    {
+        arr[i][0].toUpperCase()
+    }
+    str=arr.join(" ")
+    console.log(str)
+}
+capitalize("nirbhay kumar")
