@@ -201,11 +201,20 @@ console.log(checkprime(19))
 // Write a function that returns the Fibonacci sequence up to n terms.
 function Fibonacci(n)
 {
-    for(let i=0;i<n;i++)
+    a=0
+    b=1
+    sum=0
+    console.log(b)
+    for(let i=0;i<n-1;i++)
     {
-
+        sum=a+b
+        console.log(sum)
+        a=b
+        b=sum
     }
 }
+Fibonacci(7)
+
 // Write a function that returns the length of a string.
 
 function length(str)
@@ -220,9 +229,21 @@ function capitalize(str)
     let arr=str.split(" ")
     for(let i=0;i<arr.length;i++)
     {
-        arr[i][0].toUpperCase()
+        arr[i]=arr[i].toUpperCase()
     }
     str=arr.join(" ")
     console.log(str)
 }
 capitalize("nirbhay kumar")
+
+
+// Write a function that checks if a number is divisible by 5.
+//  Function to convert minutes to seconds.
+//  Function to count even numbers in an array.
+// Function to convert string to lowercase.
+// Function to check if a number is positive, negative, or zero.
+//  Write a  function to swap two numbers.
+// Write a  function to convert days into years, weeks, and days.
+// Function to return all odd numbers in an array.
+// Write a function that delays execution using setTimeout.
+// Write a JavaScript function that prints the numbers from 1 to a given number. But for multiples of three, print "Fizz" instead of the number, and for the multiples of five, print "Buzz". For numbers which are multiples of both three and five, print "FizzBuzz".
