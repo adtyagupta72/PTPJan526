@@ -807,3 +807,60 @@
 //     console.log(error)
 // }
 // console.log("end")
+
+
+// function factorial(n)
+// {
+//     if(n>20)
+//     {
+//         throw new RangeError("Max value 20")
+
+//     }
+//     let result = 1
+//     for(; n>1 ; n--)
+//     {
+//         result = result * n
+//     }
+//     return result
+// }
+// input = 0
+// try
+// {
+
+//     input = 3
+//     console.log(factorial(input))
+//      input = 5
+//     console.log(factorial(input))
+//      input = 8
+//     console.log(factorial(input))
+//      input = 20
+//     console.log(factorial(input))
+//      input = 1000
+//     console.log(factorial(input))
+// }
+// catch(error)
+// {
+//     console.log("Error dectected for:", input , "\n error is:", error)
+// }
+
+function largest(a,b,c)
+{
+    if(a>b && a>c)
+    {
+        return a
+    }
+    else if (b>c && b> a)
+    {
+        return b
+    }
+    else
+    {
+        return c
+    }
+}
+console.log("before debugging")
+debuggerconsole.log("after debugging")
+console.log((1,1,2))
+console.log((1,2,3))
+console.log((3,2,1))
+console.log((2,2,3))
