@@ -2028,28 +2028,39 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // console.log(average(5, 5)) //5
 
 
-function largest(a, b, c) 
-{
-    if (a > b && a > c) 
-    {
-        return a
-    } 
-    else if (b > a && b > c) 
-    {
-        return b
-    } 
-    else 
-    {
-        return c
-    }
-}
+// function largest(a, b, c) 
+// {
+//     if (a > b && a > c) 
+//     {
+//         return a
+//     } 
+//     else if (b > a && b > c) 
+//     {
+//         return b
+//     } 
+//     else 
+//     {
+//         return c
+//     }
+// }
 
-console.log("Before debugger")
-debugger
-console.log("After debugger")
-console.log(largest(1, 1, 2)) 
-console.log(largest(1, 2, 3)) 
-console.log(largest(3, 2, 1)) 
-console.log(largest(2, 2, 1)) 
+// console.log("Before debugger")
+// debugger
+// console.log("After debugger")
+// console.log(largest(1, 1, 2)) 
+// console.log(largest(1, 2, 3)) 
+// console.log(largest(3, 2, 1)) 
+// console.log(largest(2, 2, 1)) 
+
+let part = 0
+console.time('Leibniz')
+for(let k = 0; k < 10000000; k++) 
+{
+    // part = part + ((-1) ** k) / (2 * k + 1)
+    part = part + (k % 2 ? -1 : 1) / (2 * k + 1)
+}
+console.timeEnd('Leibniz')
+let pi = part * 4
+console.log(pi)
 
 
