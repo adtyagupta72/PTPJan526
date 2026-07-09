@@ -2052,15 +2052,70 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // console.log(largest(3, 2, 1)) 
 // console.log(largest(2, 2, 1)) 
 
-let part = 0
-console.time('Leibniz')
-for(let k = 0; k < 10000000; k++) 
+// let part = 0
+// console.time('Leibniz')
+// for(let k = 0; k < 10000000; k++) 
+// {
+//     // part = part + ((-1) ** k) / (2 * k + 1)
+//     part = part + (k % 2 ? -1 : 1) / (2 * k + 1)
+// }
+// console.timeEnd('Leibniz')
+// let pi = part * 4
+// console.log(pi)
+
+// console.log(typeof 2.5) 
+// console.log(typeof "one two three") 
+// console.log(typeof false)
+
+// let nr = 2.5 
+// nr = nr / 2
+// console.log(nr)
+// console.log(typeof nr)
+
+// let a = [10, 20, "en to tre", true, 50]
+// a[4] = a[4] * 2
+// console.log(a[0])  
+// console.log(a[2])  
+// console.log(a[4])  
+// console.log(a)
+// console.log(typeof a)
+
+
+// let sampleObject = 
+// {
+//     id: 10,
+//     delay: 20,
+//     name: "en to tre",
+//     isPresent: true,
+//     delay: 50
+// }
+
+// sampleObject.delay = sampleObject.delay * 2
+// console.log(sampleObject.id)   
+// console.log(sampleObject.name) 
+// console.log(sampleObject.delay) 
+// console.log(sampleObject)
+// console.log(typeof sampleObject)
+
+// function myFunction()
+// {
+//     console.log("myFunction")
+// }
+
+// console.log(myFunction)
+// console.log(typeof myFunction)
+
+
+// let contact = {}
+// contact.tel = "207-662-5412"
+// console.log(contact)
+// console.log(contact.tel)
+
+let contact = 
 {
-    // part = part + ((-1) ** k) / (2 * k + 1)
-    part = part + (k % 2 ? -1 : 1) / (2 * k + 1)
+	"first name": "Ronald"
 }
-console.timeEnd('Leibniz')
-let pi = part * 4
-console.log(pi)
+console.log(contact)
+console.log(typeof contact)
 
-
+console.log(contact["first name"])
