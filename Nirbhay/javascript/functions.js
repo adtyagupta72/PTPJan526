@@ -236,14 +236,157 @@ function capitalize(str)
 }
 capitalize("nirbhay kumar")
 
+//Next set of Questions
 
-// Write a function that checks if a number is divisible by 5.
-//  Function to convert minutes to seconds.
-//  Function to count even numbers in an array.
-// Function to convert string to lowercase.
-// Function to check if a number is positive, negative, or zero.
-//  Write a  function to swap two numbers.
+///Write a function that checks if a number is divisible by 5.
+function divisibleByFive(number)
+{
+    if(number%5==0)
+    {
+        return `${number} is divisible by 5`
+    }
+    else return "Not divisible by 5"
+}
+console.log(divisibleByFive(50))
+
+// Function to convert minutes to seconds.
+function minTosec(min)
+{
+    if(min)
+    {
+        return ` ${min}  min are equal to ${min *60} seconds`
+    }
+}
+console.log(minTosec(5))
+
+// Function to count even numbers in an array.
+function countEven(arr)
+{
+    let count=0
+    if(arr)
+    {
+        for(let i=0;i<arr.length;i++)
+        {
+            if(arr[i]%2==0)
+            {
+                count++
+            }
+        }
+        return count
+    }
+}
+console.log(countEven(["jdfh","54354ew","ty45re","4564erw"]))
+
+//Function to convert string to lowercase.
+function lowerCase(str)
+{
+    if(str)
+    {
+        let arr=str.split(" ")
+        for(let i=0;i<arr.length;i++)
+        {
+            arr[i]=arr[i].toLowerCase()
+        }
+        str=arr.join(" ")
+        console.log(str)
+    }
+}
+lowerCase("NirbhayKumar")
+
+//Function to check if a number is positive, negative, or zero.
+function checkNumber(number)
+{
+    if(number<0)
+    {
+        return `${number} is negative`
+    }
+    else if(number>0)
+    {
+        return `${number} is positive`
+    }
+    else{
+        return `number is zero`
+    }
+}
+console.log(checkNumber(0))
+
+// Write a  function to swap two numbers.
+function swap(num1,num2)
+{
+    let c=num1
+    num1=num2
+    num2=c
+    return(num1,num2)
+}
+let a=1
+let b=2
+console.log(`no. are swaped ` +swap(a,b))
+console.log(a)
+console.log(b)
+
 // Write a  function to convert days into years, weeks, and days.
-// Function to return all odd numbers in an array.
-// Write a function that delays execution using setTimeout.
+function convertDays(totalDays) {
+  const years = Math.floor(totalDays / 365)
+  const weeks = Math.floor((totalDays % 365) / 7)
+  const days = totalDays % 365 % 7
+
+  return {
+    years: years,
+    weeks: weeks,
+    days: days
+  }
+}
+
+let result = convertDays(800)
+console.log(`${result.years} years, ${result.weeks} weeks, and ${result.days} days`);
+
+//Function to return all odd numbers in an array.
+function oddNumber(arr)
+{
+    let newArr=[]
+    for(let i=0;i<arr.length;i++)
+    {
+        if(arr[i] %2!==0)
+        {
+            newArr.push(arr[i])
+        }
+    }
+    return newArr
+}
+console.log(oddNumber([4,5,6,4,3,5,6]))
+
+//Write a function that delays execution using setTimeout.
+function func()
+{
+    console.log("func is called")
+}
+function delay(gagan)
+{
+    setTimeout(gagan,2000)
+}
+delay(func)
+
 // Write a JavaScript function that prints the numbers from 1 to a given number. But for multiples of three, print "Fizz" instead of the number, and for the multiples of five, print "Buzz". For numbers which are multiples of both three and five, print "FizzBuzz".
+function printNumbers(num)
+{
+    for(let i=1;i<=num;i++)
+    {
+        if(i%3==0 && i%5==0)
+        {
+            console.log("FizzBuzz")
+        }
+        else if(i%3==0)
+        {
+            console.log("Fizz")
+        }
+        else if(i%5==0)
+        {
+            console.log("buzz")
+        }
+        else{
+            console.log(i)
+        }
+    }
+}
+
+printNumbers(20)
