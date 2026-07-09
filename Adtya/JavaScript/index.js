@@ -2111,11 +2111,38 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // console.log(contact)
 // console.log(contact.tel)
 
+// let contact = 
+// {
+// 	"first name": "Ronald",
+//     1:"one",
+//     firstName: "Adtya"
+// }
+// console.log(contact)
+// console.log(typeof contact)
+
+// console.log(contact["first name"])
+// console.log(contact[1])
+// console.log(contact.firstName)
+// console.log(contact["firstName"])
+// let key = "firstName"
+// console.log(contact[key])
+// console.log(contact.key)
+
 let contact = 
 {
-	"first name": "Ronald"
+    email_1: "RonaldSMurphy@freepost.org",
+    email_2: "rsmurphy@briazz.com"
+}
+for(i=1; i<=5; i++) 
+{
+    let key = "email_" + i
+    if(key in contact)
+        console.log(key+"=>"+contact[key])
+    else
+    {
+        console.log(key+", is not present in the object!")
+        contact[key] = "something@some.thing"
+    }
 }
 console.log(contact)
-console.log(typeof contact)
 
-console.log(contact["first name"])
