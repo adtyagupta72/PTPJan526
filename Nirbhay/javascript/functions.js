@@ -440,3 +440,94 @@ function div(arr)
 }
 
 div([3, 4, 0, 5, 23, 0, 5345, 21, 0])
+
+//Practice Questions:
+// Write code to throw an error if a number is negative.
+let number=0
+try{
+    if(number<0)
+    {
+        throw RangeError("No. is less than 0")
+    }
+    else{
+        console.log(number)
+    }
+}
+catch(error)
+{
+    console.log(error.message)
+}
+// Write a function that takes a number and throws an error if it is not even.
+function onlyEven(number)
+{
+    try{
+        if(number%2!==0)
+        {
+            throw Error("No. is not even")
+        }
+    }
+    catch(error)
+    {
+        console.log(error.message)
+    }
+}
+onlyEven(7)
+
+// Create a calculator function that throws error on division by 0.
+function calculator(num1,num2,operator)
+{
+    switch (operator)
+    {
+        case "+":
+            console.log(num1+num2)
+            break
+        case "-":
+            console.log(num1-num2)
+            break
+        case "*":
+            console.log(num1*num2)
+            break
+        case "/":
+            try{
+                if(num2!==0)
+                {
+                    console.log(num1/num2)
+                }
+                else
+                {
+                    throw RangeError("Division by 0 not possible")
+                }
+            }
+            catch(error)
+            {
+                console.log(error.message)
+            }
+        break
+        default:
+    }
+}
+calculator(833672630,90000,"/")
+// Write code to validate that input is a number using custom error.
+let userId=prompt("Enter the ID")
+try{
+    if(userId instanceof Number)
+    {
+        throw Error("Input is a number pls enter the id")
+    }
+}
+catch(error)
+{
+    console.log(error.message)
+}
+//// Write code to validate user age. Throw an error if not between 0–100.
+let userAge=Number(prompt("Enter the age"))
+try{
+    if(userAge<0 || userAge>100)
+    {
+        throw RangeError("Pls enter the value between 0 and 100")
+    }
+}
+catch(error)
+{
+    console.log(error.message)
+}
