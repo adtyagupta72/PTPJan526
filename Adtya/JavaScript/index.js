@@ -2128,21 +2128,113 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // console.log(contact[key])
 // console.log(contact.key)
 
-let contact = 
+// let contact = 
+// {
+//     email_1: "RonaldSMurphy@freepost.org",
+//     email_2: "rsmurphy@briazz.com"
+// }
+// for(i=1; i<=5; i++) 
+// {
+//     let key = "email_" + i
+//     if(key in contact)
+//         console.log(key+"=>"+contact[key])
+//     else
+//     {
+//         console.log(key+", is not present in the object!")
+//         contact[key] = "something@some.thing"
+//     }
+// }
+// console.log(contact)
+
+
+// let test = 
+// {
+//     nr: 10, 
+//     b: false, 
+//     str: "uno dos tres", 
+//     arr: [10, 20, 30], 
+//     obj: {
+//         x: 10, 
+//         y: 20
+//         }, 
+//     fn: function(arg) {console.log(arg)} 
+// }
+// test.fn(123)
+// console.log("Number:", test.nr)
+// console.log("Boolean:", test.b)
+// console.log("String:", test.str)
+// console.log("Array:", test.arr)
+// console.log("Array:", test.arr[0])
+// console.log("Array:", test.arr[1])
+// console.log("Array:", test.arr[2])
+// console.log("Object:", test.obj)
+// console.log("Object:", test.obj.x)
+// console.log("Object:", test.obj.y)
+// console.log("Object:", test.fn)
+
+let point = 
 {
-    email_1: "RonaldSMurphy@freepost.org",
-    email_2: "rsmurphy@briazz.com"
-}
-for(i=1; i<=5; i++) 
-{
-    let key = "email_" + i
-    if(key in contact)
-        console.log(key+"=>"+contact[key])
-    else
+    x: 0,
+    y: 0,
+    otherMatrics:{
+        distance: 0,
+        focus:0
+    },
+    moveHorizontally: function(distance) 
     {
-        console.log(key+", is not present in the object!")
-        contact[key] = "something@some.thing"
+        this.x = this.x + distance
+    },
+    moveVertically: function(distance) 
+    {
+        this.y = this.y + distance
+    },
+    getCurrentPosition: function()
+    {
+        console.log("X: ", this.x)
+        console.log("Y: ", this.y)
     }
 }
-console.log(contact)
 
+point.x = 10
+point.y = 20
+point.getCurrentPosition()
+point.moveHorizontally(30)
+point.getCurrentPosition()
+point.moveVertically(20)
+point.getCurrentPosition()
+
+point.distance = point.x - point.y
+console.log("Point: ", point)
+point.distance = "0"
+console.log("Point: ", point)
+checkProperty("distance")
+delete point.distance
+console.log("Point: ", point)
+point.x = undefined
+checkProperty("x")
+// checkProperty(x)
+checkProperty("distance")
+
+console.log("Hello".includes("ll"))
+// console.log(point.includes("x"))
+
+function checkProperty(property)
+{
+    if(property in point)
+    {
+        console.log(property+" is present")
+    }
+    else
+        console.log(property+" is not present here!")
+}
+
+console.log("point.z: ", point.z)
+// console.log("point.otherMatrics.area: ", point.otherMatrics1.area)
+// if(point && point.otherMatrics1) 
+// {
+//     console.log(point.otherMatrics1.area)
+// }
+// else
+//     console.log("Not possible to access otherMatrics1")
+
+point && point.otherMatrics && console.log(point.otherMatrics.area)
