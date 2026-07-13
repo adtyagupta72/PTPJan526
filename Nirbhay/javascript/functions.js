@@ -531,3 +531,68 @@ catch(error)
 {
     console.log(error.message)
 }
+// Assignment Questions:
+
+//  Create a function that accepts two inputs and throws a TypeError if either is not a number.
+function checkNumber(num1,num2)
+{
+    try{
+        if(!((typeof num1=='number') && (typeof num2=='number')))
+        {
+            throw TypeError("Num is not a number")
+        }
+        else return num1+num2
+    }
+    catch(error)
+    {
+        console.log(error.message)
+    }
+}
+console.log(checkNumber(35,"64"))
+
+//  Write a function safeDivide(a, b) that returns null if an error occurs.
+function safeDivide(a,b)
+{
+    try{
+        if(b==0)
+        {
+            throw Error("null")
+        }
+        else {
+            return a/b
+        }
+    }
+    catch(error)
+    {
+        return error.message
+    }
+}
+console.log(safeDivide(387463746,975345897))
+
+// How do you throw a ReferenceError manually?
+//throw new ReferenceError("myVariable is not defined")
+
+//// Create a validator that checks an object has keys name and email, or throws an error.
+function validator(obj,key1,key2)
+{
+    try{
+        if(key1 in obj && key2 in obj)
+        {
+            return "key included"
+        }else{
+            throw Error("key is not included")
+        }
+    }
+    catch(error)
+    {
+        console.log(error.message)
+    }
+}
+let user={
+    "name":"Nirbhay",
+    "email":"nirbhaykumarstp59@gmail.com"
+}
+console.log(validator(user,"name","age"))
+
+//// How can you catch multiple possible error types in try...catch?
+// We can use if else blocks for different types of error and catch that error accordingly in catch block.
