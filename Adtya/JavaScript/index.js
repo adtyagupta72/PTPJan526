@@ -2172,69 +2172,147 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // console.log("Object:", test.obj.y)
 // console.log("Object:", test.fn)
 
-let point = 
-{
-    x: 0,
-    y: 0,
-    otherMatrics:{
-        distance: 0,
-        focus:0
-    },
-    moveHorizontally: function(distance) 
-    {
-        this.x = this.x + distance
-    },
-    moveVertically: function(distance) 
-    {
-        this.y = this.y + distance
-    },
-    getCurrentPosition: function()
-    {
-        console.log("X: ", this.x)
-        console.log("Y: ", this.y)
-    }
-}
-
-point.x = 10
-point.y = 20
-point.getCurrentPosition()
-point.moveHorizontally(30)
-point.getCurrentPosition()
-point.moveVertically(20)
-point.getCurrentPosition()
-
-point.distance = point.x - point.y
-console.log("Point: ", point)
-point.distance = "0"
-console.log("Point: ", point)
-checkProperty("distance")
-delete point.distance
-console.log("Point: ", point)
-point.x = undefined
-checkProperty("x")
-// checkProperty(x)
-checkProperty("distance")
-
-console.log("Hello".includes("ll"))
-// console.log(point.includes("x"))
-
-function checkProperty(property)
-{
-    if(property in point)
-    {
-        console.log(property+" is present")
-    }
-    else
-        console.log(property+" is not present here!")
-}
-
-console.log("point.z: ", point.z)
-// console.log("point.otherMatrics.area: ", point.otherMatrics1.area)
-// if(point && point.otherMatrics1) 
+// let point = 
 // {
-//     console.log(point.otherMatrics1.area)
+//     x: 0,
+//     y: 0,
+//     otherMatrics:{
+//         distance: 0,
+//         focus:0
+//     },
+//     moveHorizontally: function(distance) 
+//     {
+//         this.x = this.x + distance
+//     },
+//     moveVertically: function(distance) 
+//     {
+//         this.y = this.y + distance
+//     },
+//     getCurrentPosition: function()
+//     {
+//         console.log("X: ", this.x)
+//         console.log("Y: ", this.y)
+//     }
 // }
-// else
-//     console.log("Not possible to access otherMatrics1")
 
-point && point.otherMatrics && console.log(point.otherMatrics.area)
+// point.x = 10
+// point.y = 20
+// point.getCurrentPosition()
+// point.moveHorizontally(30)
+// point.getCurrentPosition()
+// point.moveVertically(20)
+// point.getCurrentPosition()
+
+// point.distance = point.x - point.y
+// console.log("Point: ", point)
+// point.distance = "0"
+// console.log("Point: ", point)
+// checkProperty("distance")
+// delete point.distance
+// console.log("Point: ", point)
+// point.x = undefined
+// checkProperty("x")
+// // checkProperty(x)
+// checkProperty("distance")
+
+// console.log("Hello".includes("ll"))
+// // console.log(point.includes("x"))
+
+// function checkProperty(property)
+// {
+//     if(property in point)
+//     {
+//         console.log(property+" is present")
+//     }
+//     else
+//         console.log(property+" is not present here!")
+// }
+
+// console.log("point.z: ", point.z)
+// // console.log("point.otherMatrics.area: ", point.otherMatrics1.area)
+// // if(point && point.otherMatrics1) 
+// // {
+// //     console.log(point.otherMatrics1.area)
+// // }
+// // else
+// //     console.log("Not possible to access otherMatrics1")
+
+// point && point.otherMatrics && console.log(point.otherMatrics.area)
+
+// let contact = 
+// {
+//     tel: "207-662-5412",
+//     email: "RonaldSMurphy@freepost.org"
+// }
+// for(key in contact) 
+// {
+//     // print property name
+// //    console.log(key)  
+//     console.log("contact."+key+"="+contact[key])
+// }
+// console.log(Object.keys(contact))
+
+// const contact = {}
+// // contact = {
+// //     tel: "207-662-5412",
+// //     email: "RonaldSMurphy@freepost.org"
+// // }
+
+// contact.tel = "207-662-5412"
+// contact.email = "RonaldSMurphy@freepost.org"
+// console.log(contact)
+
+// var point1 = {x: 10, y: 20}
+// var point2 = {x: 10, y: 20}
+// console.log(point1 === point2)
+// console.log(point1 == point2)
+// point1 = point2
+// console.log(point1 === point2)
+// console.log(point1 == point2)
+// console.log("point1 = ", point1)
+// console.log("point2 = ", point2)
+// point1.z = 30
+// console.log("point1 = ", point1)
+// console.log("point2 = ", point2)
+
+// var point = {
+//     x: 10,
+//     y: 20,
+//     metrics: {
+//         area: 0,
+//         x:0,
+//         y:0
+//     }
+// }
+
+let point0 = {x:10, y: 20 }
+let point1 = point0    // copy reference
+let point2 = {}
+Object.assign(point2, point0, {})  //  copy properties into the new object
+//, metrics: {area: 0,x:0,y:0}
+console.log(point2)
+// console.log(point2.y)
+console.log(point1 === point0) // true
+console.log(point1 === point2) // false
+console.log(point0 === point2)
+//  ... -> spreader operator used to spread the contet of a complex data type
+
+let array = [11, 21, 31, 41, 51]
+let object = {
+    a: 1,
+    b: 2,
+    c: 3
+}
+
+myFun(...array, 22, 33)
+
+function myFun(a, b, c, d, e, f = 1, g = 2)
+{
+    console.log("a:", a)
+    console.log("b:", b)
+    console.log("c:", c)
+    console.log("d:", d)
+    console.log("e:", e)
+    console.log("f:", f)
+    console.log("g:", g)
+}
