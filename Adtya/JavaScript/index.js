@@ -2285,34 +2285,35 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 //     }
 // }
 
-let point0 = {x:10, y: 20 }
-let point1 = point0    // copy reference
-let point2 = {}
-Object.assign(point2, point0, {})  //  copy properties into the new object
-//, metrics: {area: 0,x:0,y:0}
-console.log(point2)
-// console.log(point2.y)
-console.log(point1 === point0) // true
-console.log(point1 === point2) // false
-console.log(point0 === point2)
-//  ... -> spreader operator used to spread the contet of a complex data type
+// let point0 = {x:10, y: 20 }
+// let point1 = point0    // copy reference
+// let point2 = {}
+// Object.assign(point2, point0, {})  //  copy properties into the new object
+// //, metrics: {area: 0,x:0,y:0}
+// console.log(point2)
+// // console.log(point2.y)
+// console.log(point1 === point0) // true
+// console.log(point1 === point2) // false
+// console.log(point0 === point2)
+// //  ... -> spreader operator used to spread the contet of a complex data type
 
-let array = [11, 21, 31, 41, 51]
-let object = {
-    a: 1,
-    b: 2,
-    c: 3
-}
+// let array = [11, 21, 31, 41, 51]
+// let object = {
+//     a: 1,
+//     b: 2,
+//     c: 3
+// }
 
-myFun(...array, 22, 33)
+// myFun(...array, 22, 33)
 
-function myFun(a, b, c, d, e, f = 1, g = 2)
-{
-    console.log("a:", a)
-    console.log("b:", b)
-    console.log("c:", c)
-    console.log("d:", d)
-    console.log("e:", e)
-    console.log("f:", f)
-    console.log("g:", g)
-}
+// function myFun(a, b, c, d, e, f = 1, g = 2)
+// {
+//     console.log("a:", a)
+//     console.log("b:", b)
+//     console.log("c:", c)
+//     console.log("d:", d)
+//     console.log("e:", e)
+//     console.log("f:", f)
+//     console.log("g:", g)
+// }
+

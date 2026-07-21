@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Todo App</title>
+    <!-- <link rel='stylesheet' href='main.css'> -->
+     <script>
+
+        var todoList = []
+
+        function addTodo()
+        {
+            // console.log("addTodo")
+            let newTodoTitle = document.getElementById("newTodoInput").value
+            // console.log("newTodoTitle:", newTodoTitle)
+            todoList.push({
+                id: todoList.length+1 ,
+                title: newTodoTitle
+            })
+            // console.log("todoList:", todoList)
+            updateFrontend()
+        }
+
+        function updateFrontend()
+        {
+            let todoListElement = document.getElementById("todoListElement")
+            todoListElement.innerHTML = ""
+            for(index in todoList)
+            {
+                // console.log("element:", todoList[index])
+                todoListElement.innerHTML += "<li onclick='todoClicked("+todoList[index].id+")'>"+todoList[index].title+"</li>"
+            }
+        }
+
+        function todoClicked(id)
+        {
+            console.log("todoClicked:", id)
+            //update work based id
+        }
+
+     </script>
+</head>
+<body>
+    <div>
+        <input id="newTodoInput" type="text" placeholder="Enter Todo Title here..."/>
+        <br/>
+        <button onclick="addTodo()">Add Todo</button>
+        <ul id="todoListElement">
+            <!-- <li>Todo 1</li>
+            <li>Todo 2</li>
+            <li>Todo 3</li> -->
+            <!-- <li onclick="todoClicked()">Todo 1</li> -->
+        </ul>
+    </div>
+</body>
+</html>
