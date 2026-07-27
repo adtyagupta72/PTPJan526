@@ -2317,3 +2317,55 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 //     console.log("g:", g)
 // }
 
+
+// let point0 = {
+//     x:10, 
+//     y:20 
+// }
+// let point2 = { ...point0}
+// let point3 = { ...point0, z: 100}
+// console.log("Point0: ", point0)
+// console.log("Point2: ", point2)
+// console.log(point0 === point2)
+// point2 = point0
+// console.log(point0 === point2)
+// console.log("Point3: ", point3)
+// let point4 = { ...point3, ...{z: 200, color: "red"}}
+// console.log("point4:", point4)
+// point4 = { ...point3, z: 200, color: "red"}
+// console.log("point4:", point4)
+
+let circle1 = 
+{
+  radius: 100,
+  center: {
+    x: 100,
+    y: 100
+  }
+}
+
+// let circle2 = { ...circle1 } // Shallow copy
+
+// circle1.radius = 200
+// circle1.center.x = 200
+// console.log(circle2.radius)      // 100 – primitive value is copied
+// console.log(circle2.center.x)   // 200 – because center is a reference
+// console.log(circle1 === circle2)          // false – different top-level objects
+// console.log(circle1.center === circle2.center) // true – same nested object reference	
+
+let deepClone = function(obj) 
+{
+    let newObj = {...obj}
+    for(property in newObj) 
+    {
+        if(typeof newObj[property] === "object") 
+        {
+            newObj[property] = deepClone(newObj[property])
+        }
+    }
+    return newObj
+}
+let circleCopy = deepClone(circle1)
+
+console.log("circleCopy === circle1: ", circleCopy === circle1)
+console.log("circleCopy.center === circle1.center: ", circleCopy.center === circle1.center)
