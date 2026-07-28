@@ -2378,10 +2378,23 @@ let circle =
         x:0,
         y:0
     },
-    getType: function() 
+    // getType: function() 
+    // {
+    //    	return "circle"
+ 	// }
+    getType()
     {
-       	return "circle"
- 	}
+        // console.log(this.radius)
+        // return "circle"
+        return (typeof this.radius === "number") ? "circle" : "unknown"
+	}
 }
 
-console.log("Method Calling: ", circle.getType())
+// console.log("Method Calling: ", circle.getType())
+// console.log("Method Calling: ", circle["getType"])
+// console.log("Method Calling: ", circle["getType"]())
+console.log(circle.getType())
+let figure = {...circle}
+delete circle.radius
+console.log(figure.radius)
+console.log(figure.getType())
