@@ -2335,14 +2335,14 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // point4 = { ...point3, z: 200, color: "red"}
 // console.log("point4:", point4)
 
-let circle1 = 
-{
-  radius: 100,
-  center: {
-    x: 100,
-    y: 100
-  }
-}
+// let circle1 = 
+// {
+//   radius: 100,
+//   center: {
+//     x: 100,
+//     y: 100
+//   }
+// }
 
 // let circle2 = { ...circle1 } // Shallow copy
 
@@ -2353,19 +2353,35 @@ let circle1 =
 // console.log(circle1 === circle2)          // false – different top-level objects
 // console.log(circle1.center === circle2.center) // true – same nested object reference	
 
-let deepClone = function(obj) 
-{
-    let newObj = {...obj}
-    for(property in newObj) 
-    {
-        if(typeof newObj[property] === "object") 
-        {
-            newObj[property] = deepClone(newObj[property])
-        }
-    }
-    return newObj
-}
-let circleCopy = deepClone(circle1)
+// let deepClone = function(obj) 
+// {
+//     let newObj = {...obj}
+//     for(property in newObj) 
+//     {
+//         if(typeof newObj[property] === "object") 
+//         {
+//             newObj[property] = deepClone(newObj[property])
+//         }
+//     }
+//     return newObj
+// }
+// let circleCopy = deepClone(circle1)
 
-console.log("circleCopy === circle1: ", circleCopy === circle1)
-console.log("circleCopy.center === circle1.center: ", circleCopy.center === circle1.center)
+// console.log("circleCopy === circle1: ", circleCopy === circle1)
+// console.log("circleCopy.center === circle1.center: ", circleCopy.center === circle1.center)
+
+let circle = 
+{
+    radius: 100,
+    center: 
+    {
+        x:0,
+        y:0
+    },
+    getType: function() 
+    {
+       	return "circle"
+ 	}
+}
+
+console.log("Method Calling: ", circle.getType())
