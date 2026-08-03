@@ -2493,5 +2493,31 @@ let contact =
 console.log(contact.fullName)
 contact.age = -20
 console.log(contact.age)
-contact.age = 20
-console.log(contact.age)
+// contact.age = 20
+// console.log(contact.age)
+
+console.log(Object.getOwnPropertyDescriptor(contact, "firstName"))
+console.log("-------------")
+for(key in contact)
+{
+    console.log(key+"->"+contact[key])
+}
+console.log("-------------")
+Object.defineProperty(contact, "_age", {
+    value: 36,
+    writable: true,
+    enumerable: false,
+    configurable: true
+})
+Object.defineProperty(contact, "firstName", {
+    value: "David",
+    writable: true,
+    enumerable: false,
+    configurable: true
+})
+for(key in contact)
+{
+    console.log(key+"->"+contact[key])
+}
+console.log("-------------")
+console.log("Age: ", contact.age)
