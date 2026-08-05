@@ -2490,34 +2490,48 @@ let contact =
             this._age = a
     }
 }
-console.log(contact.fullName)
-contact.age = -20
-console.log(contact.age)
-// contact.age = 20
+// console.log(contact.fullName)
+// contact.age = -20
 // console.log(contact.age)
+// // contact.age = 20
+// // console.log(contact.age)
 
-console.log(Object.getOwnPropertyDescriptor(contact, "firstName"))
-console.log("-------------")
-for(key in contact)
+// console.log(Object.getOwnPropertyDescriptor(contact, "firstName"))
+// console.log("-------------")
+// for(key in contact)
+// {
+//     console.log(key+"->"+contact[key])
+// }
+// console.log("-------------")
+// Object.defineProperty(contact, "_age", {
+//     value: 36,
+//     writable: true,
+//     enumerable: false,
+//     configurable: true
+// })
+// Object.defineProperty(contact, "firstName", {
+//     value: "David",
+//     writable: true,
+//     enumerable: false,
+//     configurable: true
+// })
+// for(key in contact)
+// {
+//     console.log(key+"->"+contact[key])
+// }
+// console.log("-------------")
+// console.log("Age: ", contact.age)
+
+Object.defineProperty(contact, "_age", 
 {
-    console.log(key+"->"+contact[key])
-}
-console.log("-------------")
-Object.defineProperty(contact, "_age", {
-    value: 36,
-    writable: true,
+    value: contact._age,
+    writable: false,
     enumerable: false,
     configurable: true
 })
-Object.defineProperty(contact, "firstName", {
-    value: "David",
-    writable: true,
-    enumerable: false,
-    configurable: true
-})
-for(key in contact)
-{
-    console.log(key+"->"+contact[key])
-}
-console.log("-------------")
-console.log("Age: ", contact.age)
+console.log(contact)
+console.log(contact._age)
+contact._age = 100
+contact.age = 100
+console.log(contact._age)
+console.log(contact)
