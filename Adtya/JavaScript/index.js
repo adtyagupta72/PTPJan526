@@ -2471,25 +2471,25 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // contact.email = "RonaldSMurphy@freepost.org"
 // console.log(contact.email)
 
-let contact = 
-{
-    _age: 36,
-    firstName : "David",
-    lastName : "Taylor",
-    get fullName() 
-    {
-        return `${this.firstName} ${this.lastName}`
-    },
-    get age() 
-    { 
-        return this._age
-    },
-    set age(a) 
-    { 
-        if(a > 0) 
-            this._age = a
-    }
-}
+// let contact = 
+// {
+//     _age: 36,
+//     firstName : "David",
+//     lastName : "Taylor",
+//     get fullName() 
+//     {
+//         return `${this.firstName} ${this.lastName}`
+//     },
+//     get age() 
+//     { 
+//         return this._age
+//     },
+//     set age(a) 
+//     { 
+//         if(a > 0) 
+//             this._age = a
+//     }
+// }
 // console.log(contact.fullName)
 // contact.age = -20
 // console.log(contact.age)
@@ -2522,16 +2522,79 @@ let contact =
 // console.log("-------------")
 // console.log("Age: ", contact.age)
 
-Object.defineProperty(contact, "_age", 
+// Object.defineProperty(contact, "_age", 
+// {
+//     value: contact._age,
+//     writable: false,
+//     enumerable: false,
+//     configurable: true
+// })
+// console.log(contact)
+// console.log(contact._age)
+// contact._age = 100
+// contact.age = 100
+// console.log(contact._age)
+// console.log(contact)
+
+// let enumKeys = Object.keys(contact)
+// let allKeys = Object.getOwnPropertyNames(contact)
+// console.log("enumKeys: ", enumKeys)
+// console.log("allKeys: ", allKeys)
+
+// // Object.preventExtensions(contact)
+// contact.gender = "M"
+// console.log(contact)
+
+// // Object.seal(contact)
+// delete contact.gender
+// contact.contactNumber = 9876543210
+// console.log(contact)
+
+// // Object.freeze(contact)
+// contact.contactNumber = 10000000
+// console.log(contact)
+
+// let createPoint  = function(x, y) 
+// {
+//     let obj = {}
+//     obj.x = x
+//     obj.y = y
+//     return obj
+// }
+// let createPoint  = function(x, y) 
+// {
+//     return 
+//     {
+//         x,
+//         y
+//     }
+// }
+
+// let createPoint  = (x, y) => ({x, y})
+// //Factory Function
+// let point1 = createPoint(1,1)
+// let point2 = createPoint(2,2)
+// console.log(point1.x) // ->  1
+// console.log(point2.x) // -> 2
+// console.log("point1: ", point1)
+// console.log("point2: ", point2)
+
+let createColoredPoint  = function(x, y, color) 
 {
-    value: contact._age,
-    writable: false,
-    enumerable: false,
-    configurable: true
-})
-console.log(contact)
-console.log(contact._age)
-contact._age = 100
-contact.age = 100
-console.log(contact._age)
-console.log(contact)
+    let _info = "... object under construction"
+    let _color = color
+    console.log(_info)
+    return {
+        x,
+        y,
+        getColor() 
+        {
+            return _color
+        }
+    }
+}
+let coloredPoint1 = createColoredPoint (1, 1, "red")
+let coloredPoint2 = createColoredPoint (2, 2, "green")
+console.log(coloredPoint1.getColor())
+console.log(coloredPoint2.getColor())
+console.log(coloredPoint1._color)
