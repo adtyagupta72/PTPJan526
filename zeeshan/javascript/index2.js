@@ -843,24 +843,553 @@
 //     console.log("Error dectected for:", input , "\n error is:", error)
 // }
 
-function largest(a,b,c)
+// function largest(a,b,c)
+// {
+//     if(a>b && a>c)
+//     {
+//         return a
+//     }
+//     else if (b>c && b> a)
+//     {
+//         return b
+//     }
+//     else
+//     {
+//         return c
+//     }
+// }
+// console.log("before debugging")
+// debuggerconsole.log("after debugging")
+// console.log((1,1,2))
+// console.log((1,2,3))
+// console.log((3,2,1))
+// console.log((2,2,3))
+
+// console.time()
+// console.log("test console")
+// for(let count = 0 ; count <999999999; count++)
+// {
+//     let a = 10
+//     let b = 20
+//     let c = a+b
+// }
+// console.timeEnd()
+
+// let part = 0
+// console.log("lebinitz")
+// for ( let k = 0 ; k < 10000000; k++)
+// {
+//     // part = part + ((-1) ** k) /( 2*k+1)
+//     part = part + (k % 2? -1 : 1) / (2* k + 1)
+// }
+// console.timeEnd("lebinitz")
+// let pi = part *4
+// console.log(pi)
+
+// let contact = {}
+// contact.tel = "23415627"
+// console.log(contact.tel)
+// console.log(contact)
+
+// let cont = 
+//  {
+//      "first name" : "zeeshan",
+//         1 :"one",
+//         lastname : "siddiqui"
+//  }
+//  console.log(cont)
+//  console.log(cont["first name"])
+// console.log(cont[1])
+// console.log(cont.lastname)
+// console.log(cont["lastname"])
+// let name = "lastname"
+// console.log(cont.name)
+// console.log(cont[name])
+
+// let contact =
+// {
+//     email_1 :"Ronald@gmail.com",
+//      email_2 :"zeeshan@gmail.com"
+// }
+// for (let i = 1 ; i <= 5 ; i++)
+// {
+//     let key = "email_" + i
+//     if(key in contact)
+//     {
+//         console.log(key + "=>" + contact[key])
+//     }
+//     else{
+//           console.log(key+ "somthing")
+//           contact[key] = "something"
+//     }
+// }
+// console.log(contact)
+ 
+// let test= {
+//     nr : 10 ,
+//     b: false ,
+//     str : "hiii",
+//     arr:[23,14,11],
+//     obj:{
+//         x:20,
+//         y:30
+//     },
+//     fn: function(arg) {console.log(arg)}
+
+// }
+
+// console.log("number", test.nr)
+// console.log("bool", test.b)
+// console.log("string", test.str)
+// console.log("array", test.arr)
+// console.log("number", test.arr[0])
+// console.log("number", testarr.[1])
+// console.log("number", test.arr[2])
+// console.log("number", test.obj)
+// console.log("number", test.obj.x)
+// console.log("number", test.obj.y)
+// console.log("func", test.obj.fn)
+
+
+// let point =
+// {
+//     x : 0,
+//     y : 0,
+//     horizontal : function(distance)
+//     {
+//         this.x = this.x + distance
+//     },
+//     vertical : function(distance)
+//     {
+//         this.y = this.y + distance
+//     },
+//     getCurrent : function()
+//     {
+//         console.log("X: ", this.x)
+//         console.log("Y: ", this.y)
+//     }
+
+// }
+
+// point.x = 10
+// point.y = 20
+// point.getCurrent()
+// point.horizontal(30)
+// point.getCurrent()
+// point.vertical(20)
+// point.getCurrent()
+
+// point.distance = point.x - point.y
+// console.log("point: ", point)
+// checkproperty("distance")
+// point.distance = "0"
+// console.log("POint:" , point)
+
+// function checkproperty(property)
+// {
+//     if(property in point)
+//     {
+//         console.log(property ,"is present")
+//     }
+//     else
+//         {
+//           console.log(property ,"is not present")
+//     }
+// }
+
+
+// if(point && point.otherMatrics)
+// {
+//     console.log(point.otherMatrics.area)
+// }
+// else
+//     console.log("mot possible to access other matricss")
+
+// function temp(temperatures)
+// {
+//     let sum = 0 ;
+//     for(let i = 0 ; i < temperatures.length; i++)
+//     {
+//         sum += temperatures[i]
+//     }
+//      console.log(sum/temperatures.length)
+
+// }
+
+// day1 = [5,5,10,20,10]
+// temp(day1)
+
+// function name(str)
+// {
+   
+//     for(let i=0;i<str.length;i++)
+//     {
+//      console.log(str[i])
+        
+//     }
+    
+// }
+// name("zeeshan")
+
+// function name(str)
+// {
+   
+//     for(let i=0;i<str.length;i++)
+//     {
+//      result+=(str[i])
+        
+//     }
+    
+// }
+// name("zeeshan")
+
+
+// const obj = 
+// {
+//     tel : 35267364784 ,
+//     email : "ZEEshan@gmail.com"
+// }
+// for (key in obj)
+// {
+// console.log("contact"+ key + "=" + obj[key])
+// }
+
+// console.log(Object.keys(obj))
+
+// obj.add = "Sitapur"
+// obj.name = "zeeshan"
+// console.log(obj)
+
+// var point1 = {x:10 ,y : 20}
+// var point2 = {x:10 ,y : 20}
+// console.log(point1 === point2)
+// console.log(point1 == point2)
+// point1 = point2
+// console.log(point1 === point2)
+// console.log(point1 == point2)
+// console.log(point1)
+// console.log(point2)
+// point1.z= 30
+// console.log(point1)
+// console.log(point2)
+
+// let point0 = {x:10 , y:20}
+// let point1 = point0
+// let point2 = {}
+// Object.assign(point2 , point0 , {z:300})
+// console.log(point2.x)
+// console.log(point2.y)
+// console.log(point2.z)
+// console.log(point1 === point2)
+// console.log(point2 === point0)
+// console.log(point1 === point0)
+// console.log(point1)
+// console.log(point2)
+// console.log(point0)
+
+// let array = [11,21,23,34,45]
+// let obj = {
+//     a : 1 ,
+//     b : 2 ,
+//     c : 3
+// }
+//  myFun(...array)
+//  function myFun(a,b,c,d,e)
+//  {
+//     console.log(a)
+//       console.log(b)
+//         console.log(c)
+//           console.log(d)
+//             console.log(e)
+// }
+// let name = "zeeshan"
+// function greet()
+// {
+//   console.log("hello, whatsup?")
+// }
+// greet()
+
+// let point0 = {
+//     x : 10,
+//     y: 20
+// }
+//  let point2 =
+//  {
+//     ...point0
+//  }
+
+//  let point3 = 
+//  {
+//     ...point0 , z : 100
+//  }
+
+//  console.log("point0", point0)
+//   console.log("point2", point2)
+//   console.log(point0 === point2)
+//   point2 = point0
+//   console.log(point0 === point2)
+//   console.log("point3", point3)
+//   let point4 = {...point3, z:200 ,color:red}
+//   console.log("point4" , point4)
+
+// let circle1 = 
+// {
+//     radius : 100,
+//     center=
+//     {
+//         x : 100 ,
+//         y : 200
+//     }
+
+
+// }
+
+// let circle2 = {...circle1}
+// circle1.radius = 200
+// circle1.center.x = 200
+// console.log(circle2.radius)
+// console.log(circle2.center.x )
+// console.log(circle1 === circle2)
+// console.log(circle1.center === circle2)
+
+// let deepClone = function(obj)
+// {
+//     let newOBJ = {...obj}
+//     for(property in newObj)
+//     {
+//         if(typeof newOBJ[property] === "object")
+//         {
+//             newOBJ[property] = deepClone(newOBJ[property])
+//         }
+//     }
+//     return newOBJ
+// }
+
+// let circlecopy = deepClone(circle)
+// console.log(circleCopy === circle1)
+
+// let circle = 
+// {
+//     radius: 100,
+//     center:
+//     {
+//         x:0,
+//         y:0
+//     },
+//     // getType: function()
+//     // {
+//     //     return "square"
+//     // }
+//     getType()
+//     {
+//         // console.log(this.radius)
+//         // return "abc"
+//         return ( typeof this.radius === "number" ) ?  "circle" : "unknown"
+//     }
+// }
+// // console.log("Method Calling:" , circle.getType())
+// // console.log("method Calling:"  , circle["getType"]())
+// // console.log("method Calling:"  , circle["getType"])
+
+// let figure = {...circle}
+// delete circle.radius
+// console.log(figure.radius)
+// console.log(figure.getType())
+   
+
+// let circle = 
+// {
+//      radius: 100,
+//      x:100,
+//      y:20,
+//     center:
+//     {
+//         x:0,
+//         y:0,
+//         show()
+//         {
+//             console.log(`${this.x},${this.y}`)
+//         }
+//     },
+//     show()
+//     {
+//     console.log(`${this.x},${this.y}`)
+//     }
+   
+// }
+// circle.center.show()
+// circle.show()
+
+
+// let user = {
+//     name:"divya",
+//     city:"bhopal",
+//     address:
+//     {
+//         city:"indore",
+//         showCity()
+//         {
+//             console.log("City:",this.city)
+//         }
+//     },
+//     showCity()
+//     {
+//         console.log("city :",this.city)
+//     }
+// }
+
+// user.address.showCity()
+// user.showCity()
+
+// let contact = 
+// {
+//     _tel : 8090624224,
+//     get tel()
+//     {
+//         console.log("Getter is called")
+//         return this._tel
+//     },
+//     set tel(t)
+//     {
+//         if(t !== ""){
+//         this._tel = t
+//         }
+//         else{
+//             console.log("blank not allowed")
+//         }
+//     }
+// }
+// console.log(contact.tel)
+// contact.tel = "90909374894"
+// contact.tel = ""
+// console.log(contact.tel)
+
+
+let contact = 
 {
-    if(a>b && a>c)
+    _age : 36, 
+    firstName : "zeeshan",
+    lastName : "Siddiqui",
+    get fullName()
     {
-        return a
-    }
-    else if (b>c && b> a)
+        return `${this.firstName} ${this.lastName}` 
+    },
+    get age()
     {
-        return b
-    }
-    else
+        return this._age
+    },
+    set age(a)
     {
-        return c
+        if(a>0)
+        {
+            this._age = a
+        }
     }
 }
-console.log("before debugging")
-debuggerconsole.log("after debugging")
-console.log((1,1,2))
-console.log((1,2,3))
-console.log((3,2,1))
-console.log((2,2,3))
+// console.log(contact.fullName)
+// contact.age = -20
+// console.log(contact.age)
+// contact.age = 18
+// console.log(contact.age)
+
+// console.log(Object.getOwnPropertyDescriptor(contact,"firstName"))
+// console.log("-------------")
+// for(key in contact)
+// {
+//     console.log(key + "-->" + contact[key])
+// }
+// console.log("-->")
+// Object.defineProperty(contact , "_age",
+// {
+//     value : 36,
+//     Writable:true,
+//     enumerable:false,
+//     configurable:true
+// })
+
+// Object.defineProperty(contact , "firstName",
+// {
+//     value : "david",
+//     Writable:true,
+//     enumerable:false,
+//     configurable:true
+// })
+// for(key in contact)
+// {
+//     console.log(contact[key])
+// }
+
+
+
+Object.defineProperty(contact , "_age",
+{
+    value : contact._age,
+    Writable:false,
+    enumerable:false,
+    configurable:true
+})
+// console.log(contact)
+// console.log(contact._age)
+// contact._age = 100
+// contact.age = 100
+// console.log(contact._age)
+// console.log(contact)
+
+// let enuKeys = Object.keys(contact)
+// let allKeys = Object.getOwnPropertyNames(contact)
+// console.log("enukey:", enuKeys)
+// console.log("allkeys:", allKeys)
+
+// Object.preventExtensions(contact)
+// contact.gender = "Male"
+// console.log(contact)
+
+// // Object.seal(contact)
+// delete contact.gender
+// console.log(contact)
+
+// // Object.freeze(contact)
+// contact.gender = "M"
+// console.log(contact)
+
+
+// let createPoint = function(x,y)
+// {
+//     let obj = {}
+//     obj.x = x
+//     obj.y = y 
+//     return obj
+// }
+
+
+// let createPoint = (x,y) => ({x,y})
+// let point1 = createPoint(1,1)
+// let point2 = createPoint(2,2)
+
+// console.log(point1.x)
+// console.log(point2.x)
+// console.log("poin1:", point1 )
+// console.log("poin2:", point2 )
+
+
+let createColoredPoint = function(x,y,color)
+{
+    let _info = "....objectUnderConst"
+    let _color = color
+    console.log(_info)
+    return
+    {
+        x,
+        y,
+        getColor()
+    {
+        return _color
+    }
+    }
+}
+
+let colorpoint1 = createColoredPoint(1,1,"red")
+let colorpoint2 = createColoredPoint(1,2,"green")
+console.log(colorpoint1.getColor())
+console.log(colorpoint2.getColor())
+console.log(colorpoint1._Color)
