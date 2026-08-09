@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+ <html lang='en'>
+ <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>POC for TODO</title>
+    <style>
+        /* Style the Dialog box itself */
+        dialog {
+        border: none;
+        border-radius: 8px;
+        padding: 24px;
+        max-width: 400px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Style the background overlay */
+        dialog::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(4px); /* Adds a modern blur effect */
+        }
+
+        /* Base button styling */
+        button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: white;
+        }
+
+        button:hover {
+        background-color: #0056b3;
+        }
+    </style>
+    <script>
+
+    </script>
+ </head>
+ <body>
+    <div>
+        <!-- Trigger Button -->
+        <button id="openModalBtn">Open Dialog</button>
+
+        <!-- Dialog Box -->
+        <dialog id="myDialog">
+            <div class="dialog-content">
+                <h2>Dialog Title</h2>
+                <p>This is a native HTML modal dialog box. You can close it by clicking the button below, clicking outside, or pressing the Esc key.</p>
+                
+                <!-- Close Button -->
+                <button id="closeModalBtn">Close</button>
+            </div>
+        </dialog>
+    </div>
+    <script>
+        const dialog = document.getElementById('myDialog');
+        const openBtn = document.getElementById('openModalBtn');
+        const closeBtn = document.getElementById('closeModalBtn');
+
+        // Open the dialog modally
+        openBtn.addEventListener('click', () => {
+            dialog.showModal(); 
+        });
+
+        // Close the dialog using the button
+        closeBtn.addEventListener('click', () => {
+            dialog.close(); 
+        });
+
+        // Close the dialog when clicking outside on the backdrop
+        dialog.addEventListener('click', (event) => {
+            const rect = dialog.getBoundingClientRect();
+            const isInDialog = (
+                event.clientX >= rect.left &&
+                event.clientX <= rect.right &&
+                event.clientY >= rect.top &&
+                event.clientY <= rect.bottom
+            );
+            if (!isInDialog) {
+                dialog.close();
+            }
+        });
+    </script>
+ </body>
+ </html>

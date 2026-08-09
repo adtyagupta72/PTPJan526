@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function onlyOne(checkbox)
+        {
+            var checkboxes = document.getElementsByName(chechbox.name);
+            checkboxes.forEach(item) =>
+        {
+            if (item !== checkbox) {
+                item.checked = false;
+            }
+        }
+        }
+    </script>
+    <style>
+    #myform{
+        background-color:red;
+    }
+    .san{
+        background-color:rgb(124, 197, 199);
+        border:5px dotted red;
+       text-align: center;
+       height: 50em;
+       width: 30em;
+    }
+    </style>
+    
+</head>
+<body>
+    <!-- <input type="button">
+    <input type="checkbox">
+    <input type="color">
+    <input type="date">
+    <input type="datetime-local">
+    <input type="email">
+    <input type="file">
+    <input type="hidden">
+    <input type="image">
+    <input type="month">
+    <input type="number">
+    <input type="password">
+    <input type="radio">
+    <input type="range">
+    <input type="reset">
+    <input type="search">
+    <input type="submit">
+    <input type="tel">
+    <input type="text">
+    <input type="time">
+    <input type="url">
+    <input type="week">
+    <input type="file">
+    <input type="hidden">
+          `
+
+    <form  action="action.html" onreset="return confirm('Are u sure?')">
+        <label for="fname">First name:</label>
+        <input type="text" name="fname"><br>
+         <label for="lname">last name:</label>
+        <input type="text" name="lname"><br>
+         <label for="username">Username:</label>
+        <input type="text" name="username"><br>
+       
+         <label for="pwd">Password:</label>
+        <input type="password" name="pwd"><br>
+         <label for="fname">First name:</label>
+        <input type="text" name="fname" value="John"><br>
+         <input type="submit" value="submit">
+        <input type="reset" value="'reset"><br>
+        <!-- <input type="radio" name="zee" value="html" -->
+
+        <input type="checkbox" name="veh1" value="Car" onclick="onlyOne(this)"/>
+        <label for="veh1">I have car</label> 
+          <input type="checkbox" name="veh1" value="bike" onclick="onlyOne(this)"/>
+        <label for="veh1">I have bike</label> 
+
+        <label
+    </form> 
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Course</th>
+            <th>fee</th>
+        </tr>
+        <tr>
+            <td>Jenis</td>
+            <td>bcom</td>
+            <td>45000</td>
+        </tr>
+        <tr>
+            <td>Zeeshan</td>
+            <td>bca</td>
+            <td>33000</td>
+        </tr><tr>
+            <td>Shuaib</td>
+            <td>bsc</td>
+            <td>18000</td>
+        </tr>
+    </table>
+<label for="favcolor">Select fav color:</label>    
+<input type="color" name="favcolor"><br>
+<label for="bday">Birthday:</label>    
+<input type="date" name="bday"><br>
+
+<form id="myform">
+    <label for="birthday"> bday(d and t)</label>
+    <input type="datetime-local" name="birthday"><br>
+    <label for="email">Enter email</label>
+    <input type="email" name="email"><br>
+    <input type="image" src="./OIP (1).webp" alt="submIt">
+
+    <br>
+    <label for="file" > Select file</label>
+    <input type="file" name="file" id="file"><br>
+     <label for="bmonth" > select month</label>
+    <input type="month" name="bmonth" id="bmonth"><br>
+     <label for="quantity" >betweemn(1 and 5)</label>
+    <input type="number" name="quantity" id="quantity" min="1" max="5"><br>
+      <label for="vol" >betweemn(1 and 50)</label>
+    <input type="range" name="vol" id="vol" min="1" max="50"><br>
+      <label for="gsearch" >Google</label>
+    <input type="search" name="gsearch" id="gsearch"><br>
+    <label for="phone" >P no</label>
+    <input type="tel" name="phone" id="phone" pattern="[0-9]{10}"><br>
+    <label for="appt" > Select time</label>
+    <input type="time" name="appt" id="appt"><br>
+    <label for="homepage" > homepage</label>
+    <input type="url" name="homepage" id="homepage"><br>
+    <label for="week" > Select</label>
+    <input type="week" name="week" id="week"><br>
+    <label for="text">Text</label>
+    <textarea name="text" rows="7" cols="45"></textarea>
+
+    <label for="fruits">Select one</label>
+    <select id="fruits" name="fruits">
+        
+        <option value="apple">Apple</option>
+        <option value="banana">banana</option>
+        <option value="mango">mango</option>
+
+        <label for="car">Select one</label>
+        <select id="car" name="car">
+            <optgroup label="German">
+                <option value="bmw">bmw</option>
+            </optgroup>
+            <optgroup label="american">
+                <option value="gwagon">bmw</option>
+            </optgroup>
+        </select>
+
+    </select>
+    
+    
+
+
+
+
+</form>
+
+<div>
+    <table class="san" border="1">
+        <tr>
+            <th>price</th>
+            <th>country</th>
+            <th>days</th>
+            <th>places</th>
+            
+
+        </tr>
+        <tr>
+            <th>1500</th>
+            <td>Guatemala</td>
+            <td>6 days</td>
+            <td>San ti ago</td>
+            
+
+        </tr>
+        <tr>
+            <th>1500</th>
+            <th>Guatemala</th>
+            <th>6 days</th>
+            <th>San ti ago</th>
+            
+
+        </tr>
+        <tr>
+            <th>1500</th>
+            <th>Guatemala</th>
+            <th>6 days</th>
+            <th>San ti ago</th>
+            
+
+        </tr>
+        <tr>
+            <th>1500</th>
+            <th>Guatemala</th>
+            <th>6 days</th>
+            <th>San ti ago</th>
+            
+
+        </tr>
+    </table>
+</div>
+    
+</body>
+</html>
