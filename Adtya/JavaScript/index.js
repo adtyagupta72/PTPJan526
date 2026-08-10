@@ -2599,18 +2599,52 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // console.log(coloredPoint2.getColor())
 // console.log(coloredPoint1._color)
 
-let ColoredPoint = function(x, y, color) 
-{
-    let _info = "... object under construction"
-    let _color = color
-    console.log(_info)
+// let ColoredPoint = function(x, y, color) 
+// {
+//     let _info = "... object under construction"
+//     let _color = color
+//     console.log(_info)
 
-    this.x = x
-    this.y = y
-    this.getColor = function() {return _color}
-}
-let coloredPoint1 = new ColoredPoint(1, 1, "red")
-let coloredPoint2 = new ColoredPoint(2, 2, "green") 
-console.log(coloredPoint1.getColor())
-console.log(coloredPoint2.getColor())
-console.log(coloredPoint1._color)
+//     this.x = x
+//     this.y = y
+//     this.getColor = function() {return _color}
+// }
+// let coloredPoint1 = new ColoredPoint(1, 1, "red")
+// let coloredPoint2 = new ColoredPoint(2, 2, "green") 
+// console.log(coloredPoint1.getColor())
+// console.log(coloredPoint2.getColor())
+// console.log(coloredPoint1._color)
+
+// console.log("coloredPoint1.constructor.name: ", coloredPoint1.constructor.name)
+// console.log("typeof coloredPoint1.constructor: ", typeof coloredPoint1.constructor)
+
+// let a = {}
+// console.log("a.constructor.name: ", a.constructor.name)
+// console.log("typeof a.constructor: ", typeof a.constructor)
+
+// let emptyObject = new Object()
+// console.log(emptyObject.constructor.name) 
+// let anotherEmptyObject = {}
+// console.log(anotherEmptyObject.constructor.name)
+
+// let reallyEmptyObject = Object.create(null)
+// // console.log(reallyEmptyObject.constructor.name)
+// console.log(typeof reallyEmptyObject.constructor)
+// //----------
+// let myNewObject = {
+//     a: 10
+// }
+
+// let myDerivedObject = Object.create(myNewObject)
+// console.log(myDerivedObject.constructor.name)
+// console.log(typeof myDerivedObject.constructor)
+// console.log("myDerivedObject.a: ", myDerivedObject.a)
+
+let point = {x:0, y:0}
+let coloredPoint = {color: "red"}
+console.log("coloredPoint.__proto__: ", coloredPoint.__proto__)
+coloredPoint.__proto__ = point //inheretance
+
+console.log(Object.getOwnPropertyNames(coloredPoint))
+console.log(coloredPoint.color)
+console.log(coloredPoint.x)	
