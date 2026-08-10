@@ -2648,3 +2648,12 @@ coloredPoint.__proto__ = point //inheretance
 console.log(Object.getOwnPropertyNames(coloredPoint))
 console.log(coloredPoint.color)
 console.log(coloredPoint.x)	
+
+coloredPoint.x = 100   // new property
+console.log("coloredPoint.x: ", coloredPoint.x)
+console.log("point.x: ", point.x)
+console.log("Object.getOwnPropertyNames(coloredPoint): ", Object.getOwnPropertyNames(coloredPoint))	
+
+point.y = 200
+console.log("coloredPoint.y: ", coloredPoint.y)
+console.log("point.y: ", point.y)
