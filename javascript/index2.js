@@ -1321,75 +1321,212 @@ let contact =
 
 
 
-Object.defineProperty(contact , "_age",
-{
-    value : contact._age,
-    Writable:false,
-    enumerable:false,
-    configurable:true
-})
-// console.log(contact)
-// console.log(contact._age)
-// contact._age = 100
-// contact.age = 100
-// console.log(contact._age)
-// console.log(contact)
-
-// let enuKeys = Object.keys(contact)
-// let allKeys = Object.getOwnPropertyNames(contact)
-// console.log("enukey:", enuKeys)
-// console.log("allkeys:", allKeys)
-
-// Object.preventExtensions(contact)
-// contact.gender = "Male"
-// console.log(contact)
-
-// // Object.seal(contact)
-// delete contact.gender
-// console.log(contact)
-
-// // Object.freeze(contact)
-// contact.gender = "M"
-// console.log(contact)
-
-
-// let createPoint = function(x,y)
+// Object.defineProperty(contact , "_age",
 // {
-//     let obj = {}
-//     obj.x = x
-//     obj.y = y 
-//     return obj
+//     value : contact._age,
+//     Writable:false,
+//     enumerable:false,
+//     configurable:true
+// })
+// // console.log(contact)
+// // console.log(contact._age)
+// // contact._age = 100
+// // contact.age = 100
+// // console.log(contact._age)
+// // console.log(contact)
+
+// // let enuKeys = Object.keys(contact)
+// // let allKeys = Object.getOwnPropertyNames(contact)
+// // console.log("enukey:", enuKeys)
+// // console.log("allkeys:", allKeys)
+
+// // Object.preventExtensions(contact)
+// // contact.gender = "Male"
+// // console.log(contact)
+
+// // // Object.seal(contact)
+// // delete contact.gender
+// // console.log(contact)
+
+// // // Object.freeze(contact)
+// // contact.gender = "M"
+// // console.log(contact)
+
+
+// // let createPoint = function(x,y)
+// // {
+// //     let obj = {}
+// //     obj.x = x
+// //     obj.y = y 
+// //     return obj
+// // }
+
+
+// // let createPoint = (x,y) => ({x,y})
+// // let point1 = createPoint(1,1)
+// // let point2 = createPoint(2,2)
+
+// // console.log(point1.x)
+// // console.log(point2.x)
+// // console.log("poin1:", point1 )
+// // console.log("poin2:", point2 )
+
+
+// let createColoredPoint = function(x,y,color)
+// {
+//     let _info = "....objectUnderConst"
+//     let _color = color
+//     console.log(_info)
+//     return
+//     {
+//         x,
+//         y,
+//         getColor()
+//     {
+//         return _color
+//     }
+//     }
 // }
 
-
-// let createPoint = (x,y) => ({x,y})
-// let point1 = createPoint(1,1)
-// let point2 = createPoint(2,2)
-
-// console.log(point1.x)
-// console.log(point2.x)
-// console.log("poin1:", point1 )
-// console.log("poin2:", point2 )
+// let colorpoint1 = createColoredPoint(1,1,"red")
+// let colorpoint2 = createColoredPoint(1,2,"green")
+// console.log(colorpoint1.getColor())
+// console.log(colorpoint2.getColor())
+// console.log(colorpoint1._Color)
 
 
-let createColoredPoint = function(x,y,color)
+
+
+
+// let ColoredPoint = function(x,y,color)
+// {
+//     let _info = "....objectUnderConst"
+//     let _color = color
+//     console.log(_info)
+   
+//     this.x = x 
+//     this.y = y
+//     this.getColor = function(){return _color}
+// }
+
+// let colorpoint1 = new ColoredPoint(1,1,"red")
+// let colorpoint2 = new ColoredPoint(1,2,"green")
+// console.log(colorpoint1.getColor())
+// console.log(colorpoint2.getColor())
+// // console.log(colorpoint1._color)
+
+// console.log("coloredpoint1",colorpoint1.constructor.name )
+// console.log("type:",typeof colorpoint1.constructor )
+
+// let a = {}
+// console.log("coloredpoint1",a.constructor.name )
+// console.log("type:",typeof a.constructor )
+
+// let emptyObj = new Object()
+// console.log(emptyObj.constructor.name)
+// let anotherEmptyObj = {}
+// console.log(anotherEmptyObj.constructor.name)
+
+
+// let reallyEmptyObj = Object.create(null)
+// // console.log(reallyEmptyObj.constructor.name)
+// console.log(typeof reallyEmptyObj.constructor)
+
+// let myNewObj = 
+// {
+//     a:10
+// }
+// let derivedEmptyObj = Object.create(myNewObj)
+//  console.log(derivedEmptyObj.constructor.name)
+//   console.log( typeof derivedEmptyObj.constructor)
+//   console.log("derivedObj",derivedEmptyObj.a)
+
+// let point = {x:0,y:0}
+// let coloredPoint = {color: "red"}
+// console.log("coloredPointproto" ,coloredPoint.__proto__ )
+// coloredPoint.__proto__ = point
+// console.log(Object.getOwnPropertyNames(coloredPoint))
+// console.log(coloredPoint.color)
+// console.log(coloredPoint.x)
+
+// coloredPoint.x = 100
+// console.log(coloredPoint.x)
+// console.log(point.x)
+// console.log(Object.getOwnPropertyNames(coloredPoint))
+
+// point.y = 200
+// console.log(coloredPoint.y)
+// console.log(point.y)
+
+// figure = 
+// {
+//     getType: function()
+//     {
+//         return this.type ? this.type : "unknown"
+//     }
+// }
+
+// let circle = 
+// {
+//     type : "circle",
+//     center:{x:0,y:0},
+//     radius: 100
+// }
+// // circle.__proto__ = figure
+// // console.log(figure.getType())
+// // console.log(circle.getType())
+
+// Object.setPrototypeOf(circle, figure)
+// let proto = Object.getPrototypeOf(circle)
+// console.log(circle.getType())
+
+// let circle = Object.create(figure)
+// circle.type = "circle"
+// circle.center = {x:0 , y :0}
+// circle.radius = 100
+// console.log(circle.getType())
+
+let Figure = function()
 {
-    let _info = "....objectUnderConst"
-    let _color = color
-    console.log(_info)
-    return
+    this.getType = function()
     {
-        x,
-        y,
-        getColor()
-    {
-        return _color
-    }
+        return this.type ? this.type : "unknown"
     }
 }
+let figure = new Figure
 
-let colorpoint1 = createColoredPoint(1,1,"red")
-let colorpoint2 = createColoredPoint(1,2,"green")
-console.log(colorpoint1.getColor())
-console.log(colorpoint2.getColor())
-console.log(colorpoint1._Color)
+let Circle = function(center , radius)
+{
+    this.type = "circle"
+    this.center = center
+    this.radius - radius
+}
+Circle.prototype = figure
+
+let circle1 = new Circle({x:0,y:0},10)
+let circle2 = new Circle({x:100,y:100},100)
+
+let Triangle = function(v1,v2,v3)
+{
+    this.type = "triangle"
+    this.vertices = [v1 , v2 , v3]
+  
+}
+Triangle.prototype = figure
+let triangle1 = new Triangle({x:0,y:0},{x:50,y:50},{x:100,y:100})
+console.log(circle1.getType())
+console.log(triangle1.getType())
+
+Circle.prototype.hi= function(){console.log("hii")}
+
+circle1.hi()
+figure.hi()
+triangle1.hi()
+
+let testString = new String("uni dri toe")
+console.log(testString.length)
+String.prototype.hi = function()
+{
+    console.log("hii")
+}
+console.log(testString.hi())
