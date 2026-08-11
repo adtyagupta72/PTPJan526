@@ -2640,20 +2640,92 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // console.log(typeof myDerivedObject.constructor)
 // console.log("myDerivedObject.a: ", myDerivedObject.a)
 
-let point = {x:0, y:0}
-let coloredPoint = {color: "red"}
-console.log("coloredPoint.__proto__: ", coloredPoint.__proto__)
-coloredPoint.__proto__ = point //inheretance
+// let point = {x:0, y:0}
+// let coloredPoint = {color: "red"}
+// console.log("coloredPoint.__proto__: ", coloredPoint.__proto__)
+// coloredPoint.__proto__ = point //inheretance
 
-console.log(Object.getOwnPropertyNames(coloredPoint))
-console.log(coloredPoint.color)
-console.log(coloredPoint.x)	
+// console.log(Object.getOwnPropertyNames(coloredPoint))
+// console.log(coloredPoint.color)
+// console.log(coloredPoint.x)	
 
-coloredPoint.x = 100   // new property
-console.log("coloredPoint.x: ", coloredPoint.x)
-console.log("point.x: ", point.x)
-console.log("Object.getOwnPropertyNames(coloredPoint): ", Object.getOwnPropertyNames(coloredPoint))	
+// coloredPoint.x = 100   // new property
+// console.log("coloredPoint.x: ", coloredPoint.x)
+// console.log("point.x: ", point.x)
+// console.log("Object.getOwnPropertyNames(coloredPoint): ", Object.getOwnPropertyNames(coloredPoint))	
 
-point.y = 200
-console.log("coloredPoint.y: ", coloredPoint.y)
-console.log("point.y: ", point.y)
+// point.y = 200
+// console.log("coloredPoint.y: ", coloredPoint.y)
+// console.log("point.y: ", point.y)
+
+
+// figure = 
+// {
+//     getType: function() 
+//     {
+//         return this.type ? this.type : "unknown"
+//     }
+// }
+
+// let circle = 
+// {
+//     type: "circle",
+//     center: {x:0, y:0},
+//     radius: 100
+// }
+// circle.__proto__ = figure   //inheretance
+// console.log(figure.getType())   //unknown
+// console.log(circle.getType())   //circle
+// Object.setPrototypeOf(circle, figure)
+// let proto = Object.getPrototypeOf(circle)
+// console.log(circle.getType())
+
+// let circle = Object.create(figure)
+// circle.type = "circle"
+// circle.center = {x:0, y:0},
+// circle.radius = 100
+// console.log(circle.getType())
+
+// let Figure = function()
+// {
+//     this.getType = function() 
+//     {
+//         return this.type ? this.type : "unknown"
+//     }
+// }
+// let figure = new Figure
+
+// let Circle = function(center, radius)
+// {
+//     this.type = "circle"
+//     this.center = center
+//     this.radius = radius
+// }
+// Circle.prototype = figure
+
+// let circle1 = new Circle({x:0, y:0}, 10)
+// let circle2 = new Circle({x:100, y:100}, 100)
+
+// let Triangle = function(v1, v2, v3) 
+// {
+//     this.type = "triangle"
+//     this.vertices = [ v1, v2, v3]
+// }
+// Triangle.prototype = figure
+// let triangle1 = new Triangle({x:0, y:0}, {x:50, y:50}, {x:10, y:100})
+// console.log(circle1.getType())
+// console.log(triangle1.getType())
+
+// Circle.prototype.hi = function(){console.log("Hi!")}
+
+// circle1.hi()
+// triangle1.hi()
+// figure.hi()
+
+let testString = new String("unu doi trei")
+console.log("length: ",testString.length)
+String.prototype.hi = function()
+                        {
+                            console.log("Hi!")
+                        }
+console.log("testString.hi(): ", testString.hi())
