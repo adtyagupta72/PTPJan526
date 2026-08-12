@@ -2722,10 +2722,103 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // triangle1.hi()
 // figure.hi()
 
-let testString = new String("unu doi trei")
-console.log("length: ",testString.length)
-String.prototype.hi = function()
-                        {
-                            console.log("Hi!")
-                        }
-console.log("testString.hi(): ", testString.hi())
+// let testString = new String("unu doi trei")
+// console.log("length: ",testString.length)
+// String.prototype.hi = function()
+//                         {
+//                             console.log("Hi!")
+//                         }
+// console.log("testString.hi(): ", testString.hi())
+
+// class Student
+// {
+// 	name
+// 	age
+// 	gender
+// 	rollNumber
+
+//     constructor(name, age, gender, rollNumber)
+//     {
+//         console.log("Constructor called!")
+//         this.name = name
+//         this.age = age
+//         this.gender = gender
+//         this.rollNumber = rollNumber
+//     }
+//     print()
+//     {
+//         console.log("name: ", this.name)
+//         console.log("age: ", this.age)
+//         console.log("gender: ", this.gender)
+//         console.log("rollNumber: ", this.rollNumber)
+//     }
+// }
+// console.log("Going to create an Object!")
+// let adtya = new Student("Adtya Gupta", 20, "Male", 11)
+// console.log("Done with creating the Object!")
+// console.log("adtya: ", adtya)
+// console.log("typeof adtya: ", typeof adtya)
+// adtya.print()
+// adtya.name = "Adtya Gupta"
+// adtya.age = 20
+// adtya.gender = "Male"
+// adtya.rollNumber = 11
+// console.log("adtya: ", adtya)
+// console.log("adtya.name: ", adtya.name)
+// console.log("adtya.age: ", adtya.age)
+// console.log("adtya.gender: ", adtya.gender)
+// console.log("adtya.rollNumber: ", adtya.rollNumber)
+
+// class Vehicle
+// {
+// 	transportMode
+// 	weight
+// 	capacity
+// 	color
+// }
+
+// class MotorBike extends Vehicle
+// {
+// 	maxSpeed
+// 	fuelType
+// 	peopleCapacity
+// 	average
+// }
+// class Car extends Vehicle
+// {
+// 	maxSpeed
+// 	fuelType
+// 	peopleCapacity
+// 	average
+// 	gears
+// 	canReverse
+// }
+
+// let vehical = new Vehicle()
+// console.log("vehical: ", vehical)
+
+// let motorBike = new MotorBike()
+// console.log("motorBike: ", motorBike)
+
+// let car = new Car()
+// console.log("car: ", car)
+
+// let Vehicle = function(id, latitude, longitude)
+let Vehicle = function(initialisedData)
+{
+    let {id, latitude, longitude} = initialisedData //destruction
+    this.setPosition = function(latitude, longitude) 
+    {
+        this.time = Date.now()
+        this.longitude = longitude
+        this.latitude = latitude
+    }
+    this.id = id
+    this.status = "unavailable"
+    this.setPosition(latitude, longitude)
+}
+
+// let vehical1 = new Vehicle(12, 12.12121212, 24.12121212)
+let vehical2 = new Vehicle({id:12, latitude:12.12121212, longitude:24.12121212})
+// console.log("vehical1: ", vehical1)
+console.log("vehical2: ", vehical2)
