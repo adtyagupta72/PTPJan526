@@ -2804,21 +2804,216 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // console.log("car: ", car)
 
 // let Vehicle = function(id, latitude, longitude)
-let Vehicle = function(initialisedData)
+// let Vehicle = function({id, latitude, longitude})
+// {
+//     this.setPosition = function(latitude, longitude) 
+//     {
+//         this.time = Date.now()
+//         this.longitude = longitude
+//         this.latitude = latitude
+//     }
+//     this.id = id
+//     this.status = "unavailable"
+//     this.setPosition(latitude, longitude)
+// }
+
+// // let vehical1 = new Vehicle(12, 12.12121212, 24.12121212)
+// let vehical2 = new Vehicle({id:12, latitude:12.12121212, longitude:24.12121212})
+// // console.log("vehical1: ", vehical1)
+// console.log("vehical2: ", vehical2)
+
+// class AlmostEmptyClass 
+// {
+//     constructor(sth) 
+//     {
+//         console.log(sth)
+//     }
+//     sayHi() 
+//     {
+//         console.log("Hi!")
+//     }
+// }
+// let almostEmptyObject = new AlmostEmptyClass(120) // -> 120
+// almostEmptyObject.sayHi()
+
+// class Vehicle 
+// {
+//     constructor({id, latitude, longitude})
+//     {
+//         this.id = id
+//         this.status = "unavailable"
+//         this.setPosition({latitude, longitude})
+//     }
+//     setPosition({latitude, longitude}) 
+//     {
+//         this.time = Date.now()
+//         this.longitude = longitude
+//         this.latitude = latitude
+//     }
+//     getPosition() 
+//     {
+//         return {
+//                 latitude: this.latitude,
+//                 longitude: this.longitude
+//                 }
+//     }
+// }
+// let vehicle1 = new Vehicle({id: "AL1024", latitude: 59.367647, longitude: 18.213451})
+// let vehicle2 = new Vehicle({longitude: 18.213423, latitude: 59.367628, id: "AL1025"})
+// console.log("vehicle1: ", vehicle1)
+// console.log("vehicle2: ", vehicle2)
+
+// function namedFunction() 
+// { 
+//     console.log("I'm named, I hope ..") 
+// }
+// let anonymousFunction = function() 
+// {
+//     console.log("I'm a bit anonymous ...")
+// }
+// let notExactlyAnonymousFunction = function anotherNamedFunction() 
+// {
+//     console.log("I'm confused ...")
+// }
+// namedFunction()	// -> I'm named, I hope ...
+// anonymousFunction()	// -> I'm a bit anonymous ...
+// notExactlyAnonymousFunction()
+
+
+// let AlmostEmptyClass = class {
+//     constructor(sth) 
+//     {
+//         console.log(sth)
+//     }
+//     sayHi() 
+//     {
+//         console.log("Hi!")
+//     }
+// }
+// let almostEmptyObject = new AlmostEmptyClass(120) // -> 120
+// almostEmptyObject.sayHi()
+
+// console.log(almostEmptyObject instanceof AlmostEmptyClass) // -> true
+// console.log(almostEmptyObject instanceof String) // -> false
+// let str = new String("test me")
+// console.log(str instanceof String)
+
+// class Vehicle 
+// {
+//     constructor({id, latitude, longitude})
+//     {
+//         this.id = id
+//         this.status = "unavailable"
+//         this.position = {latitude, longitude}
+//     }
+//     set position({latitude, longitude}) 
+//     {
+//         this.time = Date.now()
+//         this.longitude = longitude
+//         this.latitude = latitude
+//     }
+//     get position() 
+//     {
+//         return {
+//                 latitude: this.latitude,
+//                 longitude: this.longitude
+//                 }
+//     }
+//     // set status(status)
+//     // {
+//     //     this.status = status
+//     // }
+//     // get status()
+//     // {
+//     //     return this.status
+//     // }
+// }
+// let vehicle1 = new Vehicle({id: "AL1024", latitude: 59.367647, longitude: 18.213451})
+// let vehicle2 = new Vehicle({longitude: 18.213423, latitude: 59.367628, id: "AL1025"})
+// console.log("vehicle1: ", vehicle1)
+// console.log("vehicle2: ", vehicle2)
+
+// class Bus extends Vehicle 
+// {
+//     id
+//     constructor({seats, id, latitude, longitude}) 
+//     {
+//         super({id, latitude, longitude})
+//         this.seats = seats
+//         this.id = id
+//     }
+// }
+// let bus = new Bus({seats: 4, longitude: 18.213423, latitude: 59.367628, id: "AL1024"}) 
+// console.log(bus.seats) // -> 4
+// console.log(bus.id)
+
+
+// class AlmostEmptyClass 
+// { 
+//     constructor(sth) 
+//     { 
+//         console.log(sth) 
+//     }
+//     sayHi() 
+//     { 
+//         console.log("Hi!")
+//     }
+// }
+// class ExtendedClass extends AlmostEmptyClass
+// {
+//     name
+//     constructor(name) 
+//     {
+//         super("I'm super ...")
+//         this.name = name
+//     }
+//     sayHi() 
+//     { 
+//         this.hi = `Hi ${this.name}!`
+//         // console.log(`Hi ${this.name}!`)
+//         console.log(this.hi)
+//     }
+//     newHi() 
+//     {
+//         this.sayHi()
+//     }
+//     oldHi() 
+//     {
+//         super.sayHi()
+//     }
+// }
+// let obj = new ExtendedClass("Bob")
+// obj.sayHi()    // -> Hi Bob!
+// obj.newHi()    // -> Hi Bob!
+// obj.oldHi()    // Hi!
+// console.log(obj)
+
+class Vehicle 
 {
-    let {id, latitude, longitude} = initialisedData //destruction
-    this.setPosition = function(latitude, longitude) 
+    status = "unavailable"
+    #longitude
+    #latitude
+    constructor({id, latitude, longitude})
+    {
+        this.id = id
+        this.setPosition({latitude, longitude})
+    }
+    setPosition({latitude, longitude}) 
     {
         this.time = Date.now()
-        this.longitude = longitude
-        this.latitude = latitude
+        this.#longitude = longitude
+        this.#latitude = latitude
     }
-    this.id = id
-    this.status = "unavailable"
-    this.setPosition(latitude, longitude)
+    getPosition() 
+    {
+        return {
+            latitude: this.#latitude,
+            longitude: this.#longitude}
+    }
 }
+let vehicle = new Vehicle({longitude: 18.213423, latitude: 59.367628, id: "AL1024"})
+console.log(vehicle.getPosition())
+// console.log(vehicle.#longitude) // error
+console.log(vehicle.longitude)
 
-// let vehical1 = new Vehicle(12, 12.12121212, 24.12121212)
-let vehical2 = new Vehicle({id:12, latitude:12.12121212, longitude:24.12121212})
-// console.log("vehical1: ", vehical1)
-console.log("vehical2: ", vehical2)
+
