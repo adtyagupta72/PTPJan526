@@ -2988,32 +2988,169 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // obj.oldHi()    // Hi!
 // console.log(obj)
 
-class Vehicle 
-{
-    status = "unavailable"
-    #longitude
-    #latitude
-    constructor({id, latitude, longitude})
-    {
-        this.id = id
-        this.setPosition({latitude, longitude})
-    }
-    setPosition({latitude, longitude}) 
-    {
-        this.time = Date.now()
-        this.#longitude = longitude
-        this.#latitude = latitude
-    }
-    getPosition() 
-    {
-        return {
-            latitude: this.#latitude,
-            longitude: this.#longitude}
-    }
-}
-let vehicle = new Vehicle({longitude: 18.213423, latitude: 59.367628, id: "AL1024"})
-console.log(vehicle.getPosition())
-// console.log(vehicle.#longitude) // error
-console.log(vehicle.longitude)
+// class Vehicle 
+// {
+//     status = "unavailable"
+//     #longitude
+//     #latitude
+//     constructor({id, latitude, longitude})
+//     {
+//         this.id = id
+//         this.setPosition({latitude, longitude})
+//     }
+//     setPosition({latitude, longitude}) 
+//     {
+//         this.time = Date.now()
+//         this.#longitude = longitude
+//         this.#latitude = latitude
+//     }
+//     getPosition() 
+//     {
+//         return {
+//             latitude: this.#latitude,
+//             longitude: this.#longitude}
+//     }
+// }
+// let vehicle = new Vehicle({longitude: 18.213423, latitude: 59.367628, id: "AL1024"})
+// console.log(vehicle.getPosition())
+// // console.log(vehicle.#longitude) // error
+// console.log(vehicle.longitude)
+
+// let AlmostEmpty = function(sth) 
+// { 
+//     console.log(sth) 
+//     this.sayHi1 = function() 
+//     { 
+//         console.log("Hi!") 
+//     } 
+// }
+
+// class ExtendedClass extends AlmostEmpty 
+// {
+//     constructor(name) 
+//     {
+//         super("I'm super ...")
+//         this.name = name
+//     }
+//     sayHi()
+//     { 
+//         console.log(`Hi ${this.name}!`) 
+//     }
+// }
+
+// let obj = new ExtendedClass("Bob")
+// obj.sayHi()    // -> Hi Bob!
 
 
+// class AlmostEmptyClass 
+// {
+//     constructor(sth) 
+//     {
+//         console.log(sth)
+//     }
+//     sayHi() 
+//     {
+//         console.log("Hi!")
+//     }
+//     static sayHello()
+//     {
+//         console.log("Hello!")
+//     }
+// }
+// let almostEmptyObject = new AlmostEmptyClass(120) // 120
+// almostEmptyObject.sayHi() // -> Hi!
+// // almostEmptyObject.sayHello() // error
+// AlmostEmptyClass.sayHello() // -> Hello!
+
+// class Vehicle 
+// {
+//     constructor({id, latitude, longitude})
+//     {
+//         this.id = id
+//         this.status = "unavailable"
+//         this.position = {latitude, longitude}
+//     }
+//     set position({latitude, longitude}) 
+//     {
+//         this.time = Date.now()
+//         this.longitude = longitude
+//         this.latitude = latitude
+//     }
+//     get position() 
+//     {
+//         return {
+//                 latitude: this.latitude,
+//                 longitude: this.longitude
+//                 }
+//     }
+//     static isSameId(v1, v2)
+//     {
+//         return v1.id === v2.id
+//     }
+// }
+// let vehicle1 = new Vehicle({longitude: 18.213423, latitude: 59.367628, id: "AL1024"})
+// let vehicle2 = new Vehicle({longitude: 0, latitude: 0, id: "AL1024"})
+// let vehicle3 = new Vehicle({longitude: 18.213423, latitude: 59.367628, id: "AL1026"})
+// console.log(Vehicle.isSameId(vehicle1, vehicle2)) // -> true
+// console.log(Vehicle.isSameId(vehicle1, vehicle3)) // -> false
+
+// class Student
+// {
+// 	name
+// 	age
+// 	gender
+// 	rollNumber
+//     static count = 0
+//     constructor(name, age, gender, rollNumber)
+//     {
+//         console.log("Constructor called!")
+//         this.name = name
+//         this.age = age
+//         this.gender = gender
+//         this.rollNumber = rollNumber
+//         Student.count++
+//     }
+//     print()
+//     {
+//         console.log("name: ", this.name)
+//         console.log("age: ", this.age)
+//         console.log("gender: ", this.gender)
+//         console.log("rollNumber: ", this.rollNumber)
+//     }
+// }
+// console.log("Going to create an Object!")
+// console.log("Count of students created so far: ", Student.count)
+// let adtya = new Student("Adtya Gupta", 20, "Male", 11)
+// console.log("Count of students created so far: ", Student.count)
+// let zeeshan = new Student("Zeeshan Siddiqui", 18, "Male", 12)
+// console.log("Count of students created so far: ", Student.count)
+// let nirbhay = new Student("Nirbhay Kumar", 19, "Male", 13)
+// console.log("Count of students created so far: ", Student.count)
+
+// let Test = function(arg) 
+// { 
+//     this.arg = arg
+//     console.log(this.arg)
+//     // this.showSth = function() 
+//     // { 
+//     //     console.log("I'm prototyped!")
+//     // }
+// } 
+    
+// Test.prototype.showSth = function() 
+// { 
+//     console.log("I'm prototyped!")
+// }
+    
+// Test.showSth = function() 
+// { 
+//     console.log(`Hi, I'm static!`)
+// }  
+
+// let test = new Test("Hello")
+// test.showSth() // -> I'm prototyped!
+// Test.showSth() // -> I'm static!
+
+// console.log(test instanceof Test)
+
+console.log(typeof class MyClass {})
