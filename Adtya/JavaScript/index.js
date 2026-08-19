@@ -3198,10 +3198,46 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // console.log(`str1 : ${typeof str1} : ${str1}`) 
 // console.log(`bool2 : ${typeof bool2} : ${ bool2}`) 
 
-let bool1 = Boolean(false)
-let bool2 = Boolean(1)
-let bool3 = Boolean("")
-console.log(`bool1 : ${typeof bool1} : ${bool1}`) 
-console.log(`bool2 : ${typeof bool2} : ${bool2}`) 
-console.log(`bool3 : ${typeof bool3} : ${bool3}`) 
+// let bool1 = Boolean(false)
+// let bool2 = Boolean(1)
+// let bool3 = Boolean("")
+// console.log(`bool1 : ${typeof bool1} : ${bool1}`) 
+// console.log(`bool2 : ${typeof bool2} : ${bool2}`) 
+// console.log(`bool3 : ${typeof bool3} : ${bool3}`) 
 
+// console.log(0.1 + 0.2)
+// console.log(0.1 + 0.2 == 0.3)
+// console.log(0.1 + 0.2 === 0.3)
+
+
+// console.log(typeof (0.1 + 0.2).toFixed(1))
+// console.log((0.1 + 0.2).toFixed(1))
+// console.log(typeof Number((0.1 + 0.2).toFixed(1)))
+// console.log(Number((0.1 + 0.2).toFixed(1)))
+
+// let a = 10 // decimal - default
+// let b = 0x10   // hexadecimal
+// let c = 0o10 // octal
+// let d = 0b10 // binary
+// console.log(a) // -> 10
+// console.log(b) // -> 16
+// console.log(c) // -> 8
+// console.log(d) // -> 2
+// let x = 0.3
+// let y = 0.6
+// console.log(x + y) // -> 0.8999999999999999
+// console.log((x + y).toFixed(1))    // -> 0.9
+// console.log(x / 0)      // -> Infinity
+// console.log(x / "abc")
+
+let nrStr1 = (11).toString()
+let nrStr2 = (11).toString(16) // 0-9 a b c d e f
+console.log(`nrStr1 : ${typeof nrStr1} : ${nrStr1}`) // -> nrStr1 : string : 11
+console.log(`nrStr2 : ${typeof nrStr2} : ${nrStr2}`)
+
+let numberObj1 = new Number()            // -> 0
+let numberObj2 = new Number(100)       // -> 100
+let numberObj3 = new Number("200")     // -> 200
+let numberObj4 = new Number("abcd")    // -> NaN
+let numberObj5 = new Number(9e10000)   // -> Infinity
+console.log(`numberObj1 : ${typeof numberObj1} : ${ numberObj1.valueOf()}`)
