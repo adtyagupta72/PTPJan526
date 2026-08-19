@@ -3155,12 +3155,29 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 
 // console.log(typeof class MyClass {})
 
-let n = new Number(100.123)
-console.log("n:", n)
-let fixed = n.toFixed(3)
-console.log("fixed:", fixed)
-let test1 = Number.isInteger(100)
-console.log("test1:", test1)
-let test2 = n.isInteger(100)
-console.log("test2:", test2)
+// let n = new Number(100.123)
+// console.log("n:", n)
+// let fixed = n.toFixed(3)
+// console.log("fixed:", fixed)
+// let test1 = Number.isInteger(100)
+// console.log("test1:", test1)
+// let test2 = n.isInteger(100)
+// console.log("test2:", test2)
 
+// let name = "nj"
+// console.log(name.toUpper())
+
+// let name = "Adtya"
+// let name1 = new String("Adtya")
+
+let strObj = new String("Do bats eat cats?")    //Wrapper class
+console.log(typeof(strObj)) //-> object
+console.log(strObj.length) // -> 17
+let words = strObj.split(" ")
+console.log(words[0]) // -> Do
+
+let str = "Do bats eat cats?"       //primitive
+console.log(typeof(str)) //-> string
+console.log(str.length) // -> 17
+words = str.split(" ")
+console.log(words[0]) // -> Do
