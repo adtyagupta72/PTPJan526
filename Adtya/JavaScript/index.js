@@ -3153,4 +3153,14 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 
 // console.log(test instanceof Test)
 
-console.log(typeof class MyClass {})
+// console.log(typeof class MyClass {})
+
+let n = new Number(100.123)
+console.log("n:", n)
+let fixed = n.toFixed(3)
+console.log("fixed:", fixed)
+let test1 = Number.isInteger(100)
+console.log("test1:", test1)
+let test2 = n.isInteger(100)
+console.log("test2:", test2)
+
