@@ -3170,14 +3170,38 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // let name = "Adtya"
 // let name1 = new String("Adtya")
 
-let strObj = new String("Do bats eat cats?")    //Wrapper class
-console.log(typeof(strObj)) //-> object
-console.log(strObj.length) // -> 17
-let words = strObj.split(" ")
-console.log(words[0]) // -> Do
+// let strObj = new String("Do bats eat cats?")    //Wrapper class
+// console.log(typeof(strObj)) //-> object
+// console.log(strObj.length) // -> 17
+// let words = strObj.split(" ")
+// console.log(words[0]) // -> Do
 
-let str = "Do bats eat cats?"       //primitive
-console.log(typeof(str)) //-> string
-console.log(str.length) // -> 17
-words = str.split(" ")
-console.log(words[0]) // -> Do
+// let str = "Do bats eat cats?"       //primitive
+// console.log(typeof str) //-> string
+// console.log(str.length) // -> 17
+// words = str.split(" ")
+// console.log(words[0]) // -> Do
+
+// let boolObj1 = new Boolean(false)
+// let boolObj2 = new Boolean(true)
+// let str1 =boolObj1.toString()
+// let bool2 = boolObj2.valueOf()
+// console.log(`boolObj1 : ${typeof boolObj1} : ${boolObj1}`) 
+// console.log(`boolObj2 : ${typeof boolObj2} : ${boolObj2}`) 
+// console.log(`str1 : ${typeof str1} : ${str1}`) 
+// console.log(`bool2 : ${typeof bool2} : ${ bool2}`) 
+
+// let bool1 = false
+// str1 = bool1.toString()
+// bool2 = bool1.valueOf()
+// console.log(`bool1 : ${typeof bool1} : ${bool1}`)
+// console.log(`str1 : ${typeof str1} : ${str1}`) 
+// console.log(`bool2 : ${typeof bool2} : ${ bool2}`) 
+
+let bool1 = Boolean(false)
+let bool2 = Boolean(1)
+let bool3 = Boolean("")
+console.log(`bool1 : ${typeof bool1} : ${bool1}`) 
+console.log(`bool2 : ${typeof bool2} : ${bool2}`) 
+console.log(`bool3 : ${typeof bool3} : ${bool3}`) 
+
