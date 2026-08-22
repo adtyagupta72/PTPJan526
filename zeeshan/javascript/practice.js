@@ -113,19 +113,56 @@
 // console.log(name3,            no3,           email3)
   
 
-let contacts =[
-    {name1 : "John", no1 : 3452617278 , email1 :"johngmail.com"},
-     {name2 : "Zeeshan", no2 : 3452617278 , email2 : "zeeshangmail.com"},
-      {name3 : "Samantha", no3 : 3452617278 , email3 : "samanthagmail.com"}
+// let contacts =[
+//     {name1 : "John", no1 : 3452617278 , email1 :"johngmail.com"},
+//      {name2 : "Zeeshan", no2 : 3452617278 , email2 : "zeeshangmail.com"},
+//       {name3 : "Samantha", no3 : 3452617278 , email3 : "samanthagmail.com"}
+// ]
+
+// contacts.push(
+//     {
+//     name: "Maisie Haley",
+//     phone: "0913 531 3030",
+//     email: "risus.Quisque@urna.ca"
+//     }
+// )
+
+// console.log(` Name : ${contacts[0].name1}, Number:  ${contacts[0].no1}, email:  ${contacts[0].email1}`)
+// console.log(` Name : ${contacts[3].name}, Number:  ${contacts[3].phone}, email:  ${contacts[3].email}`)
+
+
+const paintings = [
+    {title: "Mona Lisa" , artist:"Leonardo da Vinci ", year: 1503},
+    {title: "The Last Supper", artist:"Leonardo da Vinci" , year: 1495},
+    {title: "Starry Night", artist:"Vincent van Gogh", year:  1889},
+    {title: "The Scream ", artist: " Edvard Munch ", year: 1893 },
+    {title: " Guernica ", artist:"Pablo Picasso ", year: 1937},
+    {title:  "The Kiss", artist:"Gustav Klimt" , year: 1907},
+    {title:"With a Pearl Earring" , artist: "Johannes Vermeer" , year: 1665},
+    {title:  " The Birth of Venus", artist:"Sandro Botticelli" , year:1485 },
+    {title:"Las Meninas" , artist: "Diego Velázquez" , year: 1656}
 ]
 
-contacts.push(
-    {
-    name: "Maisie Haley",
-    phone: "0913 531 3030",
-    email: "risus.Quisque@urna.ca"
-    }
-)
+console.log(paintings[3].year)
 
-console.log(` Name : ${contacts[0].name1}, Number:  ${contacts[0].no1}, email:  ${contacts[0].email1}`)
-console.log(` Name : ${contacts[3].name}, Number:  ${contacts[3].phone}, email:  ${contacts[3].email}`)
+//factory and constructor '
+function Image(title , artist , date )
+{
+   this.title = title;
+    this.artist = artist;
+    this.date = date;
+}
+
+function getImage(title , artist , date)
+{
+     return{
+        title : title,
+        artist : artist,
+         date : date
+    }
+    
+}
+
+let image1 = new  Image( "The Last Supper","michael",1345)
+let image2 = getImage(image1.title , image1.artist , image1.date)
+console.log(image2)
