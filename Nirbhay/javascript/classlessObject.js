@@ -15,26 +15,48 @@ console.log(artistCreation)
 The Image function is the constructor, and getImage is the factory. Using the images data array from the previous task, create a new array, images1, using the Image constructor (don't copy the objects, but just create new ones based on the properties read).
 Similarly, from images1 create a new array, images2, using getImage. Display the contents of images2
 */
-let Image=function(obj)
+
+let Image=function(title,artist,date)
 {
-    this.title=obj.title
-    this.artist=obj.artist
-    this.date=obj.date
+    this.title=title
+    this.artist=artist
+    this.date=date
 }
-let getImage=function(obj2)
+let getImage=function(title,artist,date)
 {
     return{
-        title:obj2.title,
-        artist:obj2.artist,
-        date:obj2.date
+        title:title,
+        artist:artist,
+        date:date
     }
 }
-let image1=new Image(artistCreation[0])
-console.log(image1)
-let image2=getImage(artistCreation[1])
-console.log(image2)
+let image1=new Image(...artistCreation)
+image1=new Array(image1)
+let image2=getImage(...image1)
+console.log("image1",image1)
+console.log("image2",image2)
 
-/*Create an images object that will be used to store the images. The object should have a list property, which will be an array of image objects and methods:
+// let Image=function(obj)
+// {
+//     this.title=obj.title
+//     this.artist=obj.artist
+//     this.date=obj.date
+// }
+// let getImage=function(obj2)
+// {
+//     return{
+//         title:obj2.title,
+//         artist:obj2.artist,
+//         date:obj2.date
+//     }
+// }
+// let image1=new Image(artistCreation[0])
+// console.log(image1)
+// let image2=getImage(artistCreation[1])
+// console.log(image2)
+
+/* scenerio 3-
+Create an images object that will be used to store the images. The object should have a list property, which will be an array of image objects and methods:
 contains - which takes as its argument the title of the image and returns true if the image is already placed in the 
 
 list (otherwise it returns false)
@@ -42,7 +64,11 @@ add – which takes three arguments (title, artist, and date) and creates a new 
 show - which displays all images on the list
 clear – which removes all objects from the list.
 
-While creating an object, use the Image constructor prepared in the earlier task.*/
+While creating an object, use the Image constructor prepared in the earlier task.
+
+*/
+let images= new Image(...artistCreation)
+console.log("images",images)
 
 /*Scenario 4
 
@@ -50,4 +76,64 @@ Complement the images object from the previous task with two new methods (withou
 edit - which takes three arguments (title, artist, and date) and if it finds an image with the given title in the list, it changes its artist and date properties
 delete - which takes the title argument and if it finds a picture with this title in the list, it deletes it (to delete a list element, use the splice method)
 
-Additionally, add a show method to the Image constructor, which will display information about this one image. Do not rewrite the constructor. Use prototypes for this purpose. Then modify the show method of the images object so that it uses the newly created single image show method to display the information.*/
+Additionally, add a show method to the Image constructor, which will display information about this one image. Do not rewrite the constructor. Use prototypes for this purpose. Then modify the show method of the images object so that it uses the newly created single image show method to display the information.
+*/
+
+
+
+/*Practice Questions:
+
+1.Add a method greet to the object person from above that returns "Hello, " + name.
+6.Create deeply nested prototype objects.
+*/
+
+//2.Create an object with name and age properties.
+let makeObj=
+{
+    name:"Nirbhay",
+    age:20
+}
+//3.Add a nested address object.
+makeObj.address={
+    state:"UP",
+    city:"sitapur"
+}
+console.log(makeObj)
+
+//4.Create object with null prototype.
+let newObj={
+    name:"harshit",
+    age:20,
+    school:"DAV public school"
+}
+newObj.__proto__=null
+console.log("Object.getPrototypeOf(newObj) ",Object.getPrototypeOf(newObj))
+
+//5.Create an object with a prototype.
+let withProto=Object.create(newObj)
+console.log(Object.getPrototypeOf(withProto))
+
+//7.Create a constructor and instantiate object.
+let createObj=function(name,age,gender)
+{
+    this.name=name
+    this.age=age
+    this.gender=gender
+}
+let objectCrt=new createObj("nirbhay",20,"M")
+console.log(objectCrt)
+
+//8.Add method using prototype.
+createObj.prototype.sayHello=function()
+{
+    return `hello my name is ${this.name}`
+}
+
+console.log(objectCrt.sayHello())
+
+//9.Create multiple instances using constructor.
+let objectCrt2=new createObj("jatin",20,"M")
+let objectCrt3=new createObj("lalit",30,"M")
+
+//10. Add computed method in constructor.
+
