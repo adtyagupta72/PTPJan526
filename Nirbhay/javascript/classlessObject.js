@@ -137,3 +137,15 @@ let objectCrt3=new createObj("lalit",30,"M")
 
 //10. Add computed method in constructor.
 
+let createObjcomputed=function(name,age,gender)
+{
+    this.name=name
+    this.age=age
+    this.gender=gender
+    this[name]=function()
+    {
+        return this.name;
+    }
+}
+let objectCrtComp=new createObjcomputed("nirbhay",20,"M")
+console.log("objectCrtComp.nirbhay()",objectCrtComp.nirbhay())
