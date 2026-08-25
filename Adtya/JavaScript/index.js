@@ -3277,21 +3277,42 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 //     currency: "USD"
 // }))
 
-console.log(Number.MAX_VALUE)
-console.log(Number.MIN_VALUE)
-console.log(Number.MAX_SAFE_INTEGER)
-console.log(Number.MIN_SAFE_INTEGER)
+// console.log(Number.MAX_VALUE)
+// console.log(Number.MIN_VALUE)
+// console.log(Number.MAX_SAFE_INTEGER)
+// console.log(Number.MIN_SAFE_INTEGER)
 
-console.log('Number.isInteger("123"): ',Number.isInteger("123"))
-console.log('Number.isInteger(123): ',Number.isInteger(123))
-console.log('Number.isInteger(true): ',Number.isInteger(true))
-console.log('Number.isInteger("Abc"): ',Number.isInteger("Abc"))
+// console.log('Number.isInteger("123"): ',Number.isInteger("123"))
+// console.log('Number.isInteger(123): ',Number.isInteger(123))
+// console.log('Number.isInteger(true): ',Number.isInteger(true))
+// console.log('Number.isInteger("Abc"): ',Number.isInteger("Abc"))
 
-console.log(Number.isSafeInteger(9007199254740991))
-console.log(Number.isSafeInteger(9007199254740992))
-console.log(Number.isSafeInteger("9007199254740990"))
+// console.log(Number.isSafeInteger(9007199254740991))
+// console.log(Number.isSafeInteger(9007199254740992))
+// console.log(Number.isSafeInteger("9007199254740990"))
 
-console.log(Number.isFinite(123))
-console.log(Number.isFinite(9007199254740992))
-console.log(Number.isFinite(12/0))
+// console.log(Number.isFinite(123))
+// console.log(Number.isFinite(9007199254740992))
+// console.log(Number.isFinite(12/0))
 
+// console.log(Number.parseInt("1204px"))
+// console.log(Number.parseInt("1204abc244"))
+// console.log(Number.parseFloat("123.12.12"))
+// console.log(typeof Number.parseFloat("123.12.12"))
+
+// var str = "Adtya Gupta"
+
+// console.log("Hello '123' `456` \"Hello\" \n This should be a new line! \tthis should be indented X\btest")
+// console.log('Hello "123" `456`')
+// console.log(`Hello "123" '456' ${str}
+// This is my next line`)
+
+
+// console.log(str.length)
+// console.log(str[1])
+
+let strings = [undefined, "", "ab", "cd ef", 4, null]
+for(let i=0; i< strings.length; i++) 
+{
+    strings[i] && strings[i].length && console.log(strings[i])
+}
