@@ -136,7 +136,6 @@ let objectCrt2=new createObj("jatin",20,"M")
 let objectCrt3=new createObj("lalit",30,"M")
 
 //10. Add computed method in constructor.
-
 let createObjcomputed=function(name,age,gender)
 {
     this.name=name
@@ -149,3 +148,103 @@ let createObjcomputed=function(name,age,gender)
 }
 let objectCrtComp=new createObjcomputed("nirbhay",20,"M")
 console.log("objectCrtComp.nirbhay()",objectCrtComp.nirbhay())
+
+//Assignment Questions:
+//1. Create objects dynamically in a loop.
+let createObjects=function(empId,empName,empSalary)
+{
+    this.empId=empId
+    this.empName=empName
+    this.empSalary=empSalary
+}
+let newObjArr=[]
+for(let i=1;i<=5;i++)
+{
+    let name= "Nirbhay" //prompt("Enter the name of the Employee")
+    let salary=300000 //prompt("Enter the salary of the employee")
+    newObjArr.push(new createObjects(i,name,salary))
+}
+console.log(newObjArr)
+
+//2. Manually set prototype using Object.setPrototypeOf().
+Object.setPrototypeOf(newObjArr[0],newObj)
+console.log(Object.getPrototypeOf(newObjArr[0]))
+
+//3. Create a chain: animal → dog → puppy.
+let animal=
+{
+    legs:4,
+    sound:"differ",
+    eyes:2,
+    smellAbility:"Differ"
+}
+let dog=
+{
+    sound:"barks",
+    smellAbility:"strong"
+}
+Object.setPrototypeOf(dog,animal)
+console.log("Object.getPrototypeOf(dog) ",Object.getPrototypeOf(dog))
+console.log("dog.legs ",dog.legs)
+let puppy=
+{
+    sound:"pitched bark",
+    smellAbility:"strong"
+}
+Object.setPrototypeOf(puppy,dog)
+console.log("Object.getPrototypeOf(puppy)",Object.getPrototypeOf(puppy))
+
+//4. Compare two objects with same content.
+let student1=
+{
+    name:"Rahul",
+    age:20
+}
+let student2=
+{
+    name:"Rahul",
+    age:20
+}
+
+console.log(student1==student2)
+
+// 5. Use factory function to return new objects.
+let developObj=function(title,desc,tag)
+{
+    return{
+        title:title,
+        desc:desc,
+        tag:tag
+    }
+}
+console.log(developObj("rohan ki gadi","gadi kharab ho gayi","funny"))
+console.log(developObj("khooni raat","shabnam ki Khooni raat","horror"))
+
+//6. Create a plain object using literal syntax and add two properties to it.
+let literalObj=
+{
+    id:1,
+    age:30,
+    condition:"good"
+}
+literalObj.version='2.o'
+literalObj.parentalControl=false
+console.log(literalObj)
+
+// 7. Add a property using bracket notation. 
+literalObj["cruiseControl"]=false
+
+//8. Delete a property from an object.
+delete literalObj.cruiseControl
+console.log(literalObj)
+
+//9. Loop through object keys using for…in
+for(let keys in literalObj)
+{
+    console.log(keys)
+}
+//10. Copy properties from one object to another using Object.assign()
+let literalObj2={}
+Object.assign(literalObj2,literalObj)
+console.log(literalObj2)
+console.log(literalObj==literalObj2)
