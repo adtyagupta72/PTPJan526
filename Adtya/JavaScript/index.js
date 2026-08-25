@@ -3230,14 +3230,68 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // console.log(x / 0)      // -> Infinity
 // console.log(x / "abc")
 
-let nrStr1 = (11).toString()
-let nrStr2 = (11).toString(16) // 0-9 a b c d e f
-console.log(`nrStr1 : ${typeof nrStr1} : ${nrStr1}`) // -> nrStr1 : string : 11
-console.log(`nrStr2 : ${typeof nrStr2} : ${nrStr2}`)
+// let nrStr1 = (11).toString()
+// let nrStr2 = (11).toString(16) // 0-9 a b c d e f
+// console.log(`nrStr1 : ${typeof nrStr1} : ${nrStr1}`) // -> nrStr1 : string : 11
+// console.log(`nrStr2 : ${typeof nrStr2} : ${nrStr2}`)
 
-let numberObj1 = new Number()            // -> 0
-let numberObj2 = new Number(100)       // -> 100
-let numberObj3 = new Number("200")     // -> 200
-let numberObj4 = new Number("abcd")    // -> NaN
-let numberObj5 = new Number(9e10000)   // -> Infinity
-console.log(`numberObj1 : ${typeof numberObj1} : ${ numberObj1.valueOf()}`)
+// let numberObj1 = new Number()            // -> 0
+// let numberObj2 = new Number(100)       // -> 100
+// let numberObj3 = new Number("200")     // -> 200
+// let numberObj4 = new Number("abcd")    // -> NaN
+// let numberObj5 = new Number(9e10000)   // -> Infinity
+// console.log(`numberObj1 : ${typeof numberObj1} : ${ numberObj1.valueOf()}`)
+// console.log(`numberObj3 : ${typeof numberObj3} : ${ numberObj3.valueOf()}`)
+
+// let a = 12345
+// console.log(a.toExponential())   // -> 1.2345e+4
+// console.log(a.toExponential(1))
+// let nr1 = 10.55
+// console.log(nr1.toFixed(1)) // -> 10.6
+// console.log(nr1.toFixed(0)) // -> 11
+// console.log(nr1.toFixed(3)) // -> 10.550
+// let nr2 = 2.55
+// console.log(nr2.toFixed(1)) // -> 2.5
+// console.log(nr2.toFixed(20)) // -> 2.54999999999999982236
+// console.log(((nr2 * 10).toFixed(0) / 10)) // -> 2.6
+
+// let nr = 123456.789
+// console.log(nr.toLocaleString("en-GB")) //-> 123,456.789
+// console.log(nr.toLocaleString("fr-FR")) //-> 123·456,789
+// console.log(nr.toLocaleString("de-DE")) //-> 123.456,789
+// console.log(nr.toLocaleString("ar-EG")) //-> ١٢٣٬٤٥٦٫٧٨٩
+// console.log(nr.toLocaleString("es-ES",{
+//     style: "currency",
+//     currency: "EUR"
+// })) //-> 123.456,79 €
+
+// console.log(nr.toLocaleString())
+
+// console.log(nr.toLocaleString("hi-IN"))
+// console.log(nr.toLocaleString("hi-IN", {
+//     style: "currency",
+//     currency: "INR"
+// }))
+// console.log(nr.toLocaleString("en-US", {
+//     style: "currency",
+//     currency: "USD"
+// }))
+
+console.log(Number.MAX_VALUE)
+console.log(Number.MIN_VALUE)
+console.log(Number.MAX_SAFE_INTEGER)
+console.log(Number.MIN_SAFE_INTEGER)
+
+console.log('Number.isInteger("123"): ',Number.isInteger("123"))
+console.log('Number.isInteger(123): ',Number.isInteger(123))
+console.log('Number.isInteger(true): ',Number.isInteger(true))
+console.log('Number.isInteger("Abc"): ',Number.isInteger("Abc"))
+
+console.log(Number.isSafeInteger(9007199254740991))
+console.log(Number.isSafeInteger(9007199254740992))
+console.log(Number.isSafeInteger("9007199254740990"))
+
+console.log(Number.isFinite(123))
+console.log(Number.isFinite(9007199254740992))
+console.log(Number.isFinite(12/0))
+
