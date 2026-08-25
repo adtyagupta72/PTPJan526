@@ -1486,47 +1486,553 @@ let contact =
 // circle.radius = 100
 // console.log(circle.getType())
 
-let Figure = function()
-{
-    this.getType = function()
-    {
-        return this.type ? this.type : "unknown"
-    }
-}
-let figure = new Figure
+// let Figure = function()
+// {
+//     this.getType = function()
+//     {
+//         return this.type ? this.type : "unknown"
+//     }
+// }
+// let figure = new Figure
 
-let Circle = function(center , radius)
-{
-    this.type = "circle"
-    this.center = center
-    this.radius - radius
-}
-Circle.prototype = figure
+// let Circle = function(center , radius)
+// {
+//     this.type = "circle"
+//     this.center = center
+//     this.radius - radius
+// }
+// Circle.prototype = figure
 
-let circle1 = new Circle({x:0,y:0},10)
-let circle2 = new Circle({x:100,y:100},100)
+// let circle1 = new Circle({x:0,y:0},10)
+// let circle2 = new Circle({x:100,y:100},100)
 
-let Triangle = function(v1,v2,v3)
-{
-    this.type = "triangle"
-    this.vertices = [v1 , v2 , v3]
+// let Triangle = function(v1,v2,v3)
+// {
+//     this.type = "triangle"
+//     this.vertices = [v1 , v2 , v3]
   
-}
-Triangle.prototype = figure
-let triangle1 = new Triangle({x:0,y:0},{x:50,y:50},{x:100,y:100})
-console.log(circle1.getType())
-console.log(triangle1.getType())
+// }
+// Triangle.prototype = figure
+// let triangle1 = new Triangle({x:0,y:0},{x:50,y:50},{x:100,y:100})
+// console.log(circle1.getType())
+// console.log(triangle1.getType())
 
-Circle.prototype.hi= function(){console.log("hii")}
+// Circle.prototype.hi= function(){console.log("hii")}
 
-circle1.hi()
-figure.hi()
-triangle1.hi()
+// circle1.hi()
+// figure.hi()
+// triangle1.hi()
 
-let testString = new String("uni dri toe")
-console.log(testString.length)
-String.prototype.hi = function()
-{
-    console.log("hii")
-}
-console.log(testString.hi())
+// let testString = new String("uni dri toe")
+// console.log(testString.length)
+// String.prototype.hi = function()
+// {
+//     console.log("hii")
+// }
+// console.log(testString.hi())
+
+
+// class Student
+// {
+//     name 
+//     age
+//     gender
+//     rollNumber
+
+//     constructor(name,age,gender,rollNumber)
+//     {
+//         console.log("const called")
+//         this.name = name
+//          this.age = age 
+//           this.gender = gender 
+//            this.rollNumber = rollNumber 
+//     }
+
+//     print()
+//     {
+//         console.log(this.name)
+//         console.log(this.age )
+//         console.log(this.gender)
+//         console.log(this.rollNumber)
+//     }
+// }
+// console.log("creating object")
+// let zee = new Student("zee",12,"male",2344)
+// console.log("end object")
+// console.log(zee)
+
+// zee.name = "Zeeshan"
+// zee.age = 21
+// zee.gender = "male"
+// zee.rollNumber = 234
+
+// console.log(zee)
+
+// class vehicle
+// {
+//     transportable
+//     weight
+//     capacity
+//     color
+// }
+
+// class Motorbike extends vehicle{
+//     maxSpeed
+//      fuelType
+//      peopleCapacity
+//      average
+// }
+// class Car extends vehicle{
+//     maxSpeed
+//     gears
+//     canReverse
+//     fuelType
+// }
+
+// let vehical = new vehicle()
+// console.log(vehical)
+
+// let motorBike = new Motorbike()
+// console.log(motorBike)
+
+// let car = new Car ()
+// console.log( car)
+
+// let Vehicle= function(id,latitude,longitude)
+// {
+//     // let{id,latitude,longitude}= initialisedData
+//     this.setPosition = function(latitude , longitude)
+//     {
+//         this.time = Date.now()
+//         this.longitude = longitude
+//         this.latitude = latitude
+//     }
+//     this.id = id
+//     this.status = "unavailable"
+//     this.setPosition(latitude,longitude)
+// }
+
+// let vehical2 = new Vehicle({id:12,latitude:23.65433,longitude:34.76654})
+// console.log(vehical2)
+
+// class AlmostEmptyClass{
+//     constructor(sth)
+//     {
+//         console.log(sth)
+//     }
+//     sayHi()
+//     {
+//         console.log("hi")
+//     }
+// }
+// let almostemptyobject = new AlmostEmptyClass(120)
+// almostemptyobject.sayHi()
+
+// class Vehicle  {
+//     status = "unavailable"
+//       #longitude
+//      #latitude
+//     constructor({id,latitude,longitude})
+//     {
+       
+//         this.id = id
+//     this.setPosition= ({latitude,longitude})
+   
+//     }
+//      setPosition = function({latitude,longitude})
+//         {
+//             this.time = Date.now()
+//          this.#longitude = longitude
+//         this.#latitude = latitude
+//         }
+//         getPositon = function()
+//         {
+//             return{
+//                 latitude:this.#latitude,
+//                 longitude:this.#longitude
+//             }
+//         }
+// }
+// let vehicle1 = new Vehicle({id:"alsd",latitude:56.78353,longitude:453637})
+// let vehicle2 = new Vehicle({id:"als1",latitude:56.353,longitude:7})
+// console.log(vehicle1)
+// console.log(vehicle2)
+
+// function namedfunction()
+// {
+//     console.log("i'm named")
+// }
+// let anonymous = function()
+// {
+//     console.log("i am bit anonymous ")
+
+// }
+// let notExactlyAnonymous = function anotherNamedFunction()
+// {
+//     console.log("i am confused")
+// }
+
+// namedfunction()
+// anonymous()
+// notExactlyAnonymous()
+
+// let AlmostEmptyClass = class {
+//     constructor(sth)
+//     {
+//         console.log(sth)
+//     }
+//     sayHi()
+//     {
+//         console.log("hi")
+//     }
+// }
+// let almostemptyobject = new AlmostEmptyClass(120)
+// almostemptyobject.sayHi()
+
+// console.log(almostemptyobject instanceof AlmostEmptyClass )
+// console.log(almostemptyobject instanceof String )
+// let str = new String("test")
+// console.log(str instanceof String )
+
+//  class Vehicle  {
+//     constructor({id,latitude,longitude})
+//     {
+       
+//         this.id = id
+//     this.status = "unavailable"
+//     //  set position(latitude,longitude)
+//     }
+//      set position ({latitude,longitude})
+//         {
+//             this.time = Date.now()
+//          this.longitude = longitude
+//         this.latitude = latitude
+//         }
+//         get position ()
+//         {
+//             return{
+//                 latitude:this.latitude,
+//                 longitude:this.longitude
+//             }
+//         }
+        
+// }
+// let vehicle1 = new Vehicle({id:"alsd",latitude:56.78353,longitude:453637})
+// let vehicle2 = new Vehicle({id:"als1",latitude:56.353,longitude:7})
+// console.log(vehicle1)
+// console.log(vehicle2)
+
+// class Bus extends Vehicle{
+//     constructor({seats , id , latitude , longitude})
+//     {
+//         super({id,latitude,longitude})
+//         this.seats = seats
+//     }
+// }
+// let bus = new Bus({seats:4, longitude:67.987,latitude:78.67,id:89})
+// console.log(bus.id)
+// console.log(bus.seats)
+
+// let AlmostEmptyClass = class {
+//     constructor(sth)
+//     {
+//         console.log(sth)
+//     }
+//     sayHi()
+//     {
+//         console.log("hi")
+//     }
+// }
+
+// class Extentedclass extends AlmostEmptyClass
+// {
+//     constructor(name)
+//     {
+//         super("i am super")
+//         this.name = name
+//     }
+//     sayHi()
+//     {
+//         console.log(`hi ${this.name }`)
+//     }
+//     newHi()
+//     {
+//         this.sayHi()
+//     }
+//     oldHi()
+//     {
+//         super.sayHi()
+//     }
+// }
+// let obj = new Extentedclass("zee")
+// obj.sayHi()
+// obj.newHi()
+// obj.oldHi()
+
+// let AlmosatEmpty = function(sth)
+// {
+//     console.log(sth)
+//     this.sayHi = function()
+//     {
+//         console.log("hiii")
+//     }
+// }
+
+// class EntebdedClass extends AlmosatEmpty
+// {
+//     constructor(name)
+//     {
+//         super("i'm super")
+//         this.name = name
+//     }
+//     sayHi()
+//     {
+//         console.log(`hii ${name}`)
+//     }
+// }
+
+// let obj = new EntebdedClass("zeeshan")
+// obj.sayHi()
+
+
+// class AlmostEmpty 
+// {
+//     constructor(sth)
+//     {
+//         console.log(sth)
+//     }
+//     sayHi()
+//     {
+//         console.log("hi")
+//     }
+//     static sayHello()
+//     {
+//         console.log("hello!")
+//     }
+// }
+
+ 
+// let AlmostEmptyobj = new AlmostEmpty(120)
+// AlmostEmptyobj.sayHi()
+// AlmostEmpty.sayHello()
+
+// class Vehicle  {
+//     status = "unavailable"
+//       #longitude
+//      #latitude
+//     constructor({id,latitude,longitude})
+//     {
+       
+//         this.id = id
+//     this.setPosition= ({latitude,longitude})
+   
+//     }
+//      setPosition = function({latitude,longitude})
+//         {
+//             this.time = Date.now()
+//          this.#longitude = longitude
+//         this.#latitude = latitude
+//         }
+//         getPositon = function()
+//         {
+//             return{
+//                 latitude:this.#latitude,
+//                 longitude:this.#longitude
+//             }
+//         }
+//         static isSameId(v1 , v2)
+//         {
+//             return v1.id === v2.id
+//         }
+// }
+// let vehicle1 = new Vehicle({id:"alsd",latitude:56.78353,longitude:453637})
+// let vehicle2  = new Vehicle({id:"als1",latitude:56.353,longitude:7})
+// console.log(Vehicle.isSameId(vehicle1 ,vehicle1))
+// console.log(vehicle2)
+
+// class Student
+// {
+//     name 
+//     age
+//     gender
+//     rollNumber
+//     static count = 0
+//     constructor(name,age,gender,rollNumber)
+//     {
+//         console.log("const called")
+//         this.name = name
+//          this.age = age 
+//           this.gender = gender 
+//            this.rollNumber = rollNumber 
+//            Student.count++
+//     }
+
+//     print()
+//     {
+//         console.log(this.name)
+//         console.log(this.age )
+//         console.log(this.gender)
+//         console.log(this.rollNumber)
+//     }
+// }
+// console.log("creating object")
+// console.log(Student.count)
+// let zeeshan = new Student("zee",12,"male",2344)
+// let adtya = new Student ( "adt","13" ,"male",2345)
+// let nirbhay= new Student ( "nitt","14" ,"male",2346)
+// console.log(Student.count)
+
+// let Test = function(arg)
+// {
+//     this.arg = arg
+//     console.log(this.arg)
+// }
+// Test.prototype.showsth = function()
+// {
+//     console.log("i am proto")
+// }
+// Test.showsth = function()
+// {
+//     console.log("hii i am static")
+// }
+
+// let test = new Test ("hello")
+// test.showsth()
+// Test.showsth()
+// console.log(test instanceof Test)
+
+// let fact = (n) => { return n>1? n * fact(n-1):1}
+
+// console.log(fact(5))
+
+// let n = new Number(123.456)
+// console.log("n:",n)
+// let fixed = n.toFixed(1)
+// console.log("fixed:",fixed)
+// let test1 = Number.isInteger(100)
+// console.log("test1",test1)
+// let test2 = n.isInteger(100)
+// console.log("test2",test2)
+
+// let strObj = new String("Do bats eat cats? ")
+// console.log(typeof(strObj))
+// console.log(strObj.length)
+// let words = strObj.split(" ")
+// console.log(words[0])
+
+// let str = new String("Do bats eat cats? ")
+// console.log(typeof(str))
+// console.log(str.length)
+//  words = str.split(" ")
+// console.log(words[0])
+
+// let boolObj1 = new Boolean(false)
+// let boolObj2 = new Boolean(true)
+// let str1 = boolObj1.toString()
+// let bool2 = boolObj2.valueOf()
+// console.log(`boolObj1: ${typeof boolObj1 }: ${ boolObj1}`)
+// console.log(`boolObj2: ${typeof boolObj2 }: ${ boolObj2}`)
+// console.log(`str1: ${typeof str1}: ${str1}`)
+// console.log(`bool2: ${typeof bool2}: ${bool2}`)
+
+// let bool1 = false
+// str1 = bool1.toString()
+// bool2 = bool1.valueOf()
+// console.log(`bool1: ${typeof bool1}: ${bool1}`)
+// console.log(`str1: ${typeof str1}: ${str1}`)
+
+
+// let bool1 = Boolean(false)
+// let bool2 = Boolean(1)
+// let bool3 = Boolean("")
+
+// console.log(`bool1: ${typeof bool1 }: ${ bool1}`)
+// console.log(`bool2: ${typeof bool2 }: ${ bool2}`)
+// console.log(`bool3: ${typeof bool3 }: ${ bool3}`)
+
+// console.log(0.2 + 0.1 )
+// console.log(0.2 + 0.1 === 0.3 )
+// console.log(0.2 + 0.1 == 0.3 )
+
+// console.log(typeof (0.2+0.3).toFixed(1))
+// console.log( (0.2+0.3).toFixed(1))
+// console.log(Number(typeof (0.2+0.3).toFixed(1)))
+// console.log( Number((0.2+0.3).toFixed(1)))
+
+// let a = 10
+// let b = 0X10
+// let c = 0o10
+// let d = 0b10
+// console.log(a)
+// console.log(b)
+// console.log(c)
+// console.log(d)
+// let x = 0.3
+// let y = 0.6
+// console.log(x+y)
+// console.log((x+y).toFixed(1))
+// console.log(x/0)
+// console.log(x/"abc")
+
+// let str1 =(11).toString()
+// let str2 =(11).toString(16)
+// console.log(str1)
+// console.log(str2)
+
+// let number1 = new Number()
+// let number2 = new Number(100)
+// let number3 = new Number("200")
+// let number4 = new Number("abcd")
+// let number5 = new Number(9e10000)
+// console.log(typeof number4)
+// console.log(number4)
+
+// function test() {
+//   console.log("Step 1");
+//   return "Done";   // ye sirf value return karega
+// }
+
+// console.log(test());  // yaha "Done" print hoga
+
+// let a = 12345
+// console.log(a.toExponential())
+// console.log(a.toExponential(1))
+// let nr1 = 10.55
+// console.log(nr1.toFixed(1))
+// console.log(nr1.toFixed(2))
+// console.log(nr1.toFixed(3))
+// let nr2 = 2.55
+// console.log(nr2.toFixed(1))
+// console.log(nr2.toFixed(20))
+// console.log(((nr2 * 10).toFixed(0)/10))
+
+
+// let nr = 12345.789
+// console.log(nr.toLocaleString("en-GB"))
+// console.log(nr.toLocaleString("fr-FR"))
+// console.log(nr.toLocaleString("de-DE"))
+// console.log(nr.toLocaleString("es-ES",{
+// style:"currency",
+// currency:"INR"
+// }))
+
+// console.log(nr.toLocaleString("hi-IN"))
+
+console.log(Number.MAX_VALUE)
+
+console.log(Number.MIN_VALUE)
+
+console.log(Number.MAX_SAFE_INTEGER)
+
+console.log(Number.MIN_SAFE_INTEGER)
+
+console.log(Number.isInteger("123"))
+console.log(Number.isInteger(123))
+console.log(Number.isInteger(true))
+console.log(Number.isInteger("abc"))
+
+console.log(Number.isSafeInteger("9007199254740991"))
+console.log(Number.isSafeInteger("-9007199254740991"))
+
+console.log(Number.isFinite(123))
+console.log(Number.isFinite(9007199254740992))

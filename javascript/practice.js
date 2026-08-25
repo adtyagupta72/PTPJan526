@@ -144,3 +144,25 @@ const paintings = [
 ]
 
 console.log(paintings[3].year)
+
+//factory and constructor '
+function Image(title , artist , date )
+{
+   this.title = title;
+    this.artist = artist;
+    this.date = date;
+}
+
+function getImage(title , artist , date)
+{
+     return{
+        title : title,
+        artist : artist,
+         date : date
+    }
+    
+}
+
+let image1 = new  Image( "The Last Supper","michael",1345)
+let image2 = getImage(image1.title , image1.artist , image1.date)
+console.log(image2)
