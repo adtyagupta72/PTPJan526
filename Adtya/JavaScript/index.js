@@ -1,4 +1,4 @@
-//"use strict"
+// "use strict"
 // console.log("Program Starts here------")
 // console.log("Hello There....")
 
@@ -973,3 +973,2346 @@ function openPromptDialog()
 // let message = remove ? "Deleting Data" : "Cancelled"
 // console.log(message)
 
+// let price = 50
+// let shippingCost = price > 50 ? 0 : 5
+// console.log(`price = ${price}, shipping = ${shippingCost}`) 
+
+// console.log(0) 
+// console.log(10) 
+// console.log(20) 
+// console.log(30)
+// console.log(40) 
+// console.log(50) 
+// console.log(60) 
+// console.log(70) 
+// console.log(80) 
+// console.log(90)
+
+// let n = 0
+// console.log(n) 
+// n += 10
+// console.log(n)
+// n += 10
+// console.log(n)
+// n += 10
+// console.log(n)
+// n += 10
+// console.log(n)
+// n += 10
+// console.log(n) 
+// n += 10
+// console.log(n)
+// n += 10
+// console.log(n)
+// n += 10
+// console.log(n)
+// n += 10
+// console.log(n)
+// n += 10
+
+// let n = 0
+// while(n < 91) 
+// {
+//     console.log(n) 
+//     n += 10
+// }
+/*
+n   0   10  20  30  40  50  60....  90    100
+op  0   10  20  30  40  50  60      90    
+*/
+
+
+// let fruits = ["apple", "banana", "mango"]
+// let index = 0
+// while (index < fruits.length) 
+// {
+//     console.log(fruits[index])
+//     index++
+// }
+
+// let num = 2
+// while (num <= 20) 
+// {
+//     console.log(num)
+//     num += 2
+// }
+
+// let n = 10
+// while (n >= 1) 
+// {
+//   console.log(n)
+//   n--
+// }
+
+// let condition = false
+
+// while(condition)
+// {
+//     console.log("A while loop iteration.") // never executed
+// }
+// do 
+// {
+//     console.log("A do ... while loop iteration.") // executed once
+// } 
+// while (condition)
+
+// let text = "Divya"
+// let i = 0
+// do 
+// {
+//     console.log(text[i])
+//     i++
+// } 
+// while (i < text.length)
+
+// let index = 0
+// for(; index < 10;)
+// { 
+//     console.log(index) 
+//     index++
+// }
+
+// let i = 0
+// while(i < 10) 
+// {
+//     console.log(i)
+//     i++
+// }
+
+// let values = [10, 30, 50, 100]
+// let sum = 0				
+// for(let index = 0; index < 4; index++) 
+// {
+//     sum += values[index]		
+// }					
+// console.log(sum) // 190				
+
+
+// let numbers = [2, 5, 8, 11, 14]
+// let evenCount = 0
+// for(let index = 0; index < numbers.length; index++) 
+// {
+//    	if(numbers[index] % 2 === 0) 
+//     {
+//         evenCount++
+//     }
+// }
+// console.log("Even numbers count:", evenCount)
+
+// let fruits = ["apple", "banana", "mango", "grape"]
+// for(let index = fruits.length - 1; index >= 0; index--) 
+// {
+//     console.log(fruits[index])
+// }
+
+
+// let values = [10, 30, 50, 100]
+// for(let index = 0; index < values.length; index++) 
+// {
+//     console.log(values[index]) // -> 10, 30, 50, 100
+// }
+// console.log("-------")
+// for(let index = values.length - 1; index >= 0; index--) 
+// {
+//    	console.log(values[index]) // -> 100, 50, 30, 10
+// }
+// console.log("-------")
+// for(let index = 0; index < values.length; index += 2) 
+// {
+//     console.log(values[index]) // -> 10, 50
+// }
+// let values = [10, 30, 50, 100]
+
+// for(let element of values)
+// {
+//     console.log(element)
+// }
+
+// let sum = 0
+// for(let index = 0; index < values.length; index++) 
+// {
+//     sum += values[index]
+// }
+// console.log(sum) 
+
+// sum = 0
+// for(let number of values) 
+// {
+//     sum += number
+// }
+// console.log(sum)
+
+
+// let cities = [
+//     { name: "New York", population: 18.65e6 },
+//     { name: "Cairo", population: 18.82e6 },
+//     { name: "Mumbai", population: 19.32e6 },
+//     { name: "São Paulo", population: 20.88e6 },
+//     { name: "Mexico City", population: 21.34e6 },
+//     { name: "Shanghai", population: 23.48e6 },
+//     { name: "Delhi", population: 25.87e6 },
+//     { name: "Tokyo", population: 37.26e6 }
+// ]
+// for(let city of cities) 
+// {
+//     if (city.population > 20e6) 
+//     {
+//         console.log(`${city.name} (${city.population})`)
+//     }
+// }
+
+// let names = ["Alice", "Bob", "Charlie"]
+// for(let name of names) 
+// {
+//     console.log(name)
+// }
+
+// let fruits = ["apple", "banana", "mango"]
+// for(let fruit of fruits) 
+// {
+//     console.log(fruit)
+// }
+
+// let user = 
+// {
+//     name: "Calvin",
+//     surname: "Hart",
+//     age: 66,
+//     email: "CalvinMHart@teleworm.us"
+// }
+
+// for(let key in user) 
+// {
+//   	//console.log(key) // -> name, surname, age, email
+//     console.log(`${key} -> ${user[key]}`)
+// }
+
+// let user = { name: "Swati", age: 25 } 
+// for(let key in user) 
+// { 
+//     console.log(`${key}: ${user[key]}`) 
+// }
+
+// const array1 = ["a", "b", "c"]
+// for(const element of array1) 
+// {
+//   	console.log(element)
+// }
+
+// let i = 0
+// while (true) 
+// {
+//     console.log(i)
+//     i++
+//     if (i >= 5) 
+//     {
+//         break
+//     }
+// }
+// console.log('Exited the loop with break')
+
+// for(let i = 0; i < 10; i++) 
+// {
+//     if(i == 3 || i == 6) 
+//     {
+//         continue
+//     }
+//     console.log(i)
+// }
+
+// let fruits = ["apple", "banana", "mango", "orange", "grapes"]
+// for(let i = 0; i < fruits.length; i++) 
+// {
+//     if(fruits[i] === "mango") 
+//     {
+//        	console.log("Mango found at index " + i)
+//         break
+//     }
+//     console.log("The fruit iterated: ", fruits[i])
+// }
+
+// for(let i = 1; i <= 10; i++) 
+// {
+//     if (i % 2 == 0) 
+//     {
+//         continue
+//     }
+//     console.log(i)
+// }
+
+// let temperatures
+// let sum
+// let meanTemp
+// temperatures = [12, 12, 11, 11, 10, 9, 9, 10, 12, 13, 15, 18, 21, 24, 24, 23, 25, 25, 23, 21, 20, 19, 17, 16]
+// sum = 0
+// for(let i = 0; i < temperatures.length; i++) 
+// {
+//     sum += temperatures[i]
+// }
+// meanTemp = sum / temperatures.length
+// console.log(`mean: ${meanTemp}`) 
+// temperatures = [17, 16, 14, 12, 10, 10, 10, 11, 13, 14, 15, 17, 22, 27, 29, 29, 27, 26, 24, 21, 19, 18, 17, 16]
+// sum = 0
+// for(let i = 0; i < temperatures.length; i++) 
+// {
+//     sum += temperatures[i]
+// }
+// meanTemp = sum / temperatures.length
+// console.log(`mean: ${meanTemp}`)
+
+// function getMeanTemp() 
+// {
+//     sum = 0
+//     for(let i = 0; i < temperatures.length; i++) 
+//     {
+//         sum += temperatures[i]
+//     }
+//     meanTemp = sum / temperatures.length    
+// }
+
+// temperatures = [12, 12, 11, 11, 10, 9, 9, 10, 12, 13, 15, 18, 21, 24, 24, 23, 25, 25, 23, 21, 20, 19, 17, 16]
+// getMeanTemp()
+// console.log(`mean: ${meanTemp}`) 
+
+// temperatures = [17, 16, 14, 12, 10, 10, 10, 11, 13, 14, 15, 17, 22, 27, 29, 29, 27, 26, 24, 21, 19, 18, 17, 16]
+// getMeanTemp()
+// console.log(`mean: ${meanTemp}`) 
+
+// let name = "Alice"
+// showName()
+// function showName() 
+// {
+//     console.log(name)
+// }
+
+
+// function sayHello()
+// {
+//   	console.log("Hello, world!")
+// }
+// console.log("About to call the function...")
+// sayHello() 
+// console.log("Function call finished.")
+// function showMessage() 
+// {
+//     alert( 'Hello everyone!' )
+// }
+// showMessage()
+
+// function getMeanTemp(temperatures) //parameters
+// {
+//     let sum = 0
+//     for(let i = 0; i < temperatures.length; i++) 
+//     {
+//      	sum += temperatures[i]
+//    	}
+//     return sum / temperatures.length
+// }
+// let result = getMeanTemp([12, 13, 14])//Arguments
+// console.log(`mean: ${result}`)
+
+// function showMsg()
+// {
+//     console.log("message 1")
+//     return
+//     console.log("message 2")
+// }
+// showMsg() 
+
+// temperatures
+// meanTemp
+// function getMeanTemp(temperatures)
+// {
+//     let sum = 0
+//     let result
+//     for(let i = 0; i < temperatures.length; i++) 
+//     {
+//         sum += temperatures[i]
+//    	}
+//     result = sum / temperatures.length
+//     return result  
+// }
+
+// let day1 = [12, 12, 11, 11, 10, 9, 9, 10, 12, 13, 15, 18, 21, 24, 24, 23, 25, 25, 23, 21, 20, 19, 17, 16]
+// console.log(`mean: ${getMeanTemp(day1)}`)
+// let day2 = [17, 16, 14, 12, 10, 10, 10, 11, 13, 14, 15, 17, 22, 27, 29, 29, 27, 26, 24, 21, 19, 18, 17, 16]
+// console.log(`mean: ${getMeanTemp(day2)}`) 
+
+// temperatures = [12, 12, 11, 11, 10, 9, 9, 10, 12, 13, 15, 18, 21, 24, 24, 23, 25, 25, 23, 21, 20, 19, 17, 16]
+// meanTemp = getMeanTemp()
+// console.log(`mean: ${meanTemp}`)
+
+// temperatures = [17, 16, 14, 12, 10, 10, 10, 11, 13, 14, 15, 17, 22, 27, 29, 29, 27, 26, 24, 21, 19, 18, 17, 16]
+// meanTemp = getMeanTemp()
+// console.log(`mean: ${meanTemp}`)
+
+// function add(first, second) 
+// {
+//   	return first + second
+// }
+// let result = add(5, 7)
+// console.log(result)
+
+
+// let names = ["Alice", "Bob", "Eve", "John"]
+// let name = getElement(names, 2)
+// console.log(name)
+
+// function getElement(name, index)
+// {
+//     return name[index]
+// }
+
+// function add(first, second) 
+// {
+//     return first + second
+// }
+// let first = 10, second = 20, third = 40, fourth = 80
+// console.log(add(first, second))  
+// console.log(add(second, third)) 
+// console.log(add(third, fourth))
+
+// let a = 100, b = 200, c = 300
+// function test(a) 
+// {
+//   let b = 10
+//   console.log(a)
+//   console.log(b)
+//   console.log(c) 
+// }
+// test(1)
+// console.log(a)
+// console.log(b) 
+// console.log(c) 
+
+// function showMessage(message) 
+// {
+//     console.log(`Message: ${message}`)
+// }
+// let sm = showMessage
+
+// sm("This works!") // -> Message: This works!
+// console.log(typeof sm)
+
+// function doNothing() 
+// {
+//   	return undefined
+// }
+
+// let a = doNothing() // assign result of function call
+// let b = doNothing   // assign a function
+// console.log(a)
+// console.log(typeof a) // -> undefined
+// console.log(b)
+// console.log(typeof b) // -> function
+
+// function add(a, b) 
+// {
+// 	return a + b
+// }
+// function multiply(a, b) 
+// {
+//  	return a * b
+// }
+// function operation(func, first, second) 
+// {
+//  	return func(first, second)
+// }
+// console.log(operation(add, 10, 20))      
+// console.log(operation(multiply, 10, 20))
+
+// let myAdd = function(a, b) 
+// {
+//     return a + b
+// }
+// console.log(myAdd)
+// console.log(typeof myAdd)
+// console.log(myAdd(10, 20))
+
+// let myAdd = function add(a, b) 
+// {
+//     return a + b
+// }
+// myAdd = add
+// console.log(myAdd)
+// console.log(typeof myAdd)
+// console.log(myAdd(10, 30))
+
+// console.log(add)
+// console.log(typeof add)
+// console.log(add(10, 20))
+// function add(a, b) 
+// {
+//    	return a + b
+// }
+// myAdd = add
+// console.log(myAdd(10, 20))
+// console.log(add(10, 20))
+
+// let myAdd = function(a, b) 
+// {
+//     return a + b
+// }
+// console.log(myAdd(10, 20)) 
+
+// function operation(func, first, second) 
+// {
+//     return func(first, second)
+// }
+// myAdd = function(a, b) 
+// {
+//     return a + b
+// }
+// console.log(operation(myAdd, 10, 20))
+// console.log(operation( function(a, b) 
+// {
+//     return a + b
+// }, 10, 20))
+
+// function getMeanTemp(temperatures) 
+// {
+//     if (!(temperatures instanceof Array)) 
+//     {
+//     	return "Invalid Input, please check and try again!"
+//     }
+//     let sum = 0
+//     for(let i = 0; i < temperatures.length; i++) 
+//     {
+//     	sum += temperatures[i]
+//     }
+//    	return sum / temperatures.length
+// }
+// console.log(getMeanTemp([10, 20, 30])) 
+// console.log(getMeanTemp("not an array")) 
+
+// function addNumbers(a, b) 
+// {
+//    	if (typeof a !== "number" || typeof b !== "number") 
+//     {
+//         // if(typeof a === "string")
+//         // {
+//         //     let conv = int(a)
+//         //     if(typeof conv === "number")
+//         //         a = conv
+//         // }
+//         return "Invalid input: numbers expected"
+//    	}
+//     return a + b
+// }
+// console.log(addNumbers(5, 7))        
+// console.log(addNumbers("5", 7))   
+
+// let inner = function() 
+// {
+//   	console.log('inner 1')
+// }
+// let outer = function(callback) 
+// {
+//  	console.log('outer 1')
+//   	callback()
+//    	console.log('outer 2')
+// }
+// console.log('test 1')
+// outer(inner)
+// console.log('test 2')
+
+// let fruits = ["apple", "banana", "kiwi"]
+// let intervalID = 0
+// const animateAll = (animate) =>
+// {
+//     setTimeout (()=> {
+//         animate(fruits[0])
+//         setTimeout(()=>{
+//             animate(fruits[1])
+//             intervalID = setInterval(()=> {
+//                 animate(fruits[2])
+//                 clearInterval(intervalID)
+//             },1000)
+//         },1000)
+//     },1000)
+// }
+// const animate = (fruit)=> {
+//     console.log("animating", fruit)
+// }
+// animateAll(animate)
+
+// console.log("Start")
+// setTimeout(function() 
+// {
+//   	console.log("This runs after 1 second")
+// }, 1000)
+// console.log("End")
+
+// let counter = 0
+// let intervalId = setInterval(function() 
+// {
+//    	console.log("Repeating:", ++counter)
+// }, 1000)
+// setTimeout(function() 
+// {
+//    	clearInterval(intervalId)
+//    	console.log("Stopped")
+// }, 5500)
+
+
+// let inner = function() 
+// {
+//     console.log('inner 1')
+// }
+// let outer = function(callback)
+// {
+//     console.log('outer 1')
+//     let timerId = setInterval(callback, 1000) 
+//     console.log('outer 2')
+//     setTimeout(function()
+//     {
+//         clearInterval(timerId)
+//     }, 5500)
+// }
+// console.log('test 1')
+// outer(inner)
+// console.log('test 2')	
+
+// window.addEventListener("click", function() 
+// {
+//     console.log("clicked!")
+// })
+
+// let add = function(a, b)
+// {
+//     return a + b
+// }
+
+// let add = (a, b) =>
+// {
+//    	return a + b
+// }
+// let add = (a, b) => a + b
+// console.log(add(10, 20))
+
+// function factorial(n)
+// {
+//     return n > 1 ? n * factorial(n - 1) : 1
+// }
+
+// let factorial = n => n > 1 ? n * factorial(n - 1) : 1
+// console.log(factorial(5))
+
+
+// let names = ['Alice', 'Eve', 'John']
+// function showName(element) 
+// {
+//     console.log("Name: ",element)
+// }
+// names.forEach(showName)
+
+// let greet = () => console.log("Hello!")
+// greet()
+
+// let square = x => x * x
+// console.log(square(5))
+
+// let multiply = (a, b) => a * b
+// console.log(multiply(4, 3)) 
+
+
+// function factorial(n) 
+// {
+//     let result = 1
+//     // while (n > 1) 
+//     // {
+//     //     result *= n
+//     //     n--
+//     // }
+
+//     for(let i = 2; i <= n; i++) 
+//     {
+//         result *= i
+//     }
+//     return result
+// }
+// console.log(factorial(6))
+// console.log(factorial(5))
+
+// function sum(a) 
+// {
+//     return function(b) 
+//         {
+//             return function(c) 
+//                 {
+//                     return a+b+c
+//                 }
+//         }
+// }
+// console.log(sum(3)(4)(5))
+// console.log(sum(30)) //=> function(function())
+// console.log(sum(30)(20)) //=> function(function())
+// const logger = (time) => (type) => (message) => `At time: ${time}, 
+// an event of type: ${type}, occurred with full details as: ${message}` 
+// const eventsNow = logger( '5am' )
+// const errorEvent = eventsNow( 'error' )
+// console. log(errorEvent('cannot set properties of null' ))
+/*
+function sum(a)
+    r => f(b)
+        r => f(c)
+f1 = sum(10)
+f1(20) => sum(10)(20)
+f2 = f1(20)
+f2(30) => f1(20)(30) => sum(10)(20)(30)
+*/
+// const inputElement = document.getElementById('fruits')
+// function printInputText(text) 
+// {
+//     console.log(text)
+//     //API Call
+// }
+// function debounce(fx, delay)
+// {
+//     let timeoutId = null
+//     return function(text) {
+//         clearTimeout(timeoutId)
+//         timeoutId = setTimeout (() => 
+//         {
+//             fx(text)
+//         }, delay)
+//     }
+// }
+// const debounceFn = debounce(printInputText, 2000)
+// inputElement.addEventListener('input', (event) => 
+// {
+//     console.log("fruits")
+//     debounceFn(event.target.value)//1234567
+// })
+
+// let count = 0
+// function printScroll()
+// {
+//     count += 1
+//     console. log("scroll called", count) 
+// }
+// function throttle(fx, delay)
+// {
+//     let timeoutId = null
+//     return function () 
+//     {
+//         if(!timeoutId)
+//         {
+//             timeoutId = setTimeout (() => 
+//             {
+//                 fx() 
+//                 clearTimeout(timeoutId) 
+//                 timeoutId = null
+//             }, delay)
+//         }
+//     }
+// }
+// const throttleFn = throttle(printScroll, 2000)
+// document.addEventListener('scroll', (event) => 
+// {
+//     throttleFn()
+// })
+
+// const obj = {
+//     value: 42,
+//     getValue: async function getValue() 
+//     {
+//         console.log(this.value)
+//         await new Promise((resolve) => setTimeout(resolve, 1000))
+//         console.log(this.value * 2)
+//     }
+// }    
+// const { value, getValue } = obj
+// getValue()
+
+// class Mixer 
+// {
+//     constructor (name) 
+//     {
+//         this.name = name
+//     }
+//     async start() 
+//     {
+//         console.log("Start: ", this.name) 
+//         setTimeout ( () => 
+//         {
+//             console.log("Inside Timeout: ", this.name) 
+//         }, 1000)
+//         await new Promise((resolve) => setTimeout(resolve, 500))
+//         console.log("After Await: ", this.name)
+//     }
+// }
+// const mixer = new Mixer("MixerTest")
+// mixer.start()
+
+// class DataHandler 
+// {
+//     constructor (data) 
+//     {
+//         this.data = data
+//         console.log("Property from constructor:", this.data)
+//     }
+//     async processData() 
+//     {
+//         console.log("Processing: ", this.data)
+//     	await Promise.resolve()
+//     	console.log( "Processed: ", this.data.toUpperCase())
+//     }
+// }
+// const handler = new DataHandler("async")
+// const boundProcess = handler.processData.bind( { data: "boundData" })
+// boundProcess() 
+// const handler2 = new DataHandler()
+
+
+// function Handler(name) 
+// {
+//     this.name = name
+// }
+// Handler.prototype.asyncMethod = async function () 
+// {
+//     console.log(this.name) 
+//     await new Promise((resolve) => setTimeout(resolve, 500))
+//     console.log(this.name.toUpperCase())
+// }
+// const handler = new Handler("Prototype Test")
+// handler.asyncMethod() 
+// const detachedMethod = handler.asyncMethod
+// detachedMethod()
+
+// console.log( 5 +"5")        //55
+// console.log("5" + 5)        //55
+// console.log("5" + "5")      //55
+// console.log(95 - "5")       //90    NaN
+// console.log("5" - 95)       //-90   NaN
+
+// console.log(5 * "A")
+
+// console.log('abc')
+// conole.log('def') 
+// console.log('ghi')
+
+// let multiply = (a b) => a + b
+
+// let multipl = (a, b) => a + b
+// let result = multiply(10, 20)
+
+// let multiply = (a, b) => a + b
+// let result = multiply(5, 10)
+// console.log(result)
+
+// try
+// {
+//     console.log('abc')
+//     conole.log('abc')
+// }
+// catch(error) 
+// {  
+//     console.log(error.message)
+//     console.log(error)
+// }
+
+// try
+// {
+//     console.log("Start")
+//     conole.log("Oops!")
+//     console.log("This won't run")
+//     weogb
+// }
+// catch (error) 
+// {
+//     console.log("Caught an error:")
+//     console.log(error.message)  
+// }
+// console.log("Program continues...")
+// if(isNaN("A"-10))
+// {
+
+// }
+// else
+// {
+
+// }
+
+// console.log(100 / 0) // -> Infinity
+// console.log(100 * "2") // -> 200
+// console.log(100 * "abc") // -> NaN
+
+// let sX = prompt("Enter the first number")
+// let sY = prompt("Enter the second number")
+// let x = Number(sX)
+// let y = Number(sY)
+// if (Number.isFinite(x) && Number.isFinite(y) && y !== 0) 
+// {
+//     console.log(x / y)
+// } 
+// else
+// {
+//     console.log("incorrect arguments")
+// }
+
+
+// iff(true)
+// { //-> Uncaught SyntaxError: Unexpected token '{'
+//    	 console.log("true")
+// }
+
+// let a = b
+// fun()
+
+// const someConstValue = 5
+// someConstValue = 7
+
+// let someNumber = 10
+// someNumber.length()
+// let value = -1
+// if (value < 0)
+// {
+//   throw new RangeError("Value must be non-negative")
+// }
+
+// let testArray1 = Array(10)
+// console.log(testArray1.length)
+// let testArray2 = Array(-1) 
+// console.log(testArray2.length)
+
+// let b = 10
+// try
+// {
+//     let a = b
+//     let num = 42
+//     num() 
+// } 
+// catch (error)
+// {
+//     console.log("Caught " + error)
+//     let result = error instanceof ReferenceError
+//     console.log(result)
+//     if(error instanceof ReferenceError)
+//     {
+//         console.log("This is first line which is crashing!")
+//     }
+//     else if(error instanceof TypeError)
+//     {
+//         console.log("This is the third line crashed!")
+//     }
+// }
+// console.log("We handled the exception!")
+
+// try 
+// {
+    
+// } 
+// catch (error) 
+// {
+//     console.log("Caught a TypeError: " + error.message)
+//     let result = error instanceof ReferenceError
+//     console.log(result)
+//     result = error instanceof TypeError
+//     console.log(result)
+// }
+
+
+// let a = 10
+// try 
+// {
+//     a = 5
+// }
+// finally 
+// {
+//     console.log("Finally executed!")
+// }
+// console.log(a) 
+
+// let a = 10
+// try 
+// {
+//     a = b 
+// } 
+// finally 
+// {
+//     console.log(a) 
+// }
+// console.log(a)
+
+// let a = 10
+// try 
+// {
+//     a = b  // ReferenceError
+// } 
+// catch (error) 
+// {
+//     console.log("An Error!") 
+// } 
+// finally 
+// {
+//     console.log("Finally!") 
+// }
+// console.log(a) 
+
+// let a = 10
+// try 
+// {
+//     a = b 
+// } 
+// catch (error) 
+// {
+//     try 
+//     {
+//    	    console.log(b)
+//     } 
+//     catch 
+//     {
+//      	console.log("Second catch!") 
+//     }
+// } 
+// finally 
+// {
+//     console.log("Finally!") 
+// }
+
+
+// console.log("start")
+// throw 100 
+// console.log("end")
+
+
+// console.log("start") 
+// try 
+// {
+//     throw 100
+// } 
+// catch (error) 
+// {
+//     console.log(error) 
+// }
+// console.log("end") 
+
+// function factorial(n) 
+// {
+//     if (n > 20) 
+//     {
+//         throw new RangeError("Max value 20")
+//     }
+//     let result = 1
+//     for(; n > 1; n--) 
+//     {
+//         result = result * n
+//    	}
+//     return result
+// }
+// input = 0
+// try
+// {
+//     input = 3
+//     console.log(factorial(input)) 
+//     input = 5
+//     console.log(factorial(input)) 
+//     input = 8
+//     console.log(factorial(input)) 
+//     input = 20
+//     console.log(factorial(input)) 
+//     input = 1000
+//     console.log(factorial(input)) 
+// }
+// catch(error)
+// {
+//     console.log("Error thrown for: ", input,"\n Error:", error)
+// }
+
+// function average(a, b) 
+// {
+//     return a + b / 2
+// }
+// console.log(average(2, 10))//6
+// console.log(average(5, 5)) //5
+
+
+// function largest(a, b, c) 
+// {
+//     if (a > b && a > c) 
+//     {
+//         return a
+//     } 
+//     else if (b > a && b > c) 
+//     {
+//         return b
+//     } 
+//     else 
+//     {
+//         return c
+//     }
+// }
+
+// console.log("Before debugger")
+// debugger
+// console.log("After debugger")
+// console.log(largest(1, 1, 2)) 
+// console.log(largest(1, 2, 3)) 
+// console.log(largest(3, 2, 1)) 
+// console.log(largest(2, 2, 1)) 
+
+// let part = 0
+// console.time('Leibniz')
+// for(let k = 0; k < 10000000; k++) 
+// {
+//     // part = part + ((-1) ** k) / (2 * k + 1)
+//     part = part + (k % 2 ? -1 : 1) / (2 * k + 1)
+// }
+// console.timeEnd('Leibniz')
+// let pi = part * 4
+// console.log(pi)
+
+// console.log(typeof 2.5) 
+// console.log(typeof "one two three") 
+// console.log(typeof false)
+
+// let nr = 2.5 
+// nr = nr / 2
+// console.log(nr)
+// console.log(typeof nr)
+
+// let a = [10, 20, "en to tre", true, 50]
+// a[4] = a[4] * 2
+// console.log(a[0])  
+// console.log(a[2])  
+// console.log(a[4])  
+// console.log(a)
+// console.log(typeof a)
+
+
+// let sampleObject = 
+// {
+//     id: 10,
+//     delay: 20,
+//     name: "en to tre",
+//     isPresent: true,
+//     delay: 50
+// }
+
+// sampleObject.delay = sampleObject.delay * 2
+// console.log(sampleObject.id)   
+// console.log(sampleObject.name) 
+// console.log(sampleObject.delay) 
+// console.log(sampleObject)
+// console.log(typeof sampleObject)
+
+// function myFunction()
+// {
+//     console.log("myFunction")
+// }
+
+// console.log(myFunction)
+// console.log(typeof myFunction)
+
+
+// let contact = {}
+// contact.tel = "207-662-5412"
+// console.log(contact)
+// console.log(contact.tel)
+
+// let contact = 
+// {
+// 	"first name": "Ronald",
+//     1:"one",
+//     firstName: "Adtya"
+// }
+// console.log(contact)
+// console.log(typeof contact)
+
+// console.log(contact["first name"])
+// console.log(contact[1])
+// console.log(contact.firstName)
+// console.log(contact["firstName"])
+// let key = "firstName"
+// console.log(contact[key])
+// console.log(contact.key)
+
+// let contact = 
+// {
+//     email_1: "RonaldSMurphy@freepost.org",
+//     email_2: "rsmurphy@briazz.com"
+// }
+// for(i=1; i<=5; i++) 
+// {
+//     let key = "email_" + i
+//     if(key in contact)
+//         console.log(key+"=>"+contact[key])
+//     else
+//     {
+//         console.log(key+", is not present in the object!")
+//         contact[key] = "something@some.thing"
+//     }
+// }
+// console.log(contact)
+
+
+// let test = 
+// {
+//     nr: 10, 
+//     b: false, 
+//     str: "uno dos tres", 
+//     arr: [10, 20, 30], 
+//     obj: {
+//         x: 10, 
+//         y: 20
+//         }, 
+//     fn: function(arg) {console.log(arg)} 
+// }
+// test.fn(123)
+// console.log("Number:", test.nr)
+// console.log("Boolean:", test.b)
+// console.log("String:", test.str)
+// console.log("Array:", test.arr)
+// console.log("Array:", test.arr[0])
+// console.log("Array:", test.arr[1])
+// console.log("Array:", test.arr[2])
+// console.log("Object:", test.obj)
+// console.log("Object:", test.obj.x)
+// console.log("Object:", test.obj.y)
+// console.log("Object:", test.fn)
+
+// let point = 
+// {
+//     x: 0,
+//     y: 0,
+//     otherMatrics:{
+//         distance: 0,
+//         focus:0
+//     },
+//     moveHorizontally: function(distance) 
+//     {
+//         this.x = this.x + distance
+//     },
+//     moveVertically: function(distance) 
+//     {
+//         this.y = this.y + distance
+//     },
+//     getCurrentPosition: function()
+//     {
+//         console.log("X: ", this.x)
+//         console.log("Y: ", this.y)
+//     }
+// }
+
+// point.x = 10
+// point.y = 20
+// point.getCurrentPosition()
+// point.moveHorizontally(30)
+// point.getCurrentPosition()
+// point.moveVertically(20)
+// point.getCurrentPosition()
+
+// point.distance = point.x - point.y
+// console.log("Point: ", point)
+// point.distance = "0"
+// console.log("Point: ", point)
+// checkProperty("distance")
+// delete point.distance
+// console.log("Point: ", point)
+// point.x = undefined
+// checkProperty("x")
+// // checkProperty(x)
+// checkProperty("distance")
+
+// console.log("Hello".includes("ll"))
+// // console.log(point.includes("x"))
+
+// function checkProperty(property)
+// {
+//     if(property in point)
+//     {
+//         console.log(property+" is present")
+//     }
+//     else
+//         console.log(property+" is not present here!")
+// }
+
+// console.log("point.z: ", point.z)
+// // console.log("point.otherMatrics.area: ", point.otherMatrics1.area)
+// // if(point && point.otherMatrics1) 
+// // {
+// //     console.log(point.otherMatrics1.area)
+// // }
+// // else
+// //     console.log("Not possible to access otherMatrics1")
+
+// point && point.otherMatrics && console.log(point.otherMatrics.area)
+
+// let contact = 
+// {
+//     tel: "207-662-5412",
+//     email: "RonaldSMurphy@freepost.org"
+// }
+// for(key in contact) 
+// {
+//     // print property name
+// //    console.log(key)  
+//     console.log("contact."+key+"="+contact[key])
+// }
+// console.log(Object.keys(contact))
+
+// const contact = {}
+// // contact = {
+// //     tel: "207-662-5412",
+// //     email: "RonaldSMurphy@freepost.org"
+// // }
+
+// contact.tel = "207-662-5412"
+// contact.email = "RonaldSMurphy@freepost.org"
+// console.log(contact)
+
+// var point1 = {x: 10, y: 20}
+// var point2 = {x: 10, y: 20}
+// console.log(point1 === point2)
+// console.log(point1 == point2)
+// point1 = point2
+// console.log(point1 === point2)
+// console.log(point1 == point2)
+// console.log("point1 = ", point1)
+// console.log("point2 = ", point2)
+// point1.z = 30
+// console.log("point1 = ", point1)
+// console.log("point2 = ", point2)
+
+// var point = {
+//     x: 10,
+//     y: 20,
+//     metrics: {
+//         area: 0,
+//         x:0,
+//         y:0
+//     }
+// }
+
+// let point0 = {x:10, y: 20 }
+// let point1 = point0    // copy reference
+// let point2 = {}
+// Object.assign(point2, point0, {})  //  copy properties into the new object
+// //, metrics: {area: 0,x:0,y:0}
+// console.log(point2)
+// // console.log(point2.y)
+// console.log(point1 === point0) // true
+// console.log(point1 === point2) // false
+// console.log(point0 === point2)
+// //  ... -> spreader operator used to spread the contet of a complex data type
+
+// let array = [11, 21, 31, 41, 51]
+// let object = {
+//     a: 1,
+//     b: 2,
+//     c: 3
+// }
+
+// myFun(...array, 22, 33)
+
+// function myFun(a, b, c, d, e, f = 1, g = 2)
+// {
+//     console.log("a:", a)
+//     console.log("b:", b)
+//     console.log("c:", c)
+//     console.log("d:", d)
+//     console.log("e:", e)
+//     console.log("f:", f)
+//     console.log("g:", g)
+// }
+
+
+// let point0 = {
+//     x:10, 
+//     y:20 
+// }
+// let point2 = { ...point0}
+// let point3 = { ...point0, z: 100}
+// console.log("Point0: ", point0)
+// console.log("Point2: ", point2)
+// console.log(point0 === point2)
+// point2 = point0
+// console.log(point0 === point2)
+// console.log("Point3: ", point3)
+// let point4 = { ...point3, ...{z: 200, color: "red"}}
+// console.log("point4:", point4)
+// point4 = { ...point3, z: 200, color: "red"}
+// console.log("point4:", point4)
+
+// let circle1 = 
+// {
+//   radius: 100,
+//   center: {
+//     x: 100,
+//     y: 100
+//   }
+// }
+
+// let circle2 = { ...circle1 } // Shallow copy
+
+// circle1.radius = 200
+// circle1.center.x = 200
+// console.log(circle2.radius)      // 100 – primitive value is copied
+// console.log(circle2.center.x)   // 200 – because center is a reference
+// console.log(circle1 === circle2)          // false – different top-level objects
+// console.log(circle1.center === circle2.center) // true – same nested object reference	
+
+// let deepClone = function(obj) 
+// {
+//     let newObj = {...obj}
+//     for(property in newObj) 
+//     {
+//         if(typeof newObj[property] === "object") 
+//         {
+//             newObj[property] = deepClone(newObj[property])
+//         }
+//     }
+//     return newObj
+// }
+// let circleCopy = deepClone(circle1)
+
+// console.log("circleCopy === circle1: ", circleCopy === circle1)
+// console.log("circleCopy.center === circle1.center: ", circleCopy.center === circle1.center)
+
+// let circle = 
+// {
+//     radius: 100,
+//     center: 
+//     {
+//         x:0,
+//         y:0
+//     },
+//     // getType: function() 
+//     // {
+//     //    	return "circle"
+//  	// }
+//     getType()
+//     {
+//         // console.log(this.radius)
+//         // return "circle"
+//         return (typeof this.radius === "number") ? "circle" : "unknown"
+// 	}
+// }
+
+// console.log("Method Calling: ", circle.getType())
+// console.log("Method Calling: ", circle["getType"])
+// console.log("Method Calling: ", circle["getType"]())
+// console.log(circle.getType())
+// let figure = {...circle}
+// delete circle.radius
+// console.log(figure.radius)
+// console.log(figure.getType())
+
+// let circle = 
+// {
+//     radius: 100,
+//     x: 100,
+//     y: 200,
+//     center: 
+//     {
+//         x:0,
+//         y:0,
+//         show()
+//         {
+//             console.log(`${this.x}, ${this.y}`)
+//         }
+//     },
+//     show()
+//     {
+//         console.log(`${this.x}, ${this.y}`)
+//     }
+// }
+
+// circle.center.show()
+// circle.show()
+
+// let user = 
+// {
+//     name: "Divya",
+//     city: "Bhopal",
+//     address: 
+//     {
+//     	city: "Indore",
+//     	showCity() 
+//         {
+//      	    console.log("City is:", this.city)
+//    		}
+//  	},
+//     showCity() 
+//     {
+//         console.log("City is:", this.city)
+//     }
+// }
+
+// user.address.showCity()
+// user.showCity()
+
+// let contact = 
+// {
+//   	_tel: "207-662-5412",
+// 	get tel() 
+//     {
+//         console.log("Getter is called!")
+//         return "+91 "+this._tel
+//     },
+//     set tel(t) 
+//     { 
+//         if(t !== "")
+//         {
+//             this._tel = t+"."
+//         }
+//         else
+//         {
+//             console.log("Blank not allowed")
+//         }
+//     }
+// }
+
+// console.log(contact.tel)
+// contact.tel = "100-100-1000"
+// console.log(contact.tel)
+// contact.tel = ""
+// contact.email = "RonaldSMurphy@freepost.org"
+// console.log(contact.email)
+
+// let contact = 
+// {
+//     _age: 36,
+//     firstName : "David",
+//     lastName : "Taylor",
+//     get fullName() 
+//     {
+//         return `${this.firstName} ${this.lastName}`
+//     },
+//     get age() 
+//     { 
+//         return this._age
+//     },
+//     set age(a) 
+//     { 
+//         if(a > 0) 
+//             this._age = a
+//     }
+// }
+// console.log(contact.fullName)
+// contact.age = -20
+// console.log(contact.age)
+// // contact.age = 20
+// // console.log(contact.age)
+
+// console.log(Object.getOwnPropertyDescriptor(contact, "firstName"))
+// console.log("-------------")
+// for(key in contact)
+// {
+//     console.log(key+"->"+contact[key])
+// }
+// console.log("-------------")
+// Object.defineProperty(contact, "_age", {
+//     value: 36,
+//     writable: true,
+//     enumerable: false,
+//     configurable: true
+// })
+// Object.defineProperty(contact, "firstName", {
+//     value: "David",
+//     writable: true,
+//     enumerable: false,
+//     configurable: true
+// })
+// for(key in contact)
+// {
+//     console.log(key+"->"+contact[key])
+// }
+// console.log("-------------")
+// console.log("Age: ", contact.age)
+
+// Object.defineProperty(contact, "_age", 
+// {
+//     value: contact._age,
+//     writable: false,
+//     enumerable: false,
+//     configurable: true
+// })
+// console.log(contact)
+// console.log(contact._age)
+// contact._age = 100
+// contact.age = 100
+// console.log(contact._age)
+// console.log(contact)
+
+// let enumKeys = Object.keys(contact)
+// let allKeys = Object.getOwnPropertyNames(contact)
+// console.log("enumKeys: ", enumKeys)
+// console.log("allKeys: ", allKeys)
+
+// // Object.preventExtensions(contact)
+// contact.gender = "M"
+// console.log(contact)
+
+// // Object.seal(contact)
+// delete contact.gender
+// contact.contactNumber = 9876543210
+// console.log(contact)
+
+// // Object.freeze(contact)
+// contact.contactNumber = 10000000
+// console.log(contact)
+
+// let createPoint  = function(x, y) 
+// {
+//     let obj = {}
+//     obj.x = x
+//     obj.y = y
+//     return obj
+// }
+// let createPoint  = function(x, y) 
+// {
+//     return 
+//     {
+//         x,
+//         y
+//     }
+// }
+
+// let createPoint  = (x, y) => ({x, y})
+// //Factory Function
+// let point1 = createPoint(1,1)
+// let point2 = createPoint(2,2)
+// console.log(point1.x) // ->  1
+// console.log(point2.x) // -> 2
+// console.log("point1: ", point1)
+// console.log("point2: ", point2)
+
+// let createColoredPoint  = function(x, y, color) 
+// {
+//     let _info = "... object under construction"
+//     let _color = color
+//     console.log(_info)
+//     return {
+//         x,
+//         y,
+//         getColor() 
+//         {
+//             return _color
+//         }
+//     }
+// }
+// let coloredPoint1 = createColoredPoint (1, 1, "red")
+// let coloredPoint2 = createColoredPoint (2, 2, "green")
+// console.log(coloredPoint1.getColor())
+// console.log(coloredPoint2.getColor())
+// console.log(coloredPoint1._color)
+
+// let ColoredPoint = function(x, y, color) 
+// {
+//     let _info = "... object under construction"
+//     let _color = color
+//     console.log(_info)
+
+//     this.x = x
+//     this.y = y
+//     this.getColor = function() {return _color}
+// }
+// let coloredPoint1 = new ColoredPoint(1, 1, "red")
+// let coloredPoint2 = new ColoredPoint(2, 2, "green") 
+// console.log(coloredPoint1.getColor())
+// console.log(coloredPoint2.getColor())
+// console.log(coloredPoint1._color)
+
+// console.log("coloredPoint1.constructor.name: ", coloredPoint1.constructor.name)
+// console.log("typeof coloredPoint1.constructor: ", typeof coloredPoint1.constructor)
+
+// let a = {}
+// console.log("a.constructor.name: ", a.constructor.name)
+// console.log("typeof a.constructor: ", typeof a.constructor)
+
+// let emptyObject = new Object()
+// console.log(emptyObject.constructor.name) 
+// let anotherEmptyObject = {}
+// console.log(anotherEmptyObject.constructor.name)
+
+// let reallyEmptyObject = Object.create(null)
+// // console.log(reallyEmptyObject.constructor.name)
+// console.log(typeof reallyEmptyObject.constructor)
+// //----------
+// let myNewObject = {
+//     a: 10
+// }
+
+// let myDerivedObject = Object.create(myNewObject)
+// console.log(myDerivedObject.constructor.name)
+// console.log(typeof myDerivedObject.constructor)
+// console.log("myDerivedObject.a: ", myDerivedObject.a)
+
+// let point = {x:0, y:0}
+// let coloredPoint = {color: "red"}
+// console.log("coloredPoint.__proto__: ", coloredPoint.__proto__)
+// coloredPoint.__proto__ = point //inheretance
+
+// console.log(Object.getOwnPropertyNames(coloredPoint))
+// console.log(coloredPoint.color)
+// console.log(coloredPoint.x)	
+
+// coloredPoint.x = 100   // new property
+// console.log("coloredPoint.x: ", coloredPoint.x)
+// console.log("point.x: ", point.x)
+// console.log("Object.getOwnPropertyNames(coloredPoint): ", Object.getOwnPropertyNames(coloredPoint))	
+
+// point.y = 200
+// console.log("coloredPoint.y: ", coloredPoint.y)
+// console.log("point.y: ", point.y)
+
+
+// figure = 
+// {
+//     getType: function() 
+//     {
+//         return this.type ? this.type : "unknown"
+//     }
+// }
+
+// let circle = 
+// {
+//     type: "circle",
+//     center: {x:0, y:0},
+//     radius: 100
+// }
+// circle.__proto__ = figure   //inheretance
+// console.log(figure.getType())   //unknown
+// console.log(circle.getType())   //circle
+// Object.setPrototypeOf(circle, figure)
+// let proto = Object.getPrototypeOf(circle)
+// console.log(circle.getType())
+
+// let circle = Object.create(figure)
+// circle.type = "circle"
+// circle.center = {x:0, y:0},
+// circle.radius = 100
+// console.log(circle.getType())
+
+// let Figure = function()
+// {
+//     this.getType = function() 
+//     {
+//         return this.type ? this.type : "unknown"
+//     }
+// }
+// let figure = new Figure
+
+// let Circle = function(center, radius)
+// {
+//     this.type = "circle"
+//     this.center = center
+//     this.radius = radius
+// }
+// Circle.prototype = figure
+
+// let circle1 = new Circle({x:0, y:0}, 10)
+// let circle2 = new Circle({x:100, y:100}, 100)
+
+// let Triangle = function(v1, v2, v3) 
+// {
+//     this.type = "triangle"
+//     this.vertices = [ v1, v2, v3]
+// }
+// Triangle.prototype = figure
+// let triangle1 = new Triangle({x:0, y:0}, {x:50, y:50}, {x:10, y:100})
+// console.log(circle1.getType())
+// console.log(triangle1.getType())
+
+// Circle.prototype.hi = function(){console.log("Hi!")}
+
+// circle1.hi()
+// triangle1.hi()
+// figure.hi()
+
+// let testString = new String("unu doi trei")
+// console.log("length: ",testString.length)
+// String.prototype.hi = function()
+//                         {
+//                             console.log("Hi!")
+//                         }
+// console.log("testString.hi(): ", testString.hi())
+
+// class Student
+// {
+// 	name
+// 	age
+// 	gender
+// 	rollNumber
+
+//     constructor(name, age, gender, rollNumber)
+//     {
+//         console.log("Constructor called!")
+//         this.name = name
+//         this.age = age
+//         this.gender = gender
+//         this.rollNumber = rollNumber
+//     }
+//     print()
+//     {
+//         console.log("name: ", this.name)
+//         console.log("age: ", this.age)
+//         console.log("gender: ", this.gender)
+//         console.log("rollNumber: ", this.rollNumber)
+//     }
+// }
+// console.log("Going to create an Object!")
+// let adtya = new Student("Adtya Gupta", 20, "Male", 11)
+// console.log("Done with creating the Object!")
+// console.log("adtya: ", adtya)
+// console.log("typeof adtya: ", typeof adtya)
+// adtya.print()
+// adtya.name = "Adtya Gupta"
+// adtya.age = 20
+// adtya.gender = "Male"
+// adtya.rollNumber = 11
+// console.log("adtya: ", adtya)
+// console.log("adtya.name: ", adtya.name)
+// console.log("adtya.age: ", adtya.age)
+// console.log("adtya.gender: ", adtya.gender)
+// console.log("adtya.rollNumber: ", adtya.rollNumber)
+
+// class Vehicle
+// {
+// 	transportMode
+// 	weight
+// 	capacity
+// 	color
+// }
+
+// class MotorBike extends Vehicle
+// {
+// 	maxSpeed
+// 	fuelType
+// 	peopleCapacity
+// 	average
+// }
+// class Car extends Vehicle
+// {
+// 	maxSpeed
+// 	fuelType
+// 	peopleCapacity
+// 	average
+// 	gears
+// 	canReverse
+// }
+
+// let vehical = new Vehicle()
+// console.log("vehical: ", vehical)
+
+// let motorBike = new MotorBike()
+// console.log("motorBike: ", motorBike)
+
+// let car = new Car()
+// console.log("car: ", car)
+
+// let Vehicle = function(id, latitude, longitude)
+// let Vehicle = function({id, latitude, longitude})
+// {
+//     this.setPosition = function(latitude, longitude) 
+//     {
+//         this.time = Date.now()
+//         this.longitude = longitude
+//         this.latitude = latitude
+//     }
+//     this.id = id
+//     this.status = "unavailable"
+//     this.setPosition(latitude, longitude)
+// }
+
+// // let vehical1 = new Vehicle(12, 12.12121212, 24.12121212)
+// let vehical2 = new Vehicle({id:12, latitude:12.12121212, longitude:24.12121212})
+// // console.log("vehical1: ", vehical1)
+// console.log("vehical2: ", vehical2)
+
+// class AlmostEmptyClass 
+// {
+//     constructor(sth) 
+//     {
+//         console.log(sth)
+//     }
+//     sayHi() 
+//     {
+//         console.log("Hi!")
+//     }
+// }
+// let almostEmptyObject = new AlmostEmptyClass(120) // -> 120
+// almostEmptyObject.sayHi()
+
+// class Vehicle 
+// {
+//     constructor({id, latitude, longitude})
+//     {
+//         this.id = id
+//         this.status = "unavailable"
+//         this.setPosition({latitude, longitude})
+//     }
+//     setPosition({latitude, longitude}) 
+//     {
+//         this.time = Date.now()
+//         this.longitude = longitude
+//         this.latitude = latitude
+//     }
+//     getPosition() 
+//     {
+//         return {
+//                 latitude: this.latitude,
+//                 longitude: this.longitude
+//                 }
+//     }
+// }
+// let vehicle1 = new Vehicle({id: "AL1024", latitude: 59.367647, longitude: 18.213451})
+// let vehicle2 = new Vehicle({longitude: 18.213423, latitude: 59.367628, id: "AL1025"})
+// console.log("vehicle1: ", vehicle1)
+// console.log("vehicle2: ", vehicle2)
+
+// function namedFunction() 
+// { 
+//     console.log("I'm named, I hope ..") 
+// }
+// let anonymousFunction = function() 
+// {
+//     console.log("I'm a bit anonymous ...")
+// }
+// let notExactlyAnonymousFunction = function anotherNamedFunction() 
+// {
+//     console.log("I'm confused ...")
+// }
+// namedFunction()	// -> I'm named, I hope ...
+// anonymousFunction()	// -> I'm a bit anonymous ...
+// notExactlyAnonymousFunction()
+
+
+// let AlmostEmptyClass = class {
+//     constructor(sth) 
+//     {
+//         console.log(sth)
+//     }
+//     sayHi() 
+//     {
+//         console.log("Hi!")
+//     }
+// }
+// let almostEmptyObject = new AlmostEmptyClass(120) // -> 120
+// almostEmptyObject.sayHi()
+
+// console.log(almostEmptyObject instanceof AlmostEmptyClass) // -> true
+// console.log(almostEmptyObject instanceof String) // -> false
+// let str = new String("test me")
+// console.log(str instanceof String)
+
+// class Vehicle 
+// {
+//     constructor({id, latitude, longitude})
+//     {
+//         this.id = id
+//         this.status = "unavailable"
+//         this.position = {latitude, longitude}
+//     }
+//     set position({latitude, longitude}) 
+//     {
+//         this.time = Date.now()
+//         this.longitude = longitude
+//         this.latitude = latitude
+//     }
+//     get position() 
+//     {
+//         return {
+//                 latitude: this.latitude,
+//                 longitude: this.longitude
+//                 }
+//     }
+//     // set status(status)
+//     // {
+//     //     this.status = status
+//     // }
+//     // get status()
+//     // {
+//     //     return this.status
+//     // }
+// }
+// let vehicle1 = new Vehicle({id: "AL1024", latitude: 59.367647, longitude: 18.213451})
+// let vehicle2 = new Vehicle({longitude: 18.213423, latitude: 59.367628, id: "AL1025"})
+// console.log("vehicle1: ", vehicle1)
+// console.log("vehicle2: ", vehicle2)
+
+// class Bus extends Vehicle 
+// {
+//     id
+//     constructor({seats, id, latitude, longitude}) 
+//     {
+//         super({id, latitude, longitude})
+//         this.seats = seats
+//         this.id = id
+//     }
+// }
+// let bus = new Bus({seats: 4, longitude: 18.213423, latitude: 59.367628, id: "AL1024"}) 
+// console.log(bus.seats) // -> 4
+// console.log(bus.id)
+
+
+// class AlmostEmptyClass 
+// { 
+//     constructor(sth) 
+//     { 
+//         console.log(sth) 
+//     }
+//     sayHi() 
+//     { 
+//         console.log("Hi!")
+//     }
+// }
+// class ExtendedClass extends AlmostEmptyClass
+// {
+//     name
+//     constructor(name) 
+//     {
+//         super("I'm super ...")
+//         this.name = name
+//     }
+//     sayHi() 
+//     { 
+//         this.hi = `Hi ${this.name}!`
+//         // console.log(`Hi ${this.name}!`)
+//         console.log(this.hi)
+//     }
+//     newHi() 
+//     {
+//         this.sayHi()
+//     }
+//     oldHi() 
+//     {
+//         super.sayHi()
+//     }
+// }
+// let obj = new ExtendedClass("Bob")
+// obj.sayHi()    // -> Hi Bob!
+// obj.newHi()    // -> Hi Bob!
+// obj.oldHi()    // Hi!
+// console.log(obj)
+
+// class Vehicle 
+// {
+//     status = "unavailable"
+//     #longitude
+//     #latitude
+//     constructor({id, latitude, longitude})
+//     {
+//         this.id = id
+//         this.setPosition({latitude, longitude})
+//     }
+//     setPosition({latitude, longitude}) 
+//     {
+//         this.time = Date.now()
+//         this.#longitude = longitude
+//         this.#latitude = latitude
+//     }
+//     getPosition() 
+//     {
+//         return {
+//             latitude: this.#latitude,
+//             longitude: this.#longitude}
+//     }
+// }
+// let vehicle = new Vehicle({longitude: 18.213423, latitude: 59.367628, id: "AL1024"})
+// console.log(vehicle.getPosition())
+// // console.log(vehicle.#longitude) // error
+// console.log(vehicle.longitude)
+
+// let AlmostEmpty = function(sth) 
+// { 
+//     console.log(sth) 
+//     this.sayHi1 = function() 
+//     { 
+//         console.log("Hi!") 
+//     } 
+// }
+
+// class ExtendedClass extends AlmostEmpty 
+// {
+//     constructor(name) 
+//     {
+//         super("I'm super ...")
+//         this.name = name
+//     }
+//     sayHi()
+//     { 
+//         console.log(`Hi ${this.name}!`) 
+//     }
+// }
+
+// let obj = new ExtendedClass("Bob")
+// obj.sayHi()    // -> Hi Bob!
+
+
+// class AlmostEmptyClass 
+// {
+//     constructor(sth) 
+//     {
+//         console.log(sth)
+//     }
+//     sayHi() 
+//     {
+//         console.log("Hi!")
+//     }
+//     static sayHello()
+//     {
+//         console.log("Hello!")
+//     }
+// }
+// let almostEmptyObject = new AlmostEmptyClass(120) // 120
+// almostEmptyObject.sayHi() // -> Hi!
+// // almostEmptyObject.sayHello() // error
+// AlmostEmptyClass.sayHello() // -> Hello!
+
+// class Vehicle 
+// {
+//     constructor({id, latitude, longitude})
+//     {
+//         this.id = id
+//         this.status = "unavailable"
+//         this.position = {latitude, longitude}
+//     }
+//     set position({latitude, longitude}) 
+//     {
+//         this.time = Date.now()
+//         this.longitude = longitude
+//         this.latitude = latitude
+//     }
+//     get position() 
+//     {
+//         return {
+//                 latitude: this.latitude,
+//                 longitude: this.longitude
+//                 }
+//     }
+//     static isSameId(v1, v2)
+//     {
+//         return v1.id === v2.id
+//     }
+// }
+// let vehicle1 = new Vehicle({longitude: 18.213423, latitude: 59.367628, id: "AL1024"})
+// let vehicle2 = new Vehicle({longitude: 0, latitude: 0, id: "AL1024"})
+// let vehicle3 = new Vehicle({longitude: 18.213423, latitude: 59.367628, id: "AL1026"})
+// console.log(Vehicle.isSameId(vehicle1, vehicle2)) // -> true
+// console.log(Vehicle.isSameId(vehicle1, vehicle3)) // -> false
+
+// class Student
+// {
+// 	name
+// 	age
+// 	gender
+// 	rollNumber
+//     static count = 0
+//     constructor(name, age, gender, rollNumber)
+//     {
+//         console.log("Constructor called!")
+//         this.name = name
+//         this.age = age
+//         this.gender = gender
+//         this.rollNumber = rollNumber
+//         Student.count++
+//     }
+//     print()
+//     {
+//         console.log("name: ", this.name)
+//         console.log("age: ", this.age)
+//         console.log("gender: ", this.gender)
+//         console.log("rollNumber: ", this.rollNumber)
+//     }
+// }
+// console.log("Going to create an Object!")
+// console.log("Count of students created so far: ", Student.count)
+// let adtya = new Student("Adtya Gupta", 20, "Male", 11)
+// console.log("Count of students created so far: ", Student.count)
+// let zeeshan = new Student("Zeeshan Siddiqui", 18, "Male", 12)
+// console.log("Count of students created so far: ", Student.count)
+// let nirbhay = new Student("Nirbhay Kumar", 19, "Male", 13)
+// console.log("Count of students created so far: ", Student.count)
+
+// let Test = function(arg) 
+// { 
+//     this.arg = arg
+//     console.log(this.arg)
+//     // this.showSth = function() 
+//     // { 
+//     //     console.log("I'm prototyped!")
+//     // }
+// } 
+    
+// Test.prototype.showSth = function() 
+// { 
+//     console.log("I'm prototyped!")
+// }
+    
+// Test.showSth = function() 
+// { 
+//     console.log(`Hi, I'm static!`)
+// }  
+
+// let test = new Test("Hello")
+// test.showSth() // -> I'm prototyped!
+// Test.showSth() // -> I'm static!
+
+// console.log(test instanceof Test)
+
+// console.log(typeof class MyClass {})
+
+// let n = new Number(100.123)
+// console.log("n:", n)
+// let fixed = n.toFixed(3)
+// console.log("fixed:", fixed)
+// let test1 = Number.isInteger(100)
+// console.log("test1:", test1)
+// let test2 = n.isInteger(100)
+// console.log("test2:", test2)
+
+// let name = "nj"
+// console.log(name.toUpper())
+
+// let name = "Adtya"
+// let name1 = new String("Adtya")
+
+// let strObj = new String("Do bats eat cats?")    //Wrapper class
+// console.log(typeof(strObj)) //-> object
+// console.log(strObj.length) // -> 17
+// let words = strObj.split(" ")
+// console.log(words[0]) // -> Do
+
+// let str = "Do bats eat cats?"       //primitive
+// console.log(typeof str) //-> string
+// console.log(str.length) // -> 17
+// words = str.split(" ")
+// console.log(words[0]) // -> Do
+
+// let boolObj1 = new Boolean(false)
+// let boolObj2 = new Boolean(true)
+// let str1 =boolObj1.toString()
+// let bool2 = boolObj2.valueOf()
+// console.log(`boolObj1 : ${typeof boolObj1} : ${boolObj1}`) 
+// console.log(`boolObj2 : ${typeof boolObj2} : ${boolObj2}`) 
+// console.log(`str1 : ${typeof str1} : ${str1}`) 
+// console.log(`bool2 : ${typeof bool2} : ${ bool2}`) 
+
+// let bool1 = false
+// str1 = bool1.toString()
+// bool2 = bool1.valueOf()
+// console.log(`bool1 : ${typeof bool1} : ${bool1}`)
+// console.log(`str1 : ${typeof str1} : ${str1}`) 
+// console.log(`bool2 : ${typeof bool2} : ${ bool2}`) 
+
+// let bool1 = Boolean(false)
+// let bool2 = Boolean(1)
+// let bool3 = Boolean("")
+// console.log(`bool1 : ${typeof bool1} : ${bool1}`) 
+// console.log(`bool2 : ${typeof bool2} : ${bool2}`) 
+// console.log(`bool3 : ${typeof bool3} : ${bool3}`) 
+
+// console.log(0.1 + 0.2)
+// console.log(0.1 + 0.2 == 0.3)
+// console.log(0.1 + 0.2 === 0.3)
+
+
+// console.log(typeof (0.1 + 0.2).toFixed(1))
+// console.log((0.1 + 0.2).toFixed(1))
+// console.log(typeof Number((0.1 + 0.2).toFixed(1)))
+// console.log(Number((0.1 + 0.2).toFixed(1)))
+
+// let a = 10 // decimal - default
+// let b = 0x10   // hexadecimal
+// let c = 0o10 // octal
+// let d = 0b10 // binary
+// console.log(a) // -> 10
+// console.log(b) // -> 16
+// console.log(c) // -> 8
+// console.log(d) // -> 2
+// let x = 0.3
+// let y = 0.6
+// console.log(x + y) // -> 0.8999999999999999
+// console.log((x + y).toFixed(1))    // -> 0.9
+// console.log(x / 0)      // -> Infinity
+// console.log(x / "abc")
+
+// let nrStr1 = (11).toString()
+// let nrStr2 = (11).toString(16) // 0-9 a b c d e f
+// console.log(`nrStr1 : ${typeof nrStr1} : ${nrStr1}`) // -> nrStr1 : string : 11
+// console.log(`nrStr2 : ${typeof nrStr2} : ${nrStr2}`)
+
+// let numberObj1 = new Number()            // -> 0
+// let numberObj2 = new Number(100)       // -> 100
+// let numberObj3 = new Number("200")     // -> 200
+// let numberObj4 = new Number("abcd")    // -> NaN
+// let numberObj5 = new Number(9e10000)   // -> Infinity
+// console.log(`numberObj1 : ${typeof numberObj1} : ${ numberObj1.valueOf()}`)
+// console.log(`numberObj3 : ${typeof numberObj3} : ${ numberObj3.valueOf()}`)
+
+// let a = 12345
+// console.log(a.toExponential())   // -> 1.2345e+4
+// console.log(a.toExponential(1))
+// let nr1 = 10.55
+// console.log(nr1.toFixed(1)) // -> 10.6
+// console.log(nr1.toFixed(0)) // -> 11
+// console.log(nr1.toFixed(3)) // -> 10.550
+// let nr2 = 2.55
+// console.log(nr2.toFixed(1)) // -> 2.5
+// console.log(nr2.toFixed(20)) // -> 2.54999999999999982236
+// console.log(((nr2 * 10).toFixed(0) / 10)) // -> 2.6
+
+// let nr = 123456.789
+// console.log(nr.toLocaleString("en-GB")) //-> 123,456.789
+// console.log(nr.toLocaleString("fr-FR")) //-> 123·456,789
+// console.log(nr.toLocaleString("de-DE")) //-> 123.456,789
+// console.log(nr.toLocaleString("ar-EG")) //-> ١٢٣٬٤٥٦٫٧٨٩
+// console.log(nr.toLocaleString("es-ES",{
+//     style: "currency",
+//     currency: "EUR"
+// })) //-> 123.456,79 €
+
+// console.log(nr.toLocaleString())
+
+// console.log(nr.toLocaleString("hi-IN"))
+// console.log(nr.toLocaleString("hi-IN", {
+//     style: "currency",
+//     currency: "INR"
+// }))
+// console.log(nr.toLocaleString("en-US", {
+//     style: "currency",
+//     currency: "USD"
+// }))
+
+// console.log(Number.MAX_VALUE)
+// console.log(Number.MIN_VALUE)
+// console.log(Number.MAX_SAFE_INTEGER)
+// console.log(Number.MIN_SAFE_INTEGER)
+
+// console.log('Number.isInteger("123"): ',Number.isInteger("123"))
+// console.log('Number.isInteger(123): ',Number.isInteger(123))
+// console.log('Number.isInteger(true): ',Number.isInteger(true))
+// console.log('Number.isInteger("Abc"): ',Number.isInteger("Abc"))
+
+// console.log(Number.isSafeInteger(9007199254740991))
+// console.log(Number.isSafeInteger(9007199254740992))
+// console.log(Number.isSafeInteger("9007199254740990"))
+
+// console.log(Number.isFinite(123))
+// console.log(Number.isFinite(9007199254740992))
+// console.log(Number.isFinite(12/0))
+
+// console.log(Number.parseInt("1204px"))
+// console.log(Number.parseInt("1204abc244"))
+// console.log(Number.parseFloat("123.12.12"))
+// console.log(typeof Number.parseFloat("123.12.12"))
+
+// var str = "Adtya Gupta"
+
+// console.log("Hello '123' `456` \"Hello\" \n This should be a new line! \tthis should be indented X\btest")
+// console.log('Hello "123" `456`')
+// console.log(`Hello "123" '456' ${str}
+// This is my next line`)
+
+
+// console.log(str.length)
+// console.log(str[1])
+
+let strings = [undefined, "", "ab", "cd ef", 4, null]
+for(let i=0; i< strings.length; i++) 
+{
+    strings[i] && strings[i].length && console.log(strings[i])
+}
