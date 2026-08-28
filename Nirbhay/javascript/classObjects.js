@@ -61,14 +61,46 @@ Create a new class, ExtendedUser, that will inherit from the User class.
 Put a setter and getter named fullName in it. The getter should return the first name and last name concatenated into one string. The setter takes the concatenated first and last name *e.g. 'Rafael Fifer') and splits it into first and last name (the split method), changing the appropriate properties of the object.
 
 Based on the ExtendedUser class, create two more classes, Teacher and Student (inheritance). They should not have any new methods or properties, but only the default roles in their constructors to 'teacher' or 'student' respectively (i.e. their constructors will take three parameters instead of four: name, surname, and email)
-[8:55 PM]Scenario 3
-Modify the ExtendedUser class (rewrite it) by adding a static match method to it. The method should retrieve the teacher object, student object, and optionally a course name. Its task is to find the match between the student and the teacher.
+*/
+class ExtendedUser extends User
+{
+    constructor(firstName,lastName)
+    {
+        super()
+        this.firstName=firstName
+        this.lastName=lastName
+    }
+    set Name(fullName)
+    {
+        let indentity=fullName.split(" ")
+        console.log(indentity)
+    }
+    get fullName()
+    {
+        return `${this.firstName} ${this.lastName}`
+    }
+}
+let extendUser=new ExtendedUser("Nirbhay","kumar")
+let fullName=extendUser.fullName
+extendUser.Name=fullName
 
-The method should return:
+class Student extends ExtendedUser
+{
+    constructor(name,surname,email)
+    {
+        this.name=name
+        this.surname=surname
+        this.email=email
+    }
+}
 
-an empty array if there is no match (the teacher does not teach courses the student is interested in, or teaches courses at a lower level)
-an array with {course, level} objects, if the teacher teaches the courses the student is interested in with same level.
+class Teacher extends ExtendedUser
+{
+    constructor(name,surname,email)
+    {
+        this.name=name
+        this.surname=surname
+        this.email=email
+    }
+}
 
-
-If the course name is passed as the last argument, then the method should return the {course, level} object in case of a correct match, or undefined otherwise.
-* */
