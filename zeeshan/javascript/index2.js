@@ -1974,15 +1974,82 @@ let contact =
 // console.log(x/0)
 // console.log(x/"abc")
 
-let str1 =(11).toString()
-let str2 =(11).toString(16)
-console.log(str1)
-console.log(str2)
+// let str1 =(11).toString()
+// let str2 =(11).toString(16)
+// console.log(str1)
+// console.log(str2)
 
-let number1 = new Number()
-let number2 = new Number(100)
-let number3 = new Number("200")
-let number4 = new Number("abcd")
-let number5 = new Number(9e10000)
-console.log(typeof number4)
-console.log(number4)
+// let number1 = new Number()
+// let number2 = new Number(100)
+// let number3 = new Number("200")
+// let number4 = new Number("abcd")
+// let number5 = new Number(9e10000)
+// console.log(typeof number4)
+// console.log(number4)
+
+// function test() {
+//   console.log("Step 1");
+//   return "Done";   // ye sirf value return karega
+// }
+
+// console.log(test());  // yaha "Done" print hoga
+
+// let a = 12345
+// console.log(a.toExponential())
+// console.log(a.toExponential(1))
+// let nr1 = 10.55
+// console.log(nr1.toFixed(1))
+// console.log(nr1.toFixed(2))
+// console.log(nr1.toFixed(3))
+// let nr2 = 2.55
+// console.log(nr2.toFixed(1))
+// console.log(nr2.toFixed(20))
+// console.log(((nr2 * 10).toFixed(0)/10))
+
+
+// let nr = 12345.789
+// console.log(nr.toLocaleString("en-GB"))
+// console.log(nr.toLocaleString("fr-FR"))
+// console.log(nr.toLocaleString("de-DE"))
+// console.log(nr.toLocaleString("es-ES",{
+// style:"currency",
+// currency:"INR"
+// }))
+
+// console.log(nr.toLocaleString("hi-IN"))
+
+// console.log(Number.MAX_VALUE)
+
+// console.log(Number.MIN_VALUE)
+
+// console.log(Number.MAX_SAFE_INTEGER)
+
+// console.log(Number.MIN_SAFE_INTEGER)
+
+// console.log(Number.isInteger("123"))
+// console.log(Number.isInteger(123))
+// console.log(Number.isInteger(true))
+// console.log(Number.isInteger("abc"))
+
+// console.log(Number.isSafeInteger("9007199254740991"))
+// console.log(Number.isSafeInteger("-9007199254740991"))
+
+// console.log(Number.isFinite(123))
+// console.log(Number.isFinite(9007199254740992))
+
+
+// console.log(Number.parseInt("1204px"))
+
+
+// console.log(Number.parseInt("1204abc456"))
+// console.log(Number.parseInt("123.12.12"))
+// console.log( typeof Number.parseInt("123.12.12"))
+
+// console.log("hello \t'123' \n`456`")
+// console.log('hello "123" `456`')
+
+let str = [undefined , "", "ab ", "cd ef", 4 , null]
+for (let i=0 ; i<str.length; i++)
+{
+    str[i] && str[i].length && console.log(str[i])
+}
