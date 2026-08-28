@@ -104,3 +104,76 @@ class Teacher extends ExtendedUser
     }
 }
 
+/*Practice questions:
+
+1. Declare a simple class using class keyword. 
+2. Where should the constructor be defined?
+3. Create two methods in a class.
+4. Create object with parameters.
+5. Create a getter to return full name.
+6. Create a setter to change value.
+7. Use super to call parent constructor. 
+8. Call a method from base class using super.
+  Write a program to declare a class named Person with properties name and age, and a method greet() that prints       "Hello, my name is NAME".
+ Write a program to define a class Rectangle with width and height, and a method area() that returns the area.*/
+
+//1. Declare a simple class using class keyword. 
+class SimpleClass
+{
+    constructor(className,classBase)
+    {
+        //super()
+        this.className=className
+        this.classBase=classBase
+    }
+    showOutput()
+    {
+        console.log(this.className)
+    }
+    showInput()
+    {
+        console.log("this.className,this.classBase",this.className,this.classBase)
+    }
+    get gettingclassName()
+    {
+       return this.className
+    }
+    set settingclassBase(value)
+    {
+        this.classBase=value
+    }
+}
+let classObj=new SimpleClass("SimpleClass","none")
+console.log(Object.getPrototypeOf(classObj))
+console.log(classObj.gettingclassName)
+classObj.settingclassBase="something"
+
+class Person
+{
+    constructor(name,age)
+    {
+        this.name=name
+        this.age=age
+    }
+    greet()
+    {
+        console.log(`Hello my name is ${this.name}`)
+    }
+}
+let person1=new Person("Nirbhay",20)
+person1.greet()
+
+class Rectangle
+{
+    constructor(width,height)
+    {
+        this.width=width
+        this.height=height
+    }
+    get area()
+    {
+        return this.width*this.height
+    }
+}
+let rect1=new Rectangle(100,50)
+console.log(rect1.area)
