@@ -177,3 +177,76 @@ class Rectangle
 }
 let rect1=new Rectangle(100,50)
 console.log(rect1.area)
+//Assignment questions:
+
+// 1. Write a program to create a class Fan with multiple methods: turnOn(), turnOff(), and status().
+class Fan
+{
+    constructor(state,speed)
+    {
+        this.state=state
+        this.speed=speed
+    }
+    turnOn()
+    {
+        if(this.state=="on")
+        {
+            console.log("fan is starting...")
+        }
+        else{
+            console.log("fan is not in good condition")
+        }
+    }
+    turnoff()
+    {
+        console.log("fan is turning off...")
+    }
+    status()
+    {
+        console.log(this.status)
+    }
+}
+// 2.  Write a program with a class Point having properties x and y, and a method move(dx, dy) that changes the coordinates.
+class Point
+{
+    constructor(x,y)
+    {
+        this.x=x
+        this.y=y
+    }
+    move(dx,dy)
+    {
+        this.x+=dx
+        this.y+=dy
+    }
+}
+let point1=new Point(2,3)
+point1.move(6,7)
+// 3.  Write a program to declare a class Laptop and create three different objects with different models.
+class Laptop
+{
+    constructor(model)
+    {
+        this.model=model
+    }
+}
+const model1=new Laptop("lp1201")
+const model2=new Laptop("lp456")
+const model3=new Laptop("lp789")
+// 4. Write a program to create an object from a class Phone, and check if it is an instance of Phone.
+class Phone
+{
+    constructor(company,model)
+    {
+        this.company=company
+        this.model=model
+    }
+}
+const phone1=new Phone("samsung","s123")
+console.log("phone1",phone1)
+console.log(typeof Phone)
+console.log(typeof phone1)
+console.log(phone1 instanceof Phone)
+// 5. Write a program where static method is used in a class Utility.
+// 6. Write a program to compare class and constructor function syntax for creating an object.
+// 7. Write a program where class Mobile has static method brand() returning common brand.
