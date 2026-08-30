@@ -249,4 +249,32 @@ console.log(typeof phone1)
 console.log(phone1 instanceof Phone)
 // 5. Write a program where static method is used in a class Utility.
 // 6. Write a program to compare class and constructor function syntax for creating an object.
+class CreatingClass
+{
+    constructor(name)
+    {
+        this.name=name
+    }
+}
+let byClass=new CreatingClass("Kunal")  //syntatic sugar over constructor function
+
+let makingConstructor=function(name)
+{
+    this.name=name
+}
+let byConstructor=new makingConstructor("Nirbhay")
 // 7. Write a program where class Mobile has static method brand() returning common brand.
+class Mobile
+{
+    constructor(name,model)
+    {
+        this.name=name
+        this.model=model
+    }
+    static brand()
+    {
+        return "samsung"
+    }
+}
+let mobile1=new Mobile("galaxyZfold","a5643")
+console.log(Mobile.brand())
