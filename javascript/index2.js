@@ -2018,21 +2018,38 @@ let contact =
 
 // console.log(nr.toLocaleString("hi-IN"))
 
-console.log(Number.MAX_VALUE)
+// console.log(Number.MAX_VALUE)
 
-console.log(Number.MIN_VALUE)
+// console.log(Number.MIN_VALUE)
 
-console.log(Number.MAX_SAFE_INTEGER)
+// console.log(Number.MAX_SAFE_INTEGER)
 
-console.log(Number.MIN_SAFE_INTEGER)
+// console.log(Number.MIN_SAFE_INTEGER)
 
-console.log(Number.isInteger("123"))
-console.log(Number.isInteger(123))
-console.log(Number.isInteger(true))
-console.log(Number.isInteger("abc"))
+// console.log(Number.isInteger("123"))
+// console.log(Number.isInteger(123))
+// console.log(Number.isInteger(true))
+// console.log(Number.isInteger("abc"))
 
-console.log(Number.isSafeInteger("9007199254740991"))
-console.log(Number.isSafeInteger("-9007199254740991"))
+// console.log(Number.isSafeInteger("9007199254740991"))
+// console.log(Number.isSafeInteger("-9007199254740991"))
 
-console.log(Number.isFinite(123))
-console.log(Number.isFinite(9007199254740992))
+// console.log(Number.isFinite(123))
+// console.log(Number.isFinite(9007199254740992))
+
+
+// console.log(Number.parseInt("1204px"))
+
+
+// console.log(Number.parseInt("1204abc456"))
+// console.log(Number.parseInt("123.12.12"))
+// console.log( typeof Number.parseInt("123.12.12"))
+
+// console.log("hello \t'123' \n`456`")
+// console.log('hello "123" `456`')
+
+let str = [undefined , "", "ab ", "cd ef", 4 , null]
+for (let i=0 ; i<str.length; i++)
+{
+    str[i] && str[i].length && console.log(str[i])
+}
