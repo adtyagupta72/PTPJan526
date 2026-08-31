@@ -2048,8 +2048,25 @@ let contact =
 // console.log("hello \t'123' \n`456`")
 // console.log('hello "123" `456`')
 
-let str = [undefined , "", "ab ", "cd ef", 4 , null]
-for (let i=0 ; i<str.length; i++)
-{
-    str[i] && str[i].length && console.log(str[i])
-}
+// let str = [undefined , "", "ab ", "cd ef", 4 , null]
+// for (let i=0 ; i<str.length; i++)
+// {
+//     str[i] && str[i].length && console.log(str[i])
+// }
+
+// let str = "zeeshaN"
+// console.log(str)
+// console.log(str.toUpperCase())
+// console.log(str.toLowerCase())
+
+// let str1 = "123.45.6.2"
+// Str2 = str1.split(".")
+// console.log(Str2)
+// console.log(str1[0])
+
+let text = "Lorem Ipsum Dolor"
+let text1 = text.replace(" ", "-")
+let text2 = text.replaceAll(" ", "-")
+console.log(text)
+console.log(text1)
+console.log(text2)
