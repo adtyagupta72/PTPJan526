@@ -3311,8 +3311,70 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // console.log(str.length)
 // console.log(str[1])
 
-let strings = [undefined, "", "ab", "cd ef", 4, null]
-for(let i=0; i< strings.length; i++) 
-{
-    strings[i] && strings[i].length && console.log(strings[i])
-}
+// let strings = [undefined, "", "ab", "cd ef", 4, null]
+// for(let i=0; i< strings.length; i++) 
+// {
+//     strings[i] && strings[i].length && console.log(strings[i])
+// }
+
+// class User
+// {
+//     gender
+//     constructor()
+//     {
+//         this.gender= "Male"
+//     }
+// }
+
+// class Student //extends User
+// {
+//     constructor(name, standard)
+//     {
+//         super()
+//         this.name = name
+//         this.standard = standard
+//     }
+// }
+
+// let std1 = new Student("Adtya", "12th")
+// console.log(std1)
+
+// let str = "Adtya"
+// // let str = new String("Adtya")
+
+// console.log(str)
+// console.log(str.toLowerCase())
+// console.log(str.toUpperCase())
+
+// console.log(str)
+
+// let ipAddressStr = "127.0.0.1"
+// let ipParts = ipAddressStr.split(".") // -> ["127", "0", "0", "1"]
+// console.log(ipParts[0]) // -> 127
+// console.log(ipParts)
+
+// let text = "Lorem ipsum dolor ..."
+
+// let words = text.toLowerCase().replaceAll('.','').replaceAll(',','').split(' ')
+// console.log(words)
+
+
+// let text1 = text.replace(" ", "-")
+// let text2 = text.replaceAll(" ", "-")
+// console.log(text)
+// console.log(text1)
+// console.log(text2)
+
+let text = "Lorem ipsum dolor ..."
+console.log(text.includes("z"))
+console.log(text.includes("p"))
+console.log(text.includes("dolor"))
+
+
+console.log(text.indexOf("z"))
+console.log(text.indexOf("p"))
+console.log(text.indexOf("o"))
+
+console.log(text.lastIndexOf("o"))
+
+console.log(text.indexOf("dolor"))
