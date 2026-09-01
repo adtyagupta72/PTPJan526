@@ -2064,9 +2064,23 @@ let contact =
 // console.log(Str2)
 // console.log(str1[0])
 
+// let text = "Lorem Ipsum Dolor"
+// let text1 = text.replace(" ", "-")
+// let text2 = text.replaceAll(" ", "-")
+// console.log(text)
+// console.log(text1)
+// console.log(text2)
+
+
+// let text = "Lorem Ipsum Dolor"
+// let words = text.toLowerCase().replaceAll("."," ").replaceAll(","," ").split(' ')
+// console.log(words)
+
 let text = "Lorem Ipsum Dolor"
-let text1 = text.replace(" ", "-")
-let text2 = text.replaceAll(" ", "-")
-console.log(text)
-console.log(text1)
-console.log(text2)
+console.log(text.includes("z"))
+console.log(text.includes("p"))
+console.log(text.includes("dolor"))
+
+console.log(text.indexOf("p"))
+console.log(text.indexOf("dolor"))
+console.log(text.lastIndexOf("o"))
