@@ -3365,16 +3365,92 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // console.log(text1)
 // console.log(text2)
 
-let text = "Lorem ipsum dolor ..."
-console.log(text.includes("z"))
-console.log(text.includes("p"))
-console.log(text.includes("dolor"))
+// let text = "Lorem ipsum dolor ..."
+// console.log(text.includes("z"))
+// console.log(text.includes("p"))
+// console.log(text.includes("dolor"))
 
 
-console.log(text.indexOf("z"))
-console.log(text.indexOf("p"))
-console.log(text.indexOf("o"))
+// console.log(text.indexOf("z"))
+// console.log(text.indexOf("p"))
+// console.log(text.indexOf("o"))
 
-console.log(text.lastIndexOf("o"))
+// console.log(text.lastIndexOf("o"))
 
-console.log(text.indexOf("dolor"))
+// console.log(text.indexOf("dolor"))
+
+// let text = "One, two, three, one, two, three."
+// console.log(text.substr(0,8)) // -> One, two
+// console.log(text.substr(10)) // -> three, one, two, three.
+// console.log(text.substr(-6)) // -> three.
+// console.log(text.substr(-6, 2)) // -> th
+
+// console.log(text.substring(5, 8)) // -> two
+// console.log(text.substring(5)) // -> two, three, one, two, three.
+// console.log(text.substring(-11, 8)) // -> One, two
+
+// console.log(text.slice(0,3)) // -> One
+// console.log(text.slice(5)) // -> two, three, one, two, three.
+// console.log(text.slice(-11)) // -> two, three.
+// console.log(text.slice(-11, -8)) // -> two
+
+// let numbers = [100, 5, 66]
+// for(let i=0; i<numbers.length; i++) 
+// {
+//     console.log(String(numbers[i]).padStart(10, '0'))
+//     console.log(String(numbers[i]).padStart(10, 'abc'))
+//     console.log(String(numbers[i]).padStart(10))
+// }
+
+// console.log("------------------------")
+// for(let i=0; i<numbers.length; i++) 
+// {
+//     console.log(String(numbers[i]).padEnd(10, '0'))
+//     console.log(String(numbers[i]).padEnd(10, 'abc'))
+//     console.log(String(numbers[i]).padEnd(10))    
+// }
+
+// console.log("------------------------")
+// for(let i=0; i<numbers.length; i++) 
+// {
+//     console.log(String(numbers[i]).padStart(10, '0').padEnd(20, '0'))
+//     console.log(String(numbers[i]).padStart(10, 'abc').padEnd(20, 'abc'))
+//     console.log(String(numbers[i]).padStart(10).padEnd(20))
+// }
+// console.log("------------------------")
+
+// let city = " Bergen  "
+// let street = "\t Dokkeboder\n"
+// console.log(city.trimStart())
+// console.log(city.trimLeft().length)
+// console.log(city.trimRight())
+// console.log(city.trimRight().length)
+// console.log(city.trim())
+// console.log(city.trim().length) // -> 6 -> "Berge"
+// console.log(street.trim())
+// console.log(street.trim().length) // -> 10 -> "Dokkeboder"
+
+// console.log('"a" < "b": ', "a" < "b")
+// console.log('"A" < "b": ', "A" < "b")
+// console.log('"A" < "a": ', "A" < "a")
+// console.log('"abc" < "acd": ', "abc" < "acd") // -> true
+// console.log('"b" < "acd": ', "b" < "acd")
+
+// console.log("4" < "5")
+// console.log("2" < "12")
+// console.log("34" < "332")
+
+// console.log("brettesnes" < "Sundsfjord") // -> false
+// console.log("Brettesnes" < "Sundsfjord") // -> true
+
+// console.log("Ørnes" < "Sundsfjord")
+
+// console.log("Ørnes".localeCompare("Sundsfjord", "nn")) // -> -1
+// console.log("Ørnes".localeCompare("Brettesnes", "nn")) // -> 1
+// console.log("abc".localeCompare("Abc", "nn"))
+// console.log("Abc".localeCompare("abc", "nn"))
+// console.log("abc".localeCompare("abc", "nn"))
+
+console.log(typeof new Date())
+console.log(new Date())
+console.log(new Date().toLocaleString())
