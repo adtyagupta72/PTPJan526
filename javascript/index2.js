@@ -1,4 +1,4 @@
-// let fruits = ["apple","banana","orange"]
+~~``// let fruits = ["apple","banana","orange"]
 // let index = 0 
 // while(index < fruits.length)
 // {
@@ -2076,11 +2076,26 @@ let contact =
 // let words = text.toLowerCase().replaceAll("."," ").replaceAll(","," ").split(' ')
 // console.log(words)
 
-let text = "Lorem Ipsum Dolor"
-console.log(text.includes("z"))
-console.log(text.includes("p"))
-console.log(text.includes("dolor"))
+// let text = "Lorem Ipsum Dolor"
+// console.log(text.includes("z"))
+// console.log(text.includes("p"))
+// console.log(text.includes("dolor"))
 
-console.log(text.indexOf("p"))
-console.log(text.indexOf("dolor"))
-console.log(text.lastIndexOf("o"))
+// console.log(text.indexOf("p"))
+// console.log(text.indexOf("dolor"))
+// console.log(text.lastIndexOf(""))
+
+let inner = function()
+{
+console.log('inner 1');
+}
+let outer = function(callback)
+{
+console.log('outer 1');
+
+callback();
+console.log('outer 2');
+}
+console.log('test 1');
+outer(inner);
+console.log('test 2');
