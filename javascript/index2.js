@@ -2085,17 +2085,32 @@ let contact =
 // console.log(text.indexOf("dolor"))
 // console.log(text.lastIndexOf(""))
 
-let inner = function()
-{
-console.log('inner 1');
-}
-let outer = function(callback)
-{
-console.log('outer 1');
+// let inner = function()
+// {
+// console.log('inner 1');
+// }
+// let outer = function(callback)
+// {
+// console.log('outer 1');
 
-callback();
-console.log('outer 2');
+// callback();
+// console.log('outer 2');
+// }
+// console.log('test 1');
+// outer(inner);
+// console.log('test 2');
+
+function greet(name)
+{
+    console.log("Hey" , name)
 }
-console.log('test 1');
-outer(inner);
-console.log('test 2');
+
+function forUser(callback)
+{
+    setTimeout(() =>{
+    callback("zeeshan")
+    },5000)
+}
+
+forUser(greet)
+console.log("waiting")
