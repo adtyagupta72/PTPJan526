@@ -2107,7 +2107,9 @@ function greet(name)
 
 function forUser(callback)
 {
-    setTimeout(() =>{
+    setTimeout(
+    () =>
+    {
     callback("zeeshan")
     },5000)
 }
