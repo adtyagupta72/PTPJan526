@@ -2100,19 +2100,21 @@ let contact =
 // outer(inner);
 // console.log('test 2');
 
-function greet(name)
-{
-    console.log("Hey" , name)
-}
+// function greet(name)
+// {
+//     console.log("Hey" , name)
+// }
 
-function forUser(callback)
-{
-    setTimeout(
-    () =>
-    {
-    callback("zeeshan")
-    },5000)
-}
+// function forUser(callback)
+// {
+//     setTimeout(
+//     () =>
+//     {
+//     callback("zeeshan")
+//     },5000)
+// }
 
-forUser(greet)
-console.log("waiting")
+// forUser(greet)
+// console.log("waiting")
+
+console.log(typeof "abc")
