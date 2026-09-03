@@ -2100,21 +2100,30 @@ let contact =
 // outer(inner);
 // console.log('test 2');
 
-// function greet(name)
-// {
-//     console.log("Hey" , name)
-// }
+function greet(name)
+{
+    console.log("Hey" , name)
+}
 
-// function forUser(callback)
-// {
-//     setTimeout(
-//     () =>
-//     {
-//     callback("zeeshan")
-//     },5000)
-// }
+function forUser(callback)
+{
+    setTimeout(
+    () =>
+    {
+    callback("zeeshan")
+    },5000)
+    console.log("extra code")
+}
 
-// forUser(greet)
-// console.log("waiting")
 
-console.log(typeof "abc")
+
+forUser(greet)
+console.log("waiting")
+// console.log(typeof "abc")
+
+for(let i=2; i<21 ; i+=2)
+{
+    console.log(i)
+   
+
+}
