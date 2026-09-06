@@ -2149,10 +2149,16 @@ let contact =
 
 //return statement
 
-function getTrue()
-{
-    return true
-}
+// function getTrue()
+// {
+//     return true
+// }
  
-let test = getTrue()
-console.log(test)
+// let test = getTrue()
+// console.log(test)
+
+function add(a,b )
+{
+    return console.log(`Addition of ${a} and ${b} is ${a+b}`)
+}
+add(5,10)
