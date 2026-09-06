@@ -2136,13 +2136,23 @@ let contact =
 
 // console.log(factorial(5))
 
-function greet(n)
-{
-    console.log("Good Morning", n)
-}
-function abc(callback)
-{
-    return (callback,"zeeshan")
-}
+// function greet(n)
+// {
+//     console.log("Good Morning", n)
+// }
+// function abc(callback)
+// {
+//     return (callback,"zeeshan")
+// }
 
-console.log(abc(greet))
+// console.log(abc(greet))
+
+//return statement
+
+function getTrue()
+{
+    return true
+}
+ 
+let test = getTrue()
+console.log(test)
