@@ -2157,32 +2157,38 @@ let contact =
 // let test = getTrue()
 // console.log(test)
 
-function add(a,b )
-{
-    return console.log(`Addition of ${a} and ${b} is ${a+b}`)
-}
-add(5,10)
+// function add(a,b )
+// {
+//     return console.log(`Addition of ${a} and ${b} is ${a+b}`)
+// }
+// add(5,10)
 
-function subtract(a,b )
-{
-    return console.log(`Subtraction of ${a} and ${b} is ${a-b}`)
-}
-subtract(5,10)
+// function subtract(a,b )
+// {
+//     return console.log(`Subtraction of ${a} and ${b} is ${a-b}`)
+// }
+// subtract(5,10)
 
-function multiply(a,b )
-{
-    return console.log(`Multiply of ${a} and ${b} is ${a*b}`)
-}
-multiply(5,10)
+// function multiply(a,b )
+// {
+//     return console.log(`Multiply of ${a} and ${b} is ${a*b}`)
+// }
+// multiply(5,10)
 
-function divide(a,b )
-{
-    return console.log(`divison of ${a} and ${b} is ${b/a}`)
-}
-divide(5,10)
+// function divide(a,b )
+// {
+//     return console.log(`divison of ${a} and ${b} is ${b/a}`)
+// }
+// divide(5,10)
 
-function Exponent(a,b )
-{
-    return console.log(`exponent of ${a} and ${b} is ${b**a}`)
-}
-Exponent(5,10)
+// function Exponent(a,b )
+// {
+//     return console.log(`exponent of ${a} and ${b} is ${b**a}`)
+// }
+// Exponent(5,10)
+
+
+let date1 = new Date(0)
+let date2 = new Date((1000*60*60*10)+(1000*60*5)+(1000*6))
+console.log(date1.toUTCString())
+console.log(date2.toUTCString())
