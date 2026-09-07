@@ -2189,12 +2189,58 @@ let contact =
 
 
 // let date1 = new Date(0)
-let date2 = new Date((1000*60*60*10)+(1000*60*5)+(1000*6))
-// console.log(date1.toUTCString())
+// let date2 = new Date((1000*60*60*10)+(1000*60*5)+(1000*6))
+// // console.log(date1.toUTCString())
+// // console.log(date2.toUTCString())
+
+// console.log(date2)
+// console.log(date2.getTimezoneOffset())
+// console.log(date2.toLocaleDateString())
+// console.log(date2.toISOString())
 // console.log(date2.toUTCString())
 
-console.log(date2)
-console.log(date2.getTimezoneOffset())
-console.log(date2.toLocaleDateString())
-console.log(date2.toISOString())
-console.log(date2.toUTCString())
+//if 7 days < ques solved = 10 marks
+// if 7 days < ques solved = 5 marks
+
+// current date - date time of question solved = diff 
+// diff < 7 days milsec == 10 marks 
+// diff > 7 days millsec == 5 marks 
+
+// date3 = new Date("2020-02-02t20:20:00:000")
+// date4 = new Date("2020-02-02t20:20:00:000Z")
+
+// console.log(date3.toLocaleString())
+// console.log(date3.toISOString())
+// console.log(date3.toUTCString())
+
+
+// console.log(date4.toLocaleString())
+// console.log(date4.toISOString())
+// console.log(date4.toUTCString())
+
+
+// console.log(date3.getTime())
+// console.log(date4.getTime())
+// console.log(date4.getTime()-date3.getTime())
+
+
+// console.log(new Date())
+// console.log(new Date().toLocaleString())
+
+
+// let now = Date.now()
+// let nowObj = new Date(now)
+// console.log(`now:${typeof now}: ${now}`)
+// console.log(`now:${typeof nowObj}: ${nowObj}`)
+
+let date1 = new Date(2020,6)
+let date2 = new Date(2020,6,8)
+let date3 = new Date(2020,6,8,10)
+let date4 = new Date(2020,6,8,10,20)
+let date5 = new Date(2020,6,8,10,20,45)
+
+console.log(date1.toLocaleString())
+console.log(date2.toLocaleString())
+console.log(date3.toLocaleString())
+console.log(date4.toLocaleString())
+console.log(date5.toLocaleString())
