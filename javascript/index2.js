@@ -2188,7 +2188,13 @@ let contact =
 // Exponent(5,10)
 
 
-let date1 = new Date(0)
+// let date1 = new Date(0)
 let date2 = new Date((1000*60*60*10)+(1000*60*5)+(1000*6))
-console.log(date1.toUTCString())
+// console.log(date1.toUTCString())
+// console.log(date2.toUTCString())
+
+console.log(date2)
+console.log(date2.getTimezoneOffset())
+console.log(date2.toLocaleDateString())
+console.log(date2.toISOString())
 console.log(date2.toUTCString())
