@@ -2320,3 +2320,16 @@ function odd(arr)
 }
 
 console.log(odd([2,3,6,4,7,22,11]))
+
+
+function div(n)
+{
+    if(n%5==0)
+    {
+        let result = n + " is multiple of 5 so its divisible"
+        return result
+    }
+    
+}
+
+console.log(div(550))
