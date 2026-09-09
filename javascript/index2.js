@@ -2290,3 +2290,14 @@ function lower(n){
     return result
 }
 console.log(lower("SHAHNAWAZ"))
+
+function swap(m,n)
+{
+    let temp;
+    temp = m;
+    m=n;
+    n=temp;
+
+    console.log(m , n) 
+}
+swap(5,50)
