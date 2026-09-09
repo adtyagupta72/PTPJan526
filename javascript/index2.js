@@ -2283,3 +2283,10 @@ function even(array)
 }
 
 console.log(even([2,3,4,5,6,7,13,17,21,60,24]))
+
+function lower(n){
+
+   let result = n.toLowerCase()
+    return result
+}
+console.log(lower("SHAHNAWAZ"))
