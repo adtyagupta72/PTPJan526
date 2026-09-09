@@ -2245,14 +2245,21 @@ let contact =
 // console.log(date4.toLocaleString())
 // console.log(date5.toLocaleString())
 
-let date1 = new Date("2022-07-08")
-let date2 = new Date("2022-07-08T10:20:00")
-let date3 = new Date("2022-07-08T10:20:00Z")
+// let date1 = new Date("2022-07-08")
+// let date2 = new Date("2022-07-08T10:20:00")
+// let date3 = new Date("2022-07-08T10:20:00Z")
 
-console.log(date1)
-console.log(date1.toLocaleString())
-console.log(date2)
-console.log(date2.toLocaleString())
-console.log(date3)
-console.log(date3.toLocaleString())
-console.log("zee")
+// console.log(date1)
+// console.log(date1.toLocaleString())
+// console.log(date2)
+// console.log(date2.toLocaleString())
+// console.log(date3)
+// console.log(date3.toLocaleString())
+// console.log("zee")
+
+function converter(n)
+{
+    result = n * 60;
+    return result
+}
+console.log(converter(5))
