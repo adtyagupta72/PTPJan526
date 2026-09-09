@@ -2263,3 +2263,23 @@ function converter(n)
     return result
 }
 console.log(converter(5))
+
+
+function even(array)
+{
+    count = 0;
+    for(let i in array)
+    {
+        if(array[i]%2==0)
+        {
+            count += 1;
+        }
+        else
+        {
+            count += 0;
+        }
+    }
+    return count;
+}
+
+console.log(even([2,3,4,5,6,7,13,17,21,60,24]))
