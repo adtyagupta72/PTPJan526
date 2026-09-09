@@ -2301,3 +2301,22 @@ function swap(m,n)
     console.log(m , n) 
 }
 swap(5,50)
+
+function odd(arr)
+{
+    let arr2 =[]
+    for(let i in arr)
+    {
+        if(arr[i] % 2 != 0)
+        {
+            arr2.push(arr[i]);
+        }
+        // else
+        //     {
+        //     i += '';
+        // }
+    }
+    return arr2;
+}
+
+console.log(odd([2,3,6,4,7,22,11]))
