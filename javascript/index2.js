@@ -2257,106 +2257,114 @@ let contact =
 // console.log(date3.toLocaleString())
 // console.log("zee")
 
-function converter(n)
-{
-    result = n * 60;
-    return result
-}
-console.log(converter(5))
+// function converter(n)
+// {
+//     result = n * 60;
+//     return result
+// }
+// console.log(converter(5))
 
 
-function even(array)
-{
-    count = 0;
-    for(let i in array)
-    {
-        if(array[i]%2==0)
-        {
-            count += 1;
-        }
-        else
-        {
-            count += 0;
-        }
-    }
-    return count;
-}
+// function even(array)
+// {
+//     count = 0;
+//     for(let i in array)
+//     {
+//         if(array[i]%2==0)
+//         {
+//             count += 1;
+//         }
+//         else
+//         {
+//             count += 0;
+//         }
+//     }
+//     return count;
+// }
 
-console.log(even([2,3,4,5,6,7,13,17,21,60,24]))
+// console.log(even([2,3,4,5,6,7,13,17,21,60,24]))
 
-function lower(n){
+// function lower(n){
 
-   let result = n.toLowerCase()
-    return result
-}
-console.log(lower("SHAHNAWAZ"))
+//    let result = n.toLowerCase()
+//     return result
+// }
+// console.log(lower("SHAHNAWAZ"))
 
-function swap(m,n)
-{
-    let temp;
-    temp = m;
-    m=n;
-    n=temp;
+// function swap(m,n)
+// {
+//     let temp;
+//     temp = m;
+//     m=n;
+//     n=temp;
 
-    console.log(m , n) 
-}
-swap(5,50)
+//     console.log(m , n) 
+// }
+// swap(5,50)
 
-function odd(arr)
-{
-    let arr2 =[]
-    for(let i in arr)
-    {
-        if(arr[i] % 2 != 0)
-        {
-            arr2.push(arr[i]);
-        }
-        // else
-        //     {
-        //     i += '';
-        // }
-    }
-    return arr2;
-}
+// function odd(arr)
+// {
+//     let arr2 =[]
+//     for(let i in arr)
+//     {
+//         if(arr[i] % 2 != 0)
+//         {
+//             arr2.push(arr[i]);
+//         }
+//         // else
+//         //     {
+//         //     i += '';
+//         // }
+//     }
+//     return arr2;
+// }
 
-console.log(odd([2,3,6,4,7,22,11]))
+// console.log(odd([2,3,6,4,7,22,11]))
 
 
-function div(n)
-{
-    if(n%5==0)
-    {
-        let result = n + " is multiple of 5 so its divisible"
-        return result
-    }
+// function div(n)
+// {
+//     if(n%5==0)
+//     {
+//         let result = n + " is multiple of 5 so its divisible"
+//         return result
+//     }
     
-}
+// }
 
-console.log(div(550))
-console.log("zeeshan")
-console.log("zeeshan2")
+// console.log(div(550))
+// console.log("zeeshan")
+// console.log("zeeshan2")
 
-console.log("zeeshan2")
-console.log("zeeshan2")
-
-
-// let a = [10, 20, "en to tre", true, 50];
-// a[4] = a[4] * 2;
-// console.log(a[0]);
-// console.log(a[2]);
-// console.log(a[4]);
+// console.log("zeeshan2")
+// console.log("zeeshan2")
 
 
+// // let a = [10, 20, "en to tre", true, 50];
+// // a[4] = a[4] * 2;
+// // console.log(a[0]);
+// // console.log(a[2]);
+// // console.log(a[4]);
 
-let sampleObject =
+
+
+// let sampleObject =
+// {
+// id: 10,
+// delay: 20,
+// name: "en to tre",
+// isPresent: true,
+// delay: 50
+// };
+// sampleObject.delay = sampleObject.delay * 2;
+// console.log(sampleObject.id);
+// console.log(sampleObject.name);
+// console.log(sampleObject.delay);
+
+let cont =
 {
-id: 10,
-delay: 20,
-name: "en to tre",
-isPresent: true,
-delay: 50
+tel: "207-662-5412",
+email: "RonaldSMurphy@freepost.org"
 };
-sampleObject.delay = sampleObject.delay * 2;
-console.log(sampleObject.id);
-console.log(sampleObject.name);
-console.log(sampleObject.delay);
+console.log(cont);
+console.log(cont.tel);
