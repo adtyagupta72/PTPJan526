@@ -2368,3 +2368,6 @@ email: "RonaldSMurphy@freepost.org"
 };
 console.log(cont);
 console.log(cont.tel);
+
+console.log(typeof console);
+console.log(typeof console.log);
