@@ -2340,8 +2340,23 @@ console.log("zeeshan2")
 console.log("zeeshan2")
 
 
-let a = [10, 20, "en to tre", true, 50];
-a[4] = a[4] * 2;
-console.log(a[0]);
-console.log(a[2]);
-console.log(a[4]);
+// let a = [10, 20, "en to tre", true, 50];
+// a[4] = a[4] * 2;
+// console.log(a[0]);
+// console.log(a[2]);
+// console.log(a[4]);
+
+
+
+let sampleObject =
+{
+id: 10,
+delay: 20,
+name: "en to tre",
+isPresent: true,
+delay: 50
+};
+sampleObject.delay = sampleObject.delay * 2;
+console.log(sampleObject.id);
+console.log(sampleObject.name);
+console.log(sampleObject.delay);
