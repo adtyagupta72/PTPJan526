@@ -2371,3 +2371,11 @@ console.log(cont.tel);
 
 console.log(typeof console);
 console.log(typeof console.log);
+
+let contact1 =
+{
+"first name": "Ronald"
+};
+contact1["first name"] = "Tim";
+contact1.first name = "Tim"; // SyntaxError: Unexpected identifier
+contact1."first name" = "Tim"; // SyntaxError:
