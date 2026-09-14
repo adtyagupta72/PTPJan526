@@ -2361,33 +2361,50 @@ let contact =
 // console.log(sampleObject.name);
 // console.log(sampleObject.delay);
 
-let cont =
-{
-tel: "207-662-5412",
-email: "RonaldSMurphy@freepost.org"
-};
-console.log(cont);
-console.log(cont.tel);
+// let cont =
+// {
+// tel: "207-662-5412",
+// email: "RonaldSMurphy@freepost.org"
+// };
+// console.log(cont);
+// console.log(cont.tel);
 
-console.log(typeof console);
-console.log(typeof console.log);
+// console.log(typeof console);
+// console.log(typeof console.log);
 
-let contact1 =
-{
-"first name": "Ronald"
-};
-contact1["first name"] = "Tim";
-contact1.first name = "Tim"; // SyntaxError: Unexpected identifier
-contact1."first name" = "Tim"; // SyntaxError:
+// let contact1 =
+// {
+// "first name": "Ronald"
+// };
+// contact1["first name"] = "Tim";
+// contact1.first name = "Tim"; // SyntaxError: Unexpected identifier
+// contact1."first name" = "Tim"; // SyntaxError:
 
-let contact =
+// let contact =
+// {
+// email_1: "RonaldSMurphy@freepost.org",
+// email_2: "rsmurphy@briazz.com"
+// };
+// for(i=1; i<=2; i++)
+// {
+// let key = "email_" + i;
+// console.log(key);
+// console.log(contact[key]);
+// }
+
+// let date1 = new Date ("Mon Mar 02 2020 10:00:00")
+// console.log("date1", date1)
+// let date2 = new Date ("Mon Mar 02 2020 10:00:00")
+// console.log(date2)
+// let date3 = new Date (" Mar 02 2020 10:00:00")
+// console.log(date3)
+// let date4 = new Date (" 02  March 2020 10:00:00")
+// console.log(date4)
+
+let start = Date.now()
+for ( i = 0; i <10000000;i++)
 {
-email_1: "RonaldSMurphy@freepost.org",
-email_2: "rsmurphy@briazz.com"
-};
-for(i=1; i<=2; i++)
-{
-let key = "email_" + i;
-console.log(key);
-console.log(contact[key]);
+
 }
+let end = Date.now()
+console.log(end-start)
