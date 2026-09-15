@@ -2422,17 +2422,21 @@ let contact =
 // console.log(date.toLocaleDateString())
 // console.log(date.toLocaleTimeString())
 
-let array1 = [10,20,30,10]
-let array2 = ["cat","dog"]
-let array4 = ["100"]
-let array3 = array1.concat(array2,array4)
+// let array1 = [10,20,30,10]
+// let array2 = ["cat","dog"]
+// let array4 = ["100"]
+// let array3 = array1.concat(array2,array4)
 
-console.log(array1)
+// console.log(array1)
 
-console.log(array2)
-console.log(array3)
+// console.log(array2)
+// console.log(array3)
 
-delete array3[3]
-console.log(array3)
+// delete array3[3]
+// console.log(array3)
 
-console.log(array1.lastIndexOf(10))
+// console.log(array1.lastIndexOf(10))
+
+const number = [1,2,3,4,5]
+console.log(number.includes(3))
+console.log(number.includes(1,0))
