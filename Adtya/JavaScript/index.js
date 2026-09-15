@@ -3573,34 +3573,62 @@ diff => > (7 days~) mill => 5 marks => solved before 7 days from now
 // console.log(date.toLocaleDateString()) // -> 08/07/2020
 // console.log(date.toLocaleTimeString()) // -> 10:20:00
 
-let array1 = [10, 20, 30]
-let array2 = ["cat", "dog"]
-let array4 = [true, 10, "One"]
-let array3 = array2.concat(array4, array1) // -> [10, 20, 30, "cat", "dog"]
+// let array1 = [10, 20, 30]
+// let array2 = ["cat", "dog"]
+// let array4 = [true, 10, "One"]
+// let array3 = array2.concat(array4, array1) // -> [10, 20, 30, "cat", "dog"]
 
-console.log(array1.length) // -> 3
-console.log(array2.length) // -> 2
-console.log(array3.length) // -> 5
+// console.log(array1.length) // -> 3
+// console.log(array2.length) // -> 2
+// console.log(array3.length) // -> 5
 
-console.log(array1) // -> 10
-console.log(array3) // -> "cat"
+// console.log(array1) // -> 10
+// console.log(array3) // -> "cat"
 
-array3.pop()    // Removes data from the end
+// array3.pop()    // Removes data from the end
 
-console.log(array3)
+// console.log(array3)
 
-array3.shift()  //Removes element from start
-console.log(array3)
+// array3.shift()  //Removes element from start
+// console.log(array3)
 
-array3.push("Two")
-console.log(array3)
+// array3.push("Two")
+// console.log(array3)
 
-array3.unshift("Three")
+// array3.unshift("Three")
 
-console.log(array3)
-console.log("Length :",array3.length)
-delete array3[1]               // array3.remove(1)
-console.log(array3)
-console.log("Length :",array3.length)
-console.log("array3.indexOf(10): ", array3.indexOf(10)) //3
-console.log("array3.lastIndexOf(10): ", array3.lastIndexOf(10)) //5
+// console.log(array3)
+// console.log("Length :",array3.length)
+// delete array3[1]               // array3.remove(1)
+// console.log(array3)
+// console.log("Length :",array3.length)
+// console.log("array3.indexOf(10): ", array3.indexOf(10)) //3
+// console.log("array3.lastIndexOf(10): ", array3.lastIndexOf(10)) //5
+
+// console.log("array3.lastIndexOf(10): ", array3.lastIndexOf(10, 5))
+
+// const numbers = [1, 2, 3, 4, 3]
+// console.log("numbers.includes(3): ", numbers.includes(3))
+// console.log("numbers.includes(6): ", numbers.includes(6))
+// console.log("numbers.includes(3, 2): ", numbers.includes(3, 2))
+// console.log("numbers.includes(3, 4): ", numbers.includes(3, 4))
+
+// // numbers = ["One", "Two"] //Not allowed
+
+// numbers.push("6")
+// console.log(numbers)
+
+// const nestedArray = [1, 2, [3, 4], [5, [6, 7]]]
+// const flattenedArray = nestedArray.flat()
+// console.log("flattenedArray: ", flattenedArray)
+// const deeplyFlattenedArray = nestedArray.flat(Infinity) 
+// console.log("deeplyFlattenedArray: ", deeplyFlattenedArray)
+
+// console.log(deeplyFlattenedArray.toString())
+
+// console.log(deeplyFlattenedArray.join(""))
+
+let array1 = ["cat", 90, 80, 10, 20, 30, 100, 50, "dog"]
+let anyNumberPresent = array1.some((item) => typeof item != "number")
+
+console.log("anyNumberPresent:", anyNumberPresent)
