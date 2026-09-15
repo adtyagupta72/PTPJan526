@@ -2437,6 +2437,16 @@ let contact =
 
 // console.log(array1.lastIndexOf(10))
 
-const number = [1,2,3,4,5]
-console.log(number.includes(3))
-console.log(number.includes(1,0))
+// const number = [1,2,3,4,5]
+// console.log(number.includes(3))
+// console.log(number.includes(1,0))
+
+const array1 = [1,2,[3,4],[5,[6,7]]]
+// const flatt = array1.flat()
+// console.log(flatt)
+// const flatt1 = array1.flat(infinity)
+// console.log(flatt1)
+
+
+console.log(array1.toString())
+console.log(array1.join("*"))
