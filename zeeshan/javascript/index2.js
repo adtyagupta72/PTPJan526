@@ -1,4 +1,4 @@
-// let fruits = ["apple","banana","orange"]
+~~``// let fruits = ["apple","banana","orange"]
 // let index = 0 
 // while(index < fruits.length)
 // {
@@ -2048,8 +2048,378 @@ let contact =
 // console.log("hello \t'123' \n`456`")
 // console.log('hello "123" `456`')
 
-let str = [undefined , "", "ab ", "cd ef", 4 , null]
-for (let i=0 ; i<str.length; i++)
+// let str = [undefined , "", "ab ", "cd ef", 4 , null]
+// for (let i=0 ; i<str.length; i++)
+// {
+//     str[i] && str[i].length && console.log(str[i])
+// }
+
+// let str = "zeeshaN"
+// console.log(str)
+// console.log(str.toUpperCase())
+// console.log(str.toLowerCase())
+
+// let str1 = "123.45.6.2"
+// Str2 = str1.split(".")
+// console.log(Str2)
+// console.log(str1[0])
+
+// let text = "Lorem Ipsum Dolor"
+// let text1 = text.replace(" ", "-")
+// let text2 = text.replaceAll(" ", "-")
+// console.log(text)
+// console.log(text1)
+// console.log(text2)
+
+
+// let text = "Lorem Ipsum Dolor"
+// let words = text.toLowerCase().replaceAll("."," ").replaceAll(","," ").split(' ')
+// console.log(words)
+
+// let text = "Lorem Ipsum Dolor"
+// console.log(text.includes("z"))
+// console.log(text.includes("p"))
+// console.log(text.includes("dolor"))
+
+// console.log(text.indexOf("p"))
+// console.log(text.indexOf("dolor"))
+// console.log(text.lastIndexOf(""))
+
+// let inner = function()
+// {
+// console.log('inner 1');
+// }
+// let outer = function(callback)
+// {
+// console.log('outer 1');
+
+// callback();
+// console.log('outer 2');
+// }
+// console.log('test 1');
+// outer(inner);
+// console.log('test 2');
+
+// function greet(name)
+// {
+//     console.log("Hey" , name)
+// }
+
+// function forUser(callback)
+// {
+//     setTimeout(
+//     () =>
+//     {
+//     callback("zeeshan")
+//     },5000)
+//     console.log("extra code")
+// }
+
+
+
+// forUser(greet)
+// console.log("waiting")
+// // console.log(typeof "abc")
+
+// for(let i=2; i<21 ; i+=2)
+// {
+//     console.log(i)
+   
+
+// }
+
+
+// function factorial(n)
+// {
+//    return n>1?n*factorial(n-1):1
+// }
+
+// console.log(factorial(5))
+
+// function greet(n)
+// {
+//     console.log("Good Morning", n)
+// }
+// function abc(callback)
+// {
+//     return (callback,"zeeshan")
+// }
+
+// console.log(abc(greet))
+
+//return statement
+
+// function getTrue()
+// {
+//     return true
+// }
+ 
+// let test = getTrue()
+// console.log(test)
+
+// function add(a,b )
+// {
+//     return console.log(`Addition of ${a} and ${b} is ${a+b}`)
+// }
+// add(5,10)
+
+// function subtract(a,b )
+// {
+//     return console.log(`Subtraction of ${a} and ${b} is ${a-b}`)
+// }
+// subtract(5,10)
+
+// function multiply(a,b )
+// {
+//     return console.log(`Multiply of ${a} and ${b} is ${a*b}`)
+// }
+// multiply(5,10)
+
+// function divide(a,b )
+// {
+//     return console.log(`divison of ${a} and ${b} is ${b/a}`)
+// }
+// divide(5,10)
+
+// function Exponent(a,b )
+// {
+//     return console.log(`exponent of ${a} and ${b} is ${b**a}`)
+// }
+// Exponent(5,10)
+
+
+// let date1 = new Date(0)
+// let date2 = new Date((1000*60*60*10)+(1000*60*5)+(1000*6))
+// // console.log(date1.toUTCString())
+// // console.log(date2.toUTCString())
+
+// console.log(date2)
+// console.log(date2.getTimezoneOffset())
+// console.log(date2.toLocaleDateString())
+// console.log(date2.toISOString())
+// console.log(date2.toUTCString())
+
+//if 7 days < ques solved = 10 marks
+// if 7 days < ques solved = 5 marks
+
+// current date - date time of question solved = diff 
+// diff < 7 days milsec == 10 marks 
+// diff > 7 days millsec == 5 marks 
+
+// date3 = new Date("2020-02-02t20:20:00:000")
+// date4 = new Date("2020-02-02t20:20:00:000Z")
+
+// console.log(date3.toLocaleString())
+// console.log(date3.toISOString())
+// console.log(date3.toUTCString())
+
+
+// console.log(date4.toLocaleString())
+// console.log(date4.toISOString())
+// console.log(date4.toUTCString())
+
+
+// console.log(date3.getTime())
+// console.log(date4.getTime())
+// console.log(date4.getTime()-date3.getTime())
+
+
+// console.log(new Date())
+// console.log(new Date().toLocaleString())
+
+
+// let now = Date.now()
+// let nowObj = new Date(now)
+// console.log(`now:${typeof now}: ${now}`)
+// console.log(`now:${typeof nowObj}: ${nowObj}`)
+
+// let date1 = new Date(2020,6)
+// let date2 = new Date(2020,6,8)
+// let date3 = new Date(2020,6,8,10)
+// let date4 = new Date(2020,6,8,10,20)
+// let date5 = new Date(2020,6,8,10,20,45)
+
+// console.log(date1.toLocaleString())
+// console.log(date2.toLocaleString())
+// console.log(date3.toLocaleString())
+// console.log(date4.toLocaleString())
+// console.log(date5.toLocaleString())
+
+// let date1 = new Date("2022-07-08")
+// let date2 = new Date("2022-07-08T10:20:00")
+// let date3 = new Date("2022-07-08T10:20:00Z")
+
+// console.log(date1)
+// console.log(date1.toLocaleString())
+// console.log(date2)
+// console.log(date2.toLocaleString())
+// console.log(date3)
+// console.log(date3.toLocaleString())
+// console.log("zee")
+
+// function converter(n)
+// {
+//     result = n * 60;
+//     return result
+// }
+// console.log(converter(5))
+
+
+// function even(array)
+// {
+//     count = 0;
+//     for(let i in array)
+//     {
+//         if(array[i]%2==0)
+//         {
+//             count += 1;
+//         }
+//         else
+//         {
+//             count += 0;
+//         }
+//     }
+//     return count;
+// }
+
+// console.log(even([2,3,4,5,6,7,13,17,21,60,24]))
+
+// function lower(n){
+
+//    let result = n.toLowerCase()
+//     return result
+// }
+// console.log(lower("SHAHNAWAZ"))
+
+// function swap(m,n)
+// {
+//     let temp;
+//     temp = m;
+//     m=n;
+//     n=temp;
+
+//     console.log(m , n) 
+// }
+// swap(5,50)
+
+// function odd(arr)
+// {
+//     let arr2 =[]
+//     for(let i in arr)
+//     {
+//         if(arr[i] % 2 != 0)
+//         {
+//             arr2.push(arr[i]);
+//         }
+//         // else
+//         //     {
+//         //     i += '';
+//         // }
+//     }
+//     return arr2;
+// }
+
+// console.log(odd([2,3,6,4,7,22,11]))
+
+
+// function div(n)
+// {
+//     if(n%5==0)
+//     {
+//         let result = n + " is multiple of 5 so its divisible"
+//         return result
+//     }
+    
+// }
+
+// console.log(div(550))
+// console.log("zeeshan")
+// console.log("zeeshan2")
+
+// console.log("zeeshan2")
+// console.log("zeeshan2")
+
+
+// // let a = [10, 20, "en to tre", true, 50];
+// // a[4] = a[4] * 2;
+// // console.log(a[0]);
+// // console.log(a[2]);
+// // console.log(a[4]);
+
+
+
+// let sampleObject =
+// {
+// id: 10,
+// delay: 20,
+// name: "en to tre",
+// isPresent: true,
+// delay: 50
+// };
+// sampleObject.delay = sampleObject.delay * 2;
+// console.log(sampleObject.id);
+// console.log(sampleObject.name);
+// console.log(sampleObject.delay);
+
+// let cont =
+// {
+// tel: "207-662-5412",
+// email: "RonaldSMurphy@freepost.org"
+// };
+// console.log(cont);
+// console.log(cont.tel);
+
+// console.log(typeof console);
+// console.log(typeof console.log);
+
+// let contact1 =
+// {
+// "first name": "Ronald"
+// };
+// contact1["first name"] = "Tim";
+// contact1.first name = "Tim"; // SyntaxError: Unexpected identifier
+// contact1."first name" = "Tim"; // SyntaxError:
+
+// let contact =
+// {
+// email_1: "RonaldSMurphy@freepost.org",
+// email_2: "rsmurphy@briazz.com"
+// };
+// for(i=1; i<=2; i++)
+// {
+// let key = "email_" + i;
+// console.log(key);
+// console.log(contact[key]);
+// }
+
+// let date1 = new Date ("Mon Mar 02 2020 10:00:00")
+// console.log("date1", date1)
+// let date2 = new Date ("Mon Mar 02 2020 10:00:00")
+// console.log(date2)
+// let date3 = new Date (" Mar 02 2020 10:00:00")
+// console.log(date3)
+// let date4 = new Date (" 02  March 2020 10:00:00")
+// console.log(date4)
+
+// let start = Date.now()
+// for ( i = 0; i <10000000;i++)
+// {
+
+// }
+// let end = Date.now()
+// console.log(end-start)
+
+// let date = new Date("2026-09-14T20:28:00")
+// console.log(date.getMonth())
+// console.log(date.getDay())
+// console.log(date.getDate())
+// console.log(date.getHours())
+// date.setHours(12)
+// console.log(date.getHours())
+<label id="date">Pick Date</input>
+<input type="date" for="date">
+function pickDate()
 {
-    str[i] && str[i].length && console.log(str[i])
+
 }
+

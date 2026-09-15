@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Table Generator</title>
+  <style>
+    body {
+      background-image: url("board.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh; /* full screen height */
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .input label {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: white;
+    }
+
+    .input input {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
+      margin-top: 0.5rem;
+      width: 80%; /* responsive width */
+      max-width: 300px;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      border: none;
+      background-color: #ffffffcc;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #ddd;
+      transform: scale(1.05);
+    }
+
+    .board {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      color: white;
+      font-weight: 800;
+      width: 100%;
+      max-width: 500px;
+      word-wrap: break-word;
+      text-align: center;
+      /* background-color: rgba(0,0,0,0.4); */
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    /* Media Queries for smaller devices */
+    @media (max-width: 768px) {
+      .board {
+        font-size: 1.2rem;
+      }
+      button {
+        width: 70%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .board {
+        font-size: 1rem;
+      }
+      .input input {
+        width: 100%;
+      }
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="input">
+      <label for="table">Enter Table Number:</label><br>
+      <input id="table"><br>
+      <button onclick="table()">Enter</button>
+    </div>
+    <div id="output" class="board"></div>
+  </div>
+
+  <script>
+    function table() {
+      let tableValue = parseInt(document.getElementById("table").value);
+      if (isNaN(tableValue)) {
+        alert("Please enter valid value!⚠️");
+        return;
+      }
+      let result = "";
+      for (let i = 1; i <= 10; i++) {
+        result += tableValue + " X " + i + " = " + (tableValue * i) + "<br>";
+      }
+      document.getElementById("output").innerHTML =
+        "Table of " + tableValue + " : <br><br>" + result;
+      document.getElementById("table").value = "";
+    }
+  </script>
+</body>
+</html>
