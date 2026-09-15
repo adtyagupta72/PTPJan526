@@ -2401,10 +2401,23 @@ let contact =
 // let date4 = new Date (" 02  March 2020 10:00:00")
 // console.log(date4)
 
-let start = Date.now()
-for ( i = 0; i <10000000;i++)
-{
+// let start = Date.now()
+// for ( i = 0; i <10000000;i++)
+// {
 
-}
-let end = Date.now()
-console.log(end-start)
+// }
+// let end = Date.now()
+// console.log(end-start)
+
+// let date = new Date("2026-09-14T20:28:00")
+// console.log(date.getMonth())
+// console.log(date.getDay())
+// console.log(date.getDate())
+// console.log(date.getHours())
+// date.setHours(12)
+// console.log(date.getHours())
+
+
+let date = new Date("2027-08-02T8:40:00")
+console.log(date.toLocaleDateString())
+console.log(date.toLocalTimeString())
