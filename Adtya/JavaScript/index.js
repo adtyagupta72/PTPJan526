@@ -3569,7 +3569,38 @@ diff => > (7 days~) mill => 5 marks => solved before 7 days from now
 // date.setHours(12)
 // console.log(date.getHours()) // -> 12
 
-let date = new Date("2020-07-08T10:20:00")
-console.log(date.toLocaleDateString()) // -> 08/07/2020
-console.log(date.toLocaleTimeString()) // -> 10:20:00
+// let date = new Date("2020-07-08T10:20:00")
+// console.log(date.toLocaleDateString()) // -> 08/07/2020
+// console.log(date.toLocaleTimeString()) // -> 10:20:00
 
+let array1 = [10, 20, 30]
+let array2 = ["cat", "dog"]
+let array4 = [true, 10, "One"]
+let array3 = array2.concat(array4, array1) // -> [10, 20, 30, "cat", "dog"]
+
+console.log(array1.length) // -> 3
+console.log(array2.length) // -> 2
+console.log(array3.length) // -> 5
+
+console.log(array1) // -> 10
+console.log(array3) // -> "cat"
+
+array3.pop()    // Removes data from the end
+
+console.log(array3)
+
+array3.shift()  //Removes element from start
+console.log(array3)
+
+array3.push("Two")
+console.log(array3)
+
+array3.unshift("Three")
+
+console.log(array3)
+console.log("Length :",array3.length)
+delete array3[1]               // array3.remove(1)
+console.log(array3)
+console.log("Length :",array3.length)
+console.log("array3.indexOf(10): ", array3.indexOf(10)) //3
+console.log("array3.lastIndexOf(10): ", array3.lastIndexOf(10)) //5
