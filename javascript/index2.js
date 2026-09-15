@@ -2418,6 +2418,17 @@ let contact =
 // console.log(date.getHours())
 
 
-let date = new Date("2027-08-02T8:40:00")
-console.log(date.toLocaleDateString())
-console.log(date.toLocalTimeString())
+// let date = new Date("2027-08-02T8:40:00")
+// console.log(date.toLocaleDateString())
+// console.log(date.toLocaleTimeString())
+
+let array1 = [10,20,30]
+let array2 = ["cat","dog"]
+let array3 = array1.concat(array2)
+
+console.log(array1)
+
+console.log(array2)
+console.log(array3)
+
+
