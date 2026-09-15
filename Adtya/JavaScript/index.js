@@ -3516,13 +3516,55 @@ diff => > (7 days~) mill => 5 marks => solved before 7 days from now
 // console.log(date3.toLocaleString()) // -> 08/07/2020, 10:00:00
 // console.log(date4.toLocaleString()) // -> 08/07/2020, 10:20:45
 
-let date1 = new Date("2020-07-08")
-let date2 = new Date("2020-07-08T10:20:00")
-let date3 = new Date("2020-07-08T10:20:00Z")
+// let date1 = new Date("2020-07-08")
+// let date2 = new Date("2020-07-08T10:20:00")
+// let date3 = new Date("2020-07-08T10:20:00Z")
 
-console.log(date1)
-console.log(date1.toLocaleString())
-console.log(date2)
-console.log(date2.toLocaleString())
-console.log(date3)
-console.log(date3.toLocaleString())
+// console.log(date1)
+// console.log(date1.toLocaleString())
+// console.log(date2)
+// console.log(date2.toLocaleString())
+// console.log(date3)
+// console.log(date3.toLocaleString())
+
+// let date1 = new Date("Mon Mar 02 2020 10:00:00")
+// console.log("date1: ", date1)
+// let date2 = new Date("Mon March 2 2020 10:00")
+// console.log("date2: ", date2)
+// let date3 = new Date("Mar 02 2020 10:00:00")
+// console.log("date3: ", date3)
+// let date4 = new Date("2 March 2020, 10:")
+// console.log("date4: ", date4)
+// let date5 = new Date("3.2.2020")
+// console.log("date5: ", date5)
+// let date6 = Date("03/02-2020, 10:00")
+// console.log("date6: ", date6)
+// let date7 = new Date("2020, 10:00")
+// console.log("date7: ", date7)
+// let date8 = new Date("2020 march-02, 10:00")
+// console.log("date8: ", date8)
+// let date9 = new Date("3.2.2020 GMT+0400")
+// console.log("date9: ", date9)
+// let date10 = new Date("Mon Mar 02 2020 10:00:00 UTC-4")
+// console.log("date10: ", date10)
+
+
+// let date1 = new Date(2020, 6, 8, 10, 20, 0)
+// let date2 = new Date(2020, 6, 9, 10, 20, 0)
+// console.log(date2.getTime() - date1.getTime()) 
+
+// let startTime = Date.now()
+
+// for(i=0; i<10000000; i++)
+// {}
+
+// let endTime = Date.now()
+// console.log(endTime - startTime) 
+
+let date = new Date("2026-09-14T20:28:00")
+console.log(date.getMonth()) // -> 6 
+console.log(date.getDay()) // -> 3
+console.log(date.getDate()) // 8
+console.log(date.getHours()) // -> 10
+date.setHours(12)
+console.log(date.getHours()) // -> 12
