@@ -2441,12 +2441,16 @@ let contact =
 // console.log(number.includes(3))
 // console.log(number.includes(1,0))
 
-const array1 = [1,2,[3,4],[5,[6,7]]]
+// const array1 = [1,2,[3,4],[5,[6,7]]]
 // const flatt = array1.flat()
 // console.log(flatt)
 // const flatt1 = array1.flat(infinity)
 // console.log(flatt1)
 
 
-console.log(array1.toString())
-console.log(array1.join("*"))
+// console.log(array1.toString())
+// console.log(array1.join("*"))
+
+let array1 = ["cat",20,46,45,43,22,12,44,32,100]
+let anyNumber = array1.some((item) => typeof item != "number")
+console.log(anyNumber)
