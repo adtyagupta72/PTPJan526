@@ -3451,6 +3451,184 @@ f2(30) => f1(20)(30) => sum(10)(20)(30)
 // console.log("Abc".localeCompare("abc", "nn"))
 // console.log("abc".localeCompare("abc", "nn"))
 
-console.log(typeof new Date())
-console.log(new Date())
-console.log(new Date().toLocaleString())
+// console.log(typeof new Date())
+// console.log(new Date())
+// console.log(new Date().toLocaleString())
+
+// let date1 = new Date(0) //1 Jan 1970 00:00:00 am + 0 milliseconds
+// let date2 = new Date((1000*60*60*10) + (1000 * 60 * 5)) //1 Jan 1970 00:00:00 am + 10 hours
+// // console.log(date1.toUTCString()) // -> Thu, 01 Jan 1970 00:00:00 GMT
+// // console.log(date2.toUTCString()) // -> Thu, 01 Jan 1970 10:00:00 GMT
+// console.log(date2)
+// console.log(date2.getTimezoneOffset()) // 330 Mins => 11/2 => 5.5
+// console.log(date2.toLocaleString())
+// console.log(date2.toISOString())
+// console.log(date2.toUTCString())
+
+/*
+If 7 days < question solved => 10 marks
+If 7 days > question solved => 5 marks
+
+Current date time - Date time of question solved => diff
+diff => < (7 days~) mill => 10 marks => solved within 7 days from now
+diff => > (7 days~) mill => 5 marks => solved before 7 days from now
+*/
+
+// date3 = new Date("2020-02-02T20:20:00.000")
+// date4 = new Date("2020-02-02T20:20:00.000Z")
+// console.log(date3.toLocaleString()) // -> 02/02/2020, 20:20:00
+// console.log(date3.toISOString()) // -> 2020-02-02T19:20:00.000Z
+// console.log(date3.toUTCString()) // -> Sun, 02 Feb 2020 19:20:00 GMT
+
+// console.log(date4.toLocaleString()) // -> 02/02/2020, 21:20:00
+// console.log(date4.toISOString()) // -> 2020-02-02T20:20:00.000Z
+// console.log(date4.toUTCString()) // -> Sun, 02 Feb 2020 20:20:00 GMT
+
+// console.log(date3.getTime()) // -> 1580671200000
+// console.log(date4.getTime()) // -> 1580674800000
+// console.log(date4.getTime() - date3.getTime()) // -> 3600000
+
+// let nowObj = new Date()
+// console.log(nowObj.toLocaleString())
+
+// console.log(new Date())
+// console.log(new Date().getTime())
+// console.log(new Date().toLocaleString())
+
+// console.log(Date.now())
+
+// console.log(new Date(Date.now()))
+
+// console.log(Date())
+
+// let now = Date.now() // timestamp
+// let nowObj = new Date(now)
+// console.log(`now : ${typeof now} : ${now}`)
+// console.log(`now : ${typeof nowObj} : ${nowObj}`)
+
+// let date1 = new Date(2020, 6)
+// let date2 = new Date(2020, 6, 8)
+// let date3 = new Date(2020, 6, 8, 10)
+// let date4 = new Date(2020, 6, 8, 10, 20, 45)
+
+// console.log(date1.toLocaleString()) // -> 01/07/2020, 00:00:00
+// console.log(date2.toLocaleString()) // -> 08/07/2020, 00:00:00
+// console.log(date3.toLocaleString()) // -> 08/07/2020, 10:00:00
+// console.log(date4.toLocaleString()) // -> 08/07/2020, 10:20:45
+
+// let date1 = new Date("2020-07-08")
+// let date2 = new Date("2020-07-08T10:20:00")
+// let date3 = new Date("2020-07-08T10:20:00Z")
+
+// console.log(date1)
+// console.log(date1.toLocaleString())
+// console.log(date2)
+// console.log(date2.toLocaleString())
+// console.log(date3)
+// console.log(date3.toLocaleString())
+
+// let date1 = new Date("Mon Mar 02 2020 10:00:00")
+// console.log("date1: ", date1)
+// let date2 = new Date("Mon March 2 2020 10:00")
+// console.log("date2: ", date2)
+// let date3 = new Date("Mar 02 2020 10:00:00")
+// console.log("date3: ", date3)
+// let date4 = new Date("2 March 2020, 10:")
+// console.log("date4: ", date4)
+// let date5 = new Date("3.2.2020")
+// console.log("date5: ", date5)
+// let date6 = Date("03/02-2020, 10:00")
+// console.log("date6: ", date6)
+// let date7 = new Date("2020, 10:00")
+// console.log("date7: ", date7)
+// let date8 = new Date("2020 march-02, 10:00")
+// console.log("date8: ", date8)
+// let date9 = new Date("3.2.2020 GMT+0400")
+// console.log("date9: ", date9)
+// let date10 = new Date("Mon Mar 02 2020 10:00:00 UTC-4")
+// console.log("date10: ", date10)
+
+
+// let date1 = new Date(2020, 6, 8, 10, 20, 0)
+// let date2 = new Date(2020, 6, 9, 10, 20, 0)
+// console.log(date2.getTime() - date1.getTime()) 
+
+// let startTime = Date.now()
+
+// for(i=0; i<10000000; i++)
+// {}
+
+// let endTime = Date.now()
+// console.log(endTime - startTime) 
+
+// let date = new Date("2026-09-14T20:28:00")
+// console.log(date.getMonth()) // -> 6 
+// console.log(date.getDay()) // -> 3
+// console.log(date.getDate()) // 8
+// console.log(date.getHours()) // -> 10
+// date.setHours(12)
+// console.log(date.getHours()) // -> 12
+
+// let date = new Date("2020-07-08T10:20:00")
+// console.log(date.toLocaleDateString()) // -> 08/07/2020
+// console.log(date.toLocaleTimeString()) // -> 10:20:00
+
+// let array1 = [10, 20, 30]
+// let array2 = ["cat", "dog"]
+// let array4 = [true, 10, "One"]
+// let array3 = array2.concat(array4, array1) // -> [10, 20, 30, "cat", "dog"]
+
+// console.log(array1.length) // -> 3
+// console.log(array2.length) // -> 2
+// console.log(array3.length) // -> 5
+
+// console.log(array1) // -> 10
+// console.log(array3) // -> "cat"
+
+// array3.pop()    // Removes data from the end
+
+// console.log(array3)
+
+// array3.shift()  //Removes element from start
+// console.log(array3)
+
+// array3.push("Two")
+// console.log(array3)
+
+// array3.unshift("Three")
+
+// console.log(array3)
+// console.log("Length :",array3.length)
+// delete array3[1]               // array3.remove(1)
+// console.log(array3)
+// console.log("Length :",array3.length)
+// console.log("array3.indexOf(10): ", array3.indexOf(10)) //3
+// console.log("array3.lastIndexOf(10): ", array3.lastIndexOf(10)) //5
+
+// console.log("array3.lastIndexOf(10): ", array3.lastIndexOf(10, 5))
+
+// const numbers = [1, 2, 3, 4, 3]
+// console.log("numbers.includes(3): ", numbers.includes(3))
+// console.log("numbers.includes(6): ", numbers.includes(6))
+// console.log("numbers.includes(3, 2): ", numbers.includes(3, 2))
+// console.log("numbers.includes(3, 4): ", numbers.includes(3, 4))
+
+// // numbers = ["One", "Two"] //Not allowed
+
+// numbers.push("6")
+// console.log(numbers)
+
+// const nestedArray = [1, 2, [3, 4], [5, [6, 7]]]
+// const flattenedArray = nestedArray.flat()
+// console.log("flattenedArray: ", flattenedArray)
+// const deeplyFlattenedArray = nestedArray.flat(Infinity) 
+// console.log("deeplyFlattenedArray: ", deeplyFlattenedArray)
+
+// console.log(deeplyFlattenedArray.toString())
+
+// console.log(deeplyFlattenedArray.join(""))
+
+let array1 = ["cat", 90, 80, 10, 20, 30, 100, 50, "dog"]
+let anyNumberPresent = array1.some((item) => typeof item != "number")
+
+console.log("anyNumberPresent:", anyNumberPresent)
