@@ -2456,8 +2456,22 @@ let contact =
 // console.log(anyNumber)
 
 
-let array2 = [20,24,45,12,46,1]
-let allPositive = array2.every(item => item > 0)
-console.log(allPositive)
+// let array2 = [20,24,45,12,46,1]
+// let allPositive = array2.every(item => item > 0)
+// console.log(allPositive)
+
+// let array3 = ["cat", 2 ,4,5,6,"dog"]
+// let array4 = array3.map((number)=>{
+//     if(typeof number === "number")
+//     {
+//          console.log(number)
+//     }
+     
+// })
 
 
+let num = ["cat",20,30,50,"dog","1000","ant"]
+let words = num.filter(item => typeof item === "string")
+console.log(words)
+words.sort()
+console.log(words)
