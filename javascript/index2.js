@@ -2470,8 +2470,26 @@ let contact =
 // })
 
 
-let num = ["cat",20,30,50,"dog","1000","ant"]
-let words = num.filter(item => typeof item === "string")
-console.log(words)
-words.sort()
-console.log(words)
+let num = ["cat",100,20,30,50,"dog","1000","ant"]
+
+let number = num.filter(item => typeof item === "number")
+console.log(number)
+let compare=(first,second)=>{
+    if(first<second)
+    {
+        return -1
+    }
+    else if(first=second)
+    {
+        return 0
+    }
+    else{
+        return 1
+    }
+}
+number.sort(compare)
+console.log(number)
+// let words = num.filter(item => typeof item === "string")
+// console.log(words)
+// words.sort()
+// console.log(words)
