@@ -2501,3 +2501,8 @@ let strangObj = num.reduce((a , item , index)=>
 },{})
 
 console.log(strangObj)
+
+let myPet=["cat","dog","fish","shark"]
+console.log(myPet.includes(item => item.length<3))
+console.log(myPet.includes(item => item.includes("ish")))
+console.log(myPet.includes(item => item.includes("ark")))
