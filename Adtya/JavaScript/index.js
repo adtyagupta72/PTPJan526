@@ -3628,7 +3628,121 @@ diff => > (7 days~) mill => 5 marks => solved before 7 days from now
 
 // console.log(deeplyFlattenedArray.join(""))
 
-let array1 = ["cat", 90, 80, 10, 20, 30, 100, 50, "dog"]
-let anyNumberPresent = array1.some((item) => typeof item != "number")
+// let array1 = ["cat", 90, 80, 10, 20, 30, 100, 50, "dog"]
+// let anyNumberPresent = array1.some((item) => typeof item != "number")
 
-console.log("anyNumberPresent:", anyNumberPresent)
+// console.log("anyNumberPresent:", anyNumberPresent)
+
+//Some - any one element should satisfy the condition       checks for 1 true
+//Every - Each element should satisfy the condition.        checks for 1 false
+
+// let startTime = Date.now()
+
+// let array2 = [90, 80, 10, 20, 30, 100, 50, 90, 80, -10]
+// let allPositive = array2.every(item => item > 0)
+// let allPositive = false
+// for(let count = 0; count< array2.length; count++)
+// {
+//     if(array2[count] >= 0)
+//     {
+//         allPositive = true
+//     }
+//     else
+//     {
+//         allPositive = false
+//         break
+//     }
+// }
+// console.log("allPositive: ", allPositive)
+
+// let endTime = Date.now()
+// console.log(endTime - startTime+" MilliSeconds") 
+
+// let array1 = [90, 80, 10, 20, 30, 100, 50]
+// let array2 = array1.map((number)=> {
+//     if(number >= 50)
+//         return number+5 
+//     return number
+// })
+// console.log(array2)
+
+//Nirbhay
+//let array3=["cat",90,80,10,20,30,100,50,"dog"]
+// let array4=array3.map((number)=>{
+//     if(typeof number==number && number>=50)
+//         return number+5
+//     return number
+// })
+// console.log(array4)
+
+//Zee
+// let array3 = ["cat", 2 ,4,5,6,"dog"]
+// let array4 = array3.map((number)=>{
+//     if(typeof number === "number")
+//     {
+//         return number
+//     }
+//     return number
+// })
+// console.log(array4)
+
+// let array3 = ["cat", 90, 80, 10, 20, 30, 100, 50, "dog"]
+
+// let result = array3
+//     .filter((element) => typeof element == "number")
+//     .map((element) => element>=50 ? element+5 : element)
+// console.log(result)
+
+
+// let array1 = ["cat", 90, 80, 10, 20, 30, 100, 50, "dog", "ant"]
+// let words = array1.filter(item => typeof item === "string") 
+// console.log(words)
+// words.sort() 
+// console.log(words)
+// let numbers = array1.filter(item => typeof item === "number") 
+// console.log(numbers)
+// // numbers.sort()
+// // console.log(numbers)
+// let comparisionFunction = (first, second) => 
+//     {
+//         if( first < second) 
+//         {
+//             return -1
+//         } 
+//         else if(first == second) 
+//         {
+//             return 0
+//         } 
+//         else 
+//         {
+//             return 1
+//         }
+//     }
+// numbers.sort(comparisionFunction) 
+// console.log(numbers)
+
+// let numbers = [10, 20, 30, 50, 80, 90, 100] 
+// let sum = numbers.reduce((accumulator, item) => accumulator + item, 100)
+// //reduce returns the sum of elements
+// console.log(sum) 
+
+// let strangeObj = numbers.reduce((a, item, index) => 
+// {
+//     a[item] = index
+//     return a
+// }, {})
+// console.log(strangeObj) 
+
+// numbers.reverse()
+// console.log(numbers) 
+// numbers.reverse()
+// console.log(numbers) 
+
+let myPets = ["cat", "dog", "hamster", "canary", "shark", "cat", "dog"]
+console.log(myPets.find(item => item.length > 3)) // -> hamster
+console.log(myPets.find(item => item.includes("og"))) // -> dog
+console.log(myPets.find(item => item.includes("fish"))) // -> undefined
+
+console.log(myPets.findIndex(item => item.length > 3)) // -> 2
+console.log(myPets.findIndex(item => item.includes("og"))) // -> 1
+console.log(myPets.findIndex(item => item.includes("fish"))) // -> -1
