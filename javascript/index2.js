@@ -2493,3 +2493,11 @@ console.log(number)
 // console.log(words)
 // words.sort()
 // console.log(words)
+
+let strangObj = num.reduce((a , item , index)=>
+{
+    a[item] = index
+    return a
+},{})
+
+console.log(strangObj)
