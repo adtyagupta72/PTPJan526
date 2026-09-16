@@ -2451,6 +2451,13 @@ let contact =
 // console.log(array1.toString())
 // console.log(array1.join("*"))
 
-let array1 = ["cat",20,46,45,43,22,12,44,32,100]
-let anyNumber = array1.some((item) => typeof item != "number")
-console.log(anyNumber)
+// let array1 = ["cat",20,46,45,43,22,12,44,32,100]
+// let anyNumber = array1.some((item) => typeof item != "number")
+// console.log(anyNumber)
+
+
+let array2 = [20,24,45,12,46,1]
+let allPositive = array2.every(item => item > 0)
+console.log(allPositive)
+
+
