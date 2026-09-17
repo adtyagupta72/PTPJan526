@@ -2264,7 +2264,7 @@ let contact =
 // console.log(converter(5))
 
 
-// function even(array)
+// function even()
 // {
 //     count = 0;
 //     for(let i in array)
@@ -2509,4 +2509,7 @@ console.log(myPet.includes(item => item.includes("ark")))
 let array = [2,4,59,78,67]
 console.log(array)
 array.push(77)
+console.log(array)
+
+array.unshift(3)
 console.log(array)
