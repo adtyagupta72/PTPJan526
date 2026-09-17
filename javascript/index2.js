@@ -2513,3 +2513,6 @@ console.log(array)
 
 array.unshift(3)
 console.log(array)
+
+array.pop()
+console.log(array)
