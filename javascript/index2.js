@@ -2509,3 +2509,4 @@ console.log(myPet.includes(item => item.includes("ark")))
 let array = [2,4,59,78,67]
 console.log(array)
 array.push(77)
+console.log(array)
