@@ -1366,8 +1366,7 @@ let contact =
 // // let point1 = createPoint(1,1)
 // // let point2 = createPoint(2,2)
 
-// // console.log(point1.x)
-// // console.log(point2.x)
+// // nsonsole.log(point1.xnsole.log(point2.x)
 // // console.log("poin1:", point1 )
 // // console.log("poin2:", point2 )
 
@@ -2506,3 +2505,7 @@ let myPet=["cat","dog","fish","shark"]
 console.log(myPet.includes(item => item.length<3))
 console.log(myPet.includes(item => item.includes("ish")))
 console.log(myPet.includes(item => item.includes("ark")))
+
+let array = [2,4,59,78,67]
+console.log(array)
+array.push(77)
