@@ -434,7 +434,7 @@
 //     return sum / temperatures.length
 // }
 // console.log(getMeanTemp([10,20,30]))
-// console.log(getMeanTemp("not an array"))
+// console.log(getMeanTemp("not an nso"))
 
 
 // function add(a,b)
@@ -941,7 +941,7 @@
 // console.log("number", test.nr)
 // console.log("bool", test.b)
 // console.log("string", test.str)
-// console.log("array", test.arr)
+// console.log(",", test.arr)
 // console.log("number", test.arr[0])
 // console.log("number", testarr.[1])
 // console.log("number", test.arr[2])
@@ -1087,13 +1087,13 @@
 // console.log(point2)
 // console.log(point0)
 
-// let array = [11,21,23,34,45]
+// let le = [11,21,23,34,45]
 // let obj = {
 //     a : 1 ,
 //     b : 2 ,
 //     c : 3
 // }
-//  myFun(...array)
+//  myFun(...l)
 //  function myFun(a,b,c,d,e)
 //  {
 //     console.log(a)
@@ -2267,7 +2267,7 @@ let contact =
 // function even()
 // {
 //     count = 0;
-//     for(let i in array)
+//     for(let i in g)
 //     {
 //         if(array[i]%2==0)
 //         {
@@ -2493,18 +2493,18 @@ console.log(number)
 // words.sort()
 // console.log(words)
 
-let strangObj = num.reduce((a , item , index)=>
-{
-    a[item] = index
-    return a
-},{})
+// let strangObj = num.reduce((a , item , index)=>
+// {
+//     a[item] = index
+//     return a
+// },{})
 
-console.log(strangObj)
+// console.log(strangObj)
 
-let myPet=["cat","dog","fish","shark"]
-console.log(myPet.includes(item => item.length<3))
-console.log(myPet.includes(item => item.includes("ish")))
-console.log(myPet.includes(item => item.includes("ark")))
+// let myPet=["cat","dog","fish","shark"]
+// console.log(myPet.includes(item => item.length<3))
+// console.log(myPet.includes(item => item.includes("ish")))
+// console.log(myPet.includes(item => item.includes("ark")))
 
 let array = [2,4,59,78,67]
 console.log(array)
@@ -2512,7 +2512,13 @@ array.push(77)
 console.log(array)
 
 array.unshift(3)
-console.log(array)
+console.log()
 
 array.pop()
 console.log(array)
+
+let array2 = [2,3,5,6,7]
+
+array.concat(array2)
+console.log(array)
+
