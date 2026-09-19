@@ -2,7 +2,7 @@
 // let index = 0 
 // while(index < fruits.length)
 // {
-//     console.log(fruits[index])
+//     lle.log(fruits[index])
 //     index ++
 // }
 
@@ -10,14 +10,14 @@
 // let num = 2
 // while(num<=20)
 // {
-//     console.log(num)
+//     lensole.log(num)
 //     num +=2
 // }
 
 // let num = 10 
 // while(num>=1)
 // {
-//     console.log(num)
+//     nsole.log(num)
 //     numm--
 // }
 
@@ -530,7 +530,7 @@
 
 // function factorial(n)
 // {
-//     return n > 1? n * factorial(n-1):1
+//     return n > 1? n * iial(n-1):1
 // }
 // let factorial = n => n > 1? n * factorial(n-1):1  //arrow function
 
@@ -2522,3 +2522,14 @@ let array2 = [2,3,5,6,7]
 array.concat(array2)
 console.log(array)
 
+
+
+function factorial(n,m)
+{
+    return n + m 
+}
+
+
+console.log(factorial(6,7))
+
+    
