@@ -3738,11 +3738,98 @@ diff => > (7 days~) mill => 5 marks => solved before 7 days from now
 // numbers.reverse()
 // console.log(numbers) 
 
-let myPets = ["cat", "dog", "hamster", "canary", "shark", "cat", "dog"]
-console.log(myPets.find(item => item.length > 3)) // -> hamster
-console.log(myPets.find(item => item.includes("og"))) // -> dog
-console.log(myPets.find(item => item.includes("fish"))) // -> undefined
+// let myPets = ["cat", "dog", "hamster", "canary", "shark", "cat", "dog"]
+// console.log(myPets.find(item => item.length > 3)) // -> hamster
+// console.log(myPets.find(item => item.includes("og"))) // -> dog
+// console.log(myPets.find(item => item.includes("fish"))) // -> undefined
 
-console.log(myPets.findIndex(item => item.length > 3)) // -> 2
-console.log(myPets.findIndex(item => item.includes("og"))) // -> 1
-console.log(myPets.findIndex(item => item.includes("fish"))) // -> -1
+// console.log(myPets.findIndex(item => item.length > 3)) // -> 2
+// console.log(myPets.findIndex(item => item.includes("og"))) // -> 1
+// console.log(myPets.findIndex(item => item.includes("fish"))) // -> -1
+
+// let myPets = ["cat", "dog", "hamster", "canary", "shark", "cat", "dog"]
+// let p1 = myPets.slice(3) // ->  ["canary", "shark", "cat", "dog"]
+// console.log("p1: ", p1)
+// let p2 = myPets.slice(3, 5) // -> ["canary", "shark"]
+// console.log("p2", p2)
+// let p3 = myPets.slice(-3) // -> ["shark", "cat", "dog"]
+// console.log("p3: ", p3)
+// let p4 = myPets.slice(-3, -1) // -> ["shark", "cat"]
+// console.log("p4: ", p4)
+
+// let myPets = ["cat", "dog", "hamster", "canary", "shark", "cat", "dog"]
+// let removedPets = myPets.splice(2, 3) 
+// console.log(myPets) // -> ["cat", "dog", "cat", "dog"]
+// console.log(removedPets) // -> ["hamster", "canary", "shark"]
+
+// let myPets1 = ["cat", "dog", "hamster", "canary", "shark", "cat", "dog"]
+// myPets1.splice(2, 0, "rabbit", "guinea pig")
+// console.log(myPets1) 
+
+
+// let [el1, el2, el3] = myPets1//, el4, el5, el6, el7, el8
+
+//Destruction
+// console.log("el1:", el1)
+// console.log("el2:", el2)
+// console.log("el3:", el3)
+// console.log("el4:", el4)
+// console.log("el5:", el5)
+// console.log("el6:", el6)
+// console.log("el7:", el7)
+// console.log("el8:", el8)
+
+// let myObject = {
+//     a: "A",
+//     b: "B",
+//     c: "C"
+// }
+
+// let {b} = myObject
+
+// console.log("b:", b)
+
+// let myPets = ["cat", "dog"]
+// let [pet1 = "fish", , pet3 = "fish"] = myPets
+// console.log(pet1)
+// console.log(pet3)
+
+// let array1 = [100, 200, 300]
+// let array2 = [1000, 2000]
+// let array3 = [10, 20, ...array1, 500, ...array2] 
+
+// console.log("array1: ", array1)
+// console.log("array2: ", array2)
+// console.log("array3: ", array3)
+
+// readAllElement([10, 20, ...array1, 500, ...array2])
+// readAllElement([...array1])
+// readAllElement([...array2])
+// readAllElement([...array2, 10, 20, 5000])
+
+// function readAllElement(arr)
+// {
+//     console.log(arr)
+// }
+
+
+// let testFn = (a, b, d) => a + b + d
+// let array = [10, 20, 30, 40]
+// console.log(testFn(...array))
+
+let emptySet = new Set() // -> {}
+console.log(emptySet.size) // -> 0
+console.log(emptySet)
+let petsSet = new Set(["cat", "dog", "cat"]) 
+console.log(petsSet.size)
+console.log(petsSet)
+
+petsSet.add("shark")
+petsSet.add("hamster")
+console.log(petsSet.size) // -> 4
+console.log(petsSet.has("shark")) // -> true
+petsSet.delete("dog") // -> true
+petsSet.delete("dog") // -> false
+console.log(petsSet.size) // -> 3
+petsSet.clear()
+console.log(petsSet.size) // -> 0
