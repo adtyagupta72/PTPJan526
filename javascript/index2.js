@@ -2534,12 +2534,19 @@ let contact =
 
 // console.log("zeeshan")
 
-let myPets = ["cat", "dog", "canary" , "shark", "cat", "monkey"]
-let p1 = myPets.slice(3)
-console.log(p1)
-let p2 = myPets.slice(-3,-1)
-console.log(p2)
-let p3 = myPets.slice(2,5)
-console.log(p3)
-let p4 = myPets.slice(1)
-console.log(p4)
+// let myPets = ["cat", "dog", "canary" , "shark", "cat", "monkey"]
+// let p1 = myPets.slice(3)
+// console.log(p1)
+// let p2 = myPets.slice(-3,-1)
+// console.log(p2)
+// let p3 = myPets.slice(2,5)
+// console.log(p3)
+// let p4 = myPets.slice(1)
+// console.log(p4)
+
+let myPets1 =  ["cat", "dog", "canary" , "shark", "cat", "monkey"]
+let removed = myPets1.splice(2,3)
+console.log(removed)
+
+myPets1.splice(2,0,"reindeer","kingfisher")
+console.log(myPets1)
