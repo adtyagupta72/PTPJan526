@@ -2582,3 +2582,9 @@ let contact =
 let test =(a,b,c,d) => a+b+c+d
 let array = [10,20,30,40]
 console.log(test(...array))
+
+let emptySet = new Set()
+console.log(emptySet.size)
+
+let petSet = new Set(["cat", "dog", "cat"])
+console.log(petSet)
