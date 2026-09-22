@@ -2469,25 +2469,25 @@ let contact =
 // })
 
 
-let num = ["cat",100,20,30,50,"dog","1000","ant"]
+// let num = ["cat",100,20,30,50,"dog","1000","ant"]
 
-let number = num.filter(item => typeof item === "number")
-console.log(number)
-let compare=(first,second)=>{
-    if(first<second)
-    {
-        return -1
-    }
-    else if(first=second)
-    {
-        return 0
-    }
-    else{
-        return 1
-    }
-}
-number.sort(compare)
-console.log(number)
+// let number = num.filter(item => typeof item === "number")
+// console.log(number)
+// let compare=(first,second)=>{
+//     if(first<second)
+//     {
+//         return -1
+//     }
+//     else if(first=second)
+//     {
+//         return 0
+//     }
+//     else{
+//         return 1
+//     }
+// }
+// number.sort(compare)
+// console.log(number)
 // let words = num.filter(item => typeof item === "string")
 // console.log(words)
 // words.sort()
@@ -2506,30 +2506,40 @@ console.log(number)
 // console.log(myPet.includes(item => item.includes("ish")))
 // console.log(myPet.includes(item => item.includes("ark")))
 
-let array = [2,4,59,78,67]
-console.log(array)
-array.push(77)
-console.log(array)
+// let array = [2,4,59,78,67]
+// console.log(array)
+// array.push(77)
+// console.log(array)
 
-array.unshift(3)
-console.log()
+// array.unshift(3)
+// console.log()
 
-array.pop()
-console.log(array)
+// array.pop()
+// console.log(array)
 
-let array2 = [2,3,5,6,7]
+// let array2 = [2,3,5,6,7]
 
-array.concat(array2)
-console.log(array)
-
-
-
-function factorial(n,m)
-{
-    return n + m 
-}
+// array.concat(array2)
+// console.log(array)
 
 
-console.log(factorial(6,7))
 
-console.log("zeeshan")
+// function factorial(n,m)
+// {
+//     return n + m 
+// }
+
+
+// console.log(factorial(6,7))
+
+// console.log("zeeshan")
+
+let myPets = ["cat", "dog", "canary" , "shark", "cat", "monkey"]
+let p1 = myPets.slice(3)
+console.log(p1)
+let p2 = myPets.slice(-3,-1)
+console.log(p2)
+let p3 = myPets.slice(2,5)
+console.log(p3)
+let p4 = myPets.slice(1)
+console.log(p4)
