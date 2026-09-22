@@ -2544,37 +2544,41 @@ let contact =
 // let p4 = myPets.slice(1)
 // console.log(p4)
 
-let myPets1 =  ["cat", "dog", "canary" , "shark", "cat", "monkey"]
-// let removed = myPets1.splice(2,3)
-// console.log(removed)
+// let myPets1 =  ["cat", "dog", "canary" , "shark", "cat", "monkey"]
+// // let removed = myPets1.splice(2,3)
+// // console.log(removed)
 
-// myPets1.splice(2,0,"reindeer","kingfisher")
-// console.log(myPets1)
+// // myPets1.splice(2,0,"reindeer","kingfisher")
+// // console.log(myPets1)
 
-//destruction
+// //destruction
 
-// let [el1 , el2 , el3 ,el4 , el5] = myPets1
-// console.log(el1)
-// console.log(el3)
-// console.log(el5)
+// // let [el1 , el2 , el3 ,el4 , el5] = myPets1
+// // console.log(el1)
+// // console.log(el3)
+// // console.log(el5)
 
-let myPets =["cat","dog"]
-let [Pet1="fish", ,Pet2="shark"] = myPets1
-console.log(Pet1)
-console.log(myPets)
+// let myPets =["cat","dog"]
+// let [Pet1="fish", ,Pet2="shark"] = myPets1
+// console.log(Pet1)
+// console.log(myPets)
 
-let array1 = [100,200,300]
-let array2 = [1000,2000]
-let array3 = [10,20,...array1,500,...array2]
-console.log(array1)
-console.log(array2)
-console.log(array3)
+// let array1 = [100,200,300]
+// let array2 = [1000,2000]
+// let array3 = [10,20,...array1,500,...array2]
+// console.log(array1)
+// console.log(array2)
+// console.log(array3)
 
-function read(arr)
-{
-    console.log(arr)
-}
+// function read(arr)
+// {
+//     console.log(arr)
+// }
 
-read([...array1])
-read([...array2])
-read([...array3])
+// read([...array1])
+// read([...array2])
+// read([...array3])
+
+let test =(a,b,c,d) => a+b+c+d
+let array = [10,20,30,40]
+console.log(test(...array))
