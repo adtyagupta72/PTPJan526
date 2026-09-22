@@ -2553,7 +2553,12 @@ let myPets1 =  ["cat", "dog", "canary" , "shark", "cat", "monkey"]
 
 //destruction
 
-let [el1 , el2 , el3 ,el4 , el5] = myPets1
-console.log(el1)
-console.log(el3)
-console.log(el5)
+// let [el1 , el2 , el3 ,el4 , el5] = myPets1
+// console.log(el1)
+// console.log(el3)
+// console.log(el5)
+
+let myPets =["cat","dog"]
+let [Pet1="fish", ,Pet2="shark"] = myPets1
+console.log(Pet1)
+console.log(myPets)
