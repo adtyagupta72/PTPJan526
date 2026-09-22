@@ -2562,3 +2562,19 @@ let myPets =["cat","dog"]
 let [Pet1="fish", ,Pet2="shark"] = myPets1
 console.log(Pet1)
 console.log(myPets)
+
+let array1 = [100,200,300]
+let array2 = [1000,2000]
+let array3 = [10,20,...array1,500,...array2]
+console.log(array1)
+console.log(array2)
+console.log(array3)
+
+function read(arr)
+{
+    console.log(arr)
+}
+
+read([...array1])
+read([...array2])
+read([...array3])
