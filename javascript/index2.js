@@ -2545,8 +2545,15 @@ let contact =
 // console.log(p4)
 
 let myPets1 =  ["cat", "dog", "canary" , "shark", "cat", "monkey"]
-let removed = myPets1.splice(2,3)
-console.log(removed)
+// let removed = myPets1.splice(2,3)
+// console.log(removed)
 
-myPets1.splice(2,0,"reindeer","kingfisher")
-console.log(myPets1)
+// myPets1.splice(2,0,"reindeer","kingfisher")
+// console.log(myPets1)
+
+//destruction
+
+let [el1 , el2 , el3 ,el4 , el5] = myPets1
+console.log(el1)
+console.log(el3)
+console.log(el5)
