@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <center>
+        <h1>Table Tag Practice</h1>
+    </center>
+    <center>
+        <table border="2">
+            <caption>Employee Salary Table</caption>
+            <thead>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Emp ID</th>
+                    <th>Emp Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sahil Kumar</td>
+                    <td>Emp101</td>
+                    <td>30,000</td>
+                </tr>
+                <tr>
+                    <td>Nirbhay Kumar</td>
+                    <td>Emp102</td>
+                    <td>40,000</td>
+                </tr>
+                <tr>
+                    <td>Harsh Rajput</td>
+                    <td>Emp103</td>
+                    <td>50,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+    <h2>Use Of Colspan and rowspan</h2>
+    <table border="3" style="width: 50%;">
+        <colgroup>
+            <col span="2" style="background-color: sandybrown;">
+            <col span="2" style="background-color: bisque;">
+        </colgroup>
+        <thead>
+            <th>Name</th>
+            <th>Roll no.</th>
+            <th>Phone no.</th>
+            <th>Other phone no.</th>
+            <th>City</th>
+            <th>Percentage</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nirbhay</td>
+                <td>NBCA53</td>
+                <td colspan="2">749039473</td>
+                <td rowspan="3">sitapur</td>
+                <td>63%</td>
+            </tr>
+            <tr>
+                <td>Jatin</td>
+                <td>NBCA78</td>
+                <td>6577483738</td>
+                <td>9846477332</td>
+                <td>65%</td>
+            </tr>
+            <tr>
+                <td>Kamal</td>
+                <td>NBCA34</td>
+                <td colspan="2">5688484933</td>
+                <td>70%</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table border="3" style="width: 50%; text-align: center;">
+        <caption>TIME TABLE</caption>
+        <thead>
+            <th>Duration</th>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thurs</th>
+            <th>Fri</th>
+            <th>Sat</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:00AM-9:00AM</td>
+                
+            </tr>
+            <tr>
+                <td>9:15AM-9:30AM</td>
+            </tr>
+            <tr>
+                <td>9:35AM-10:35AM</td>
+            </tr>
+            <tr>
+                <td>12:00PM-1:10PM</td>
+            </tr>
+            <tr>
+                <td>2:00PM-3:00PM</td>
+            </tr>
+            <tr>
+                <td>3:10PM-4:10PM</td>
+            </tr>
+            <tr>
+                <td>4:30PM-5:30PM</td>
+            </tr>
+            <tr>
+                <td>6:00PM-8:00PM</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h3>Use of Nested Table</h3>
+    <table border="3">
+        <thead>
+            <th>Section A</th>
+            <th>Section B</th>
+            <th>Section C</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <table border="2">
+                        <thead>
+                            <th>Name</th>
+                            <th>Roll.no</th>
+                            <th>Marks</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nirbhay</td>
+                                <td>NBCA53</td>
+                                <td>65%</td>
+                            </tr>
+                            <tr>
+                                <td>Harsh</td>
+                                <td>NBCA45</td>
+                                <td>67%</td>
+                            </tr>
+                            <tr>
+                                <td>Rohit</td>
+                                <td>NBCA56</td>
+                                <td>67%</td>
+                            </tr>
+                            <tr>
+                                <td>Tushar</td>
+                                <td>NBCA89</td>
+                                <td>67%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table border="2">
+                        <thead>
+                            <th>Name</th>
+                            <th>Roll.no</th>
+                            <th>Marks</th>
+                        </thead>
+                        <tbody>
+                             <tr>
+                                <td>Yuvraj</td>
+                                <td>NBCA58</td>
+                                <td>65%</td>
+                            </tr>
+                            <tr>
+                                <td>Rohit</td>
+                                <td>NBCA22</td>
+                                <td>67%</td>
+                            </tr>
+                            <tr>
+                                <td>Virat</td>
+                                <td>NBCA34</td>
+                                <td>67%</td>
+                            </tr>
+                            <tr>
+                                <td>Sanju</td>
+                                <td>NBCA12</td>
+                                <td>67%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table border="2">
+                        <thead>
+                            <th>Name</th>
+                            <th>Roll.no</th>
+                            <th>Marks</th>
+                        </thead>
+                        <tbody>
+                             <tr>
+                                <td>Chris</td>
+                                <td>NBCA51</td>
+                                <td>65%</td>
+                            </tr>
+                            <tr>
+                                <td>Harshit</td>
+                                <td>NBCA34</td>
+                                <td>67%</td>
+                            </tr>
+                            <tr>
+                                <td>Methew</td>
+                                <td>NBCA89</td>
+                                <td>67%</td>
+                            </tr>
+                            <tr>
+                                <td>Kunal</td>
+                                <td>NBCA67</td>
+                                <td>67%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

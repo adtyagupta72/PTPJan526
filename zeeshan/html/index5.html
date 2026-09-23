@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label id="date">Pick Date</input>
+<input type="date" for="date" id="userInput"><br><br>
+<button onclick="pickDate()">Time Left</button>
+<p id="output"></p>
+<script>
+    let timer ;
+function pickDate()
+{
+    let userInput = document.getElementById("userInput").value
+    let targetDate = new Date(userInput)
+
+    timer = setInterval(()=>{
+    let now = new Date()
+    let diff = targetDate.getTime()-now.getTime()
+    let hours = Math.floor(diff / (1000 * 60 * 60));
+    let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+     document.getElementById("output").innerHTML =
+    ` Time left: ${hours}h : ${minutes}m : ${seconds}s`;
+    }, 1000);
+}
+
+
+
+
+</script>
+
+</body>
+</html>
