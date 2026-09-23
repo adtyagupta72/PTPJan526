@@ -2416,10 +2416,4 @@ let contact =
 // console.log(date.getHours())
 // date.setHours(12)
 // console.log(date.getHours())
-<label id="date">Pick Date</input>
-<input type="date" for="date">
-function pickDate()
-{
-
-}
 
