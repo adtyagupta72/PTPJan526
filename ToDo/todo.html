@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         dialog {
+            border: none;
+            border-radius: 8px;
+            padding: 24px;
+            max-width: 400px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+         dialog::backdrop {
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(4px); /* Adds a modern blur effect */
+        }
+
+         button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+
+
+    </style>
+    <script>
+        var toDoList = []
+        
+
+        function addTodo()
+        {
+            console.log("addtodo")
+            let newTitle = document.getElementById("newTodoInput").value
+            console.log("newTodoTitle", newTitle)
+            toDoList.push({
+                id : toDoList.length + 1,
+                title : newTitle
+            })
+            console.log(toDoList)
+            frontendUpdate()
+        }
+
+        function frontendUpdate()
+        {
+            let todoListElement = document.getElementById("todoListElement")
+            todoListElement.innerHTML = ""
+            for ( index in toDoList)
+            {
+                todoListElement.innerHTML += "<li onclick='todoClicked("+toDoList[index].id+")'>" + toDoList[index].title + "</li>"
+            }
+        }
+
+        function todoClicked(id)
+        {
+            console.log("todoclicked", id)
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input id="newTodoInput" type="text" placeholder="Enter Todo Title here....">
+        <br>
+        <button onclick="addTodo()">Add Todo</button>
+        <ul id="todoListElement">
+        </ul>
+        <dialog id="todoDialog">
+             <div class="dialog-content">
+                <h2>Add ToDo</h2>
+                <br/><br/>
+                <input id="newTodoInput" type="text" placeholder="Enter Todo Title here..."/>
+                <br/><br/><br/>
+                <button onclick="addTodo()">Add Todo</button>
+                <!-- Close Button -->
+                <button id="closeModalBtn">Close</button>
+            </div>
+        </dialog>
+
+         <dialog id="todoUpdateDialog">
+            <div class="dialog-content">
+                <h2>Update ToDo</h2>
+                <br/><br/>
+                <input id="todoInput" type="text" placeholder="Enter Todo Title here..."/>
+                <br/><br/><br/>
+                <button onclick="closeUpdateDialog()">Update ToDo</button>
+                <!-- Close Button -->
+                <button onclick="closeUpdateDialog()">Close</button>
+            </div>
+        </dialog>
+        
+    </div>
+</body>
+</html>

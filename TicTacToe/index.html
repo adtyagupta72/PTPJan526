@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe Game</title>
+    <style>
+      *{
+        caret-color: transparent;
+      }
+        /* body
+        {
+         background-color:black; 
+        
+         background-image: url("pnga.png");
+         background-size: 700px 600px;
+         background-repeat: no-repeat;
+        height: 100vh;
+       
+         background-position: center;
+         
+} */
+        
+        
+        /* .box
+        {
+          display: flex;            
+  justify-content: center;   
+  align-items: center;  
+        } */
+      
+        h1 
+        {
+           font-size: 60px;
+           color:white;
+            /* padding-bottom : 5%; */
+           transition: all 0.9s ease;
+          margin-top:2%;
+            /* margin-bottom:25%; */
+          
+            /* background-color: #fff; */
+        }
+        h1:hover
+        {
+            transform: scale(1.2);
+          
+      
+        }
+        /* .grid
+        {
+            background-color: rgb(181, 167, 147);
+             
+            width:300px;
+            height:300px;
+             margin-top:7.5%;
+            margin-left:40%;
+            border:2px solid rgb(64, 41, 10);
+            
+        } */
+
+        .x {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px brown;
+ padding: 20%;
+}
+
+.o {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px brown;
+  padding: 20%;
+  
+  
+}
+
+
+    #reset-btn {
+  display: block;       
+  /* margin: 95px auto;    */
+  margin-top:2%;
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+
+#new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+}
+
+#msg {
+  color: #ffffc7;
+  font-size: 5vmin;
+}
+
+.msg-container {
+  position: absolute;  
+  top: 50%;             
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.8); 
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  gap: 2rem;
+}
+
+.hide {
+  display: none;
+}
+
+
+.winner {
+  background-color: gold !important;
+  color: black;
+  font-weight: bold;
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px gold; }
+  to { box-shadow: 0 0 25px gold; }
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .box {
+    width: 100%;
+  }
+}
+
+ body{
+    background-color: black;
+    
+  }
+  .container {
+  height: 100vh;             
+  display: flex;   
+   flex-direction: column;         
+  justify-content: center;    
+  align-items: center;    
+  margin:0%;
+  }   
+  .grid
+  {
+    width:246px;
+     height:240px;
+    /* background-color: aliceblue; */
+     margin-top:15%;
+     
+           
+  }
+.board 
+{
+  
+  background-image:url("pnga.png");
+  background-repeat: no-repeat;
+/* background-color: aliceblue; */
+background-position: center;   
+  background-size:75%;
+  width :85vh;
+  height:65vh;
+  display: flex;            
+  justify-content: center;    
+  align-items: center;  
+  padding-top:0%;  
+}
+
+        
+    </style>
+
+  
+</head>
+<body>
+      <div class="msg-container hide">
+      <p id="msg">Winner</p>
+      <button id="new-btn">New Game</button>
+    </div>
+  
+    <!-- <DIV CLASS="grid">
+        <div class="box" style="width:100px; height:100px; background-color: rgb(56, 40, 21); float:right; margin:0;"></div>
+        <div class="box" style="width:100px; height:100px; background-color: rgb(88, 73, 54); float:right; margin:0;"></div>
+        <div class="box"  style="width:100px; height:100px; background-color: rgb(56, 40, 21); float:right; margin:0;"></div>
+
+        <div class="box" style="width:100px; height:100px; background-color: rgb(88, 73, 54); float:right; margin:0;"></div>
+        <div class="box" style="width:100px; height:100px; background-color: rgb(56, 40, 21); float:right; margin:0;"></div>
+        <div class="box" style="width:100px; height:100px; background-color: rgb(88, 73, 54); float:right; margin:0;"></div>
+
+        <div class="box" style="width:100px; height:100px; background-color: rgb(56, 40, 21); float:right; margin:0;"></div>
+        <div class="box" style="width:100px; height:100px; background-color: rgb(88, 73, 54); float:right; margin:0;"></div>
+        <div class="box" style="width:100px; height:100px; background-color: rgb(56, 40, 21); float:right; margin:0;"></div>
+       
+
+    </DIV> -->
+
+     <div class="container">
+       <center> <h1><strong><span style="color:rgb(182, 130, 68)">X</span></strong> vs <strong><spanO style="color: rgb(119, 90, 52)">O</span></strong> Battle</h1></center>
+    <div class="board">
+      <div class="grid">
+       <div class="box" style="width:82px; height:80px; background-color: rgb(56, 40, 21); float:right; margin:0;"></div>
+        <div class="box" style="width:82px; height:80px; background-color: rgb(88, 73, 54); float:right; margin:0;"></div>
+        <div class="box"  style="width:82px; height:80px; background-color: rgb(56, 40, 21); float:right; margin:0;"></div>
+
+        <div class="box" style="width:82px; height:80px; background-color: rgb(88, 73, 54); float:right; margin:0;"></div>
+        <div class="box" style="width:82px; height:80px ;background-color: rgb(56, 40, 21); float:right; margin:0;"></div>
+        <div class="box" style="width:82px; height:80px; background-color: rgb(88, 73, 54); float:right; margin:0;"></div>
+
+        <div class="box" style="width:82px; height:80px; background-color: rgb(56, 40, 21); float:right; margin:0;"></div>
+        <div class="box" style="width:82px; height:80px; background-color: rgb(88, 73, 54); float:right; margin:0;"></div>
+        <div class="box" style="width:82px; height:80px; background-color: rgb(56, 40, 21); float:right; margin:0;"></div>
+       
+        </div>
+      </div>
+       <button id="reset-btn">Reset Game</button>
+
+  </div>
+     
+    <script>
+  let boxes = document.querySelectorAll(".box");
+let resetBtn = document.querySelector("#reset-btn");
+let newGameBtn = document.querySelector("#new-btn");
+let msgContainer = document.querySelector(".msg-container");
+let msg = document.querySelector("#msg");
+
+let turnO = true; 
+let count = 0;
+
+const winPatterns = [
+  [0, 1, 2],
+  [0, 3, 6],
+  [0, 4, 8],
+  [1, 4, 7],
+  [2, 5, 8],
+  [2, 4, 6],
+  [3, 4, 5],
+  [6, 7, 8],
+];
+
+const resetGame = () => {
+  turnO = true;
+  count = 0;
+  enableBoxes();
+  msgContainer.classList.add("hide")
+  enableResetBtn();
+};
+
+boxes.forEach((box) => {
+  box.addEventListener("click", () => {
+    if (turnO) {
+     
+      box.innerHTML =` <span class="o">O<span>`
+      turnO = false;
+    } else {
+     
+      box.innerHTML = `<span class="x">X<span>`
+      turnO = true;
+    }
+   box.style.pointerEvents = "none";
+    count++;
+
+    let isWinner = checkWinner();
+
+    if (count === 9 && !isWinner) {
+      gameDraw();
+    }
+  });
+});
+
+const gameDraw = () => {
+  msg.innerText = `Game was a Draw.`;
+  msgContainer.classList.remove("hide");
+  disableBoxes();
+};
+
+ 
+
+// const enableBoxes = () => {
+//   for (let box of boxes) {
+//     box.disabled = false;
+//     box.innerText = "";
+//   }
+// };
+
+const showWinner = (winner, pattern) => {
+  msg.innerText = `Congratulations, Winner is ${winner} 🎉`;
+  msgContainer.classList.remove("hide");
+
+ 
+  pattern.forEach(index => {
+    boxes[index].classList.add("winner");
+  });
+
+  disableBoxes();
+  disableresetbtn();
+}
+
+const disableresetbtn = () => {
+ const resetBtn = document.getElementById("reset-btn");
+   resetBtn.disabled  = true;
+  }
+
+  const enableResetBtn = () => {
+  const resetBtn = document.getElementById("reset-btn"); 
+  resetBtn.disabled = false; 
+};
+
+const disableBoxes = () => {
+  for (let box of boxes) {
+    box.style.pointerEvents = "none";  
+  }
+};
+
+const enableBoxes = () => {
+  for (let box of boxes) {
+    box.style.pointerEvents = "auto";  
+    box.innerText = "";
+    box.classList.remove("winner");   
+  }
+};
+
+
+
+
+const checkWinner = () => {
+  for (let pattern of winPatterns) {
+    let pos1Val = boxes[pattern[0]].innerText;
+    let pos2Val = boxes[pattern[1]].innerText;
+    let pos3Val = boxes[pattern[2]].innerText;
+
+    if (pos1Val != "" && pos2Val != "" && pos3Val != "") {
+      if (pos1Val === pos2Val && pos2Val === pos3Val) {
+        showWinner(pos1Val, pattern);
+
+        return true;
+      }
+    }
+  }
+};
+
+newGameBtn.addEventListener("click", resetGame);
+resetBtn.addEventListener("click", resetGame);
+
+        
+  </script>     
+        
+
+  
+</body>
+</html>
