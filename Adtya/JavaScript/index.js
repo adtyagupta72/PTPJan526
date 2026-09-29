@@ -3853,21 +3853,72 @@ diff => > (7 days~) mill => 5 marks => solved before 7 days from now
 //   result = petsIterator.next()
 // }
 
-let emptyMap = new Map()
+// let emptyMap = new Map()
+// let petsMap = new Map([["cats", 1],[ "dogs", 2],[ "hamsters", 5]])
+// console.log(emptyMap.size) // -> 0
+// console.log(petsMap.size)
+
+// console.log(petsMap.has("dogs"))
+// console.log(petsMap.has("sharks"))
+// console.log(petsMap.has(1))
+
+// console.log(petsMap.get("hamsters")) // -> 5
+// petsMap.set("hamsters", 6)
+// console.log(petsMap.get("hamsters")) // -> 6
+// petsMap.delete("hamsters")
+// console.log(petsMap.get("hamsters")) // -> undefined
+// console.log(petsMap)
+// petsMap.clear()
+// console.log(petsMap.size)
+// console.log(petsMap)
 let petsMap = new Map([["cats", 1],[ "dogs", 2],[ "hamsters", 5]])
-console.log(emptyMap.size) // -> 0
-console.log(petsMap.size)
+// petsMap.forEach((value, key) => console.log(`${key} : ${value}`))
 
-console.log(petsMap.has("dogs"))
-console.log(petsMap.has("sharks"))
-console.log(petsMap.has(1))
+// let petValuesIterator = petsMap.values()
+// console.log(petValuesIterator.next().value)
+// console.log(petValuesIterator.next().value)
+// console.log(petValuesIterator.next().value)
+// petValuesIterator = petsMap.keys()
+// console.log(petValuesIterator.next().value)
+// console.log(petValuesIterator.next().value)
+// console.log(petValuesIterator.next().value)
 
-console.log(petsMap.get("hamsters")) // -> 5
-petsMap.set("hamsters", 6)
-console.log(petsMap.get("hamsters")) // -> 6
-petsMap.delete("hamsters")
-console.log(petsMap.get("hamsters")) // -> undefined
-console.log(petsMap)
-petsMap.clear()
-console.log(petsMap.size)
-console.log(petsMap)
+
+// let petsIterator = petsMap.entries()
+// let result = petsIterator.next()
+// while (!result.done) 
+// {
+//   console.log(result.value) 
+//   result = petsIterator.next()
+// }
+// let petsArray = ["cat", "dog", "hamster"]
+// for(let pet of petsArray) 
+// {
+//   console.log(pet) 
+// }
+// let petsSet = new Set(["cat", "dog", "hamster"])
+// for(let pet of petsSet) 
+// {
+//   console.log(pet) 
+// }
+// let petsMap1 = new Map([["cats", 1], ["dogs", 3], ["hamsters", 2]])
+// for(let pet of petsMap1) 
+// {
+//   console.log(pet)
+//   console.log(pet[0]) 
+//   console.log(pet[1]) 
+// }
+
+let vehicle2 = 
+{
+  id: "AK12113",
+  longitude: 59.358615, 
+  latitude: 17.947589,
+  getId: function() 
+  {
+    return this.id
+  }
+}
+let vehicle2JSON = JSON.stringify(vehicle2)
+console.log(typeof vehicle2JSON) // -> string
+console.log(vehicle2JSON)
