@@ -3834,10 +3834,10 @@ diff => > (7 days~) mill => 5 marks => solved before 7 days from now
 // petsSet.clear()
 // console.log(petsSet.size) // -> 0
 
-let petsSet = new Set(["cat", "dog", "hamster"]) 
-petsSet.forEach(value => console.log(value)) 
+// let petsSet = new Set(["cat", "dog", "hamster"]) 
+// petsSet.forEach(value => console.log(value)) 
 
-petsSet.forEach((value, key) => console.log(`(${value}:${key})`)) 
+// petsSet.forEach((value, key) => console.log(`(${value}:${key})`)) 
 
 // let petsIterator = petsSet.values()
 // console.log(petsIterator.next().value)
@@ -3845,10 +3845,29 @@ petsSet.forEach((value, key) => console.log(`(${value}:${key})`))
 // console.log(petsIterator.next().value)
 // console.log(petsIterator.next().value)
 
-let petsIterator = petsSet.values()
-let result = petsIterator.next()
-while (!result.done) 
-{
-  console.log(result.value) // -> cat -> dog -> hamster
-  result = petsIterator.next()
-}
+// let petsIterator = petsSet.values()
+// let result = petsIterator.next()
+// while (!result.done) 
+// {
+//   console.log(result.value) // -> cat -> dog -> hamster
+//   result = petsIterator.next()
+// }
+
+let emptyMap = new Map()
+let petsMap = new Map([["cats", 1],[ "dogs", 2],[ "hamsters", 5]])
+console.log(emptyMap.size) // -> 0
+console.log(petsMap.size)
+
+console.log(petsMap.has("dogs"))
+console.log(petsMap.has("sharks"))
+console.log(petsMap.has(1))
+
+console.log(petsMap.get("hamsters")) // -> 5
+petsMap.set("hamsters", 6)
+console.log(petsMap.get("hamsters")) // -> 6
+petsMap.delete("hamsters")
+console.log(petsMap.get("hamsters")) // -> undefined
+console.log(petsMap)
+petsMap.clear()
+console.log(petsMap.size)
+console.log(petsMap)
