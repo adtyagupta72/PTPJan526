@@ -3817,19 +3817,38 @@ diff => > (7 days~) mill => 5 marks => solved before 7 days from now
 // let array = [10, 20, 30, 40]
 // console.log(testFn(...array))
 
-let emptySet = new Set() // -> {}
-console.log(emptySet.size) // -> 0
-console.log(emptySet)
-let petsSet = new Set(["cat", "dog", "cat"]) 
-console.log(petsSet.size)
-console.log(petsSet)
+// let emptySet = new Set() // -> {}
+// console.log(emptySet.size) // -> 0
+// console.log(emptySet)
+// let petsSet = new Set(["cat", "dog", "cat"]) 
+// console.log(petsSet.size)
+// console.log(petsSet)
 
-petsSet.add("shark")
-petsSet.add("hamster")
-console.log(petsSet.size) // -> 4
-console.log(petsSet.has("shark")) // -> true
-petsSet.delete("dog") // -> true
-petsSet.delete("dog") // -> false
-console.log(petsSet.size) // -> 3
-petsSet.clear()
-console.log(petsSet.size) // -> 0
+// petsSet.add("shark")
+// petsSet.add("hamster")
+// console.log(petsSet.size) // -> 4
+// console.log(petsSet.has("shark")) // -> true
+// petsSet.delete("dog") // -> true
+// petsSet.delete("dog") // -> false
+// console.log(petsSet.size) // -> 3
+// petsSet.clear()
+// console.log(petsSet.size) // -> 0
+
+let petsSet = new Set(["cat", "dog", "hamster"]) 
+petsSet.forEach(value => console.log(value)) 
+
+petsSet.forEach((value, key) => console.log(`(${value}:${key})`)) 
+
+// let petsIterator = petsSet.values()
+// console.log(petsIterator.next().value)
+// console.log(petsIterator.next().value)
+// console.log(petsIterator.next().value)
+// console.log(petsIterator.next().value)
+
+let petsIterator = petsSet.values()
+let result = petsIterator.next()
+while (!result.done) 
+{
+  console.log(result.value) // -> cat -> dog -> hamster
+  result = petsIterator.next()
+}
