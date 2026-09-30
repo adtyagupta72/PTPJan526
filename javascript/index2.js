@@ -2579,12 +2579,95 @@ let contact =
 // read([...array2])
 // read([...array3])
 
-let test =(a,b,c,d) => a+b+c+d
-let array = [10,20,30,40]
-console.log(test(...array))
+// let test =(a,b,c,d) => a+b+c+d
+// let array = [10,20,30,40]
+// console.log(test(...array))
 
-let emptySet = new Set()
-console.log(emptySet.size)
+// let emptySet = new Set()
+// console.log(emptySet.size)
 
-let petSet = new Set(["cat", "dog", "cat"])
-console.log(petSet)
+// let petSet = new Set(["cat", "dog", "cat"])
+// console.log(petSet)
+
+// let petSet = new Set(["cat","dog","hamster"])
+// petSet.forEach(value => console.log(value))
+
+// petSet.forEach((value , key) => console.log(`(${value}:${key})`))
+
+// let pettrator = petsSet.values()
+// let result = pettrator.next()
+// while(!result.done)
+// {
+//     console.log(result.value)
+//     result = pettrator.next()
+// }
+
+// let emptyMap = new Map()
+// let petsMap = new Map([["cat",1],["dog",2]])
+// console.log(emptyMap.size)
+// console.log(petsMap)
+
+// console.log(petsMap.get("hamster"))
+// petsMap.set("hamster", 6)
+// petsMap.delete("hamsters")
+// console.log(petsMaps)
+
+
+// let pet = new Map([["cats",1],["dog",4],["hamster",6]])
+// pet.forEach((value,key)=> console.log(`$(key):$(value)`))
+
+// let petitr = pet.values()
+// console.log(petitr.next().value)
+// console.log(petitr.next().value)
+// console.log(petitr.next().value)
+// let petitr = pet.keys()
+// console.log(petitr.next().value)
+// console.log(petitr.next().value)
+// console.log(petitr.next().value)
+
+// let petitr = pet.entries()
+// let result = petitr.next()
+// while(!result.done)
+// {
+//     console.log(result.value)
+// }
+
+// let petsArray = ["cat","dog","hamster"]
+
+// for(let pet of petsArray)
+// {
+//     console.log(pet)
+// }
+
+// let petsSet = ["cat","dog","hamster"]
+
+// for(let pet of petsSet)
+// {
+//     console.log(pet)
+// }
+
+// let petsMap = ["cat","dog","hamster"]
+
+// for(let pet of petsMap)
+// {
+//     console.log(pet)
+// }
+
+let  vehicle2 = {
+    longitude :"ak2344",
+    latitude : 12.34566,
+    getid: function()
+    {
+        return this.id
+    },
+    newObj:
+    {
+        a:"a"
+    }
+
+}
+
+let vehicle = JSON.stringify(vehicle2)
+console.log(vehicle)
+
+console.log("abc")
