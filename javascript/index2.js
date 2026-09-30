@@ -2673,8 +2673,20 @@ let contact =
 // console.log("abc")
 // console.log(123)
 
-let vehicleJSON = `{"id":"Ak678","position":{"longitude":45.7654,"latitude":78.6543}}`
-let vehicle = JSON.parse(vehicleJSON)
-console.log(typeof vehicle)
-console.log( vehicle.position.longitude)
-console.log(vehicle.position.latitude)
+// let vehicleJSON = `{"id":"Ak678","position":{"longitude":45.7654,"latitude":78.6543}}`
+// let vehicle = JSON.parse(vehicleJSON)
+// console.log(typeof vehicle)
+// console.log( vehicle.position.longitude)
+// console.log(vehicle.position.latitude)
+
+
+// let vehicleJSON = `[{"id":"Ak678","longitude":45.7654,"latitude":78.6543},{"id":"b2678","longitude":45.7654,"latitude":78.6543},{"id":"c2678","longitude":45.7654,"latitude":78.6543}]}`
+// let vehicle = JSON.parse(vehicleJSON)
+// console.log
+
+console.log(Math.PI)
+console.log(Math.E)
+
+console.log(Math.ceil(10.2))
+console.log(Math.floor(10.2))
+console.log(Math.round(10.2))
