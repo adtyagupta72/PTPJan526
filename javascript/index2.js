@@ -2708,8 +2708,21 @@ let contact =
 // }
 // console.log(random(20,30))
 
-console.log(Math.abs(-4))
-console.log(Math.abs(10))
-console.log(Math.min(100,20,40,499))
-let number = [100,20.300,10,400]
-console.log(Math.max(...number))
+// console.log(Math.abs(-4))
+// console.log(Math.abs(10))
+// console.log(Math.min(100,20,40,499))
+// let number = [100,20.300,10,400]
+// console.log(Math.max(...number))
+
+
+console.log(Math.pow(2,3))
+console.log(Math.pow(4,2))
+console.log(Math.pow(4,-1))
+console.log(Math.pow(4,-2))
+console.log(Math.pow(4,0.5))
+console.log(Math.pow(-1,0.5))
+console.log(Math.pow(Math.sqrt(36)))
+x = Math.pow(Math.E,2)
+console.log(x)
+console.log(Math.cos(Math.PI/3))
+console.log(Math.cos(Math.PI/4))
