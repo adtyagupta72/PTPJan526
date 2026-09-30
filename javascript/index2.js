@@ -2700,10 +2700,16 @@ let contact =
 // console.log(Math.floor(10.5))
 // console.log(Math.round(10.5))
 
-let random = (min , max) =>
-{
-    let _min = Math.ceil(min)
-    let _max = Math.ceil(max)
-    return Math.floor(Math.random()*(_max-_min + 1)+_min)
-}
-console.log(random(20,30))
+// let random = (min , max) =>
+// {
+//     let _min = Math.ceil(min)
+//     let _max = Math.ceil(max)
+//     return Math.floor(Math.random()*(_max-_min + 1)+_min)
+// }
+// console.log(random(20,30))
+
+console.log(Math.abs(-4))
+console.log(Math.abs(10))
+console.log(Math.min(100,20,40,499))
+let number = [100,20.300,10,400]
+console.log(Math.max(...number))
