@@ -2653,22 +2653,28 @@ let contact =
 //     console.log(pet)
 // }
 
-let  vehicle2 = {
-    longitude :"ak2344",
-    latitude : 12.34566,
-    getid: function()
-    {
-        return this.id
-    },
-    newObj:
-    {
-        a:"a"
-    }
+// let  vehicle2 = {
+//     longitude :"ak2344",
+//     latitude : 12.34566,
+//     getid: function()
+//     {
+//         return this.id
+//     },
+//     newObj:
+//     {
+//         a:"a"
+//     }
 
-}
+// }
 
-let vehicle = JSON.stringify(vehicle2)
-console.log(vehicle)
+// let vehicle = JSON.stringify(vehicle2)
+// console.log(vehicle)
 
-console.log("abc")
-console.log(123)
+// console.log("abc")
+// console.log(123)
+
+let vehicleJSON = `{"id":"Ak678","position":{"longitude":45.7654,"latitude":78.6543}}`
+let vehicle = JSON.parse(vehicleJSON)
+console.log(typeof vehicle)
+console.log( vehicle.position.longitude)
+console.log(vehicle.position.latitude)
