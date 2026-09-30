@@ -3926,34 +3926,114 @@ let petsMap = new Map([["cats", 1],[ "dogs", 2],[ "hamsters", 5]])
 // console.log(typeof vehicle2JSON) // -> string
 // console.log(vehicle2JSON)
 
-let Vehicle = function(id, latitude, longitude)
-{ 
-    this.id = id
-    this.latitude = latitude     
-    this.longitude = longitude
-} 
-let ids = ["AK12113", "AL1024", "BA1001"]
-let vehicles = []
-ids.forEach(id => vehicles.push(new Vehicle(id, 59.358615, 17.947589)))
-let vehcilesJSON = JSON.stringify(vehicles)
-console.log(vehcilesJSON)
+// let Vehicle = function(id, latitude, longitude)
+// { 
+//     this.id = id
+//     this.latitude = latitude     
+//     this.longitude = longitude} 
+// let ids = ["AK12113", "AL1024", "BA1001"]
+// let vehicles1 = []
+// ids.forEach(id => vehicles1.push(new Vehicle(id, 59.358615, 17.947589)))
+// let vehcilesJSON1 = JSON.stringify(vehicles1)
+// console.log(vehcilesJSON1)
+// /*
+// [
+//     {
+//         "id":"AK12113",
+//         "latitude":59.358615,
+//         "longitude":17.947589
+//     },
+//     {
+//         "id":"AL1024",
+//         "latitude":59.358615,
+//         "longitude":17.947589
+//     },
+//     {
+//         "id":"BA1001",
+//         "latitude":59.358615,
+//         "longitude":17.947589
+//     }
+// ]
+// */
+// let vehicleJSON = '{"id":"AK12113","position":{"longitude":59.358615,"latitude":17.947589}}'
+// let vehicle = JSON.parse(vehicleJSON)
+// console.log(typeof vehicle) // -> object
+// console.log(vehicle.position.longitude)
+// console.log(vehicle.position.latitude)
 
-/*
-[
-    {
-        "id":"AK12113",
-        "latitude":59.358615,
-        "longitude":17.947589
-    },
-    {
-        "id":"AL1024",
-        "latitude":59.358615,
-        "longitude":17.947589
-    },
-    {
-        "id":"BA1001",
-        "latitude":59.358615,
-        "longitude":17.947589
-    }
-]
-*/
+// let vehcilesJSON = '[{"id":"AK12113","latitude":59.358615,"longitude":17.947589},{"id":"AL1024","latitude":59.358615,"longitude":17.947589},{"id":"BA1001","latitude":59.358615,"longitude":17.947589}]'
+// vehcilesJSON = vehcilesJSON.replaceAll("id", "plate")
+// let vehicles = JSON.parse(vehcilesJSON)
+// console.log(vehicles instanceof Array) // -> true
+// console.log(vehicles.length) // -> 3
+// console.log(vehicles[0].plate)
+
+// console.log(Math.PI) // -> 3.141592653589793
+// console.log(Math.E)
+
+// console.log(Math.ceil(10.2)) // -> 11
+// console.log(Math.floor(10.2)) // -> 10
+// console.log(Math.round(10.2)) // -> 10
+
+// console.log(Math.ceil(10.499999)) // -> 11 
+// console.log(Math.floor(10.499999)) // -> 10
+// console.log(Math.round(10.499999)) // -> 10
+
+// console.log(Math.ceil(10.5)) // -> 11
+// console.log(Math.floor(10.5)) // -> 10
+// console.log(Math.round(10.5)) // -> 11
+
+// console.log(Math.ceil(10.8)) // -> 11
+// console.log(Math.floor(10.8)) // -> 10
+// console.log(Math.round(10.8))   
+
+// console.log(Math.random())
+
+// let randomInteger = (min, max) => 
+// {
+//     let _min = Math.ceil(min)
+//     let _max = Math.floor(max)
+//     return Math.floor(Math.random() * (_max - _min + 1) + min)
+// }
+// console.log(randomInteger(10,20))
+
+// console.log("Absolute value: ", Math.abs(-3.25))
+// console.log("Absolute value: ", Math.abs(10))
+// console.log("Minimum value: ", Math.min(100, 20, 300, 10, 400))
+// let numbers = [100, 20, 300, 10, 400]
+// console.log("Max value: ", Math.max(...numbers))
+
+// console.log(Math.pow(2, 3)) // -> 8 => 23
+// console.log(Math.pow(4, 2)) // -> 16 => 42
+// console.log(Math.pow(4, -1)) // -> 0.25 => 4-1 = 1/4^1 
+// console.log(Math.pow(4, -2)) // -> 0.0625 => 4-2 = 1/4^2 
+// console.log(Math.pow(4, 0.5)) // -> 2 => 40.5 = 4^(1/2) = √(2&4)
+// console.log(Math.pow(-1,0.5)) // -> NaN => -10.5 = √(2&-1)
+// console.log(Math.sqrt(4)) // -> 2
+// x = Math.pow(Math.E, 2) // -> 7.3890560989306495
+// console.log("x: ",x)
+// console.log(Math.log(x)) // -> 2
+// console.log(Math.log2(16)) // -> 4
+// console.log(Math.log10(1000))
+
+// console.log(Math.cos(Math.PI/3))
+// console.log(Math.tan(Math.PI/4))
+// console.log(Math.asin(1))
+
+
+
+//      adtya@gmail.com             
+// a@a.a        3 letters overall mandatory, @ mandatory, . mandatory
+//              1 letter -> @ -> 1 letter -> . -> 1 letter
+// iwegfoiwehf
+
+let re1 = new RegExp('c.t')
+let re2 = /c.t/
+console.log("cat: ", re1.test("cat"))
+console.log("cut: ", re2.test("cut"))
+console.log("cot", re2.test("cot"))
+console.log("coooooot: ", re2.test("coooooot"))
+console.log("ct: ", re2.test("ct"))
+console.log("c.t: ", re2.test("c.t"))
+console.log("c6t: ", re2.test("c6t"))
+console.log("c0t: ", re2.test("c0t"))
