@@ -2671,3 +2671,4 @@ let vehicle = JSON.stringify(vehicle2)
 console.log(vehicle)
 
 console.log("abc")
+console.log(123)
