@@ -2684,18 +2684,26 @@ let contact =
 // let vehicle = JSON.parse(vehicleJSON)
 // console.log
 
-console.log(Math.PI)
-console.log(Math.E)
+// console.log(Math.PI)
+// console.log(Math.E)
 
-console.log(Math.ceil(10.2))
-console.log(Math.floor(10.2))
-console.log(Math.round(10.2))
+// console.log(Math.ceil(10.2))
+// console.log(Math.floor(10.2))
+// console.log(Math.round(10.2))
 
 
-console.log(Math.ceil(10.49999))
-console.log(Math.floor(10.49999))
-console.log(Math.round(10.49999))
+// console.log(Math.ceil(10.49999))
+// console.log(Math.floor(10.49999))
+// console.log(Math.round(10.49999))
 
-console.log(Math.ceil(10.5))
-console.log(Math.floor(10.5))
-console.log(Math.round(10.5))
+// console.log(Math.ceil(10.5))
+// console.log(Math.floor(10.5))
+// console.log(Math.round(10.5))
+
+let random = (min , max) =>
+{
+    let _min = Math.ceil(min)
+    let _max = Math.ceil(max)
+    return Math.floor(Math.random()*(_max-_min + 1)+_min)
+}
+console.log(random(20,30))
