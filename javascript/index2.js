@@ -2695,3 +2695,7 @@ console.log(Math.round(10.2))
 console.log(Math.ceil(10.49999))
 console.log(Math.floor(10.49999))
 console.log(Math.round(10.49999))
+
+console.log(Math.ceil(10.5))
+console.log(Math.floor(10.5))
+console.log(Math.round(10.5))
