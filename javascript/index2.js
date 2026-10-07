@@ -2735,3 +2735,16 @@ let contact =
 let re = /c.t/
 console.log(re.exec("haircut"))
 console.log(re.exec("ct"))
+
+const regex = /(\d{4})-(\d{2})-(\d{2})/;
+const text = "the event is on scheduled for 2026-10-07"
+const result = regex.exec(text)
+console.log(result)
+
+if(result !== null)
+{
+    console.log(result[0])
+    console.log(result[1])
+    console.log(result[2])
+    console.log(result[3])
+}
