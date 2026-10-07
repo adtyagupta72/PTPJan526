@@ -2732,19 +2732,26 @@ let contact =
 // console.log(re1.test("cut"))
 // console.log(re2.test("coooooot"))
 // console.log(re2.test("ct"))
+// let re = /c.t/
+// console.log(re.exec("haircut"))
+// console.log(re.exec("ct"))
+
+// const regex = /(\d{4})-(\d{2})-(\d{2})/;
+// const text = "the event is on scheduled for 2026-10-07"
+// const result = regex.exec(text)
+// console.log(result)
+
+// if(result !== null)
+// {
+//     console.log(result[0])
+//     console.log(result[1])
+//     console.log(result[2])
+//     console.log(result[3])
+// }
+
 let re = /c.t/
-console.log(re.exec("haircut"))
-console.log(re.exec("ct"))
-
-const regex = /(\d{4})-(\d{2})-(\d{2})/;
-const text = "the event is on scheduled for 2026-10-07"
-const result = regex.exec(text)
-console.log(result)
-
-if(result !== null)
-{
-    console.log(result[0])
-    console.log(result[1])
-    console.log(result[2])
-    console.log(result[3])
-}
+let str= "dog and cat"
+console.log("match:", str.match(re))
+console.log("search:", str.search(re))
+console.log("replace:", str.replace(re))
+console.log(str)
