@@ -4027,13 +4027,57 @@ let petsMap = new Map([["cats", 1],[ "dogs", 2],[ "hamsters", 5]])
 //              1 letter -> @ -> 1 letter -> . -> 1 letter
 // iwegfoiwehf
 
-let re1 = new RegExp('c.t')
-let re2 = /c.t/
-console.log("cat: ", re1.test("cat"))
-console.log("cut: ", re2.test("cut"))
-console.log("cot", re2.test("cot"))
-console.log("coooooot: ", re2.test("coooooot"))
-console.log("ct: ", re2.test("ct"))
-console.log("c.t: ", re2.test("c.t"))
-console.log("c6t: ", re2.test("c6t"))
-console.log("c0t: ", re2.test("c0t"))
+// let re1 = new RegExp('c.t')
+// let re2 = /c.t/
+// console.log("cat: ", re1.test("cat"))
+// console.log("cut: ", re2.test("cut"))
+// console.log("cot", re2.test("cot"))
+// console.log("coooooot: ", re2.test("coooooot"))
+// console.log("ct: ", re2.test("ct"))
+// console.log("c.t: ", re2.test("c.t"))
+// console.log("c6t: ", re2.test("c6t"))
+// console.log("c0t: ", re2.test("c0t"))
+
+// let re = /c.t/
+// console.log(re.exec("haircut")) 
+// console.log(re.exec("ct"))
+
+// const regex = /(\d{4})-(\d{2})-(\d{2})/;
+// const text = "The event is scheduled for 2026-10-07.";
+
+// const result = regex.exec(text)
+// console.log("result: ", result)
+
+// if (result !== null) {
+//   console.log("Full Match:", result[0]); // "2026-10-07"
+//   console.log("Year (Group 1):", result[1]); // "2026"
+//   console.log("Month (Group 2):", result[2]); // "10"
+//   console.log("Day (Group 3):", result[3]); // "07"
+// }
+
+// let re = /c.t/
+// let str = "dog and cat"
+// console.log("match: ", str.match(re)) 
+// console.log("search: ", str.search(re)) 
+// console.log("replace: ", str.replace(re, 'unicorn')) 
+// console.log(str) 
+
+// let re = /c\.t/
+// console.log(re.exec("cut")) 
+// console.log(re.exec("c.t")) 
+
+let re1 = /o*ps/
+console.log("*", re1.exec("ps"))
+console.log("*", re1.exec("ops")) 
+console.log("*", re1.exec("o")) 
+console.log("*", re1.exec("He said: ooops!")) 
+let re2 = /o+ps/
+console.log("+", re2.exec("ps")) // -> null
+console.log("+", re2.exec("ops"))
+console.log("+", re2.exec("He said: ooops!")) 
+let re3 = /o?ps/  /// strange, isnt it?
+console.log("?", re3.exec("ps")) 
+console.log("?", re3.exec("o")) 
+console.log("?", re3.exec("ops")) 
+console.log("?", re3.exec("ocps")) 
+console.log("?", re3.exec("He said: ooops!")) 
