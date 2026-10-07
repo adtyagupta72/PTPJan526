@@ -2727,8 +2727,11 @@ let contact =
 // console.log(Math.cos(Math.PI/3))
 // console.log(Math.cos(Math.PI/4))
 
-let re1 = new RegExp('c..t')
-let re2 = /c.t/
-console.log(re1.test("cut"))
-console.log(re2.test("coooooot"))
-console.log(re2.test("ct"))
+// let re1 = new RegExp('c..t')
+// let re2 = /c.t/
+// console.log(re1.test("cut"))
+// console.log(re2.test("coooooot"))
+// console.log(re2.test("ct"))
+let re = /c.t/
+console.log(re.exec("haircut"))
+console.log(re.exec("ct"))
