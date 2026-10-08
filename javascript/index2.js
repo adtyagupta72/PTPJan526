@@ -2789,15 +2789,22 @@ let contact =
 // console.log(re6.exec("abc abc abc one two three"))
 // console.log(re6.exec("abc abcabc"))
 
-let getItem = function(array,index)
-{
-    return (index > 0 < index < array.length)? array[index] : undefined
-}
-let array = [10,20,80,100]
-console.log(getItem(array,2))
-
-
-// let getRandomItem = function(array)
+// let getItem = function(array,index)
 // {
-//     return 
+//     return (index > 0 < index < array.length)? array[index] : undefined
 // }
+// let array = [10,20,80,100]
+// console.log(getItem(array,2))
+
+
+let array = function(array)
+{
+    return array[Math.floor(Math.random()* array.length)]
+}
+console.log(getRandomItem(array))
+
+Array.prototype.getRandomItem = function()
+{
+    return this[Math.floor(Math.random()* array.length)]
+}
+console.log(array.getRandomItem())
