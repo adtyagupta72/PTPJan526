@@ -2770,21 +2770,34 @@ let contact =
 // console.log(re.exec("oooooops"))
 // console.log(re.exec("ooops"))
 
-let re3 = /c[aiu]t/
-console.log(re3.exec("cattle"))
-console.log(re3.exec("cut"))
-console.log(re3.exec("czt"))
+// let re3 = /c[aiu]t/
+// console.log(re3.exec("cattle"))
+// console.log(re3.exec("cut"))
+// console.log(re3.exec("czt"))
 
 
 
 
 
-let re4 = /c[^iu]t/
-console.log(re4.exec("cattle"))
-console.log(re4.exec("cut"))
-console.log(re4.exec("czt"))
+// let re4 = /c[^iu]t/
+// console.log(re4.exec("cattle"))
+// console.log(re4.exec("cut"))
+// console.log(re4.exec("czt"))
 
-let re6 = /^(abc\s){3}$/
-console.log(re6.exec("abc abc abc"))
-console.log(re6.exec("abc abc abc one two three"))
-console.log(re6.exec("abc abcabc"))
+// let re6 = /^(abc\s){3}$/
+// console.log(re6.exec("abc abc abc"))
+// console.log(re6.exec("abc abc abc one two three"))
+// console.log(re6.exec("abc abcabc"))
+
+let getItem = function(array,index)
+{
+    return (index > 0 < index < array.length)? array[index] : undefined
+}
+let array = [10,20,80,100]
+console.log(getItem(array,2))
+
+
+// let getRandomItem = function(array)
+// {
+//     return 
+// }
