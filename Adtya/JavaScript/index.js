@@ -4112,18 +4112,45 @@ let petsMap = new Map([["cats", 1],[ "dogs", 2],[ "hamsters", 5]])
 // console.log(re4.exec("haircut")) 
 // console.log(re4.exec("city"))
 
-let re = /id\d+/
-console.log(re.exec("My ids.")) 
-console.log(re.exec("id60001"))
+// let re = /id\d+/
+// console.log(re.exec("My ids.")) 
+// console.log(re.exec("id60001"))
 
-let re1 = /^(abc\s){3}$/
-console.log(re1.exec("abc abc abc ")) 
-console.log(re1.exec("abc abc abc one two three ")) 
-console.log(re1.exec("abc abc abc abc ")) 
-console.log(re1.exec("abc abcabc"))
+// let re1 = /^(abc\s){3}$/
+// console.log(re1.exec("abc abc abc ")) 
+// console.log(re1.exec("abc abc abc one two three ")) 
+// console.log(re1.exec("abc abc abc abc ")) 
+// console.log(re1.exec("abc abcabc"))
 
-let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-console.log(emailRegex.exec("abc@gmail.com"))
-console.log(emailRegex.exec("a@g.c"))
-console.log(emailRegex.exec("ag.c"))
-console.log(emailRegex.exec("a@gc"))
+// let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+// console.log(emailRegex.exec("abc@gmail.com"))
+// console.log(emailRegex.exec("a@g.c"))
+// console.log(emailRegex.exec("ag.c"))
+// console.log(emailRegex.exec("a@gc"))
+
+let getItem = function(array, index) 
+{
+    return (index > 0 < index < array.length) ? array[index] : undefined
+//   let retVal = undefined
+//   if(index > 0 && index < array.length) 
+//   {
+//     retVal = array[index]
+//   }
+//   return retVal
+}
+let array = [10, 20, 80, 100]
+console.log(getItem(array, 2))
+let getRandomItem = function (array) 
+{
+  return array[Math.floor(Math.random() * array.length)]
+}
+console.log(getRandomItem(array))
+console.log(getRandomItem(array))
+
+Array.prototype.getRandomItem = function ()
+{
+    return this[Math.floor(Math.random() * this.length)]
+}
+console.log(array.getRandomItem())
+console.log(array.getRandomItem())
+console.log(array.getRandomItem())
