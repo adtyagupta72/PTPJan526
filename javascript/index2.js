@@ -2783,3 +2783,8 @@ let re4 = /c[^iu]t/
 console.log(re4.exec("cattle"))
 console.log(re4.exec("cut"))
 console.log(re4.exec("czt"))
+
+let re6 = /^(abc\s){3}$/
+console.log(re6.exec("abc abc abc"))
+console.log(re6.exec("abc abc abc one two three"))
+console.log(re6.exec("abc abcabc"))
