@@ -2765,7 +2765,21 @@ let contact =
 // console.log(re2.exec("haircut"))
 // console.log(re2.exec("city"))
 
-let re = /o{4,5}ps/
-console.log(re.exec("ops"))
-console.log(re.exec("oooooops"))
-console.log(re.exec("ooops"))
+// let re = /o{4,5}ps/
+// console.log(re.exec("ops"))
+// console.log(re.exec("oooooops"))
+// console.log(re.exec("ooops"))
+
+let re3 = /c[aiu]t/
+console.log(re3.exec("cattle"))
+console.log(re3.exec("cut"))
+console.log(re3.exec("czt"))
+
+
+
+
+
+let re4 = /c[^iu]t/
+console.log(re4.exec("cattle"))
+console.log(re4.exec("cut"))
+console.log(re4.exec("czt"))
