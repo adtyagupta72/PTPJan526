@@ -2749,9 +2749,18 @@ let contact =
 //     console.log(result[3])
 // }
 
-let re = /c.t/
-let str= "dog and cat"
-console.log("match:", str.match(re))
-console.log("search:", str.search(re))
-console.log("replace:", str.replace(re))
-console.log(str)
+// let re = /c.t/
+// let str= "dog and cat"
+// console.log("match:", str.match(re))
+// console.log("search:", str.search(re))
+// console.log("replace:", str.replace(re))
+// console.log(str)
+
+let re1 = /ca| ut/
+console.log(re1.exec("cattle"))
+console.log(re1.exec("haircut"))
+console.log(re1.exec("city"))
+let re2 = /c(a|u)t/
+console.log(re2.exec("cattle"))
+console.log(re2.exec("haircut"))
+console.log(re2.exec("city"))
