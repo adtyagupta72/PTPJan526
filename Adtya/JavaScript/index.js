@@ -4066,18 +4066,64 @@ let petsMap = new Map([["cats", 1],[ "dogs", 2],[ "hamsters", 5]])
 // console.log(re.exec("cut")) 
 // console.log(re.exec("c.t")) 
 
-let re1 = /o*ps/
-console.log("*", re1.exec("ps"))
-console.log("*", re1.exec("ops")) 
-console.log("*", re1.exec("o")) 
-console.log("*", re1.exec("He said: ooops!")) 
-let re2 = /o+ps/
-console.log("+", re2.exec("ps")) // -> null
-console.log("+", re2.exec("ops"))
-console.log("+", re2.exec("He said: ooops!")) 
-let re3 = /o?ps/  /// strange, isnt it?
-console.log("?", re3.exec("ps")) 
-console.log("?", re3.exec("o")) 
-console.log("?", re3.exec("ops")) 
-console.log("?", re3.exec("ocps")) 
-console.log("?", re3.exec("He said: ooops!")) 
+// let re1 = /o*ps/
+// console.log("*", re1.exec("ps"))
+// console.log("*", re1.exec("ops")) 
+// console.log("*", re1.exec("o")) 
+// console.log("*", re1.exec("He said: ooops!")) 
+
+
+// let re2 = /o+ps/
+// console.log("+", re2.exec("ps"))
+// console.log("+", re2.exec("o"))
+// console.log("+", re2.exec("ops"))
+// console.log("+", re2.exec("He said: ooops!")) 
+
+
+// let re3 = /o?ps/  /// strange, isnt it?
+// console.log("?", re3.exec("ps")) 
+// console.log("?", re3.exec("o"))
+// console.log("?", re3.exec("ops")) 
+// console.log("?", re3.exec("ocps"))
+// console.log("?", re3.exec("He said: ooops!"))
+
+// let re1 = /ca|ut/
+// console.log("|: ", re1.exec("cattle")) 
+// console.log("|: ",re1.exec("haircut")) 
+// console.log("|: ",re1.exec("city")) 
+
+// let re2 = /c(a|u)t/
+// console.log("(|): ",re2.exec("cattle"))
+// console.log("(|): ",re2.exec("haircut")) 
+// console.log("(|): ",re2.exec("city"))
+
+// let re = /o{1,2}ps/ // repeats 'o' two or three times 
+// console.log(re.exec("He said: ops!")) 
+// console.log(re.exec("He said: ooops!")) 
+// console.log(re.exec("He said: ooooooooops!")) 
+
+// let re3 = /c[aiu]t/
+// console.log(re3.exec("cattle")) 
+// console.log(re3.exec("haircut")) 
+// console.log(re3.exec("city")) 
+
+// let re4 = /c[^au]t/
+// console.log(re4.exec("cattle")) 
+// console.log(re4.exec("haircut")) 
+// console.log(re4.exec("city"))
+
+let re = /id\d+/
+console.log(re.exec("My ids.")) 
+console.log(re.exec("id60001"))
+
+let re1 = /^(abc\s){3}$/
+console.log(re1.exec("abc abc abc ")) 
+console.log(re1.exec("abc abc abc one two three ")) 
+console.log(re1.exec("abc abc abc abc ")) 
+console.log(re1.exec("abc abcabc"))
+
+let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+console.log(emailRegex.exec("abc@gmail.com"))
+console.log(emailRegex.exec("a@g.c"))
+console.log(emailRegex.exec("ag.c"))
+console.log(emailRegex.exec("a@gc"))
