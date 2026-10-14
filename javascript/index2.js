@@ -2797,14 +2797,35 @@ let contact =
 // console.log(getItem(array,2))
 
 
-let array = function(array)
-{
-    return array[Math.floor(Math.random()* array.length)]
-}
-console.log(getRandomItem(array))
+// let array = function(array)
+// {
+//     return array[Math.floor(Math.random()* array.length)]
+// }
+// console.log(getRandomItem(array))
 
-Array.prototype.getRandomItem = function()
+// Array.prototype.getRandomItem = function()
+// {
+//     return this[Math.floor(Math.random()* array.length)]
+// }
+// console.log(array.getRandomItem())
+
+// 
+// console.log("start")
+// fetchdata()
+// console.log("end")
+
+// function test(a = 1 , b= 2 , c= 3, d = 4)
+// {
+//     console.log(`a:${a},b:${b},c:${c},d:${d}`)
+// }
+// test()
+
+function(...test)
 {
-    return this[Math.floor(Math.random()* array.length)]
+    let msg = `length: ${arguments.length}, args:`
+    arguments.forEach(arg => {msg += arg+","})
+        console.log(msg)
+  
 }
-console.log(array.getRandomItem())
+test(100,200,300)
+test(100)
