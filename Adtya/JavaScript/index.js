@@ -4128,29 +4128,75 @@ let petsMap = new Map([["cats", 1],[ "dogs", 2],[ "hamsters", 5]])
 // console.log(emailRegex.exec("ag.c"))
 // console.log(emailRegex.exec("a@gc"))
 
-let getItem = function(array, index) 
-{
-    return (index > 0 < index < array.length) ? array[index] : undefined
-//   let retVal = undefined
-//   if(index > 0 && index < array.length) 
-//   {
-//     retVal = array[index]
-//   }
-//   return retVal
-}
-let array = [10, 20, 80, 100]
-console.log(getItem(array, 2))
-let getRandomItem = function (array) 
-{
-  return array[Math.floor(Math.random() * array.length)]
-}
-console.log(getRandomItem(array))
-console.log(getRandomItem(array))
+// let getItem = function(array, index) 
+// {
+//     return (index > 0 < index < array.length) ? array[index] : undefined
+// //   let retVal = undefined
+// //   if(index > 0 && index < array.length) 
+// //   {
+// //     retVal = array[index]
+// //   }
+// //   return retVal
+// }
+// let array = [10, 20, 80, 100]
+// console.log(getItem(array, 2))
+// let getRandomItem = function (array) 
+// {
+//   return array[Math.floor(Math.random() * array.length)]
+// }
+// console.log(getRandomItem(array))
+// console.log(getRandomItem(array))
 
-Array.prototype.getRandomItem = function ()
+// Array.prototype.getRandomItem = function ()
+// {
+//     return this[Math.floor(Math.random() * this.length)]
+// }
+// console.log(array.getRandomItem())
+// console.log(array.getRandomItem())
+// console.log(array.getRandomItem())
+
+// Async - Await
+// async function fetchData() 
+// {
+//   const response = await fetch('https://fake-json-api.mock.beeceptor.com/users')
+//   const data = await response.json()
+//   console.log(data)
+// }
+
+// console.log("This is the start:-------")
+// fetchData()
+// console.log("This is the End:---------")
+
+// function test(a = 3, b = 1, c = 4, d = 2) 
+// {
+//     console.log(`a: ${a}, b: ${b}, c: ${c}, d: ${d}`)
+// }
+// test()
+// test(100)
+// test(100, 200)
+// test(100, 200, 300)
+// test(100, 200, 300, 400)
+
+// function test(...args) 
+// {
+//     let msg = `length: ${args.length}, args:`
+//     args.forEach(arg => {msg += arg+","})
+//     console.log(msg)
+// }
+// test(100, 200, 300) // -> length: 3, args: 100 200 300
+// test(100)
+
+function test(firstArg, ...anotherArgs) 
 {
-    return this[Math.floor(Math.random() * this.length)]
+    let msg = `frist arg: ${firstArg}, length: ${anotherArgs.length}, args:`
+    anotherArgs.forEach(arg => {msg += arg})
+    console.log(msg)
 }
-console.log(array.getRandomItem())
-console.log(array.getRandomItem())
-console.log(array.getRandomItem())
+test(100, 200, 300)
+test(100)
+
+function sum(...numbers) 
+{
+   return numbers.reduce((acc, curr) => acc + curr, 0)
+}
+console.log(sum(1, 2, 3, 4))
