@@ -2878,20 +2878,67 @@ let contact =
 // }
 // showPoint.call(point,["coordinates"])
 
-"use strict"
-let point =
+// "use strict"
+// let point =
+// {
+//     x:100,
+//     y:200
+// }
+
+//  function showPoint(msg)
+// {
+//     console.log(`${msg} [${this.x}:${this.y}]`)
+// }
+// let showcoordinates = showPoint.bind(point,'coordinates')
+// let show = showPoint.bind(point)
+// showcoordinates()
+// showcoordinates('point')
+// show('point')
+// showPoint('test')
+
+let car1 = {brand:"Vw",color:"blue"}
+let car2 = {brand:"Vy",color:"red"}
+let returnBrand = function()
 {
-    x:100,
-    y:200
+    console.log("car brand" + this.brand)
 }
 
- function showPoint(msg)
+returnBrand.call(car1)
+returnBrand.call(car2)
+
+function booktitle(name,author)
 {
-    console.log(`${msg} [${this.x}:${this.y}]`)
+    console.log(name + 'is written by' + author)
+    console.log(this)
 }
-let showcoordinates = showPoint.bind(point,'coordinates')
-let show = showPoint.bind(point)
-showcoordinates()
-showcoordinates('point')
-show('point')
-showPoint('test')
+
+booktitle.apply(["html and Css ","new web"])
+let book = 
+{
+    author :'Mary',
+    getAuthor: function()
+    {
+        return this.author
+    }
+
+}
+
+let book2 = { author :'John'}
+let getAuthorCopy = book.getAuthor.bind(book2)
+console.log(getAuthorCopy())
+function fullname(greet)
+{
+    console.log(greet + " " + this.firstName + " " + this.lastName)
+}
+const person1 =
+{
+    firstname : "zeeshan",
+    lastname : "siddiqui"
+
+}
+const person2 =
+{
+    firstname : "zeeshan",
+    lastname : "siddiqui"
+
+}
