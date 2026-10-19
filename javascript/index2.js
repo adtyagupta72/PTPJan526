@@ -2942,3 +2942,10 @@ const person2 =
     lastname : "siddiqui"
 
 }
+ let s = new Set([1,30])
+ s.add(500)
+
+ for (let e of s)
+ {
+    console.log(e)
+ }
