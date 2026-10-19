@@ -2945,7 +2945,14 @@ const person2 =
  let s = new Set([1,30])
  s.add(500)
 
- for (let e of s)
- {
-    console.log(e)
- }
+//  for (let e of s)
+//  {
+//     console.log(e)
+//  }
+// console.log(...s)
+
+let it = s[Symbol.iterator]()
+console.log(it.next().value)
+console.log(it.next().value)
+console.log(it.next().value)
+console.log(it.next())
