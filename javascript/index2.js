@@ -2820,12 +2820,32 @@ let contact =
 // }
 // test()
 
-function(...test)
-{
-    let msg = `length: ${arguments.length}, args:`
-    arguments.forEach(arg => {msg += arg+","})
-        console.log(msg)
+// function (...test)
+// {
+//     let msg = `length: ${arguments.length}, args:`
+//     arguments.forEach(arg => {msg += arg+","})
+//         console.log(msg)
   
+// }
+// test(100,200,300)
+// test(100)
+
+// function test(first , ...another)
+// {
+//     let msg = `fist:${first}, length: ${another.length}, args:`
+//     another.forEach(arg => {msg += arg}
+//         console.log(msg)
+// }
+// test(100,200,300)
+// function sum(...number)
+// {
+//     return number.reduce((acc , curr))
+// }
+
+
+"use strict"
+function test()
+{
+    console.log(this)
 }
-test(100,200,300)
-test(100)
+test()
