@@ -4186,17 +4186,150 @@ let petsMap = new Map([["cats", 1],[ "dogs", 2],[ "hamsters", 5]])
 // test(100, 200, 300) // -> length: 3, args: 100 200 300
 // test(100)
 
-function test(firstArg, ...anotherArgs) 
-{
-    let msg = `frist arg: ${firstArg}, length: ${anotherArgs.length}, args:`
-    anotherArgs.forEach(arg => {msg += arg})
-    console.log(msg)
-}
-test(100, 200, 300)
-test(100)
+// function test(firstArg, ...anotherArgs) 
+// {
+//     let msg = `frist arg: ${firstArg}, length: ${anotherArgs.length}, args:`
+//     anotherArgs.forEach(arg => {msg += arg})
+//     console.log(msg)
+// }
+// test(100, 200, 300)
+// test(100)
 
-function sum(...numbers) 
+// function sum(...numbers) 
+// {
+//    return numbers.reduce((acc, curr) => acc + curr, 0)
+// }
+// console.log(sum(1, 2, 3, 4))
+
+// let point = 
+// {
+//   x: 100,
+//   y: 200,
+//   testThis: function() 
+//   {
+//     console.log(this)
+//   },
+//   show: function() 
+//   {
+//     console.log(`${this.x}:${this.y}`)
+//   }
+// }
+// point.testThis()
+// point.show()
+
+// "use strict"
+// function test() 
+// {
+//     console.log(this)
+// }
+// test()
+
+// function greet() 
+// {
+//   console.log(this.name)
+// }
+// let obj = { name: "nj" }
+// greet.call(obj)
+// greet()
+
+// 'use strict'
+// function showPoint(msg) 
+// {
+//   console.log(`${msg} [${this.x}:${this.y}]`)
+// }
+// showPoint("coordinates")
+
+// let point = 
+// {
+//   x: 100,
+//   y: 200
+// }
+// function showPoint(msg) 
+// {
+//   console.log(this)
+//   console.log(`${msg} [${this.x}:${this.y}] ${this.z}`)
+// }
+// showPoint.call(point, 'coordinates')
+// showPoint.apply(point, ['coordinates', 'hello'])
+
+// let point = 
+// {
+//     x: 100,
+//     y: 200
+// }
+
+// let point1 = 
+// {
+//     x: 1000,
+//     y: 2000
+// }
+
+// function showPoint(msg) 
+// {
+//     console.log(`${msg} [${this.x}:${this.y}]`)
+// }
+
+// let showCoordinates = showPoint.bind(point, 'coordinates')
+// let show = showPoint.bind(point)
+// showCoordinates()
+// showCoordinates('point')
+// show('point')
+// showPoint('test')
+
+// showCoordinates = showPoint.bind(point1, 'Hello Point')
+
+// showCoordinates()
+//Example 1
+let car1 = { brand: 'Vw', color: 'blue' }
+let car2 = { brand: 'Toyota', color: 'white' }
+let returnCarBrand = function() 
 {
-   return numbers.reduce((acc, curr) => acc + curr, 0)
+    console.log('Car brand is ' + this.brand)
 }
-console.log(sum(1, 2, 3, 4))
+returnCarBrand.call(car1) // Car brand is Vw
+returnCarBrand.call(car2) // Car brand is Toyota
+
+//Example 2
+function bookTitle(name, author) 
+{
+    console.log(name + 'is written by ' + author)
+    console.log(this)
+}
+
+bookTitle.apply(['HTML & CSS: Design and Build Web Sites', 'Jon Duckett'])
+let book = 
+{
+    author: 'Mary',
+    getAuthor: function () 
+    {
+        return this.author
+    }
+}
+let book2 = { author: 'John' }
+let getAuthorcopy = book.getAuthor.bind(book2)
+console.log(getAuthorcopy()) // John
+
+//Example 3
+function fullName(greet) 
+{
+  console.log(greet + " " + this.fristName + " " + this.lastName)
+}
+const person1 = 
+{
+    fristName : "Suman",
+    lastName : "Sharma",
+}
+const person2 = 
+{
+    fristName : "ratan",
+    lastName : "tata",
+}
+fullName.call(person1, "hello")
+fullName.call(person2,"hii")
+fullName.apply(person1, ["hello"])
+fullName.apply(person2,["hii"])
+const person1FullName = fullName.bind(person1)
+const person2FullName = fullName.bind(person2)
+console.log("execute some other code here")
+person1FullName("hello")
+person2FullName("hii")
