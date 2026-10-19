@@ -2951,8 +2951,17 @@ const person2 =
 //  }
 // console.log(...s)
 
-let it = s[Symbol.iterator]()
-console.log(it.next().value)
-console.log(it.next().value)
-console.log(it.next().value)
-console.log(it.next())
+// let it = s[Symbol.iterator]()
+// console.log(it.next().value)
+// console.log(it.next().value)
+// console.log(it.next().value)
+// console.log(it.next())
+
+let almost = 
+{
+    data : [10,20,30,40]
+}
+for (let e of almost)
+{
+    console.log(a)
+}
