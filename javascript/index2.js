@@ -2843,9 +2843,17 @@ let contact =
 // }
 
 
-"use strict"
-function test()
+// "use strict"
+// function test()
+// {
+//     console.log(this)
+// }
+// test()
+
+function greet()
 {
     console.log(this)
+
 }
-test()
+let obj = {name : "zee"}
+greet.call(obj)
