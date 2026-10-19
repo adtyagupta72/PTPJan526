@@ -2858,9 +2858,22 @@ let contact =
 // let obj = {name : "zee"}
 // greet.call(obj)
 
+// "use strict"
+// function showPoint(msg)
+// {
+//     console.log(`${msg} [${this.x}:${this.y}]`)
+// }
+// showPoint("coordinates")
+
 "use strict"
-function showPoint(msg)
+let point =
 {
-    console.log(`${msg} [${this.x}:${this.y}]`)
+    x:100,
+    y:200
 }
-showPoint("coordinates")
+
+ function showPoint(msg)
+{
+    console.log(`${msg} [${this.x}:${this.y}:${this.z}]`)
+}
+showPoint.call(point, "coordinates")
