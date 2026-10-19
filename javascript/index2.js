@@ -2865,6 +2865,19 @@ let contact =
 // }
 // showPoint("coordinates")
 
+// "use strict"
+// let point =
+// {
+//     x:100,
+//     y:200
+// }
+
+//  function showPoint(msg)
+// {
+//     console.log(`${msg} [${this.x}:${this.y}:${this.z}]`)
+// }
+// showPoint.call(point,["coordinates"])
+
 "use strict"
 let point =
 {
@@ -2874,6 +2887,11 @@ let point =
 
  function showPoint(msg)
 {
-    console.log(`${msg} [${this.x}:${this.y}:${this.z}]`)
+    console.log(`${msg} [${this.x}:${this.y}]`)
 }
-showPoint.call(point,["coordinates"])
+let showcoordinates = showPoint.bind(point,'coordinates')
+let show = showPoint.bind(point)
+showcoordinates()
+showcoordinates('point')
+show('point')
+showPoint('test')
