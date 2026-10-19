@@ -2850,10 +2850,17 @@ let contact =
 // }
 // test()
 
-function greet()
-{
-    console.log(this)
+// function greet()
+// {
+//     console.log(this)
 
+// }
+// let obj = {name : "zee"}
+// greet.call(obj)
+
+"use strict"
+function showPoint(msg)
+{
+    console.log(`${msg} [${this.x}:${this.y}]`)
 }
-let obj = {name : "zee"}
-greet.call(obj)
+showPoint("coordinates")
