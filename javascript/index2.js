@@ -2876,4 +2876,4 @@ let point =
 {
     console.log(`${msg} [${this.x}:${this.y}:${this.z}]`)
 }
-showPoint.call(point, "coordinates")
+showPoint.call(point,["coordinates"])
