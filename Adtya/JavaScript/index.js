@@ -4280,56 +4280,178 @@ let petsMap = new Map([["cats", 1],[ "dogs", 2],[ "hamsters", 5]])
 
 // showCoordinates()
 //Example 1
-let car1 = { brand: 'Vw', color: 'blue' }
-let car2 = { brand: 'Toyota', color: 'white' }
-let returnCarBrand = function() 
-{
-    console.log('Car brand is ' + this.brand)
-}
-returnCarBrand.call(car1) // Car brand is Vw
-returnCarBrand.call(car2) // Car brand is Toyota
+// let car1 = { brand: 'Vw', color: 'blue' }
+// let car2 = { brand: 'Toyota', color: 'white' }
+// let returnCarBrand = function() 
+// {
+//     console.log('Car brand is ' + this.brand)
+// }
+// returnCarBrand.call(car1) // Car brand is Vw
+// returnCarBrand.call(car2) // Car brand is Toyota
 
-//Example 2
-function bookTitle(name, author) 
-{
-    console.log(name + 'is written by ' + author)
-    console.log(this)
-}
+// //Example 2
+// function bookTitle(name, author) 
+// {
+//     console.log(name + 'is written by ' + author)
+//     console.log(this)
+// }
 
-bookTitle.apply(['HTML & CSS: Design and Build Web Sites', 'Jon Duckett'])
-let book = 
+// bookTitle.apply(['HTML & CSS: Design and Build Web Sites', 'Jon Duckett'])
+// let book = 
+// {
+//     author: 'Mary',
+//     getAuthor: function () 
+//     {
+//         return this.author
+//     }
+// }
+// let book2 = { author: 'John' }
+// let getAuthorcopy = book.getAuthor.bind(book2)
+// console.log(getAuthorcopy()) // John
+
+// //Example 3
+// function fullName(greet) 
+// {
+//   console.log(greet + " " + this.fristName + " " + this.lastName)
+// }
+// const person1 = 
+// {
+//     fristName : "Suman",
+//     lastName : "Sharma",
+// }
+// const person2 = 
+// {
+//     fristName : "ratan",
+//     lastName : "tata",
+// }
+// fullName.call(person1, "hello")
+// fullName.call(person2,"hii")
+// fullName.apply(person1, ["hello"])
+// fullName.apply(person2,["hii"])
+// const person1FullName = fullName.bind(person1)
+// const person2FullName = fullName.bind(person2)
+// console.log("execute some other code here")
+// person1FullName("hello")
+// person2FullName("hii")
+
+
+// let almostIterable = 
+// {
+//     data: [10, 30, 60, 20, 90],
+//     // iterator: function() 
+//     [Symbol.iterator]()
+//     {
+//         let index = -1
+//         let data = this.data
+//         return {
+//             next: function() 
+//             {
+//                 index++     //-1 -> 0 -> 1 -> 2 -> 3 -> 4 -> 5
+//                 return {
+//                     value: data.length === index ? undefined : data[index],
+//                     done: data.length === index
+//                 }
+//             }
+//         }
+//     }
+// }
+/*
+    obj = {data: [10, 20, 30.....]}
+    iterableObj = obj.iterator()
+    iterableObj.next()      => {value: 10, done: false}
+    iterableObj.next()      => {value: 30, done: false}
+    iterableObj.next()      => {value: 60, done: false}
+    iterableObj.next()      => {value: 20, done: false}
+    iterableObj.next()      => {value: 90, done: false}
+    iterableObj.next()      => {value: undefined, done: true}
+    iterableObj.next().done == true / false
+
+    let it = almostIterable.iterator()
+    console.log(it.next()) // -> {value: 10, done: false}
+    console.log(it.next())
+    console.log(it.next())
+    console.log(it.next())
+    console.log(it.next())
+    console.log(it.next())
+*/
+// for( let a of almostIterable ) 
+// { 
+//     console.log(a) 
+// }
+// console.log(...almostIterable) 
+// console.log([...almostIterable])
+
+
+// function* testGenerator() 
+// {
+//     yield 10    //
+//     yield 20    //
+//     yield 30
+// }
+
+// function* testGenerator() 
+// {
+//     for(let i=10; i<=30; i += 10) 
+//     {
+//         yield i
+//     }
+// }
+
+// function* testGenerator() 
+// {
+//     let data = [10, 20, 30]
+//     for(let element of data) 
+//     {
+//         yield element
+//     }
+// }
+
+// let gen = testGenerator()
+// console.log(gen.next()) // -> {value: 10, done: false}
+// console.log(gen.next()) // -> {value: 20, done: false}
+// console.log(gen.next()) // -> {value: 30, done: false}
+// console.log(gen.next())
+
+// let iterable = 
+// {
+//     data: [10, 30, 60, 20, 90],
+//     [Symbol.iterator]: function* () 
+//     {
+//         for(element of this.data) 
+//         {
+//             yield element
+//         }
+//     }
+// }
+
+// let it = iterable[Symbol.iterator]()
+// console.log(it.next())
+// console.log(it.next())
+
+// for( a of iterable ) 
+// {
+//   console.log(a)
+// }
+// console.log(...iterable)
+// console.log([...iterable])
+
+let factorialGenerator = function* (range = Infinity) 
 {
-    author: 'Mary',
-    getAuthor: function () 
+    let last = 1
+    for(let index = 1; index <= range; index++)
     {
-        return this.author
+        last *= index
+        yield last
     }
 }
-let book2 = { author: 'John' }
-let getAuthorcopy = book.getAuthor.bind(book2)
-console.log(getAuthorcopy()) // John
+let factorial = factorialGenerator()
+console.log(factorial.next()) // -> {value: 1, done: false}
+console.log(factorial.next()) // -> {value: 2, done: false}
+console.log(factorial.next()) // -> {value: 6, done: false}
+console.log(factorial.next()) // -> {value: undefined, done: true}
+console.log(factorial.next())
+console.log(factorial.next())
+console.log(factorial.next())
+console.log(factorial.next())
+console.log(factorial.next())
 
-//Example 3
-function fullName(greet) 
-{
-  console.log(greet + " " + this.fristName + " " + this.lastName)
-}
-const person1 = 
-{
-    fristName : "Suman",
-    lastName : "Sharma",
-}
-const person2 = 
-{
-    fristName : "ratan",
-    lastName : "tata",
-}
-fullName.call(person1, "hello")
-fullName.call(person2,"hii")
-fullName.apply(person1, ["hello"])
-fullName.apply(person2,["hii"])
-const person1FullName = fullName.bind(person1)
-const person2FullName = fullName.bind(person2)
-console.log("execute some other code here")
-person1FullName("hello")
-person2FullName("hii")
