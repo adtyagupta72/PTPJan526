@@ -2896,95 +2896,109 @@ let contact =
 // show('point')
 // showPoint('test')
 
-let car1 = {brand:"Vw",color:"blue"}
-let car2 = {brand:"Vy",color:"red"}
-let returnBrand = function()
-{
-    console.log("car brand" + this.brand)
-}
+// let car1 = {brand:"Vw",color:"blue"}
+// let car2 = {brand:"Vy",color:"red"}
+// let returnBrand = function()
+// {
+//     console.log("car brand" + this.brand)
+// }
 
-returnBrand.call(car1)
-returnBrand.call(car2)
+// returnBrand.call(car1)
+// returnBrand.call(car2)
 
-function booktitle(name,author)
-{
-    console.log(name + 'is written by' + author)
-    console.log(this)
-}
+// function booktitle(name,author)
+// {
+//     console.log(name + 'is written by' + author)
+//     console.log(this)
+// }
 
-booktitle.apply(["html and Css ","new web"])
-let book = 
-{
-    author :'Mary',
-    getAuthor: function()
-    {
-        return this.author
-    }
+// booktitle.apply(["html and Css ","new web"])
+// let book = 
+// {
+//     author :'Mary',
+//     getAuthor: function()
+//     {
+//         return this.author
+//     }
 
-}
+// }
 
-let book2 = { author :'John'}
-let getAuthorCopy = book.getAuthor.bind(book2)
-console.log(getAuthorCopy())
-function fullname(greet)
-{
-    console.log(greet + " " + this.firstName + " " + this.lastName)
-}
-const person1 =
-{
-    firstname : "zeeshan",
-    lastname : "siddiqui"
+// let book2 = { author :'John'}
+// let getAuthorCopy = book.getAuthor.bind(book2)
+// console.log(getAuthorCopy())
+// function fullname(greet)
+// {
+//     console.log(greet + " " + this.firstName + " " + this.lastName)
+// }
+// const person1 =
+// {
+//     firstname : "zeeshan",
+//     lastname : "siddiqui"
 
-}
-const person2 =
-{
-    firstname : "zeeshan",
-    lastname : "siddiqui"
+// }
+// const person2 =
+// {
+//     firstname : "zeeshan",
+//     lastname : "siddiqui"
 
-}
- let s = new Set([1,30])
- s.add(500)
+// }
+//  let s = new Set([1,30])
+//  s.add(500)
 
-//  for (let e of s)
-//  {
-//     console.log(e)
-//  }
-// console.log(...s)
+// //  for (let e of s)
+// //  {
+// //     console.log(e)
+// //  }
+// // console.log(...s)
 
-// let it = s[Symbol.iterator]()
-// console.log(it.next().value)
-// console.log(it.next().value)
-// console.log(it.next().value)
-// console.log(it.next())
+// // let it = s[Symbol.iterator]()
+// // console.log(it.next().value)
+// // console.log(it.next().value)
+// // console.log(it.next().value)
+// // console.log(it.next())
 
-let almost = 
-{
-    data: [10,20,30,40,90],
-    // iterator: function()
-    [Synmbol.iterator](){
+// let almost = 
+// {
+//     data: [10,20,30,40,90],
+//     // iterator: function()
+//     [Synmbol.iterator](){
 
-        let index = -1
-        let data = this.data
-        return{
-            next: function{
-                index++
-                return{
-                    value: data.length === index? undefined: data[index],
-                    done: data.length === index
-                }
-            }
-        }
+//         let index = -1
+//         let data = this.data
+//         return{
+//             next: function()
+//             {
+//                 index++
+//                 return{
+//                     value: data.length === index? undefined: data[index],
+//                     done: data.length === index
+//                 }
+//             }
+//         }
 
        
-    }
+//     }
 
-}
+// }
 
-for (let a of almost)
-{
-    console.log(a)
-}
-console.log(...almostIterable)
-console.log([...almostIterable])
+// for (let a of almost)
+// {
+//     console.log(a)
+// }
+// console.log(...almost)
+// console.log([...almost])
     
 
+function* testGen()
+{
+    for(let i=10;i<=30;i+=10)
+    {
+        yield i
+    }
+}
+
+let gen = testGen()
+console.log(gen.next())
+console.log(gen.next())
+console.log(gen.next())
+console.log(gen.next())
