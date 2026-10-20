@@ -4456,55 +4456,92 @@ let petsMap = new Map([["cats", 1],[ "dogs", 2],[ "hamsters", 5]])
 // console.log(factorial.next())
 
 
-class Factorial 
-{
-    constructor(range = Infinity) 
-    {
-      this.range = range
-    }
-    [Symbol.iterator] = function* ()
-    {
-      let last = 1
-      for(let index = 1; index <= this.range; index++)
-      {
-         last *= index
-         yield last
-      }        
-   }
-}
-let factorial = new Factorial(5)
-console.log([...factorial]) // -> [1, 2, 6, 24, 120]
-let it = factorial[Symbol.iterator]()
-console.log(it.next().value) // -> 1
-console.log(it.next().value) // -> 2
-console.log(it.next().value)
-console.log(it.next().value)
-console.log(it.next().value)
-console.log(it.next().value)
+// class Factorial 
+// {
+//     constructor(range = Infinity) 
+//     {
+//       this.range = range
+//     }
+//     [Symbol.iterator] = function* ()
+//     {
+//       let last = 1
+//       for(let index = 1; index <= this.range; index++)
+//       {
+//          last *= index
+//          yield last
+//       }        
+//    }
+// }
+// let factorial = new Factorial(5)
+// console.log([...factorial]) // -> [1, 2, 6, 24, 120]
+// let it = factorial[Symbol.iterator]()
+// console.log(it.next().value) // -> 1
+// console.log(it.next().value) // -> 2
+// console.log(it.next().value)
+// console.log(it.next().value)
+// console.log(it.next().value)
+// console.log(it.next().value)
 
 
-function* fibonacci()
+// function* fibonacci()
+// {
+//     let lastButOne = 0, last = 1
+//     yield lastButOne
+//     yield last
+//     for(let i=1; i<=range; i++) 
+//     {
+//         let tmp = lastButOne + last
+//         lastButOne = last
+//         last = tmp
+//         yield last
+//     }
+// }
+// let fibIt1 = fibonacci(10)
+// console.log([...fibIt1])
+// let fibIt2 = fibonacci()
+// console.log(fibIt2.next().value)
+// console.log(fibIt2.next().value)
+// console.log(fibIt2.next().value)
+// console.log(fibIt2.next().value)
+// let fibIt3 = fibonacci(5)
+// for( let f of fibIt3) 
+// {
+//   console.log(f)
+// }
+
+// let p = new Promise((resolve, reject) => 
+// {
+//     resolve("This operation was successful!")
+//     // reject("This is the error")
+// })
+
+// p
+//     .then((message) => {        //Success - resolve
+//         console.log(message); 
+//     })
+//     .catch((error)=>{         //failure - reject
+//         console.log(error)
+//     })
+
+let p = new Promise((resolve, reject) => 
 {
-    let lastButOne = 0, last = 1
-    yield lastButOne
-    yield last
-    for(let i=1; i<=range; i++) 
+    let value = Math.floor(Math.random() * 4)
+    if (value === 0) 
     {
-        let tmp = lastButOne + last
-        lastButOne = last
-        last = tmp
-        yield last
+        reject(new Error('!!!'))
+    } 
+    else 
+    {
+        setTimeout(() => 
+        {
+            resolve(value)
+        }, value * 1000)
     }
-}
-let fibIt1 = fibonacci(10)
-console.log([...fibIt1])
-let fibIt2 = fibonacci()
-console.log(fibIt2.next().value)
-console.log(fibIt2.next().value)
-console.log(fibIt2.next().value)
-console.log(fibIt2.next().value)
-let fibIt3 = fibonacci(5)
-for( let f of fibIt3) 
-{
-  console.log(f)
-}
+})
+
+p.then((message)=>{
+    console.log("Success message: ", message)
+})
+.catch((error)=>{
+    console.log("Error message: ", error)
+})
