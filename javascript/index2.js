@@ -2989,11 +2989,26 @@ let contact =
 // console.log([...almost])
     
 
+// function* testGen()
+// {
+//     for(let i=10;i<=30;i+=10)
+//     {
+//         yield i
+//     }
+// }
+
+// let gen = testGen()
+// console.log(gen.next())
+// console.log(gen.next())
+// console.log(gen.next())
+// console.log(gen.next())
+
 function* testGen()
 {
-    for(let i=10;i<=30;i+=10)
+    data = [10,30,40]
+    for(let element of data)
     {
-        yield i
+        yield element
     }
 }
 
