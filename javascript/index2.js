@@ -2959,9 +2959,32 @@ const person2 =
 
 let almost = 
 {
-    data : [10,20,30,40]
+    data: [10,20,30,40,90],
+    // iterator: function()
+    [Synmbol.iterator](){
+
+        let index = -1
+        let data = this.data
+        return{
+            next: function{
+                index++
+                return{
+                    value: data.length === index? undefined: data[index],
+                    done: data.length === index
+                }
+            }
+        }
+
+       
+    }
+
 }
-for (let e of almost)
+
+for (let a of almost)
 {
     console.log(a)
 }
+console.log(...almostIterable)
+console.log([...almostIterable])
+    
+
