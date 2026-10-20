@@ -3035,15 +3035,35 @@ let contact =
 //     console.log(it.next())
 // )
 
-let factorial = function (range = Infinity)
-{
-    let Last = 1
-    for(let index=1 ; index <= this.range ; index++)
-    {
-        Last *= index
-        yield Last
-    }
-}
-let factorial1 = factorial(5)
-console.log(factorial1.next())
+// let factorial = function (range = Infinity)
+// {
+//     let Last = 1
+//     for(let index=1 ; index <= this.range ; index++)
+//     {
+//         Last *= index
+//         yield Last
+//     }
+// }
+// let factorial1 = factorial(5)
+// console.log(factorial1.next())
 
+
+
+let p = new Promise ((resolve,reject)
+=>
+{
+    resolve("this is success call")
+    // reject("this is eroor")
+})
+
+p.then((message)) =>{
+
+
+{
+    console.log(message)
+}
+}
+.catch((error)) =>
+    {
+    console.log(error)
+}
