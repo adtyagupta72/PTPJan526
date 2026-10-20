@@ -3003,17 +3003,47 @@ let contact =
 // console.log(gen.next())
 // console.log(gen.next())
 
-function* testGen()
+// function* testGen()
+// {
+//     data = [10,30,40]
+//     for(let element of data)
+//     {
+//         yield element
+//     }
+// }
+
+// let gen = testGen()
+// console.log(gen.next())
+// console.log(gen.next())
+// console.log(gen.next())
+// console.log(gen.next())
+
+// let iterable = 
+// {
+//     data : [10,20,30,40]
+//     [Symbol.iterator]: function* ()
+//     {
+//         for(element of this.data)
+//         {
+//             yield element
+//         }
+//     }
+// }
+
+// let it = iterable[Symbol.iterator](
+//     console.log(it.next())
+//     console.log(it.next())
+// )
+
+let factorial = function (range = Infinity)
 {
-    data = [10,30,40]
-    for(let element of data)
+    let Last = 1
+    for(let index=1 ; index <= this.range ; index++)
     {
-        yield element
+        Last *= index
+        yield Last
     }
 }
+let factorial1 = factorial(5)
+console.log(factorial1.next())
 
-let gen = testGen()
-console.log(gen.next())
-console.log(gen.next())
-console.log(gen.next())
-console.log(gen.next())
