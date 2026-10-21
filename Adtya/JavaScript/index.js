@@ -3817,19 +3817,731 @@ diff => > (7 days~) mill => 5 marks => solved before 7 days from now
 // let array = [10, 20, 30, 40]
 // console.log(testFn(...array))
 
-let emptySet = new Set() // -> {}
-console.log(emptySet.size) // -> 0
-console.log(emptySet)
-let petsSet = new Set(["cat", "dog", "cat"]) 
-console.log(petsSet.size)
-console.log(petsSet)
+// let emptySet = new Set() // -> {}
+// console.log(emptySet.size) // -> 0
+// console.log(emptySet)
+// let petsSet = new Set(["cat", "dog", "cat"]) 
+// console.log(petsSet.size)
+// console.log(petsSet)
 
-petsSet.add("shark")
-petsSet.add("hamster")
-console.log(petsSet.size) // -> 4
-console.log(petsSet.has("shark")) // -> true
-petsSet.delete("dog") // -> true
-petsSet.delete("dog") // -> false
-console.log(petsSet.size) // -> 3
-petsSet.clear()
-console.log(petsSet.size) // -> 0
+// petsSet.add("shark")
+// petsSet.add("hamster")
+// console.log(petsSet.size) // -> 4
+// console.log(petsSet.has("shark")) // -> true
+// petsSet.delete("dog") // -> true
+// petsSet.delete("dog") // -> false
+// console.log(petsSet.size) // -> 3
+// petsSet.clear()
+// console.log(petsSet.size) // -> 0
+
+// let petsSet = new Set(["cat", "dog", "hamster"]) 
+// petsSet.forEach(value => console.log(value)) 
+
+// petsSet.forEach((value, key) => console.log(`(${value}:${key})`)) 
+
+// let petsIterator = petsSet.values()
+// console.log(petsIterator.next().value)
+// console.log(petsIterator.next().value)
+// console.log(petsIterator.next().value)
+// console.log(petsIterator.next().value)
+
+// let petsIterator = petsSet.values()
+// let result = petsIterator.next()
+// while (!result.done) 
+// {
+//   console.log(result.value) // -> cat -> dog -> hamster
+//   result = petsIterator.next()
+// }
+
+// let emptyMap = new Map()
+// let petsMap = new Map([["cats", 1],[ "dogs", 2],[ "hamsters", 5]])
+// console.log(emptyMap.size) // -> 0
+// console.log(petsMap.size)
+
+// console.log(petsMap.has("dogs"))
+// console.log(petsMap.has("sharks"))
+// console.log(petsMap.has(1))
+
+// console.log(petsMap.get("hamsters")) // -> 5
+// petsMap.set("hamsters", 6)
+// console.log(petsMap.get("hamsters")) // -> 6
+// petsMap.delete("hamsters")
+// console.log(petsMap.get("hamsters")) // -> undefined
+// console.log(petsMap)
+// petsMap.clear()
+// console.log(petsMap.size)
+// console.log(petsMap)
+let petsMap = new Map([["cats", 1],[ "dogs", 2],[ "hamsters", 5]])
+// petsMap.forEach((value, key) => console.log(`${key} : ${value}`))
+
+// let petValuesIterator = petsMap.values()
+// console.log(petValuesIterator.next().value)
+// console.log(petValuesIterator.next().value)
+// console.log(petValuesIterator.next().value)
+// petValuesIterator = petsMap.keys()
+// console.log(petValuesIterator.next().value)
+// console.log(petValuesIterator.next().value)
+// console.log(petValuesIterator.next().value)
+
+
+// let petsIterator = petsMap.entries()
+// let result = petsIterator.next()
+// while (!result.done) 
+// {
+//   console.log(result.value) 
+//   result = petsIterator.next()
+// }
+// let petsArray = ["cat", "dog", "hamster"]
+// for(let pet of petsArray) 
+// {
+//   console.log(pet) 
+// }
+// let petsSet = new Set(["cat", "dog", "hamster"])
+// for(let pet of petsSet) 
+// {
+//   console.log(pet) 
+// }
+// let petsMap1 = new Map([["cats", 1], ["dogs", 3], ["hamsters", 2]])
+// for(let pet of petsMap1) 
+// {
+//   console.log(pet)
+//   console.log(pet[0]) 
+//   console.log(pet[1]) 
+// }
+
+// let vehicle2 = 
+// {
+//   id: "AK12113",
+//   longitude: 59.358615, 
+//   latitude: 17.947589,
+//   getId: function() 
+//   {
+//     return this.id
+//   },
+//   newObj: {
+//     a: "A"
+//   }
+// }
+// let vehicle2JSON = JSON.stringify(vehicle2)
+// console.log(typeof vehicle2JSON) // -> string
+// console.log(vehicle2JSON)
+
+// let Vehicle = function(id, latitude, longitude)
+// { 
+//     this.id = id
+//     this.latitude = latitude     
+//     this.longitude = longitude} 
+// let ids = ["AK12113", "AL1024", "BA1001"]
+// let vehicles1 = []
+// ids.forEach(id => vehicles1.push(new Vehicle(id, 59.358615, 17.947589)))
+// let vehcilesJSON1 = JSON.stringify(vehicles1)
+// console.log(vehcilesJSON1)
+// /*
+// [
+//     {
+//         "id":"AK12113",
+//         "latitude":59.358615,
+//         "longitude":17.947589
+//     },
+//     {
+//         "id":"AL1024",
+//         "latitude":59.358615,
+//         "longitude":17.947589
+//     },
+//     {
+//         "id":"BA1001",
+//         "latitude":59.358615,
+//         "longitude":17.947589
+//     }
+// ]
+// */
+// let vehicleJSON = '{"id":"AK12113","position":{"longitude":59.358615,"latitude":17.947589}}'
+// let vehicle = JSON.parse(vehicleJSON)
+// console.log(typeof vehicle) // -> object
+// console.log(vehicle.position.longitude)
+// console.log(vehicle.position.latitude)
+
+// let vehcilesJSON = '[{"id":"AK12113","latitude":59.358615,"longitude":17.947589},{"id":"AL1024","latitude":59.358615,"longitude":17.947589},{"id":"BA1001","latitude":59.358615,"longitude":17.947589}]'
+// vehcilesJSON = vehcilesJSON.replaceAll("id", "plate")
+// let vehicles = JSON.parse(vehcilesJSON)
+// console.log(vehicles instanceof Array) // -> true
+// console.log(vehicles.length) // -> 3
+// console.log(vehicles[0].plate)
+
+// console.log(Math.PI) // -> 3.141592653589793
+// console.log(Math.E)
+
+// console.log(Math.ceil(10.2)) // -> 11
+// console.log(Math.floor(10.2)) // -> 10
+// console.log(Math.round(10.2)) // -> 10
+
+// console.log(Math.ceil(10.499999)) // -> 11 
+// console.log(Math.floor(10.499999)) // -> 10
+// console.log(Math.round(10.499999)) // -> 10
+
+// console.log(Math.ceil(10.5)) // -> 11
+// console.log(Math.floor(10.5)) // -> 10
+// console.log(Math.round(10.5)) // -> 11
+
+// console.log(Math.ceil(10.8)) // -> 11
+// console.log(Math.floor(10.8)) // -> 10
+// console.log(Math.round(10.8))   
+
+// console.log(Math.random())
+
+// let randomInteger = (min, max) => 
+// {
+//     let _min = Math.ceil(min)
+//     let _max = Math.floor(max)
+//     return Math.floor(Math.random() * (_max - _min + 1) + min)
+// }
+// console.log(randomInteger(10,20))
+
+// console.log("Absolute value: ", Math.abs(-3.25))
+// console.log("Absolute value: ", Math.abs(10))
+// console.log("Minimum value: ", Math.min(100, 20, 300, 10, 400))
+// let numbers = [100, 20, 300, 10, 400]
+// console.log("Max value: ", Math.max(...numbers))
+
+// console.log(Math.pow(2, 3)) // -> 8 => 23
+// console.log(Math.pow(4, 2)) // -> 16 => 42
+// console.log(Math.pow(4, -1)) // -> 0.25 => 4-1 = 1/4^1 
+// console.log(Math.pow(4, -2)) // -> 0.0625 => 4-2 = 1/4^2 
+// console.log(Math.pow(4, 0.5)) // -> 2 => 40.5 = 4^(1/2) = √(2&4)
+// console.log(Math.pow(-1,0.5)) // -> NaN => -10.5 = √(2&-1)
+// console.log(Math.sqrt(4)) // -> 2
+// x = Math.pow(Math.E, 2) // -> 7.3890560989306495
+// console.log("x: ",x)
+// console.log(Math.log(x)) // -> 2
+// console.log(Math.log2(16)) // -> 4
+// console.log(Math.log10(1000))
+
+// console.log(Math.cos(Math.PI/3))
+// console.log(Math.tan(Math.PI/4))
+// console.log(Math.asin(1))
+
+
+
+//      adtya@gmail.com             
+// a@a.a        3 letters overall mandatory, @ mandatory, . mandatory
+//              1 letter -> @ -> 1 letter -> . -> 1 letter
+// iwegfoiwehf
+
+// let re1 = new RegExp('c.t')
+// let re2 = /c.t/
+// console.log("cat: ", re1.test("cat"))
+// console.log("cut: ", re2.test("cut"))
+// console.log("cot", re2.test("cot"))
+// console.log("coooooot: ", re2.test("coooooot"))
+// console.log("ct: ", re2.test("ct"))
+// console.log("c.t: ", re2.test("c.t"))
+// console.log("c6t: ", re2.test("c6t"))
+// console.log("c0t: ", re2.test("c0t"))
+
+// let re = /c.t/
+// console.log(re.exec("haircut")) 
+// console.log(re.exec("ct"))
+
+// const regex = /(\d{4})-(\d{2})-(\d{2})/;
+// const text = "The event is scheduled for 2026-10-07.";
+
+// const result = regex.exec(text)
+// console.log("result: ", result)
+
+// if (result !== null) {
+//   console.log("Full Match:", result[0]); // "2026-10-07"
+//   console.log("Year (Group 1):", result[1]); // "2026"
+//   console.log("Month (Group 2):", result[2]); // "10"
+//   console.log("Day (Group 3):", result[3]); // "07"
+// }
+
+// let re = /c.t/
+// let str = "dog and cat"
+// console.log("match: ", str.match(re)) 
+// console.log("search: ", str.search(re)) 
+// console.log("replace: ", str.replace(re, 'unicorn')) 
+// console.log(str) 
+
+// let re = /c\.t/
+// console.log(re.exec("cut")) 
+// console.log(re.exec("c.t")) 
+
+// let re1 = /o*ps/
+// console.log("*", re1.exec("ps"))
+// console.log("*", re1.exec("ops")) 
+// console.log("*", re1.exec("o")) 
+// console.log("*", re1.exec("He said: ooops!")) 
+
+
+// let re2 = /o+ps/
+// console.log("+", re2.exec("ps"))
+// console.log("+", re2.exec("o"))
+// console.log("+", re2.exec("ops"))
+// console.log("+", re2.exec("He said: ooops!")) 
+
+
+// let re3 = /o?ps/  /// strange, isnt it?
+// console.log("?", re3.exec("ps")) 
+// console.log("?", re3.exec("o"))
+// console.log("?", re3.exec("ops")) 
+// console.log("?", re3.exec("ocps"))
+// console.log("?", re3.exec("He said: ooops!"))
+
+// let re1 = /ca|ut/
+// console.log("|: ", re1.exec("cattle")) 
+// console.log("|: ",re1.exec("haircut")) 
+// console.log("|: ",re1.exec("city")) 
+
+// let re2 = /c(a|u)t/
+// console.log("(|): ",re2.exec("cattle"))
+// console.log("(|): ",re2.exec("haircut")) 
+// console.log("(|): ",re2.exec("city"))
+
+// let re = /o{1,2}ps/ // repeats 'o' two or three times 
+// console.log(re.exec("He said: ops!")) 
+// console.log(re.exec("He said: ooops!")) 
+// console.log(re.exec("He said: ooooooooops!")) 
+
+// let re3 = /c[aiu]t/
+// console.log(re3.exec("cattle")) 
+// console.log(re3.exec("haircut")) 
+// console.log(re3.exec("city")) 
+
+// let re4 = /c[^au]t/
+// console.log(re4.exec("cattle")) 
+// console.log(re4.exec("haircut")) 
+// console.log(re4.exec("city"))
+
+// let re = /id\d+/
+// console.log(re.exec("My ids.")) 
+// console.log(re.exec("id60001"))
+
+// let re1 = /^(abc\s){3}$/
+// console.log(re1.exec("abc abc abc ")) 
+// console.log(re1.exec("abc abc abc one two three ")) 
+// console.log(re1.exec("abc abc abc abc ")) 
+// console.log(re1.exec("abc abcabc"))
+
+// let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+// console.log(emailRegex.exec("abc@gmail.com"))
+// console.log(emailRegex.exec("a@g.c"))
+// console.log(emailRegex.exec("ag.c"))
+// console.log(emailRegex.exec("a@gc"))
+
+// let getItem = function(array, index) 
+// {
+//     return (index > 0 < index < array.length) ? array[index] : undefined
+// //   let retVal = undefined
+// //   if(index > 0 && index < array.length) 
+// //   {
+// //     retVal = array[index]
+// //   }
+// //   return retVal
+// }
+// let array = [10, 20, 80, 100]
+// console.log(getItem(array, 2))
+// let getRandomItem = function (array) 
+// {
+//   return array[Math.floor(Math.random() * array.length)]
+// }
+// console.log(getRandomItem(array))
+// console.log(getRandomItem(array))
+
+// Array.prototype.getRandomItem = function ()
+// {
+//     return this[Math.floor(Math.random() * this.length)]
+// }
+// console.log(array.getRandomItem())
+// console.log(array.getRandomItem())
+// console.log(array.getRandomItem())
+
+// Async - Await
+// async function fetchData() 
+// {
+//   const response = await fetch('https://fake-json-api.mock.beeceptor.com/users')
+//   const data = await response.json()
+//   console.log(data)
+// }
+
+// console.log("This is the start:-------")
+// fetchData()
+// console.log("This is the End:---------")
+
+// function test(a = 3, b = 1, c = 4, d = 2) 
+// {
+//     console.log(`a: ${a}, b: ${b}, c: ${c}, d: ${d}`)
+// }
+// test()
+// test(100)
+// test(100, 200)
+// test(100, 200, 300)
+// test(100, 200, 300, 400)
+
+// function test(...args) 
+// {
+//     let msg = `length: ${args.length}, args:`
+//     args.forEach(arg => {msg += arg+","})
+//     console.log(msg)
+// }
+// test(100, 200, 300) // -> length: 3, args: 100 200 300
+// test(100)
+
+// function test(firstArg, ...anotherArgs) 
+// {
+//     let msg = `frist arg: ${firstArg}, length: ${anotherArgs.length}, args:`
+//     anotherArgs.forEach(arg => {msg += arg})
+//     console.log(msg)
+// }
+// test(100, 200, 300)
+// test(100)
+
+// function sum(...numbers) 
+// {
+//    return numbers.reduce((acc, curr) => acc + curr, 0)
+// }
+// console.log(sum(1, 2, 3, 4))
+
+// let point = 
+// {
+//   x: 100,
+//   y: 200,
+//   testThis: function() 
+//   {
+//     console.log(this)
+//   },
+//   show: function() 
+//   {
+//     console.log(`${this.x}:${this.y}`)
+//   }
+// }
+// point.testThis()
+// point.show()
+
+// "use strict"
+// function test() 
+// {
+//     console.log(this)
+// }
+// test()
+
+// function greet() 
+// {
+//   console.log(this.name)
+// }
+// let obj = { name: "nj" }
+// greet.call(obj)
+// greet()
+
+// 'use strict'
+// function showPoint(msg) 
+// {
+//   console.log(`${msg} [${this.x}:${this.y}]`)
+// }
+// showPoint("coordinates")
+
+// let point = 
+// {
+//   x: 100,
+//   y: 200
+// }
+// function showPoint(msg) 
+// {
+//   console.log(this)
+//   console.log(`${msg} [${this.x}:${this.y}] ${this.z}`)
+// }
+// showPoint.call(point, 'coordinates')
+// showPoint.apply(point, ['coordinates', 'hello'])
+
+// let point = 
+// {
+//     x: 100,
+//     y: 200
+// }
+
+// let point1 = 
+// {
+//     x: 1000,
+//     y: 2000
+// }
+
+// function showPoint(msg) 
+// {
+//     console.log(`${msg} [${this.x}:${this.y}]`)
+// }
+
+// let showCoordinates = showPoint.bind(point, 'coordinates')
+// let show = showPoint.bind(point)
+// showCoordinates()
+// showCoordinates('point')
+// show('point')
+// showPoint('test')
+
+// showCoordinates = showPoint.bind(point1, 'Hello Point')
+
+// showCoordinates()
+//Example 1
+// let car1 = { brand: 'Vw', color: 'blue' }
+// let car2 = { brand: 'Toyota', color: 'white' }
+// let returnCarBrand = function() 
+// {
+//     console.log('Car brand is ' + this.brand)
+// }
+// returnCarBrand.call(car1) // Car brand is Vw
+// returnCarBrand.call(car2) // Car brand is Toyota
+
+// //Example 2
+// function bookTitle(name, author) 
+// {
+//     console.log(name + 'is written by ' + author)
+//     console.log(this)
+// }
+
+// bookTitle.apply(['HTML & CSS: Design and Build Web Sites', 'Jon Duckett'])
+// let book = 
+// {
+//     author: 'Mary',
+//     getAuthor: function () 
+//     {
+//         return this.author
+//     }
+// }
+// let book2 = { author: 'John' }
+// let getAuthorcopy = book.getAuthor.bind(book2)
+// console.log(getAuthorcopy()) // John
+
+// //Example 3
+// function fullName(greet) 
+// {
+//   console.log(greet + " " + this.fristName + " " + this.lastName)
+// }
+// const person1 = 
+// {
+//     fristName : "Suman",
+//     lastName : "Sharma",
+// }
+// const person2 = 
+// {
+//     fristName : "ratan",
+//     lastName : "tata",
+// }
+// fullName.call(person1, "hello")
+// fullName.call(person2,"hii")
+// fullName.apply(person1, ["hello"])
+// fullName.apply(person2,["hii"])
+// const person1FullName = fullName.bind(person1)
+// const person2FullName = fullName.bind(person2)
+// console.log("execute some other code here")
+// person1FullName("hello")
+// person2FullName("hii")
+
+
+// let almostIterable = 
+// {
+//     data: [10, 30, 60, 20, 90],
+//     // iterator: function() 
+//     [Symbol.iterator]()
+//     {
+//         let index = -1
+//         let data = this.data
+//         return {
+//             next: function() 
+//             {
+//                 index++     //-1 -> 0 -> 1 -> 2 -> 3 -> 4 -> 5
+//                 return {
+//                     value: data.length === index ? undefined : data[index],
+//                     done: data.length === index
+//                 }
+//             }
+//         }
+//     }
+// }
+/*
+    obj = {data: [10, 20, 30.....]}
+    iterableObj = obj.iterator()
+    iterableObj.next()      => {value: 10, done: false}
+    iterableObj.next()      => {value: 30, done: false}
+    iterableObj.next()      => {value: 60, done: false}
+    iterableObj.next()      => {value: 20, done: false}
+    iterableObj.next()      => {value: 90, done: false}
+    iterableObj.next()      => {value: undefined, done: true}
+    iterableObj.next().done == true / false
+
+    let it = almostIterable.iterator()
+    console.log(it.next()) // -> {value: 10, done: false}
+    console.log(it.next())
+    console.log(it.next())
+    console.log(it.next())
+    console.log(it.next())
+    console.log(it.next())
+*/
+// for( let a of almostIterable ) 
+// { 
+//     console.log(a) 
+// }
+// console.log(...almostIterable) 
+// console.log([...almostIterable])
+
+
+// function* testGenerator() 
+// {
+//     yield 10    //
+//     yield 20    //
+//     yield 30
+// }
+
+// function* testGenerator() 
+// {
+//     for(let i=10; i<=30; i += 10) 
+//     {
+//         yield i
+//     }
+// }
+
+// function* testGenerator() 
+// {
+//     let data = [10, 20, 30]
+//     for(let element of data) 
+//     {
+//         yield element
+//     }
+// }
+
+// let gen = testGenerator()
+// console.log(gen.next()) // -> {value: 10, done: false}
+// console.log(gen.next()) // -> {value: 20, done: false}
+// console.log(gen.next()) // -> {value: 30, done: false}
+// console.log(gen.next())
+
+// let iterable = 
+// {
+//     data: [10, 30, 60, 20, 90],
+//     [Symbol.iterator]: function* () 
+//     {
+//         for(element of this.data) 
+//         {
+//             yield element
+//         }
+//     }
+// }
+
+// let it = iterable[Symbol.iterator]()
+// console.log(it.next())
+// console.log(it.next())
+
+// for( a of iterable ) 
+// {
+//   console.log(a)
+// }
+// console.log(...iterable)
+// console.log([...iterable])
+
+// let factorialGenerator = function* (range = Infinity) 
+// {
+//     let last = 1
+//     for(let index = 1; index <= range; index++)
+//     {
+//         last *= index
+//         yield last
+//     }
+// }
+// let factorial = factorialGenerator()
+// console.log(factorial.next()) // -> {value: 1, done: false}
+// console.log(factorial.next()) // -> {value: 2, done: false}
+// console.log(factorial.next()) // -> {value: 6, done: false}
+// console.log(factorial.next()) // -> {value: undefined, done: true}
+// console.log(factorial.next())
+// console.log(factorial.next())
+// console.log(factorial.next())
+// console.log(factorial.next())
+// console.log(factorial.next())
+
+
+// class Factorial 
+// {
+//     constructor(range = Infinity) 
+//     {
+//       this.range = range
+//     }
+//     [Symbol.iterator] = function* ()
+//     {
+//       let last = 1
+//       for(let index = 1; index <= this.range; index++)
+//       {
+//          last *= index
+//          yield last
+//       }        
+//    }
+// }
+// let factorial = new Factorial(5)
+// console.log([...factorial]) // -> [1, 2, 6, 24, 120]
+// let it = factorial[Symbol.iterator]()
+// console.log(it.next().value) // -> 1
+// console.log(it.next().value) // -> 2
+// console.log(it.next().value)
+// console.log(it.next().value)
+// console.log(it.next().value)
+// console.log(it.next().value)
+
+
+// function* fibonacci()
+// {
+//     let lastButOne = 0, last = 1
+//     yield lastButOne
+//     yield last
+//     for(let i=1; i<=range; i++) 
+//     {
+//         let tmp = lastButOne + last
+//         lastButOne = last
+//         last = tmp
+//         yield last
+//     }
+// }
+// let fibIt1 = fibonacci(10)
+// console.log([...fibIt1])
+// let fibIt2 = fibonacci()
+// console.log(fibIt2.next().value)
+// console.log(fibIt2.next().value)
+// console.log(fibIt2.next().value)
+// console.log(fibIt2.next().value)
+// let fibIt3 = fibonacci(5)
+// for( let f of fibIt3) 
+// {
+//   console.log(f)
+// }
+
+// let p = new Promise((resolve, reject) => 
+// {
+//     resolve("This operation was successful!")
+//     // reject("This is the error")
+// })
+
+// p
+//     .then((message) => {        //Success - resolve
+//         console.log(message); 
+//     })
+//     .catch((error)=>{         //failure - reject
+//         console.log(error)
+//     })
+
+let p = new Promise((resolve, reject) => 
+{
+    let value = Math.floor(Math.random() * 4)
+    if (value === 0) 
+    {
+        reject(new Error('!!!'))
+    } 
+    else 
+    {
+        setTimeout(() => 
+        {
+            resolve(value)
+        }, value * 1000)
+    }
+})
+
+p.then((message)=>{
+    console.log("Success message: ", message)
+})
+.catch((error)=>{
+    console.log("Error message: ", error)
+})
