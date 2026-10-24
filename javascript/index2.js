@@ -3079,3 +3079,11 @@ function sub(a,b)
 
 sub(8,5)
 
+function mul(a,b)
+{
+    console.log(a*b)
+}
+
+mul(8,5)
+
+
