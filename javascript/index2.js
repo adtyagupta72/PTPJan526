@@ -3063,4 +3063,11 @@ let contact =
 //     console.log(message)
 // }
 // }
-console.log("abc")
+// console.log("abc")
+
+function sum(a,b)
+{
+    console.log(a+b)
+}
+
+sum(8,5)
