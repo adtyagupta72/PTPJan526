@@ -3071,3 +3071,11 @@ function sum(a,b)
 }
 
 sum(8,5)
+
+function sub(a,b)
+{
+    console.log(a-b)
+}
+
+sub(8,5)
+
