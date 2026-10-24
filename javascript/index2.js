@@ -3049,17 +3049,18 @@ let contact =
 
 
 
-let p = new Promise ((resolve,reject)
-=>
-{
-    resolve("this is success call")
-    // reject("this is eroor")
-})
+// let p = new Promise ((resolve,reject)
+// =>
+// {
+//     resolve("this is success call")
+//     // reject("this is eroor")
+// })
 
-p.then((message)) =>{
+// p.then((message)) =>{
 
 
-{
-    console.log(message)
-}
-}
+// {
+//     console.log(message)
+// }
+// }
+console.log("abc")
