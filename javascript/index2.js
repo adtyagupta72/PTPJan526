@@ -3065,25 +3065,43 @@ let contact =
 // }
 // console.log("abc")
 
-function sum(a,b)
+// function sum(a,b)
+// {
+//     console.log(a+b)
+// }
+
+// sum(8,5)
+
+// function sub(a,b)
+// {
+//     console.log(a-b)
+// }
+
+// sub(8,5)
+
+// function mul(a,b)
+// {
+//     console.log(a*b)
+// }
+
+// mul(8,
+
+
+let inner = function()
 {
-    console.log(a+b)
+    console.log("inner")
 }
 
-sum(8,5)
-
-function sub(a,b)
+let outer = function(a)
 {
-    console.log(a-b)
+    console.log("outer1")
+    a()
+    console.log("outer2")
 }
 
-sub(8,5)
+console.log("test1")
+outer(inner)
+console.log("test1")
 
-function mul(a,b)
-{
-    console.log(a*b)
-}
-
-mul(8,5)
 
 
