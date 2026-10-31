@@ -3104,18 +3104,20 @@ let contact =
 // console.log("test1")
 
 
-function inner()
-{
-    console.log("This is inner")
-}
+// function inner()
+// {
+//     console.log("This is inner")
+// }
 
-function outer(callback)
-{
-    console.log("outer1")
-    callback()
-    console.log("outer2")
+// function outer(callback)
+// {
+//     console.log("outer1")
+//     callback()
+//     console.log("outer2")
 
-}
+// }
+
+
 
 console.log("test start")
 outer(inner)
@@ -3130,4 +3132,8 @@ function factorial(n)
     return n > 0 ? n * factorial(n-1):1;
 }
 console.log(factorial(6));
+
+console.log("-------------")
+
+
 
