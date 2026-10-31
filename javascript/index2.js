@@ -3087,21 +3087,38 @@ let contact =
 // mul(8,
 
 
-let inner = function()
+// let inner = function()
+// {
+//     console.log("inner")
+// }
+
+// let outer = function(a)
+// {
+//     console.log("outer1")
+//     a()
+//     console.log("outer2")
+// }
+
+// console.log("test1")
+// outer(inner)
+// console.log("test1")
+
+
+function inner()
 {
-    console.log("inner")
+    console.log("This is inner")
 }
 
-let outer = function(a)
+function outer(callback)
 {
     console.log("outer1")
-    a()
+    callback()
     console.log("outer2")
+
 }
 
-console.log("test1")
+console.log("test start")
 outer(inner)
-console.log("test1")
-
+console.log("test end")
 
 
