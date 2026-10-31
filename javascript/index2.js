@@ -3104,19 +3104,21 @@ let contact =
 // console.log("test1")
 
 
-// function inner()
-// {
-//     console.log("This is inner")
-// }
+//
 
-// function outer(callback)
-// {
-//     console.log("outer1")
-//     callback()
-//     console.log("outer2")
 
-// }
+ function inner()
+{
+    console.log("This is inner")
+}
 
+function outer(callback)
+{
+    console.log("outer1")
+    callback()
+    console.log("outer2")
+
+}
 
 
 console.log("test start")
@@ -3124,16 +3126,16 @@ outer(inner)
 console.log("test end")
 
 
-console.log("-------------")
-console.log("Recursion")
+// console.log("-------------")
+// console.log("Recursion")
 
-function factorial(n)
-{
-    return n > 0 ? n * factorial(n-1):1;
-}
-console.log(factorial(6));
+// function factorial(n)
+// {
+//     return n > 0 ? n * factorial(n-1):1;
+// }
+// console.log(factorial(6));
 
-console.log("-------------")
+// console.log("-------------")
 
 
 
