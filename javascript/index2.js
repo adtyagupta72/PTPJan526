@@ -3170,12 +3170,26 @@ let contact =
 
 // console.log(typeof newObj.id)
 
-console.log(typeof console.log)
+// console.log(typeof console.log)
+
+// let contact1 = 
+// {
+//     tel: "207-662-5412",
+//     email: "RonaldSMurphy@freepost.org"
+// }
+// console.log(contact1)
+// console.log(contact1.tel)
 
 let contact1 = 
 {
-    tel: "207-662-5412",
-    email: "RonaldSMurphy@freepost.org"
+    email_1 : "zee@gmail.com",
+    email_2 : "shah@gmail.com"
 }
-console.log(contact1)
-console.log(contact1.tel)
+
+for(let i = 1 ; i<=2;i++)
+{
+    let key = "email_" + i
+    console.log(key)
+    console.log(contact1[key])
+}
+
