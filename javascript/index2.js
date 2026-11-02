@@ -3107,35 +3107,65 @@ let contact =
 //
 
 
- function inner()
+//  function inner()
+// {
+//     console.log("This is inner")
+// }
+
+// function outer(callback)
+// {
+//     console.log("outer1")
+//     callback()
+//     console.log("outer2")
+
+// }
+
+
+// console.log("test start")
+// outer(inner)
+// console.log("test end")
+
+
+// console.log("-------------")
+// console.log("Recursion")
+
+// function factorial(n)
+// {
+//     return n > 0 ? n * factorial(n-1):1;
+// }
+// console.log(factorial(6));
+
+// console.log("-------------")
+
+
+// let a = [10, 20, "en to tre", true, 50]
+// a[4] = a[4] * 2
+// console.log(a[0])  
+// console.log(a[2])  
+// console.log(a[4])
+
+
+let sampleObject = 
 {
-    console.log("This is inner")
+    id: 10, 
+    delay: 20,
+    name: "en to tre",
+    isPresent: true,
+    delay: 50
+}
+sampleObject.delay = sampleObject.delay * 2
+console.log(sampleObject.id)   
+console.log(sampleObject.name) 
+console.log(sampleObject.delay)  
+
+let newObj = 
+{
+    id:2345,
+    name:"zeeshan",
+    course :"3rd year"
+
 }
 
-function outer(callback)
-{
-    console.log("outer1")
-    callback()
-    console.log("outer2")
+// newObj.id = 67
 
-}
-
-
-console.log("test start")
-outer(inner)
-console.log("test end")
-
-
-console.log("-------------")
-console.log("Recursion")
-
-function factorial(n)
-{
-    return n > 0 ? n * factorial(n-1):1;
-}
-console.log(factorial(6));
-
-console.log("-------------")
-
-
-
+console.log(typeof newObj.id)
