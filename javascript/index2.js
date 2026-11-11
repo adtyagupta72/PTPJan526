@@ -3195,15 +3195,29 @@ let contact =
 
 
 
-function perfectSquare(n)
+
+
+
+
+function factoryFunc(name , age , no)
 {
-    let sqrt = Math.sqrt(n)
-    if(sqrt%1 === 0)
-    {
-        console.log("its a perfect square")
-    }
-    else{
-        console.log("Not a perfect square")
+    return{
+        name:name,
+        age:age,
+        number:no
     }
 }
-perfectSquare(81/9)
+
+console.log(factoryFunc("Zeeshan", 21, 80906242243))
+
+ 
+
+function getdet(name)
+{
+    return {
+        name:name
+    }
+}
+
+name1 = getdet("Zeeshan")
+console.log(name1)
