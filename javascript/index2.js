@@ -3180,16 +3180,30 @@ let contact =
 // console.log(contact1)
 // console.log(contact1.tel)
 
-let contact1 = 
-{
-    email_1 : "zee@gmail.com",
-    email_2 : "shah@gmail.com"
-}
+// let contact1 = 
+// {
+//     email_1 : "zee@gmail.com",
+//     email_2 : "shah@gmail.com"
+// }
 
-for(let i = 1 ; i<=2;i++)
-{
-    let key = "email_" + i
-    console.log(key)
-    console.log(contact1[key])
-}
+// for(let i = 1 ; i<=2;i++)
+// {
+//     let key = "email_" + i
+//     console.log(key)
+//     console.log(contact1[key])
+// }
 
+
+
+function perfectSquare(n)
+{
+    let sqrt = Math.sqrt(n)
+    if(sqrt%1 === 0)
+    {
+        console.log("its a perfect square")
+    }
+    else{
+        console.log("Not a perfect square")
+    }
+}
+perfectSquare(81/9)
