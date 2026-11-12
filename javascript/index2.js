@@ -3199,25 +3199,49 @@ let contact =
 
 
 
-function factoryFunc(name , age , no)
-{
-    return{
-        name:name,
-        age:age,
-        number:no
-    }
-}
+// function factoryFunc(name , age , no)
+// {
+//     return{
+//         name:name,
+//         age:age,
+//         number:no
+//     }
+// }
 
-console.log(factoryFunc("Zeeshan", 21, 80906242243))
+// console.log(factoryFunc("Zeeshan", 21, 80906242243))
 
  
 
-function getdet(name)
-{
-    return {
-        name:name
-    }
-}
+// function getdet(name)
+// {
+//     return {
+//         name:name
+//     }
+// }
 
-name1 = getdet("Zeeshan")
-console.log(name1)
+// name1 = getdet("Zeeshan")
+// console.log(name1)
+
+
+//while loop
+
+// let j = 1;
+// while(j<=20)
+// {
+
+//     console.log(j)
+//     j++
+// }
+
+let j = 1;
+while(j<=20)
+{
+    if(j==10)
+    {
+        j++
+        continue;
+    }
+
+    console.log(j)
+    j++
+}

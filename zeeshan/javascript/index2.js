@@ -2417,9 +2417,3 @@ let contact =
 // date.setHours(12)
 // console.log(date.getHours())
 
-"use strict"
-function test()
-{
-    console.log(this)
-}
-test()
