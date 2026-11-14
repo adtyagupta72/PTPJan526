@@ -3247,15 +3247,31 @@ while(j<=20)
 }
 
 
-let n =0;
-while(n<=10)
-{
-    if(n==5)
-    {
-        n++
-        continue;
-    }
-    console.log(n)
-    n++
-}
+// let n =0;
+// while(n<=10)
+// {
+//     if(n==5)
+//     {
+//         n++
+//         continue;
+//     }
+//     console.log(n)
+//     n++
+// }
+
+// let n = 5 ;
+// do{
+//     console.log(n)
+//     n++
+// }
+// while(n<5)
+
+// let arr = [20,30,10,70]
+// let sum = 0;
+// for(let i = 0 ; i< arr.length; i++)
+// {
+//     sum += arr[i]
+// }
+
+// console.log("the sum :", sum )
 
