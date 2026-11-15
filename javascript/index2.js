@@ -3284,11 +3284,44 @@ let contact =
 // }
 
 // console.log(sum)
-let n = 7;
-console.log(`Table of ${n}`)
+// let n = 7;
+// console.log(`Table of ${n}`)
 
-for (let i = 1;i<=10;i++)
+// for (let i = 1;i<=10;i++)
+// {
+//     // console.log(n, "X", i, "=", n*i)
+//     console.log(`${n} X ${i} =  ${n*i}`)
+// }
+
+// let array = [1,3,2,6,4,22,3,9,23,43]
+// let evenCount = 0;
+// let oddCount = 0;
+// for(let i=0; i<array.length; i++)
+// {
+//     if(array[i]%2===0){
+//         evenCount++
+//     }
+//     else{
+//         oddCount++
+//     }
+// }
+
+// console.log(evenCount)
+
+// console.log(oddCount)
+
+
+let array = [1,3,2,6,4,22,3,9,23,43]
+let evenCount =0;
+let oddCount = 0;
+for(let i=0; i<array.length; i++)
 {
-    // console.log(n, "X", i, "=", n*i)
-    console.log(`${n} X ${i} =  ${n*i}`)
+    if(array[i]%2!==0){
+        oddCount++
+    }
+    else{
+        evenCount++
+    }
 }
+console.log(oddCount)
+console.log(evenCount)
