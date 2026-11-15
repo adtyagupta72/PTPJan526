@@ -3327,19 +3327,32 @@ let contact =
 // console.log(evenCount)
 
 
-let array = [2,3,4,6,1]
-let evenSum = 0;
-let oddSum = 0;
-for(let i=0; i<array.length; i++)
+// let array = [2,3,4,6,1]
+// let evenSum = 0;
+// let oddSum = 0;
+// for(let i=0; i<array.length; i++)
+// {
+//     if(array[i]%2===0){
+//         evenSum += array[i]
+//     }
+//     else{
+//         oddSum += array[i]
+//     }
+// }
+
+// console.log(evenSum)
+
+// console.log(oddSum)
+
+
+// let fruits =["star fruit", "custurd apple ", "jujube", "mulberry", "waterchestnut"]
+// for(let i = fruits.length-1;i>=0;i--)
+// {
+//     console.log(fruits[i])
+// }
+
+let fruits =["star fruit", "custurd apple ", "jujube", "mulberry", "waterchestnut"]
+for(let fruit in fruits)
 {
-    if(array[i]%2===0){
-        evenSum += array[i]
-    }
-    else{
-        oddSum += array[i]
-    }
+    console.log(fruits[fruit])
 }
-
-console.log(evenSum)
-
-console.log(oddSum)
