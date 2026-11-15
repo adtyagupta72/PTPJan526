@@ -3233,18 +3233,18 @@ let contact =
 //     j++
 // }
 
-let j = 1;
-while(j<=20)
-{
-    if(j==10)
-    {
-        j++
-        continue;
-    }
+// let j = 1;
+// while(j<=20)
+// {
+//     if(j==10)
+//     {
+//         j++
+//         continue;
+//     }
 
-    console.log(j)
-    j++
-}
+//     console.log(j)
+//     j++
+// }
 
 
 // let n =0;
@@ -3275,3 +3275,20 @@ while(j<=20)
 
 // console.log("the sum :", sum )
 
+// let array = [2,3,10,5,6,5,66]
+// let sum =0
+// for(let i = 0;i<array.length;i++)
+// {
+//     sum += array[i]
+
+// }
+
+// console.log(sum)
+let n = 7;
+console.log(`Table of ${n}`)
+
+for (let i = 1;i<=10;i++)
+{
+    // console.log(n, "X", i, "=", n*i)
+    console.log(`${n} X ${i} =  ${n*i}`)
+}
