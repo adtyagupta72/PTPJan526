@@ -3311,17 +3311,35 @@ let contact =
 // console.log(oddCount)
 
 
-let array = [1,3,2,6,4,22,3,9,23,43]
-let evenCount =0;
-let oddCount = 0;
+// let array = [1,3,2,6,4,22,3,9,23,43]
+// let evenCount =0;
+// let oddCount = 0;
+// for(let i=0; i<array.length; i++)
+// {
+//     if(array[i]%2!==0){
+//         oddCount++
+//     }
+//     else{
+//         evenCount++
+//     }
+// }
+// console.log(oddCount)
+// console.log(evenCount)
+
+
+let array = [2,3,4,6,1]
+let evenSum = 0;
+let oddSum = 0;
 for(let i=0; i<array.length; i++)
 {
-    if(array[i]%2!==0){
-        oddCount++
+    if(array[i]%2===0){
+        evenSum += array[i]
     }
     else{
-        evenCount++
+        oddSum += array[i]
     }
 }
-console.log(oddCount)
-console.log(evenCount)
+
+console.log(evenSum)
+
+console.log(oddSum)
