@@ -3275,74 +3275,74 @@ let contact =
 
 // console.log("the sum :", sum )
 
-// let array = [2,3,10,5,6,5,66]
-// let sum =0
-// for(let i = 0;i<array.length;i++)
-// {
-//     sum += array[i]
+let array = [2,3,10,5,6,5,66]
+let sum =0
+for(let i = 0;i<array.length;i++)
+{
+    sum += array[i]
 
-// }
+}
 
-// console.log(sum)
-// let n = 7;
-// console.log(`Table of ${n}`)
+console.log(sum)
+let n = 7;
+console.log(`Table of ${n}`)
 
-// for (let i = 1;i<=10;i++)
-// {
-//     // console.log(n, "X", i, "=", n*i)
-//     console.log(`${n} X ${i} =  ${n*i}`)
-// }
-
-// let array = [1,3,2,6,4,22,3,9,23,43]
-// let evenCount = 0;
-// let oddCount = 0;
-// for(let i=0; i<array.length; i++)
-// {
-//     if(array[i]%2===0){
-//         evenCount++
-//     }
-//     else{
-//         oddCount++
-//     }
-// }
-
-// console.log(evenCount)
-
-// console.log(oddCount)
-
+for (let i = 1;i<=10;i++)
+{
+    // console.log(n, "X", i, "=", n*i)
+    console.log(`${n} X ${i} =  ${n*i}`)
+}
 
 let array = [1,3,2,6,4,22,3,9,23,43]
-let evenCount =0;
+let evenCount = 0;
 let oddCount = 0;
 for(let i=0; i<array.length; i++)
 {
-    if(array[i]%2!==0){
-        oddCount++
-    }
-    else{
+    if(array[i]%2===0){
         evenCount++
     }
+    else{
+        oddCount++
+    }
 }
-console.log(oddCount)
+
 console.log(evenCount)
 
+console.log(oddCount)
 
-// let array = [2,3,4,6,1]
-let evenSum = 0;
-let oddSum = 0;
-for(let i=0; i<array.length; i++)
-{
-    if(array[i]%2===0){
-        evenSum += array[i]
-    }
-    else{
-        oddSum += array[i]
-    }
-}
 
-console.log(evenSum)
+// let array = [1,3,2,6,4,22,3,9,23,43]
+// let evenCount =0;
+// let oddCount = 0;
+// for(let i=0; i<array.length; i++)
+// {
+//     if(array[i]%2!==0){
+//         oddCount++
+//     }
+//     else{
+//         evenCount++
+//     }
+// }
+// console.log(oddCount)
+// console.log(evenCount)
 
-console.log(oddSum)
+
+// // let array = [2,3,4,6,1]
+// let evenSum = 0;
+// let oddSum = 0;
+// for(let i=0; i<array.length; i++)
+// {
+//     if(array[i]%2===0){
+//         evenSum += array[i]
+//     }
+//     else{
+//         oddSum += array[i]
+//     }
+// }
+
+// console.log(evenSum)
+
+// console.log(oddSum)
 
 
 // let fruits =["star fruit", "custurd apple ", "jujube", "mulberry", "waterchestnut"]
@@ -3376,18 +3376,18 @@ console.log(oddSum)
 // console.log(sum)
 
 
-let array =[0,10,20,30,40, 50, 60 , 70 , 80 ,90 , 100]
-for(let i = 0 ; i<=array.length;i+= 2)
-{
-    console.log(array[i])
-}
-for(let i=array.length-1; i>=0 ;i--)
-{
-    console.log(array[i])
-}
+// let array =[0,10,20,30,40, 50, 60 , 70 , 80 ,90 , 100]
+// for(let i = 0 ; i<=array.length;i+= 2)
+// {
+//     console.log(array[i])
+// }
+// for(let i=array.length-1; i>=0 ;i--)
+// {
+//     console.log(array[i])
+// }
 
- let fruits =["star fruit", "custurd apple ", "jujube", "mulberry", "waterchestnut"]
-for(let fruit in fruits)
-{
-    console.log(fruits[fruit])
-}
+//  let fruits =["star fruit", "custurd apple ", "jujube", "mulberry", "waterchestnut"]
+// for(let fruit in fruits)
+// {
+//     console.log(fruits[fruit])
+// }
