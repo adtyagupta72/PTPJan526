@@ -3199,28 +3199,28 @@ let contact =
 
 
 
-// function factoryFunc(name , age , no)
-// {
-//     return{
-//         name:name,
-//         age:age,
-//         number:no
-//     }
-// }
+function factoryFunc(name , age , no)
+{
+    return{
+        name:name,
+        age:age,
+        number:no
+    }
+}
 
-// console.log(factoryFunc("Zeeshan", 21, 80906242243))
+console.log(factoryFunc("Zeeshan", 21, 80906242243))
 
  
 
-// function getdet(name)
-// {
-//     return {
-//         name:name
-//     }
-// }
+function getdet(name)
+{
+    return {
+        name:name
+    }
+}
 
-// name1 = getdet("Zeeshan")
-// console.log(name1)
+name1 = getdet("Zeeshan")
+console.log(name1)
 
 
 //while loop
@@ -3233,47 +3233,47 @@ let contact =
 //     j++
 // }
 
-let j = 1;
-while(j<=20)
-{
-    if(j==10)
-    {
-        j++
-        continue;
-    }
+// let j = 1;
+// while(j<=20)
+// {
+//     if(j==10)
+//     {
+//         j++
+//         continue;
+//     }
 
-    console.log(j)
-    j++
-}
+//     console.log(j)
+//     j++
+// }
 
 
-let n =0;
-while(n<=10)
-{
-    if(n==5)
-    {
-        n++
-        continue;
-    }
-    console.log(n)
-    n++
-}
+// let n =0;
+// while(n<=10)
+// {
+//     if(n==5)
+//     {
+//         n++
+//         continue;
+//     }
+//     console.log(n)
+//     n++
+// }
 
-let n = 5 ;
-do{
-    console.log(n)
-    n++
-}
-while(n<5)
+// let n = 5 ;
+// do{
+//     console.log(n)
+//     n++
+// }
+// while(n<5)
 
-let arr = [20,30,10,70]
-let sum = 0;
-for(let i = 0 ; i< arr.length; i++)
-{
-    sum += arr[i]
-}
+// let arr = [20,30,10,70]
+// let sum = 0;
+// for(let i = 0 ; i< arr.length; i++)
+// {
+//     sum += arr[i]
+// }
 
-console.log("the sum :", sum )
+// console.log("the sum :", sum )
 
 // let array = [2,3,10,5,6,5,66]
 // let sum =0
