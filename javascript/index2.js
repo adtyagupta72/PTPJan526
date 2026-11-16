@@ -3367,3 +3367,10 @@ let contact =
 //     console.log(array[i])
 // }
 
+let array = [4,5,6,7,3,43]
+let sum = 0;
+for(let i = 0 ; i < array.length;i++)
+{
+    sum += array[i];
+}
+console.log(sum)
