@@ -3367,10 +3367,27 @@ let contact =
 //     console.log(array[i])
 // }
 
-let array = [4,5,6,7,3,43]
-let sum = 0;
-for(let i = 0 ; i < array.length;i++)
+// let array = [4,5,6,7,3,43]
+// let sum = 0;
+// for(let i = 0 ; i < array.length;i++)
+// {
+//     sum += array[i];
+// }
+// console.log(sum)
+
+
+let array =[0,10,20,30,40, 50, 60 , 70 , 80 ,90 , 100]
+for(let i = 0 ; i<=array.length;i+= 2)
 {
-    sum += array[i];
+    console.log(array[i])
 }
-console.log(sum)
+for(let i=array.length-1; i>=0 ;i--)
+{
+    console.log(array[i])
+}
+
+ let fruits =["star fruit", "custurd apple ", "jujube", "mulberry", "waterchestnut"]
+for(let fruit in fruits)
+{
+    console.log(fruits[fruit])
+}
