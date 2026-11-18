@@ -3395,14 +3395,39 @@ let contact =
 // }
 
 
-class Customer{
-    constructor(name,age)
-    {
-        this.name = name ;
-        this.pincode = age;
-    }
+// class Customer{
+//     constructor(name,age)
+//     {
+//         this.name = name ;
+//         this.pincode = age;
+//     }
 
+// }
+
+// let Customer1 = new Customer("Zeeshan", 21)
+// console.log(Customer1)
+
+// class Customer{
+//     constructor(name,age)
+//     {
+//         this.name = name ;
+//         this.pincode = age;
+//     }
+
+// }
+
+// let Customer1 = new Customer("Zeeshan", 21)
+// console.log(Customer1)
+
+class Vehicle
+{
+    constructor(model , years)
+    {
+        this.Modal = model;
+        this.year = years ;
+    }
 }
 
-let Customer1 = new Customer("Zeeshan", 21)
-console.log(Customer1)
+let automobile = new Vehicle(3421,2005)
+
+console.log(automobile)
