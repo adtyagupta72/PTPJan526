@@ -3199,28 +3199,30 @@ let contact =
 
 
 
-function factoryFunc(name , age , no)
-{
-    return{
-        name:name,
-        age:age,
-        number:no
-    }
-}
 
-console.log(factoryFunc("Zeeshan", 21, 80906242243))
+
+// function factoryFunc(name , age , no)
+// {
+//     return{
+//         name:name,
+//         age:age,
+//         number:no
+//     }
+// }
+
+// console.log(factoryFunc("Zeeshan", 21, 80906242243))
 
  
 
-function getdet(name)
-{
-    return {
-        name:name
-    }
-}
+// function getdet(name)
+// {
+//     return {
+//         name:name
+//     }
+// }
 
-name1 = getdet("Zeeshan")
-console.log(name1)
+// name1 = getdet("Zeeshan")
+// console.log(name1)
 
 
 //while loop
@@ -3391,3 +3393,16 @@ console.log(name1)
 // {
 //     console.log(fruits[fruit])
 // }
+
+
+class Customer{
+    constructor(name,age)
+    {
+        this.name = name ;
+        this.pincode = age;
+    }
+
+}
+
+let Customer1 = new Customer("Zeeshan", 21)
+console.log(Customer1)
