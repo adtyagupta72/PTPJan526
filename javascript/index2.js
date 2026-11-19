@@ -3395,58 +3395,58 @@ let contact =
 // }
 
 
-// class Customer{
-//     constructor(name,age)
-//     {
-//         this.name = name ;
-//         this.pincode = age;
-//     }
-
-// }
-
-// let Customer1 = new Customer("Zeeshan", 21)
-// console.log(Customer1)
-
-// class Customer{
-//     constructor(name,age)
-//     {
-//         this.name = name ;
-//         this.pincode = age;
-//     }
-
-// }
-
-// let Customer1 = new Customer("Zeeshan", 21)
-// console.log(Customer1)
-
-// class Vehicle
-// {
-//     constructor(model , years)
-//     {
-//         this.Modal = model;
-//         this.year = years ;
-//     }
-// }
-
-// let automobile = new Vehicle(3421,2005)
-
-// console.log(automobile)
-
-class Student 
-{
-    constructor(n , a , c , g , caste)
+class Customer{
+    constructor(name,age)
     {
-        this.Name = n;
-        this.Age = a;
-        this.Class = c;
-        this.gender = g ;
-        this.caste = caste;
+        this.name = name ;
+        this.pincode = age;
+    }
+
+}
+
+let Customer1 = new Customer("Zeeshan", 21)
+console.log(Customer1)
+
+class Customer{
+    constructor(name,age)
+    {
+        this.name = name ;
+        this.pincode = age;
+    }
+
+}
+
+let Customer1 = new Customer("Zeeshan", 21)
+console.log(Customer1)
+
+class Vehicle
+{
+    constructor(model , years)
+    {
+        this.Modal = model;
+        this.year = years ;
     }
 }
-let student1 = new Student("Zeeshna", 21 , "bca" , "male", "obc") 
-let student2 = new Student("Nirbhay", 20 , "bcom" , "male", "gen") 
-let student3 = new Student("Amit", 19 , "bba" , "male", "gen") 
 
-console.log(student2.caste)
+let automobile = new Vehicle(3421,2005)
+
+console.log(automobile)
+
+// class Student 
+// {
+//     constructor(n , a , c , g , caste)
+//     {
+//         this.Name = n;
+//         this.Age = a;
+//         this.Class = c;
+//         this.gender = g ;
+//         this.caste = caste;
+//     }
+// }
+// let student1 = new Student("Zeeshna", 21 , "bca" , "male", "obc") 
+// let student2 = new Student("Nirbhay", 20 , "bcom" , "male", "gen") 
+// let student3 = new Student("Amit", 19 , "bba" , "male", "gen") 
+
+// console.log(student2.caste)
 
 
