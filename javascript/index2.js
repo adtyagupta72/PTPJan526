@@ -3153,47 +3153,45 @@ let contact =
 //     isPresent: true,
 //     delay: 50
 // }
-// sampleObject.delay = sampleObject.delay * 2
-// console.log(sampleObject.id)   
-// console.log(sampleObject.name) 
-// console.log(sampleObject.delay)  
+sampleObject.delay = sampleObject.delay * 2
+console.log(sampleObject.id)   
+console.log(sampleObject.name) 
+console.log(sampleObject.delay)  
 
-// let newObj = 
-// {
-//     id:2345,
-//     name:"zeeshan",
-//     course :"3rd year"
+let newObj = 
+{
+    id:2345,
+    name:"zeeshan",
+    course :"3rd year"
 
-// }
+}
 
-// newObj.id = 67
+newObj.id = 67
 
-// console.log(typeof newObj.id)
+console.log(typeof newObj.id)
 
-// console.log(typeof console.log)
+console.log(typeof console.log)
 
-// let contact1 = 
-// {
-//     tel: "207-662-5412",
-//     email: "RonaldSMurphy@freepost.org"
-// }
-// console.log(contact1)
-// console.log(contact1.tel)
+let contact1 = 
+{
+    tel: "207-662-5412",
+    email: "RonaldSMurphy@freepost.org"
+}
+console.log(contact1)
+console.log(contact1.tel)
 
-// let contact1 = 
-// {
-//     email_1 : "zee@gmail.com",
-//     email_2 : "shah@gmail.com"
-// }
+let contact1 = 
+{
+    email_1 : "zee@gmail.com",
+    email_2 : "shah@gmail.com"
+}
 
-// for(let i = 1 ; i<=2;i++)
-// {
-//     let key = "email_" + i
-//     console.log(key)
-//     console.log(contact1[key])
-// }
-
-
+for(let i = 1 ; i<=2;i++)
+{
+    let key = "email_" + i
+    console.log(key)
+    console.log(contact1[key])
+}
 
 
 
@@ -3201,150 +3199,152 @@ let contact =
 
 
 
-// function factoryFunc(name , age , no)
-// {
-//     return{
-//         name:name,
-//         age:age,
-//         number:no
-//     }
-// }
 
-// console.log(factoryFunc("Zeeshan", 21, 80906242243))
+
+function factoryFunc(name , age , no)
+{
+    return{
+        name:name,
+        age:age,
+        number:no
+    }
+}
+
+console.log(factoryFunc("Zeeshan", 21, 80906242243))
 
  
 
-// function getdet(name)
-// {
-//     return {
-//         name:name
-//     }
-// }
+function getdet(name)
+{
+    return {
+        name:name
+    }
+}
 
-// name1 = getdet("Zeeshan")
-// console.log(name1)
-
-
-//while loop
-
-// let j = 1;
-// while(j<=20)
-// {
-
-//     console.log(j)
-//     j++
-// }
-
-// let j = 1;
-// while(j<=20)
-// {
-//     if(j==10)
-//     {
-//         j++
-//         continue;
-//     }
-
-//     console.log(j)
-//     j++
-// }
+name1 = getdet("Zeeshan")
+console.log(name1)
 
 
-// let n =0;
-// while(n<=10)
-// {
-//     if(n==5)
-//     {
-//         n++
-//         continue;
-//     }
-//     console.log(n)
-//     n++
-// }
+while loop
 
-// let n = 5 ;
-// do{
-//     console.log(n)
-//     n++
-// }
-// while(n<5)
+let j = 1;
+while(j<=20)
+{
 
-// let arr = [20,30,10,70]
-// let sum = 0;
-// for(let i = 0 ; i< arr.length; i++)
-// {
-//     sum += arr[i]
-// }
+    console.log(j)
+    j++
+}
 
-// console.log("the sum :", sum )
+let j = 1;
+while(j<=20)
+{
+    if(j==10)
+    {
+        j++
+        continue;
+    }
 
-// let array = [2,3,10,5,6,5,66]
-// let sum =0
-// for(let i = 0;i<array.length;i++)
-// {
-//     sum += array[i]
-
-// }
-
-// console.log(sum)
-// let n = 7;
-// console.log(`Table of ${n}`)
-
-// for (let i = 1;i<=10;i++)
-// {
-//     // console.log(n, "X", i, "=", n*i)
-//     console.log(`${n} X ${i} =  ${n*i}`)
-// }
-
-// let array = [1,3,2,6,4,22,3,9,23,43]
-// let evenCount = 0;
-// let oddCount = 0;
-// for(let i=0; i<array.length; i++)
-// {
-//     if(array[i]%2===0){
-//         evenCount++
-//     }
-//     else{
-//         oddCount++
-//     }
-// }
-
-// console.log(evenCount)
-
-// console.log(oddCount)
+    console.log(j)
+    j++
+}
 
 
-// let array = [1,3,2,6,4,22,3,9,23,43]
-// let evenCount =0;
-// let oddCount = 0;
-// for(let i=0; i<array.length; i++)
-// {
-//     if(array[i]%2!==0){
-//         oddCount++
-//     }
-//     else{
-//         evenCount++
-//     }
-// }
-// console.log(oddCount)
-// console.log(evenCount)
+let n =0;
+while(n<=10)
+{
+    if(n==5)
+    {
+        n++
+        continue;
+    }
+    console.log(n)
+    n++
+}
+
+let n = 5 ;
+do{
+    console.log(n)
+    n++
+}
+while(n<5)
+
+let arr = [20,30,10,70]
+let sum = 0;
+for(let i = 0 ; i< arr.length; i++)
+{
+    sum += arr[i]
+}
+
+console.log("the sum :", sum )
+
+let array = [2,3,10,5,6,5,66]
+let sum =0
+for(let i = 0;i<array.length;i++)
+{
+    sum += array[i]
+
+}
+
+console.log(sum)
+let n = 7;
+console.log(`Table of ${n}`)
+
+for (let i = 1;i<=10;i++)
+{
+    // console.log(n, "X", i, "=", n*i)
+    console.log(`${n} X ${i} =  ${n*i}`)
+}
+
+let array = [1,3,2,6,4,22,3,9,23,43]
+let evenCount = 0;
+let oddCount = 0;
+for(let i=0; i<array.length; i++)
+{
+    if(array[i]%2===0){
+        evenCount++
+    }
+    else{
+        oddCount++
+    }
+}
+
+console.log(evenCount)
+
+console.log(oddCount)
 
 
-// // let array = [2,3,4,6,1]
-// let evenSum = 0;
-// let oddSum = 0;
-// for(let i=0; i<array.length; i++)
-// {
-//     if(array[i]%2===0){
-//         evenSum += array[i]
-//     }
-//     else{
-//         oddSum += array[i]
-//     }
-// }
+let array = [1,3,2,6,4,22,3,9,23,43]
+let evenCount =0;
+let oddCount = 0;
+for(let i=0; i<array.length; i++)
+{
+    if(array[i]%2!==0){
+        oddCount++
+    }
+    else{
+        evenCount++
+    }
+}
+console.log(oddCount)
+console.log(evenCount)
 
-// console.log(evenSum)
 
-// console.log(oddSum)
+// let array = [2,3,4,6,1]
+let evenSum = 0;
+let oddSum = 0;
+for(let i=0; i<array.length; i++)
+{
+    if(array[i]%2===0){
+        evenSum += array[i]
+    }
+    else{
+        oddSum += array[i]
+    }
+}
+
+console.log(evenSum)
+
+console.log(oddSum)
 
 
 // let fruits =["star fruit", "custurd apple ", "jujube", "mulberry", "waterchestnut"]
