@@ -3349,50 +3349,48 @@ let contact =
 
 // let fruits =["star fruit", "custurd apple ", "jujube", "mulberry", "waterchestnut"]
 // for(let i = fruits.length-1;i>=0;i--)
-// {
-//     console.log(fruits[i])
-// }
+?
 
-// let fruits =["star fruit", "custurd apple ", "jujube", "mulberry", "waterchestnut"]
-// for(let fruit in fruits)
-// {
-//     console.log(fruits[fruit])
-// }
+let fruits =["star fruit", "custurd apple ", "jujube", "mulberry", "waterchestnut"]
+for(let fruit in fruits)
+{
+    console.log(fruits[fruit])
+}
 
-// let array =[0,10,20,30,40, 50, 60 , 70 , 80 ,90 , 100]
-// for(let i = 0 ; i<=array.length;i+= 2)
-// {
-//     console.log(array[i])
-// }
-// for(let i=array.length-1; i>=0 ;i--)
-// {
-//     console.log(array[i])
-// }
+let array =[0,10,20,30,40, 50, 60 , 70 , 80 ,90 , 100]
+for(let i = 0 ; i<=array.length;i+= 2)
+{
+    console.log(array[i])
+}
+for(let i=array.length-1; i>=0 ;i--)
+{
+    console.log(array[i])
+}
 
-// let array = [4,5,6,7,3,43]
-// let sum = 0;
-// for(let i = 0 ; i < array.length;i++)
-// {
-//     sum += array[i];
-// }
-// console.log(sum)
+let array = [4,5,6,7,3,43]
+let sum = 0;
+for(let i = 0 ; i < array.length;i++)
+{
+    sum += array[i];
+}
+console.log(sum)
 
 
-// let array =[0,10,20,30,40, 50, 60 , 70 , 80 ,90 , 100]
-// for(let i = 0 ; i<=array.length;i+= 2)
-// {
-//     console.log(array[i])
-// }
-// for(let i=array.length-1; i>=0 ;i--)
-// {
-//     console.log(array[i])
-// }
+let array =[0,10,20,30,40, 50, 60 , 70 , 80 ,90 , 100]
+for(let i = 0 ; i<=array.length;i+= 2)
+{
+    console.log(array[i])
+}
+for(let i=array.length-1; i>=0 ;i--)
+{
+    console.log(array[i])
+}
 
-//  let fruits =["star fruit", "custurd apple ", "jujube", "mulberry", "waterchestnut"]
-// for(let fruit in fruits)
-// {
-//     console.log(fruits[fruit])
-// }
+ let fruits =["star fruit", "custurd apple ", "jujube", "mulberry", "waterchestnut"]
+for(let fruit in fruits)
+{
+    console.log(fruits[fruit])
+}
 
 
 class Customer{
@@ -3432,21 +3430,21 @@ let automobile = new Vehicle(3421,2005)
 
 console.log(automobile)
 
-// class Student 
-// {
-//     constructor(n , a , c , g , caste)
-//     {
-//         this.Name = n;
-//         this.Age = a;
-//         this.Class = c;
-//         this.gender = g ;
-//         this.caste = caste;
-//     }
-// }
-// let student1 = new Student("Zeeshna", 21 , "bca" , "male", "obc") 
-// let student2 = new Student("Nirbhay", 20 , "bcom" , "male", "gen") 
-// let student3 = new Student("Amit", 19 , "bba" , "male", "gen") 
+class Student 
+{
+    constructor(n , a , c , g , caste)
+    {
+        this.Name = n;
+        this.Age = a;
+        this.Class = c;
+        this.gender = g ;
+        this.caste = caste;
+    }
+}
+let student1 = new Student("Zeeshna", 21 , "bca" , "male", "obc") 
+let student2 = new Student("Nirbhay", 20 , "bcom" , "male", "gen") 
+let student3 = new Student("Amit", 19 , "bba" , "male", "gen") 
 
-// console.log(student2.caste)
+console.log(student2.caste)
 
 
