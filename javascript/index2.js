@@ -3448,3 +3448,19 @@ let contact =
 // console.log(student2.caste)
 
 
+let anon = function(id,latitude,longitude)
+{
+    this.setPosition = function(id,latitude,longitude)
+    {
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.id = id ;
+        this.time = Date.now();
+    }
+    
+    this.status = "unavailable";
+    this.setPosition(id,latitude , longitude);
+}
+let pos1 = new anon(56,78,21)
+pos1.setPosition(21,34,22)
+console.log(pos1)
