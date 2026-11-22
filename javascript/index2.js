@@ -3448,19 +3448,43 @@ let contact =
 // console.log(student2.caste)
 
 
-let anon = function(id,latitude,longitude)
-{
-    this.setPosition = function(id,latitude,longitude)
-    {
-        this.latitude = latitude;
-        this.longitude = longitude;
-        this.id = id ;
-        this.time = Date.now();
-    }
+// let anon = function(id,latitude,longitude)
+// {
+//     this.setPosition = function(id,latitude,longitude)
+//     {
+//         this.latitude = latitude;
+//         this.longitude = longitude;
+//         this.id = id ;
+//         this.time = Date.now();
+//     }
     
-    this.status = "unavailable";
-    this.setPosition(id,latitude , longitude);
-}
-let pos1 = new anon(56,78,21)
-pos1.setPosition(21,34,22)
-console.log(pos1)
+//     this.status = "unavailable";
+//     this.setPosition(id,latitude , longitude);
+// }
+// let pos1 = new anon(56,78,21)
+// pos1.setPosition(21,34,22)
+// console.log(pos1)
+
+//  class Guardian
+// {
+//     constructor(name,age)
+//     {
+//         this.name = name;
+//         this.age = age;
+//     }
+
+// }
+
+// class child extends Guardian
+// {
+//     constructor(name,age,course)
+//     {
+//         super(name,age);
+//         this.course = course ;
+//     }
+// }
+
+// let child1 = new child("zeeshan",21 , "BCA")
+// console.log(child1)
+// let child2 = new child("shahnawaz",22,"mca")
+// console.log(child2)
