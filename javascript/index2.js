@@ -3489,51 +3489,77 @@ let contact =
 // let child2 = new child("shahnawaz",22,"mca")
 // console.log(child2)
 
-class Person
+// class Person
+// {
+//     constructor(name,age)
+//     {
+//         this.name = name ;
+//         this.age = age;
+//     }
+//     introduce()
+//     {
+//         console.log(this.name)
+//         console.log(this.age)
+//     }
+// }
+
+// class Student extends Person
+// {
+//     constructor(name,age,course)
+//     {
+//         super(name,age);
+//         this.course = course;
+//     }
+//       introduce()
+//     {
+//         super.introduce();
+//       console.log(this.course)
+//     }
+// }
+
+
+// class Teacher extends Person
+// {
+//     constructor(name,age,subject)
+//     {
+//         super(name,age);
+//         this.subject =subject ;
+//     }
+//       introduce()
+//     {
+//        super.introduce();
+//       console.log(this.subject)
+//     }
+// }
+
+// let student1 = new Student(" zeeshan",21,"bca")
+// let teacher1 = new Teacher("Pankaj",39,"DBMS")
+
+// student1.introduce();
+// teacher1.introduce();
+
+class Vehicle
 {
-    constructor(name,age)
+    constructor(Speed,tyres,avg)
     {
-        this.name = name ;
-        this.age = age;
+        this.tyre = tyres;
+        this.Speed = Speed;
+        this.avg = avg;
     }
-    introduce()
-    {
-        console.log(this.name)
-        console.log(this.age)
-    }
+    
 }
 
-class Student extends Person
+class Bus extends Vehicle 
 {
-    constructor(name,age,course)
+    constructor(Speed,tyres,avg,color)
     {
-        super(name,age);
-        this.course = course;
+        super(Speed,tyres,avg);
+        this.color = color;
     }
-      introduce()
-    {
-        super.introduce();
-      console.log(this.course)
-    }
+    
 }
 
+let bus = new Vehicle("25km",4,40,"yellow")
+// Bus.color("blue")
+console.log(bus)
 
-class Teacher extends Person
-{
-    constructor(name,age,subject)
-    {
-        super(name,age);
-        this.subject =subject ;
-    }
-      introduce()
-    {
-       super.introduce();
-      console.log(this.subject)
-    }
-}
-
-let student1 = new Student(" zeeshan",21,"bca")
-let teacher1 = new Teacher("Pankaj",39,"DBMS")
-
-student1.introduce();
-teacher1.introduce();
