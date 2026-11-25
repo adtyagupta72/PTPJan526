@@ -3564,34 +3564,3 @@ let contact =
 // console.log(bus)
 
 
-class Student
-{
-    constructor(name,age,standrad)
-    {
-        this.name = name;
-        this.age = age;
-        this.standrad = standrad;
-    }
-}
-
-class SportsStudent extends Student{
-    constructor(name , age , standrad,sport,fee)
-    {
-        super(name , age , standrad);
-        this.sport = sport;
-        this.fee = fee ;
-    }
-}
-
-let SportStu1 = new SportsStudent("shahnawaz",23,12,"hockey",2500)
-console.log(SportStu1)
-
-let student1 = new Student("zeeshan",21,12)
-console.log(student1)
-
-let name1 = function (name)
-{
-    console.log("hii " + name )
-}
-
-name1("zeeshan")
