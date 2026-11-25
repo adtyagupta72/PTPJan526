@@ -3588,3 +3588,10 @@ console.log(SportStu1)
 
 let student1 = new Student("zeeshan",21,12)
 console.log(student1)
+
+let name1 = function (name)
+{
+    console.log("hii " + name )
+}
+
+name1("zeeshan")
