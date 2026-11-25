@@ -3538,28 +3538,42 @@ let contact =
 // student1.introduce();
 // teacher1.introduce();
 
-class Vehicle
-{
-    constructor(Speed,tyres,avg)
-    {
-        this.tyre = tyres;
-        this.Speed = Speed;
-        this.avg = avg;
-    }
+// class Vehicle
+// {
+//     constructor(Speed,tyres,avg)
+//     {
+//         this.tyre = tyres;
+//         this.Speed = Speed;
+//         this.avg = avg;
+//     }
     
+// }
+
+// class Bus extends Vehicle 
+// {
+//     constructor(Speed,tyres,avg,color)
+//     {
+//         super(Speed,tyres,avg);
+//         this.color = color;
+//     }
+    
+// }
+
+// let bus = new Vehicle("25km",4,40,"yellow")
+// // Bus.color("blue")
+// console.log(bus)
+
+
+class Student
+{
+    constructor(name,age,standrad)
+    {
+        this.name = name;
+        this.age = age;
+        this.standrad = standrad;
+    }
 }
 
-class Bus extends Vehicle 
-{
-    constructor(Speed,tyres,avg,color)
-    {
-        super(Speed,tyres,avg);
-        this.color = color;
-    }
-    
-}
 
-let bus = new Vehicle("25km",4,40,"yellow")
-// Bus.color("blue")
-console.log(bus)
-
+let student1 = new Student("zeeshan",21,12)
+console.log(student1)
