@@ -3393,87 +3393,62 @@ let contact =
 // }
 
 
-// class Customer{
-//     constructor(name,age)
-//     {
-//         this.name = name ;
-//         this.pincode = age;
-//     }
-
-// }
-
-// let Customer1 = new Customer("Zeeshan", 21)
-// console.log(Customer1)
-
-// class Customer{
-//     constructor(name,age)
-//     {
-//         this.name = name ;
-//         this.pincode = age;
-//     }
-
-// }
-
-// let Customer1 = new Customer("Zeeshan", 21)
-// console.log(Customer1)
-
-// class Vehicle
-// {
-//     constructor(model , years)
-//     {
-//         this.Modal = model;
-//         this.year = years ;
-//     }
-// }
-
-// let automobile = new Vehicle(3421,2005)
-
-// console.log(automobile)
-
-// class Student 
-// {
-//     constructor(n , a , c , g , caste)
-//     {
-//         this.Name = n;
-//         this.Age = a;
-//         this.Class = c;
-//         this.gender = g ;
-//         this.caste = caste;
-//     }
-// }
-// let student1 = new Student("Zeeshna", 21 , "bca" , "male", "obc") 
-// let student2 = new Student("Nirbhay", 20 , "bcom" , "male", "gen") 
-// let student3 = new Student("Amit", 19 , "bba" , "male", "gen") 
-
-// console.log(student2.caste)
-
-
-let anon = function(id,latitude,longitude)
-{
-    this.setPosition = function(id,latitude,longitude)
-    {
-        this.latitude = latitude;
-        this.longitude = longitude;
-        this.id = id ;
-        this.time = Date.now();
-    }
-    
-    this.status = "unavailable";
-    this.setPosition(id,latitude , longitude);
-}
-let pos1 = new anon(56,78,21)
-pos1.setPosition(21,34,22)
-console.log(pos1)
-
- class Guardian
-{
+class Customer{
     constructor(name,age)
     {
-        this.name = name;
-        this.age = age;
+        this.name = name ;
+        this.pincode = age;
     }
 
 }
+
+let Customer1 = new Customer("Zeeshan", 21)
+console.log(Customer1)
+
+class Customer{
+    constructor(name,age)
+    {
+        this.name = name ;
+        this.pincode = age;
+    }
+
+}
+
+let Customer1 = new Customer("Zeeshan", 21)
+console.log(Customer1)
+
+class Vehicle
+{
+    constructor(model , years)
+    {
+        this.Modal = model;
+        this.year = years ;
+    }
+}
+
+let automobile = new Vehicle(3421,2005)
+
+console.log(automobile)
+
+class Student 
+{
+    constructor(n , a , c , g , caste)
+    {
+        this.Name = n;
+        this.Age = a;
+        this.Class = c;
+        this.gender = g ;
+        this.caste = caste;
+    }
+}
+let student1 = new Student("Zeeshna", 21 , "bca" , "male", "obc") 
+let student2 = new Student("Nirbhay", 20 , "bcom" , "male", "gen") 
+let student3 = new Student("Amit", 19 , "bba" , "male", "gen") 
+
+console.log(student2.caste)
+
+
+
 
 // class child extends Guardian
 // {
