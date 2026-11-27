@@ -3393,149 +3393,149 @@ let contact =
 // }
 
 
-class Customer{
-    constructor(name,age)
-    {
-        this.name = name ;
-        this.pincode = age;
-    }
-
-}
-
-let Customer1 = new Customer("Zeeshan", 21)
-console.log(Customer1)
-
-class Customer{
-    constructor(name,age)
-    {
-        this.name = name ;
-        this.pincode = age;
-    }
-
-}
-
-let Customer1 = new Customer("Zeeshan", 21)
-console.log(Customer1)
-
-class Vehicle
-{
-    constructor(model , years)
-    {
-        this.Modal = model;
-        this.year = years ;
-    }
-}
-
-let automobile = new Vehicle(3421,2005)
-
-console.log(automobile)
-
-class Student 
-{
-    constructor(n , a , c , g , caste)
-    {
-        this.Name = n;
-        this.Age = a;
-        this.Class = c;
-        this.gender = g ;
-        this.caste = caste;
-    }
-}
-let student1 = new Student("Zeeshna", 21 , "bca" , "male", "obc") 
-let student2 = new Student("Nirbhay", 20 , "bcom" , "male", "gen") 
-let student3 = new Student("Amit", 19 , "bba" , "male", "gen") 
-
-console.log(student2.caste)
-
-
-
-
-// class child extends Guardian
-// {
-//     constructor(name,age,course)
-//     {
-//         super(name,age);
-//         this.course = course ;
-//     }
-// }
-
-// let child1 = new child("zeeshan",21 , "BCA")
-// console.log(child1)
-// let child2 = new child("shahnawaz",22,"mca")
-// console.log(child2)
-
-// class Person
-// {
+// class Customer{
 //     constructor(name,age)
 //     {
 //         this.name = name ;
-//         this.age = age;
+//         this.pincode = age;
 //     }
-//     introduce()
-//     {
-//         console.log(this.name)
-//         console.log(this.age)
-//     }
+
 // }
 
-// class Student extends Person
-// {
-//     constructor(name,age,course)
+// let Customer1 = new Customer("Zeeshan", 21)
+// console.log(Customer1)
+
+// class Customer{
+//     constructor(name,age)
 //     {
-//         super(name,age);
-//         this.course = course;
+//         this.name = name ;
+//         this.pincode = age;
 //     }
-//       introduce()
-//     {
-//         super.introduce();
-//       console.log(this.course)
-//     }
+
 // }
 
-
-// class Teacher extends Person
-// {
-//     constructor(name,age,subject)
-//     {
-//         super(name,age);
-//         this.subject =subject ;
-//     }
-//       introduce()
-//     {
-//        super.introduce();
-//       console.log(this.subject)
-//     }
-// }
-
-// let student1 = new Student(" zeeshan",21,"bca")
-// let teacher1 = new Teacher("Pankaj",39,"DBMS")
-
-// student1.introduce();
-// teacher1.introduce();
+// let Customer1 = new Customer("Zeeshan", 21)
+// console.log(Customer1)
 
 // class Vehicle
 // {
-//     constructor(Speed,tyres,avg)
+//     constructor(model , years)
 //     {
-//         this.tyre = tyres;
-//         this.Speed = Speed;
-//         this.avg = avg;
+//         this.Modal = model;
+//         this.year = years ;
 //     }
-    
 // }
 
-// class Bus extends Vehicle 
+// let automobile = new Vehicle(3421,2005)
+
+// console.log(automobile)
+
+// class Student 
 // {
-//     constructor(Speed,tyres,avg,color)
+//     constructor(n , a , c , g , caste)
 //     {
-//         super(Speed,tyres,avg);
-//         this.color = color;
+//         this.Name = n;
+//         this.Age = a;
+//         this.Class = c;
+//         this.gender = g ;
+//         this.caste = caste;
 //     }
-    
 // }
+// let student1 = new Student("Zeeshna", 21 , "bca" , "male", "obc") 
+// let student2 = new Student("Nirbhay", 20 , "bcom" , "male", "gen") 
+// let student3 = new Student("Amit", 19 , "bba" , "male", "gen") 
 
-// let bus = new Vehicle("25km",4,40,"yellow")
-// // Bus.color("blue")
-// console.log(bus)
+// console.log(student2.caste)
+
+
+
+
+class child extends Guardian
+{
+    constructor(name,age,course)
+    {
+        super(name,age);
+        this.course = course ;
+    }
+}
+
+let child1 = new child("zeeshan",21 , "BCA")
+console.log(child1)
+let child2 = new child("shahnawaz",22,"mca")
+console.log(child2)
+
+class Person
+{
+    constructor(name,age)
+    {
+        this.name = name ;
+        this.age = age;
+    }
+    introduce()
+    {
+        console.log(this.name)
+        console.log(this.age)
+    }
+}
+
+class Student extends Person
+{
+    constructor(name,age,course)
+    {
+        super(name,age);
+        this.course = course;
+    }
+      introduce()
+    {
+        super.introduce();
+      console.log(this.course)
+    }
+}
+
+
+class Teacher extends Person
+{
+    constructor(name,age,subject)
+    {
+        super(name,age);
+        this.subject =subject ;
+    }
+      introduce()
+    {
+       super.introduce();
+      console.log(this.subject)
+    }
+}
+
+let student1 = new Student(" zeeshan",21,"bca")
+let teacher1 = new Teacher("Pankaj",39,"DBMS")
+
+student1.introduce();
+teacher1.introduce();
+
+class Vehicle
+{
+    constructor(Speed,tyres,avg)
+    {
+        this.tyre = tyres;
+        this.Speed = Speed;
+        this.avg = avg;
+    }
+    
+}
+
+class Bus extends Vehicle 
+{
+    constructor(Speed,tyres,avg,color)
+    {
+        super(Speed,tyres,avg);
+        this.color = color;
+    }
+    
+}
+
+let bus = new Vehicle("25km",4,40,"yellow")
+// Bus.color("blue")
+console.log(bus)
 
 
